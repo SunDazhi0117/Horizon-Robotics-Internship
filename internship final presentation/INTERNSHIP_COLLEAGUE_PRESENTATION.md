@@ -6,7 +6,7 @@
 **Internship:** June–August 2026  
 **Presentation date:** August 25, 2026
 
-[Chinese Version](INTERNSHIP_COLLEAGUE_PRESENTATION_ZH.md) · [Detailed Personal Version](INTERNSHIP_FINAL_PRESENTATION.md)
+[Chinese Version](INTERNSHIP_COLLEAGUE_PRESENTATION_ZH.md)
 
 > My main internship contribution was connecting articulated-asset generation, scene assembly, physics simulation, robot manipulation, and evaluation into one reproducible engineering workflow while improving the usability of Articraft, SceneSmith integration, and MuJoCo task development.
 

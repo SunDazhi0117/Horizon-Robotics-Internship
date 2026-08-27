@@ -25,3 +25,20 @@ articraft/viewer/web/dist/
 *.log
 MUJOCO_LOG.TXT
 .DS_Store
+
+# Portfolio-export exclusions
+/.vscode/
+/dev_machine_migration/
+/pytorch_learning/
+/articraft/.agents/
+/articraft/.github/
+/articraft/.vscode/
+/articraft/.lfsconfig
+/articraft/AGENTS.md
+/articraft/CLAUDE.md
+/articraft/EXTERNAL_AGENT_DATA.md
+/scenesmith/.gitmodules
+/scenesmith/AGENTS.md
+/week2_note/README.md
+/week4_note/GIT_COMMIT_CHECK_REPORT.md
+/week4_note/PUBLISHING.md

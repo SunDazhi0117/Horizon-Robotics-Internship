@@ -1,4 +1,0 @@
-[submodule "external/Hunyuan3D-2"]
-	path = external/Hunyuan3D-2
-	url = git@github.com:Tencent-Hunyuan/Hunyuan3D-2.git
-	branch = main

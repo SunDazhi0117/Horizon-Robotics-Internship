@@ -4,7 +4,7 @@ This directory contains only the five retained cabinet-manipulation levels.
 
 ## Code Learning
 
-The beginner-oriented Chinese code guide starts here:
+The beginner-oriented code guide starts here:
 
 - [Python and MuJoCo task code learning guide](code_learning/README.md)
 - [Project-specific Python basics](code_learning/00_python_basics.md)
