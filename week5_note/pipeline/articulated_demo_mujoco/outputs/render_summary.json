@@ -1,0 +1,22 @@
+{
+  "scene_xml": "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/articulated_demo_mujoco/xml/articulated_demo_static.xml",
+  "png_outputs": [
+    "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/articulated_demo_mujoco/outputs/articulated_demo_diag.png",
+    "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/articulated_demo_mujoco/outputs/articulated_demo_top.png",
+    "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/articulated_demo_mujoco/outputs/articulated_demo_side.png",
+    "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/articulated_demo_mujoco/outputs/articulated_demo_front.png"
+  ],
+  "gif_output": "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/articulated_demo_mujoco/outputs/articulated_demo_static_turntable.gif",
+  "nbody": 2,
+  "ngeom": 86,
+  "nmesh": 85,
+  "njnt": 0,
+  "nq": 0,
+  "extent": 12.86694939755191,
+  "center": [
+    2.5346433877114363,
+    2.2262504891420978,
+    0.5851257162758228
+  ],
+  "status": "rendered_static_scene"
+}

@@ -1,0 +1,138 @@
+task_name: entry_door_open_hold_close_generalized
+
+initial_state:
+  phase: initial
+  base: [3.62, 2.28, 0.0]
+  arm_qpos: [0.0, -0.55, 0.0, -2.25, 0.0, 1.75, 0.78]
+  gripper: 0.04
+  object_joints:
+    left_hinge: 0.0
+    right_hinge: 0.0
+    microwave_hinge: 0.0
+    entry_hinge: 0.0
+  active_target: null
+
+actions:
+  - action: hold_pose
+    phase: initial_hold
+    frames: 5
+
+  - action: move_near_target
+    phase: navigate_to_entry_door
+    target_geom: week8_entry_door_handle_proxy
+    candidate_search:
+      stand_distance: 0.69
+      center_angle_degrees: 118.27257832
+      angle_offsets_degrees: [0.0, -20.0, 20.0, -40.0, 40.0]
+      detour_distance: 1.20
+    heading_axis: [-0.5088919973, -0.8608303753, 0.0]
+    yaw_offset: 0.0
+    steps_per_segment: 61
+
+  - action: approach_target
+    phase: approach_entry_handle
+    target_geom: week8_entry_door_handle_proxy
+    hand_offset: [0.0744064323, 0.0831083899, -0.0026967748]
+    hand_rotation:
+      - [0.0282686622, -0.7365281188, -0.6758159608]
+      - [0.0268258963, 0.6764016267, -0.7360442994]
+      - [0.9992403385, 0.0026776188, 0.0388789960]
+    approach_direction: [-0.4732836795, 0.8809100432, 0.0]
+    standoff_distances: [0.38, 0.28, 0.20, 0.14, 0.09]
+    max_step: 0.03
+
+  - action: grasp_target
+    phase: grasp_entry_handle
+    target_geom: week8_entry_door_handle_proxy
+    hand_offset: [0.0744064323, 0.0831083899, -0.0026967748]
+    hand_rotation:
+      - [0.0282686622, -0.7365281188, -0.6758159608]
+      - [0.0268258963, 0.6764016267, -0.7360442994]
+      - [0.9992403385, 0.0026776188, 0.0388789960]
+    closed_gripper: 0.023711985
+    max_step: 0.025
+    close_steps: 17
+    minimum_final_finger_contacts: 2
+
+  - action: follow_hinge_joint
+    phase: open_entry_door
+    joint_name: entry_hinge
+    moving_body: entry_door
+    target_angle: 1.0
+    samples: 101
+    base_target: [3.7643954907, 0.7499606856, -1.1046934942]
+    max_joint_step: 0.15
+    minimum_each_finger_contacts: 2
+    ik_position_tolerance: 0.009
+    ik_rotation_tolerance: 0.03
+    ik_continuity_weight: 0.003
+    ik_max_nfev: 1600
+
+  - action: hold_pose
+    phase: hold_entry_door_open
+    frames: 12
+
+  - action: follow_hinge_joint
+    phase: close_entry_door
+    joint_name: entry_hinge
+    moving_body: entry_door
+    target_angle: 0.0
+    samples: 101
+    base_target: [4.5221971039, 0.7321858629, -2.1046934942]
+    max_joint_step: 0.15
+    minimum_each_finger_contacts: 2
+    ik_position_tolerance: 0.009
+    ik_rotation_tolerance: 0.03
+    ik_continuity_weight: 0.003
+    ik_max_nfev: 1600
+
+  - action: change_gripper
+    phase: release_entry_handle
+    target: 0.04
+    active_target: null
+    steps: 17
+
+  - action: retreat_from_target
+    phase: retreat_from_entry_door
+    target_geom: week8_entry_door_handle_proxy
+    hand_offset: [0.0744064323, 0.0831083899, -0.0026967748]
+    hand_rotation:
+      - [0.0282686622, -0.7365281188, -0.6758159608]
+      - [0.0268258963, 0.6764016267, -0.7360442994]
+      - [0.9992403385, 0.0026776188, 0.0388789960]
+    approach_direction: [-0.4732836795, 0.8809100432, 0.0]
+    standoff_distances: [0.09, 0.14, 0.20, 0.28, 0.38]
+    max_step: 0.03
+
+  - action: move_arm
+    phase: return_arm_home
+    waypoints:
+      - [0.0, -0.55, 0.0, -2.25, 0.0, 1.75, 0.78]
+    max_step: 0.03
+
+  - action: hold_pose
+    phase: final_hold
+    frames: 8
+
+evaluation:
+  joint_name: entry_hinge
+  target_angle: 1.0
+  final_angle: 0.0
+  final_gripper: 0.04
+  max_arm_joint_step: 0.15
+
+render:
+  width: 760
+  height: 570
+  max_frames: 180
+  duration_ms: 92
+  front:
+    lookat: [4.40, 0.50, 1.05]
+    distance: 2.50
+    azimuth: 315.0
+    elevation: -18.0
+  top:
+    lookat: [4.35, 0.75, 0.75]
+    distance: 2.45
+    azimuth: 180.0
+    elevation: -78.0

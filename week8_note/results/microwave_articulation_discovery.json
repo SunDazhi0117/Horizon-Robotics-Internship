@@ -1,0 +1,32 @@
+{
+  "target_geom": "033_microwave_front_door_handle_bar",
+  "target_geom_id": 146,
+  "target_body": "microwave_door",
+  "target_body_id": 17,
+  "moving_body": "microwave_door",
+  "moving_body_id": 17,
+  "joint_name": "body_to_front_door",
+  "joint_id": 15,
+  "joint_type": "hinge",
+  "joint_axis_local": [
+    0.0,
+    0.0,
+    1.0
+  ],
+  "joint_axis_world": [
+    0.0,
+    0.0,
+    1.0
+  ],
+  "joint_limited": true,
+  "joint_range": [
+    0.0,
+    1.75
+  ],
+  "qpos_address": 15,
+  "target_world_position": [
+    3.8486700057983407,
+    3.9455318450927734,
+    1.1896767616271977
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "task_name": "microwave_open_hold_close_generalized",
+  "passed": true,
+  "state_count": 401,
+  "action_count": 11,
+  "actions": [
+    {
+      "action_index": 0,
+      "action": "hold_pose",
+      "phase": "initial_hold",
+      "start_state_index": 1,
+      "end_state_index": 5
+    },
+    {
+      "action_index": 1,
+      "action": "move_base",
+      "phase": "navigate_to_microwave",
+      "start_state_index": 6,
+      "end_state_index": 55
+    },
+    {
+      "action_index": 2,
+      "action": "approach_target",
+      "phase": "approach_microwave_handle_5",
+      "start_state_index": 56,
+      "end_state_index": 122
+    },
+    {
+      "action_index": 3,
+      "action": "grasp_target",
+      "phase": "grasp_microwave_handle",
+      "start_state_index": 123,
+      "end_state_index": 155
+    },
+    {
+      "action_index": 4,
+      "action": "follow_hinge_joint",
+      "phase": "open_microwave_door",
+      "start_state_index": 156,
+      "end_state_index": 219
+    },
+    {
+      "action_index": 5,
+      "action": "hold_pose",
+      "phase": "hold_microwave_open",
+      "start_state_index": 220,
+      "end_state_index": 231
+    },
+    {
+      "action_index": 6,
+      "action": "follow_hinge_joint",
+      "phase": "close_microwave_door",
+      "start_state_index": 232,
+      "end_state_index": 295
+    },
+    {
+      "action_index": 7,
+      "action": "change_gripper",
+      "phase": "release_microwave_handle",
+      "start_state_index": 296,
+      "end_state_index": 311
+    },
+    {
+      "action_index": 8,
+      "action": "retreat_from_target",
+      "phase": "retreat_from_microwave_5",
+      "start_state_index": 312,
+      "end_state_index": 359
+    },
+    {
+      "action_index": 9,
+      "action": "move_arm",
+      "phase": "return_arm_home",
+      "start_state_index": 360,
+      "end_state_index": 392
+    },
+    {
+      "action_index": 10,
+      "action": "hold_pose",
+      "phase": "final_hold",
+      "start_state_index": 393,
+      "end_state_index": 400
+    }
+  ],
+  "environment_geom_count_checked": 95,
+  "environment_visual_overlap_failure_count": 0,
+  "forbidden_target_contact_failure_count": 0,
+  "lost_grasp_failure_count": 0,
+  "maximum_microwave_hinge_angle": 1.0,
+  "target_microwave_hinge_angle": 1.0,
+  "final_microwave_hinge_angle": 0.0,
+  "final_gripper": 0.04,
+  "maximum_arm_joint_step": 0.05486990814576387,
+  "front_video_frame_count": 201,
+  "top_video_frame_count": 201,
+  "config": "/home/users/dazhi.sun-labs/projects/week8_note/configs/microwave_open_hold_close.yaml",
+  "task_xml": "/home/users/dazhi.sun-labs/projects/week8_note/xml/microwave_generalization.xml",
+  "trajectory": "/home/users/dazhi.sun-labs/projects/week8_note/results/microwave_open_hold_close_trajectory.json",
+  "front_video": "/home/users/dazhi.sun-labs/projects/week8_note/assets/microwave_open_hold_close.gif",
+  "top_video": "/home/users/dazhi.sun-labs/projects/week8_note/assets/microwave_open_hold_close_top_view.gif"
+}

@@ -1,0 +1,16 @@
+{
+    "robots": [
+        {
+            "name": "robot1",
+            "battery": 100
+        },
+        {
+            "name": "robot2",
+            "battery": 80
+        },
+        {
+            "name": "robot3",
+            "battery": 60
+        }
+    ]
+}

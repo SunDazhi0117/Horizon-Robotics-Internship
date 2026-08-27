@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Articulated Demo Room - MuJoCo Static Import</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #101418;
+      color: #f3f5f7;
+    }
+    body {
+      margin: 0;
+      padding: 28px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 26px;
+      font-weight: 700;
+    }
+    p {
+      margin: 0 0 22px;
+      color: #b8c0c8;
+      line-height: 1.5;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 18px;
+    }
+    figure {
+      margin: 0;
+      background: #171d23;
+      border: 1px solid #2b343d;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      background: #050607;
+    }
+    figcaption {
+      padding: 10px 12px;
+      color: #d9dee4;
+      font-size: 14px;
+    }
+    .meta {
+      margin: 18px 0 0;
+      font-size: 14px;
+      color: #aab3bc;
+    }
+    code {
+      color: #d7e7ff;
+      background: #1e2832;
+      padding: 2px 5px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Articulated Demo Room in MuJoCo</h1>
+  <p>
+    Static MuJoCo import preview of the complex SceneSmith + Articraft demo room.
+    Geometry is loaded and rendered; a first-pass MuJoCo joint rebuild is also included below.
+  </p>
+
+  <h2>Task 3: Navigate And Reach Cabinet Handle</h2>
+  <p>
+    Stretch starts away from the cabinet, follows waypoints to the cabinet-front region, turns toward the handle,
+    then raises the lift and extends the arm. This combines navigation and pre-manipulation in one MuJoCo run.
+  </p>
+
+  <div class="grid">
+    <figure>
+      <img src="outputs/combined_nav_reach_start_top.png" alt="Stretch combined task start top view">
+      <figcaption>Start pose before navigation.</figcaption>
+    </figure>
+    <figure>
+      <img src="outputs/combined_nav_reach_after_navigation_top.png" alt="Stretch after navigation top view">
+      <figcaption>After waypoint navigation and base alignment near the cabinet.</figcaption>
+    </figure>
+    <figure>
+      <img src="outputs/combined_nav_reach_final_diag.png" alt="Stretch final reach diagonal view">
+      <figcaption>Final diagonal view with the gripper near the cabinet handle.</figcaption>
+    </figure>
+    <figure>
+      <img src="outputs/combined_nav_reach_motion.gif" alt="Stretch combined navigation and reach motion">
+      <figcaption>One continuous run: waypoint navigation, turn alignment, lift, and arm extension.</figcaption>
+    </figure>
+  </div>
+
+  <p class="meta">
+    Combined task result: navigation distance <code>0.045 m</code>,
+    yaw error <code>0.055 rad</code>, gripper-to-handle distance <code>0.066 m</code>,
+    task result <code>PASS</code>.
+  </p>
+
+  <h2>Task 2: Reach Cabinet Handle</h2>
+  <p>
+    Stretch starts from a cabinet-front pose, raises the lift, extends the arm, and moves the gripper
+    near the right cabinet handle. This is a pre-manipulation validation, not a grasp or door-opening task yet.
+  </p>
+
+  <div class="grid">
+    <figure>
+      <img src="outputs/reach_cabinet_handle_start_top.png" alt="Stretch cabinet handle reach start top view">
+      <figcaption>Start pose before lift and arm extension.</figcaption>
+    </figure>
+    <figure>
+      <img src="outputs/reach_cabinet_handle_final_top.png" alt="Stretch cabinet handle reach final top view">
+      <figcaption>Final top view with the gripper near the cabinet handle.</figcaption>
+    </figure>
+    <figure>
+      <img src="outputs/reach_cabinet_handle_final_diag.png" alt="Stretch cabinet handle reach final diagonal view">
+      <figcaption>Final diagonal view: lift and arm extension toward the handle.</figcaption>
+    </figure>
+    <figure>
+      <img src="outputs/reach_cabinet_handle_motion.gif" alt="Stretch cabinet handle reach motion">
+      <figcaption>Motion generated with Stretch <code>lift</code>, <code>arm_extend</code>, and <code>grip</code> actuators.</figcaption>
+    </figure>
+  </div>
+
+  <p class="meta">
+    Cabinet handle reach result: gripper-to-handle distance <code>0.022 m</code>,
+    success threshold <code>0.08 m</code>, arm extension <code>0.520 m</code>,
+    task result <code>PASS</code>.
+  </p>
+
+  <h2>Task 1b: Waypoint Navigate To Cabinet</h2>
+  <p>
+    Stretch now follows three waypoint targets before stopping at the cabinet-front operation region.
+    This is still a simple controller, but it is closer to a navigation task than the earlier straight-line smoke test.
+  </p>
+
+  <div class="grid">
+    <figure>
+      <img src="outputs/waypoint_cabinet_start_top.png" alt="Stretch waypoint cabinet navigation start pose">
+      <figcaption>Start pose for waypoint navigation.</figcaption>
+    </figure>
+    <figure>
+      <img src="outputs/waypoint_cabinet_final_top.png" alt="Stretch waypoint cabinet navigation final top view">
+      <figcaption>Final top view after reaching the cabinet-front target.</figcaption>
+    </figure>
+    <figure>
+      <img src="outputs/waypoint_cabinet_final_diag.png" alt="Stretch waypoint cabinet navigation final diagonal view">
+      <figcaption>Final diagonal view near the cabinet.</figcaption>
+    </figure>
+    <figure>
+      <img src="outputs/waypoint_cabinet_motion.gif" alt="Stretch waypoint cabinet navigation motion">
+      <figcaption>Motion through three waypoints using Stretch <code>forward</code>/<code>turn</code> actuators.</figcaption>
+    </figure>
+  </div>
+
+  <p class="meta">
+    Waypoint navigation result: reached <code>3/3</code> waypoints,
+    final distance <code>0.350 m</code>, success radius <code>0.35 m</code>,
+    elapsed time <code>13.62 s</code>, task result <code>PASS</code>.
+  </p>
+
+  <h2>Task 1: Navigate To Cabinet</h2>
+  <p>
+    Stretch starts from a fixed pose and drives toward the front of the double-door cabinet.
+    Success is measured by distance to the cabinet-front target region.
+  </p>
+
+  <div class="grid">
+    <figure>
+      <img src="outputs/navigate_cabinet_start_top.png" alt="Stretch cabinet navigation start pose">
+      <figcaption>Start pose for cabinet navigation.</figcaption>
+    </figure>
+    <figure>
+      <img src="outputs/navigate_cabinet_final_top.png" alt="Stretch cabinet navigation final pose">
+      <figcaption>Final pose near the cabinet-front target region.</figcaption>
+    </figure>
+    <figure>
+      <img src="outputs/navigate_cabinet_final_diag.png" alt="Stretch cabinet navigation diagonal view">
+      <figcaption>Final diagonal view near the cabinet.</figcaption>
+    </figure>
+    <figure>
+      <img src="outputs/navigate_cabinet_motion.gif" alt="Stretch cabinet navigation motion">
+      <figcaption>Navigation motion generated with Stretch <code>forward</code> actuator and <code>mj_step</code>.</figcaption>
+    </figure>
+  </div>
+
+  <p class="meta">
+    Cabinet navigation result: final distance <code>0.350 m</code>,
+    success radius <code>0.35 m</code>, task result <code>PASS</code>.
+  </p>
+
+  <h2>Real Stretch Robot In Room</h2>
+  <p>
+    Hello Robot Stretch from MuJoCo Menagerie was merged into the generated articulated room.
+    The combined model contains the room joints plus Stretch actuators.
+  </p>
+
+  <div class="grid">
+    <figure>
+      <img src="outputs/stretch_room_start_top.png" alt="Stretch robot start pose in room">
+      <figcaption>Stretch start pose inside the generated room.</figcaption>
+    </figure>
+    <figure>
+      <img src="outputs/stretch_room_final_top.png" alt="Stretch robot final pose in room">
+      <figcaption>Stretch final pose after forward/turn/lift/arm control.</figcaption>
+    </figure>
+    <figure>
+      <img src="outputs/stretch_room_final_diag.png" alt="Stretch robot diagonal view in room">
+      <figcaption>Diagonal view of Stretch inside the room.</figcaption>
+    </figure>
+    <figure>
+      <img src="outputs/stretch_room_motion.gif" alt="Stretch robot motion in room">
+      <figcaption>Real Stretch model motion inside the generated room.</figcaption>
+    </figure>
+  </div>
+
+  <p class="meta">
+    Stretch-in-room result: <code>nbody=36</code>, <code>njnt=26</code>,
+    <code>nq=32</code>, <code>nu=16</code>, moved about <code>0.34 m</code>.
+  </p>
+
+  <h2>Actuator Demo</h2>
+  <p>
+    The reconstructed joints are now driven through MuJoCo <code>position</code> actuators:
+    <code>data.ctrl</code> sets targets, and <code>mj_step</code> advances the simulation.
+  </p>
+
+  <div class="grid">
+    <figure>
+      <img src="outputs/actuator_demo_start.png" alt="Actuator demo start pose">
+      <figcaption>Start pose before actuator control.</figcaption>
+    </figure>
+    <figure>
+      <img src="outputs/actuator_demo_final.png" alt="Actuator demo final pose">
+      <figcaption>Final pose after actuator-driven simulation.</figcaption>
+    </figure>
+    <figure>
+      <img src="outputs/actuator_demo_motion.gif" alt="Actuator-driven joint motion GIF">
+      <figcaption>Motion generated by <code>data.ctrl</code> and <code>mj_step</code>.</figcaption>
+    </figure>
+  </div>
+
+  <p class="meta">
+    Actuator validation: <code>nu=8</code>, task result <code>PASS</code>.
+    Tasks include opening the entry door, cabinet doors, microwave door, and extending the tray.
+  </p>
+
+  <h2>Mobile Base Smoke Test</h2>
+  <p>
+    A minimal geometric mobile base was added as a robot-loading smoke test.
+    This is not a real robot URDF and not a manipulation task yet.
+  </p>
+
+  <div class="grid">
+    <figure>
+      <img src="outputs/mobile_base_start.png" alt="Mobile base start pose">
+      <figcaption>Mobile base start pose.</figcaption>
+    </figure>
+    <figure>
+      <img src="outputs/mobile_base_final.png" alt="Mobile base final pose">
+      <figcaption>Mobile base final pose after position actuator control.</figcaption>
+    </figure>
+    <figure>
+      <img src="outputs/mobile_base_motion.gif" alt="Mobile base motion GIF">
+      <figcaption>Mobile base motion smoke test.</figcaption>
+    </figure>
+  </div>
+
+  <p class="meta">
+    Mobile base result: moved about <code>0.97 m</code> in XY, smoke test <code>PASS</code>.
+  </p>
+
+  <h2>Joint Demo</h2>
+  <p>
+    First-pass MuJoCo articulation rebuild. The scene now loads with <code>8</code> joints and the preview
+    directly sets <code>qpos</code> values to show open/closed poses. This is not robot control yet.
+  </p>
+
+  <div class="grid">
+    <figure>
+      <img src="outputs/articulated_joints_closed_top.png" alt="Closed top view with MuJoCo joints">
+      <figcaption>Closed pose with reconstructed MuJoCo joints.</figcaption>
+    </figure>
+    <figure>
+      <img src="outputs/articulated_joints_open_top.png" alt="Open top view with MuJoCo joints">
+      <figcaption>Open pose: door, cabinet, microwave door, tray, turntable, and knobs use MuJoCo qpos.</figcaption>
+    </figure>
+    <figure>
+      <img src="outputs/articulated_joints_open_diag.png" alt="Open diagonal view with MuJoCo joints">
+      <figcaption>Open pose diagonal view.</figcaption>
+    </figure>
+    <figure>
+      <img src="outputs/articulated_joints_motion.gif" alt="Motion GIF for reconstructed MuJoCo joints">
+      <figcaption>Motion GIF generated by setting MuJoCo joint positions over time.</figcaption>
+    </figure>
+  </div>
+
+  <p class="meta">
+    Joint rebuild result: <code>nbody=10</code>, <code>ngeom=86</code>,
+    <code>nmesh=85</code>, <code>njnt=8</code>, <code>nq=8</code>.
+  </p>
+
+  <h2>Static Import</h2>
+  <p>
+    Earlier static import result. Useful for confirming that all geometry entered MuJoCo before joints were rebuilt.
+  </p>
+
+  <div class="grid">
+    <figure>
+      <img src="outputs/articulated_demo_top.png" alt="Top view of articulated demo room">
+      <figcaption>Top view: room, furniture, cabinet, door, and microwave geometry.</figcaption>
+    </figure>
+    <figure>
+      <img src="outputs/articulated_demo_diag.png" alt="Diagonal view of articulated demo room">
+      <figcaption>Diagonal view: room shell and exterior geometry.</figcaption>
+    </figure>
+    <figure>
+      <img src="outputs/articulated_demo_side.png" alt="Side view of articulated demo room">
+      <figcaption>Side view.</figcaption>
+    </figure>
+    <figure>
+      <img src="outputs/articulated_demo_static_turntable.gif" alt="Turntable animation of articulated demo room">
+      <figcaption>Turntable GIF rendered by MuJoCo offscreen renderer.</figcaption>
+    </figure>
+  </div>
+
+  <p class="meta">
+    Static import result: <code>nbody=2</code>, <code>ngeom=86</code>,
+    <code>nmesh=85</code>, <code>njnt=0</code>.
+  </p>
+</body>
+</html>

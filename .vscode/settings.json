@@ -1,0 +1,11 @@
+{
+  "remote.autoForwardPorts": true,
+  "remote.restoreForwardedPorts": true,
+  "remote.portsAttributes": {
+    "8902": {
+      "label": "SceneSmith Viewer",
+      "onAutoForward": "openBrowser",
+      "requireLocalPort": true
+    }
+  }
+}

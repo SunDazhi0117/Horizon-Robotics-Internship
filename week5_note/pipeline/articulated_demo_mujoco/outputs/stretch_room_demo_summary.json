@@ -1,0 +1,30 @@
+{
+  "scene_xml": "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/articulated_demo_mujoco/xml/articulated_demo_with_stretch.xml",
+  "nbody": 36,
+  "njnt": 26,
+  "nq": 32,
+  "nu": 16,
+  "nmesh": 152,
+  "start_pos": [
+    2.6,
+    2.0,
+    0.0
+  ],
+  "final_pos": [
+    2.2641902543791326,
+    2.0193028281175622,
+    -0.0008495339137016678
+  ],
+  "moved_distance_xy": 0.33636406530318885,
+  "all_finite": true,
+  "contact_count_final": 5,
+  "outputs": {
+    "start_top": "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/articulated_demo_mujoco/outputs/stretch_room_start_top.png",
+    "start_diag": "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/articulated_demo_mujoco/outputs/stretch_room_start_diag.png",
+    "final_top": "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/articulated_demo_mujoco/outputs/stretch_room_final_top.png",
+    "final_diag": "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/articulated_demo_mujoco/outputs/stretch_room_final_diag.png",
+    "motion_gif": "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/articulated_demo_mujoco/outputs/stretch_room_motion.gif"
+  },
+  "passed": true,
+  "note": "Real Stretch model in generated articulated room; smoke test only, not manipulation."
+}

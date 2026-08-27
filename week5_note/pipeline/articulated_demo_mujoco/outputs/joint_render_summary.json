@@ -1,0 +1,34 @@
+{
+  "scene_xml": "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/articulated_demo_mujoco/xml/articulated_demo_with_joints.xml",
+  "joint_count": 8,
+  "qpos_count": 8,
+  "joints": [
+    "frame_to_door",
+    "left_hinge",
+    "right_hinge",
+    "body_to_front_door",
+    "body_to_sliding_tray",
+    "tray_to_turntable",
+    "body_to_upper_knob",
+    "body_to_lower_knob"
+  ],
+  "open_targets": {
+    "frame_to_door": 1.2,
+    "left_hinge": 1.2,
+    "right_hinge": 1.2,
+    "body_to_front_door": 1.25,
+    "body_to_sliding_tray": 0.18,
+    "tray_to_turntable": 2.4,
+    "body_to_upper_knob": 1.2,
+    "body_to_lower_knob": -1.2
+  },
+  "outputs": [
+    "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/articulated_demo_mujoco/outputs/articulated_joints_closed_top.png",
+    "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/articulated_demo_mujoco/outputs/articulated_joints_closed_diag.png",
+    "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/articulated_demo_mujoco/outputs/articulated_joints_open_top.png",
+    "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/articulated_demo_mujoco/outputs/articulated_joints_open_diag.png",
+    "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/articulated_demo_mujoco/outputs/articulated_joints_motion.gif"
+  ],
+  "status": "rendered_joint_demo",
+  "note": "First-pass kinematic joint visualization; not robot control yet."
+}

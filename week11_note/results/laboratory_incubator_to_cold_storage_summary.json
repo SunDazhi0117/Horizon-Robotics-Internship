@@ -1,0 +1,280 @@
+{
+  "task_name": "laboratory_incubator_to_cold_storage",
+  "passed": true,
+  "state_count": 1457,
+  "action_count": 31,
+  "actions": [
+    {
+      "action_index": 0,
+      "action": "hold_pose",
+      "phase": "initial_hold",
+      "start_state_index": 1,
+      "end_state_index": 5
+    },
+    {
+      "action_index": 1,
+      "action": "move_near_target",
+      "phase": "navigate_to_incubator",
+      "start_state_index": 6,
+      "end_state_index": 55
+    },
+    {
+      "action_index": 2,
+      "action": "approach_target",
+      "phase": "approach_incubator_door_5",
+      "start_state_index": 56,
+      "end_state_index": 120
+    },
+    {
+      "action_index": 3,
+      "action": "grasp_target",
+      "phase": "grasp_incubator_door",
+      "start_state_index": 121,
+      "end_state_index": 151
+    },
+    {
+      "action_index": 4,
+      "action": "follow_hinge_joint",
+      "phase": "open_incubator_door",
+      "start_state_index": 152,
+      "end_state_index": 215
+    },
+    {
+      "action_index": 5,
+      "action": "change_gripper",
+      "phase": "release_incubator_door",
+      "start_state_index": 216,
+      "end_state_index": 231
+    },
+    {
+      "action_index": 6,
+      "action": "retreat_from_target",
+      "phase": "retreat_from_incubator_door_4",
+      "start_state_index": 232,
+      "end_state_index": 256
+    },
+    {
+      "action_index": 7,
+      "action": "move_arm",
+      "phase": "reset_before_tray",
+      "start_state_index": 257,
+      "end_state_index": 288
+    },
+    {
+      "action_index": 8,
+      "action": "move_near_target",
+      "phase": "align_with_incubator_tray_clear_incubator_door",
+      "start_state_index": 289,
+      "end_state_index": 368
+    },
+    {
+      "action_index": 9,
+      "action": "approach_target",
+      "phase": "approach_incubator_tray_5",
+      "start_state_index": 369,
+      "end_state_index": 439
+    },
+    {
+      "action_index": 10,
+      "action": "grasp_target",
+      "phase": "grasp_incubator_tray",
+      "start_state_index": 440,
+      "end_state_index": 467
+    },
+    {
+      "action_index": 11,
+      "action": "follow_slide_joint",
+      "phase": "pull_incubator_tray",
+      "start_state_index": 468,
+      "end_state_index": 515
+    },
+    {
+      "action_index": 12,
+      "action": "change_gripper",
+      "phase": "release_incubator_tray",
+      "start_state_index": 516,
+      "end_state_index": 531
+    },
+    {
+      "action_index": 13,
+      "action": "retreat_from_target",
+      "phase": "retreat_from_incubator_tray_4",
+      "start_state_index": 532,
+      "end_state_index": 561
+    },
+    {
+      "action_index": 14,
+      "action": "move_arm",
+      "phase": "reset_after_tray",
+      "start_state_index": 562,
+      "end_state_index": 613
+    },
+    {
+      "action_index": 15,
+      "action": "move_near_target",
+      "phase": "navigate_to_cold_storage_clear_open_source",
+      "start_state_index": 614,
+      "end_state_index": 713
+    },
+    {
+      "action_index": 16,
+      "action": "approach_target",
+      "phase": "approach_cold_storage_door_5",
+      "start_state_index": 714,
+      "end_state_index": 778
+    },
+    {
+      "action_index": 17,
+      "action": "grasp_target",
+      "phase": "grasp_cold_storage_door",
+      "start_state_index": 779,
+      "end_state_index": 809
+    },
+    {
+      "action_index": 18,
+      "action": "follow_hinge_joint",
+      "phase": "open_cold_storage_door",
+      "start_state_index": 810,
+      "end_state_index": 873
+    },
+    {
+      "action_index": 19,
+      "action": "change_gripper",
+      "phase": "release_cold_storage_door",
+      "start_state_index": 874,
+      "end_state_index": 889
+    },
+    {
+      "action_index": 20,
+      "action": "retreat_from_target",
+      "phase": "retreat_from_cold_storage_door_4",
+      "start_state_index": 890,
+      "end_state_index": 914
+    },
+    {
+      "action_index": 21,
+      "action": "move_arm",
+      "phase": "reset_before_sample",
+      "start_state_index": 915,
+      "end_state_index": 946
+    },
+    {
+      "action_index": 22,
+      "action": "move_near_target",
+      "phase": "return_to_sample_clear_all_open_objects",
+      "start_state_index": 947,
+      "end_state_index": 1046
+    },
+    {
+      "action_index": 23,
+      "action": "approach_target",
+      "phase": "approach_sample_tube_5",
+      "start_state_index": 1047,
+      "end_state_index": 1107
+    },
+    {
+      "action_index": 24,
+      "action": "grasp_target",
+      "phase": "grasp_sample_tube",
+      "start_state_index": 1108,
+      "end_state_index": 1140
+    },
+    {
+      "action_index": 25,
+      "action": "carry_payload",
+      "phase": "carry_sample_to_cold_storage",
+      "start_state_index": 1141,
+      "end_state_index": 1352
+    },
+    {
+      "action_index": 26,
+      "action": "hold_pose",
+      "phase": "inspect_sample_at_destination",
+      "start_state_index": 1353,
+      "end_state_index": 1362
+    },
+    {
+      "action_index": 27,
+      "action": "change_gripper",
+      "phase": "place_sample_in_cold_storage",
+      "start_state_index": 1363,
+      "end_state_index": 1378
+    },
+    {
+      "action_index": 28,
+      "action": "retreat_from_target",
+      "phase": "retreat_after_sample_placement_4",
+      "start_state_index": 1379,
+      "end_state_index": 1409
+    },
+    {
+      "action_index": 29,
+      "action": "move_arm",
+      "phase": "return_arm_home",
+      "start_state_index": 1410,
+      "end_state_index": 1448
+    },
+    {
+      "action_index": 30,
+      "action": "hold_pose",
+      "phase": "final_hold",
+      "start_state_index": 1449,
+      "end_state_index": 1456
+    }
+  ],
+  "joint_goals": [
+    {
+      "joint_name": "incubator_hinge",
+      "reached": 0.75,
+      "closest_reached_error": 0.0,
+      "final": 0.75,
+      "expected_final": 0.75,
+      "passed": true
+    },
+    {
+      "joint_name": "tray_slide",
+      "reached": 0.22,
+      "closest_reached_error": 0.0,
+      "final": 0.22,
+      "expected_final": 0.22,
+      "passed": true
+    },
+    {
+      "joint_name": "cold_storage_hinge",
+      "reached": 0.75,
+      "closest_reached_error": 0.0,
+      "final": 0.75,
+      "expected_final": 0.75,
+      "passed": true
+    }
+  ],
+  "payload_goal": {
+    "body": "laboratory_payload",
+    "destination_site": "laboratory_destination_site",
+    "actual_position": [
+      4.87,
+      4.08,
+      1.33
+    ],
+    "expected_position": [
+      4.87,
+      4.08,
+      1.33
+    ],
+    "position_error": 0.0,
+    "tolerance": 1e-06,
+    "passed": true
+  },
+  "final_gripper": 0.04,
+  "environment_visual_overlap_failure_count": 0,
+  "forbidden_target_contact_failure_count": 0,
+  "lost_grasp_failure_count": 0,
+  "maximum_arm_joint_step": 0.036363510149995726,
+  "front_video_frame_count": 209,
+  "top_video_frame_count": 209,
+  "config": "/home/users/dazhi.sun-labs/projects/week11_note/configs/laboratory_incubator_to_cold_storage.yaml",
+  "task_xml": "/home/users/dazhi.sun-labs/projects/week11_note/xml/laboratory_transfer.xml",
+  "trajectory": "/home/users/dazhi.sun-labs/projects/week11_note/results/laboratory_incubator_to_cold_storage_trajectory.json",
+  "front_video": "/home/users/dazhi.sun-labs/projects/week11_note/assets/laboratory_incubator_to_cold_storage.gif",
+  "top_video": "/home/users/dazhi.sun-labs/projects/week11_note/assets/laboratory_incubator_to_cold_storage_top_view.gif"
+}

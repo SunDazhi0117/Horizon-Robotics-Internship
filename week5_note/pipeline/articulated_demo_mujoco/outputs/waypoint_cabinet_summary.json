@@ -1,0 +1,65 @@
+{
+  "scene_xml": "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/articulated_demo_mujoco/xml/articulated_demo_stretch_waypoint_cabinet.xml",
+  "task_name": "stretch_waypoint_navigation_to_cabinet_front",
+  "start_xy": [
+    3.1,
+    2.35
+  ],
+  "waypoints": [
+    [
+      3.55,
+      2.35
+    ],
+    [
+      3.55,
+      2.95
+    ],
+    [
+      4.45,
+      2.95
+    ]
+  ],
+  "waypoint_radius": 0.22,
+  "success_radius": 0.35,
+  "reached_waypoints": [
+    {
+      "waypoint_index": 0,
+      "time": 2.057999999999995,
+      "x": 3.3300089124125276,
+      "y": 2.350099484905256,
+      "distance": 0.2199911100821241
+    },
+    {
+      "waypoint_index": 1,
+      "time": 7.211999999999428,
+      "x": 3.592543069245724,
+      "y": 2.7343630736835816,
+      "distance": 0.21979353205233093
+    },
+    {
+      "waypoint_index": 2,
+      "time": 13.618000000001217,
+      "x": 4.100062995837654,
+      "y": 2.9527397579783523,
+      "distance": 0.34994772917665506
+    }
+  ],
+  "final_xy": [
+    4.100062995837654,
+    2.9527397579783523
+  ],
+  "final_distance_to_target": 0.34994772917665506,
+  "elapsed_time": 13.618000000001217,
+  "path_sample_count": 6812,
+  "all_finite": true,
+  "contact_count_final": 5,
+  "passed": true,
+  "outputs": {
+    "start_top": "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/articulated_demo_mujoco/outputs/waypoint_cabinet_start_top.png",
+    "start_diag": "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/articulated_demo_mujoco/outputs/waypoint_cabinet_start_diag.png",
+    "final_top": "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/articulated_demo_mujoco/outputs/waypoint_cabinet_final_top.png",
+    "final_diag": "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/articulated_demo_mujoco/outputs/waypoint_cabinet_final_diag.png",
+    "motion_gif": "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/articulated_demo_mujoco/outputs/waypoint_cabinet_motion.gif"
+  },
+  "note": "Waypoint navigation task with simple heading controller; no manipulation yet."
+}

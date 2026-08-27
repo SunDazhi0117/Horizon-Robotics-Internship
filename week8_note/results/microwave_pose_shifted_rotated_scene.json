@@ -1,0 +1,17 @@
+{
+  "source_xml": "/home/users/dazhi.sun-labs/projects/week8_note/xml/microwave_generalization.xml",
+  "moved_xml": "/home/users/dazhi.sun-labs/projects/week8_note/xml/microwave_pose_shifted_rotated.xml",
+  "microwave_center": [
+    4.06367027759552,
+    4.209031820297242,
+    1.189676702022553
+  ],
+  "translation": [
+    0.15,
+    -0.05,
+    0.0
+  ],
+  "yaw_degrees": 10.0,
+  "moved_static_geom_count": 11,
+  "moved_body_count": 5
+}

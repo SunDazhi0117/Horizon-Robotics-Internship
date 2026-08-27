@@ -1,0 +1,20 @@
+{
+  "source_glb": "/home/users/dazhi.sun-labs/projects/scenesmith/outputs/2026-07-01/articulated_demo_room_v1/articulated_demo_room_v1.glb",
+  "output_xml": "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/articulated_demo_mujoco/xml/articulated_demo_static.xml",
+  "mesh_count": 85,
+  "node_count": 85,
+  "geometry_count": 85,
+  "combined_bounds": {
+    "min": [
+      -2.7249999046325684,
+      -0.05000000074505806,
+      0.0
+    ],
+    "max": [
+      5.45000824479217,
+      4.650000000372529,
+      2.800000049173832
+    ]
+  },
+  "note": "Static MuJoCo import only; original GLB articulation metadata is not converted into MJCF joints."
+}

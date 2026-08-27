@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mujoco model="week11_sterilizer_service">
+  <compiler angle="radian" autolimits="true"/>
+  <include file="/home/users/dazhi.sun-labs/projects/week8_note/xml/franka_panda_raised_for_microwave.xml"/>
+  <option gravity="0 0 -9.81" timestep="0.002"/>
+  <visual><global offwidth="900" offheight="700"/></visual>
+  <worldbody>
+    <light pos="3.5 2.5 4.5" dir="0.1 0.2 -1" diffuse="0.9 0.9 0.9"/>
+    <geom name="reference_ground" type="plane" pos="3.8 3.2 0" size="4 4 0.05" rgba="0.70 0.73 0.76 1"/>
+
+    <body name="sterilizer_body">
+      <geom name="sterilizer_back" type="box" pos="3.84867 4.33553 0.92" size="0.34 0.025 0.55" rgba="0.31 0.34 0.37 1"/>
+      <geom name="sterilizer_left_frame" type="box" pos="3.52867 4.15553 0.92" size="0.025 0.18 0.55" rgba="0.68 0.71 0.73 1"/>
+      <geom name="sterilizer_right_frame" type="box" pos="4.16867 4.15553 0.92" size="0.025 0.18 0.55" rgba="0.68 0.71 0.73 1"/>
+      <geom name="sterilizer_bottom_plinth" type="box" pos="3.84867 4.15553 0.32" size="0.34 0.18 0.03" rgba="0.22 0.25 0.28 1"/>
+      <geom name="sterilizer_top_frame" type="box" pos="3.84867 4.15553 1.47" size="0.34 0.18 0.025" rgba="0.22 0.25 0.28 1"/>
+      <geom name="sterilizer_ground_plinth" type="box" pos="3.84867 4.15553 0.145" size="0.34 0.18 0.145" rgba="0.18 0.21 0.24 1"/>
+      <geom name="sterilizer_tray_track" type="box" pos="4.12267 4.06053 1.048" size="0.021 0.305 0.015" rgba="0.12 0.15 0.18 1"/>
+      <geom name="sterilizer_latch_guide" type="box" pos="3.55867 3.975 0.450" size="0.200 0.015 0.025" rgba="0.32 0.35 0.38 1"/>
+      <geom name="sterilizer_control_module" type="box" pos="3.84867 4.20553 1.645" size="0.34 0.13 0.15" rgba="0.56 0.60 0.63 1"/>
+      <geom name="sterilizer_status_display" type="box" pos="4.07567 4.06053 1.620" size="0.080 0.018 0.050" rgba="0.12 0.58 0.42 1"/>
+      <geom name="sterilizer_warning_strip" type="box" pos="3.73567 4.06053 1.620" size="0.065 0.018 0.050" rgba="0.88 0.58 0.08 1"/>
+    </body>
+
+    <body name="sterilizer_safety_latch" pos="3.648670006 3.925531845 1.189676762">
+      <joint name="sterilizer_safety_latch_slide_joint" type="slide" axis="-1 0 0" range="0 0.18" damping="1"/>
+      <geom name="sterilizer_latch_bolt" type="box" pos="0 0.023 -0.060" size="0.080 0.015 0.025" rgba="0.76 0.18 0.10 1"/>
+      <geom name="sterilizer_latch_linkage" type="box" pos="0 0.023 -0.399676762" size="0.025 0.015 0.315" rgba="0.66 0.15 0.09 1"/>
+      <geom name="sterilizer_latch_handle" type="box" pos="0 0 0" size="0.024 0.022 0.092" rgba="0.12 0.14 0.16 1" contype="2" conaffinity="3"/>
+    </body>
+
+    <body name="sterilizer_service_panel" pos="3.848670006 4.045531845 0.580000000">
+      <joint name="sterilizer_service_panel_hinge_joint" type="hinge" axis="1 0 0" range="0 1.15" damping="1"/>
+      <geom name="sterilizer_service_panel_surface" type="box" pos="0 -0.025 0.275" size="0.25 0.025 0.275" rgba="0.72 0.75 0.77 1"/>
+      <geom name="sterilizer_service_panel_label" type="box" pos="0 -0.052 0.460" size="0.22 0.012 0.040" rgba="0.24 0.28 0.31 1"/>
+      <geom name="sterilizer_service_panel_hinge_bar" type="cylinder" pos="0 0 0" quat="0.70710678 0 0.70710678 0" size="0.018 0.295" rgba="0.18 0.21 0.24 1"/>
+      <geom name="sterilizer_service_panel_handle_bracket" type="box" pos="0 -0.064 0.535" size="0.024 0.014 0.025" rgba="0.08 0.10 0.12 1"/>
+      <geom name="sterilizer_service_panel_handle" type="box" pos="0 -0.100 0.609676762" size="0.024 0.022 0.092" rgba="0.08 0.10 0.12 1" contype="2" conaffinity="3"/>
+    </body>
+
+    <body name="sterilizer_instrument_tray" pos="3.848670006 4.015531845 1.175000000">
+      <joint name="sterilizer_instrument_tray_slide_joint" type="slide" axis="0 -1 0" range="0 0.28" damping="1"/>
+      <geom name="sterilizer_instrument_tray_bottom" type="box" pos="0 0.16 -0.10" size="0.28 0.10 0.012" rgba="0.45 0.49 0.52 1"/>
+      <geom name="sterilizer_instrument_tray_left_wall" type="box" pos="-0.27 0.16 0" size="0.012 0.10 0.10" rgba="0.58 0.62 0.65 1"/>
+      <geom name="sterilizer_instrument_tray_right_wall" type="box" pos="0.27 0.16 0" size="0.012 0.10 0.10" rgba="0.58 0.62 0.65 1"/>
+      <geom name="sterilizer_instrument_tray_back" type="box" pos="0 0.25 0" size="0.26 0.012 0.10" rgba="0.58 0.62 0.65 1"/>
+      <geom name="sterilizer_instrument_tray_front_wall" type="box" pos="0 0.06 0.08" size="0.26 0.012 0.08" rgba="0.58 0.62 0.65 1"/>
+      <geom name="sterilizer_instrument_pack" type="box" pos="-0.08 0.15 -0.033" size="0.12 0.065 0.055" rgba="0.18 0.44 0.60 1"/>
+      <geom name="sterilizer_tray_handle_bracket" type="box" pos="0.200 0.005 0.165" size="0.024 0.055 0.025" rgba="0.08 0.10 0.12 1"/>
+      <geom name="sterilizer_instrument_tray_handle" type="box" pos="0.200 -0.070 0.164676762" size="0.024 0.022 0.092" rgba="0.08 0.10 0.12 1" contype="2" conaffinity="3"/>
+    </body>
+  </worldbody>
+</mujoco>

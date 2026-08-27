@@ -1,0 +1,21 @@
+{
+  "scene_xml": "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/native_scene_import/mujoco_export/scene.xml",
+  "outputs": [
+    "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/native_scene_import/outputs/native_scene_diag.png",
+    "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/native_scene_import/outputs/native_scene_top.png",
+    "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/native_scene_import/outputs/native_scene_front.png",
+    "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/native_scene_import/outputs/native_scene_side.png"
+  ],
+  "nbody": 9,
+  "ngeom": 404,
+  "nmesh": 397,
+  "njnt": 0,
+  "nq": 0,
+  "extent": 8.028256613720266,
+  "center": [
+    1.8,
+    1.5601110590898883,
+    0.6764203222387397
+  ],
+  "status": "rendered"
+}

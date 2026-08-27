@@ -1,0 +1,260 @@
+{
+  "overall_status": "KINEMATIC_PASS_DYNAMICS_BLOCKED",
+  "source_urdf": "articraft/data/cache/record_materialization/rec_create-a-complex-articulated-microwave-oven-as-a_20260622_093428_040254_ec41899c/model.urdf",
+  "model": {
+    "links": 6,
+    "links_with_inertial": [],
+    "positions": 5,
+    "velocities": 5,
+    "collision_geometries": 47
+  },
+  "joint_contract": {
+    "status": "PASS",
+    "failures": [],
+    "joints": [
+      {
+        "name": "body_to_front_door",
+        "type": "revolute",
+        "lower": 0.0,
+        "upper": 1.75,
+        "position_index": 0
+      },
+      {
+        "name": "body_to_sliding_tray",
+        "type": "prismatic",
+        "lower": 0.0,
+        "upper": 0.22,
+        "position_index": 1
+      },
+      {
+        "name": "tray_to_turntable",
+        "type": "revolute",
+        "lower": "-inf",
+        "upper": "inf",
+        "position_index": 2
+      },
+      {
+        "name": "body_to_upper_knob",
+        "type": "revolute",
+        "lower": "-inf",
+        "upper": "inf",
+        "position_index": 3
+      },
+      {
+        "name": "body_to_lower_knob",
+        "type": "revolute",
+        "lower": "-inf",
+        "upper": "inf",
+        "position_index": 4
+      }
+    ]
+  },
+  "normal_operation_states": {
+    "closed": {
+      "joint_values": {},
+      "penetration_count": 0,
+      "max_depth_m": 0.0,
+      "contacts": []
+    },
+    "door_half_open": {
+      "joint_values": {
+        "body_to_front_door": 0.875
+      },
+      "penetration_count": 0,
+      "max_depth_m": 0.0,
+      "contacts": []
+    },
+    "door_fully_open": {
+      "joint_values": {
+        "body_to_front_door": 1.75
+      },
+      "penetration_count": 0,
+      "max_depth_m": 0.0,
+      "contacts": []
+    },
+    "door_open_tray_half_out": {
+      "joint_values": {
+        "body_to_front_door": 1.75,
+        "body_to_sliding_tray": 0.11
+      },
+      "penetration_count": 0,
+      "max_depth_m": 0.0,
+      "contacts": []
+    },
+    "door_open_tray_fully_out": {
+      "joint_values": {
+        "body_to_front_door": 1.75,
+        "body_to_sliding_tray": 0.22
+      },
+      "penetration_count": 0,
+      "max_depth_m": 0.0,
+      "contacts": []
+    },
+    "all_controls_sampled": {
+      "joint_values": {
+        "body_to_front_door": 1.75,
+        "body_to_sliding_tray": 0.22,
+        "tray_to_turntable": 3.141592653589793,
+        "body_to_upper_knob": 1.0,
+        "body_to_lower_knob": -1.0
+      },
+      "penetration_count": 0,
+      "max_depth_m": 0.0,
+      "contacts": []
+    }
+  },
+  "normal_path_penetration_count": 0,
+  "diagnostic_invalid_states": {
+    "tray_out_while_door_closed": {
+      "joint_values": {
+        "body_to_sliding_tray": 0.22
+      },
+      "penetration_count": 12,
+      "max_depth_m": 0.03600000000000001,
+      "contacts": [
+        {
+          "bodies": [
+            "front_door",
+            "sliding_tray"
+          ],
+          "geometries": [
+            "complex_articulated_microwave::left_stile",
+            "complex_articulated_microwave::tray_plate"
+          ],
+          "depth_m": 0.004500000000000018
+        },
+        {
+          "bodies": [
+            "front_door",
+            "sliding_tray"
+          ],
+          "geometries": [
+            "complex_articulated_microwave::window_pane",
+            "complex_articulated_microwave::tray_plate"
+          ],
+          "depth_m": 0.024
+        },
+        {
+          "bodies": [
+            "front_door",
+            "turntable"
+          ],
+          "geometries": [
+            "complex_articulated_microwave::window_pane",
+            "complex_articulated_microwave::segment_0"
+          ],
+          "depth_m": 0.014999999999999993
+        },
+        {
+          "bodies": [
+            "front_door",
+            "turntable"
+          ],
+          "geometries": [
+            "complex_articulated_microwave::window_pane",
+            "complex_articulated_microwave::segment_1"
+          ],
+          "depth_m": 0.03600000000000001
+        },
+        {
+          "bodies": [
+            "front_door",
+            "turntable"
+          ],
+          "geometries": [
+            "complex_articulated_microwave::window_pane",
+            "complex_articulated_microwave::segment_2"
+          ],
+          "depth_m": 0.03600000000000001
+        },
+        {
+          "bodies": [
+            "front_door",
+            "turntable"
+          ],
+          "geometries": [
+            "complex_articulated_microwave::window_pane",
+            "complex_articulated_microwave::segment_3"
+          ],
+          "depth_m": 0.03600000000000001
+        },
+        {
+          "bodies": [
+            "front_door",
+            "turntable"
+          ],
+          "geometries": [
+            "complex_articulated_microwave::window_pane",
+            "complex_articulated_microwave::segment_4"
+          ],
+          "depth_m": 0.03600000000000001
+        },
+        {
+          "bodies": [
+            "front_door",
+            "turntable"
+          ],
+          "geometries": [
+            "complex_articulated_microwave::window_pane",
+            "complex_articulated_microwave::segment_5"
+          ],
+          "depth_m": 0.03600000000000001
+        },
+        {
+          "bodies": [
+            "front_door",
+            "turntable"
+          ],
+          "geometries": [
+            "complex_articulated_microwave::window_pane",
+            "complex_articulated_microwave::segment_6"
+          ],
+          "depth_m": 0.03600000000000001
+        },
+        {
+          "bodies": [
+            "front_door",
+            "turntable"
+          ],
+          "geometries": [
+            "complex_articulated_microwave::window_pane",
+            "complex_articulated_microwave::segment_7"
+          ],
+          "depth_m": 0.03600000000000001
+        },
+        {
+          "bodies": [
+            "front_door",
+            "sliding_tray"
+          ],
+          "geometries": [
+            "complex_articulated_microwave::handle_bar",
+            "complex_articulated_microwave::tray_plate"
+          ],
+          "depth_m": 0.025500000000000037
+        },
+        {
+          "bodies": [
+            "front_door",
+            "sliding_tray"
+          ],
+          "geometries": [
+            "complex_articulated_microwave::handle_mount_1",
+            "complex_articulated_microwave::tray_plate"
+          ],
+          "depth_m": 0.018999999999999996
+        }
+      ]
+    }
+  },
+  "gravity_simulation": {
+    "status": "BLOCKED",
+    "duration_s": 0.25,
+    "reason": "An internal mass matrix associated with the joint that connects body sliding_tray to body turntable is not positive-definite. Since the joint allows rotation, ensure body turntable (combined with other outboard bodies) has reasonable non-zero moments of inertia about the joint rotation axes."
+  },
+  "interpretation": {
+    "normal_operation": "Open the door before extending the tray. All sampled normal operation states are collision-free.",
+    "viewer_interlock": "Extending the tray while the door is closed causes collision, so the door/tray interlock is required.",
+    "dynamics": "The source URDF has no inertial blocks. Add physically reasonable mass and inertia values before claiming dynamic simulation."
+  }
+}

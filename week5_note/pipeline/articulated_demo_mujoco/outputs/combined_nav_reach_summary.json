@@ -1,0 +1,91 @@
+{
+  "scene_xml": "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/articulated_demo_mujoco/xml/articulated_demo_stretch_navigate_and_reach_cabinet.xml",
+  "task_name": "stretch_navigate_and_reach_cabinet_handle",
+  "start_xy": [
+    3.1,
+    2.35
+  ],
+  "start_yaw_rad": 3.141592653589793,
+  "waypoints": [
+    [
+      3.55,
+      2.35
+    ],
+    [
+      3.55,
+      2.95
+    ],
+    [
+      4.22,
+      2.86
+    ]
+  ],
+  "reached_waypoints": [
+    {
+      "waypoint_index": 0,
+      "time": 2.057999999999995,
+      "x": 3.3300004073917364,
+      "y": 2.3498328741694787,
+      "distance": 0.2199996560880155
+    },
+    {
+      "waypoint_index": 1,
+      "time": 7.215999999999427,
+      "x": 3.592101096739351,
+      "y": 2.734131150123618,
+      "distance": 0.21993604227958685
+    },
+    {
+      "waypoint_index": 2,
+      "time": 14.440000000001492,
+      "x": 4.186276986477622,
+      "y": 2.8897117071804344,
+      "distance": 0.044944712532247605
+    }
+  ],
+  "nav_success_radius": 0.045,
+  "nav_final_xy": [
+    4.186276986477622,
+    2.8897117071804344
+  ],
+  "nav_distance_to_reach_base": 0.044944712532247605,
+  "nav_passed": true,
+  "reach_base_xy": [
+    4.22,
+    2.86
+  ],
+  "reach_base_yaw_rad": 1.5707963267948966,
+  "base_pose_adjusted_for_reach": false,
+  "alignment_steps": 3281,
+  "aligned_yaw_error": -0.05499501889945613,
+  "yaw_success_rad": 0.055,
+  "alignment_passed": true,
+  "target_handle_geom": "010_double_door_cabinet_right_door_right_handle",
+  "handle_position": [
+    4.882000088691348,
+    2.8720000554348433,
+    0.7000000178813935
+  ],
+  "gripper_position": [
+    4.926465997584828,
+    2.9200000209840815,
+    0.6938884311452257
+  ],
+  "gripper_to_handle_distance": 0.06571579139662738,
+  "reach_success_distance": 0.08,
+  "lift_qpos": 0.09467264883646627,
+  "arm_extension_total": 0.5199999479095962,
+  "reach_elapsed_time": 5.999999999996675,
+  "all_finite": true,
+  "contact_count_final": 5,
+  "reach_passed": true,
+  "passed": true,
+  "outputs": {
+    "start_top": "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/articulated_demo_mujoco/outputs/combined_nav_reach_start_top.png",
+    "after_navigation_top": "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/articulated_demo_mujoco/outputs/combined_nav_reach_after_navigation_top.png",
+    "final_top": "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/articulated_demo_mujoco/outputs/combined_nav_reach_final_top.png",
+    "final_diag": "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/articulated_demo_mujoco/outputs/combined_nav_reach_final_diag.png",
+    "motion_gif": "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/articulated_demo_mujoco/outputs/combined_nav_reach_motion.gif"
+  },
+  "note": "Combined navigation + pre-manipulation reach. The base approaches and aligns through MuJoCo controls; this is not full autonomous manipulation yet."
+}

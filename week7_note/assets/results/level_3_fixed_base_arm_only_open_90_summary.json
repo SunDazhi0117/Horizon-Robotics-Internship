@@ -1,0 +1,30 @@
+{
+  "task_name": "level_3_fixed_base_arm_only_open_90",
+  "scope": "validated fixed-base grasp followed to 90 degrees using only Panda arm joints",
+  "passed_full_validation": true,
+  "base_locked_during_opening": true,
+  "fixed_base_pose": [
+    4.49,
+    2.3,
+    0.05
+  ],
+  "maximum_base_drift": 0.0,
+  "target_hinge_angle": 1.5707963267948966,
+  "final_hinge_angle": 1.5707963267948966,
+  "open_sample_count": 65,
+  "max_gripper_to_handle_distance": 0.053205145431453986,
+  "min_handle_unique_finger_contacts": 2.0,
+  "max_hand_position_error": 5.982694922344174e-07,
+  "max_hand_rotation_error": 4.5124906532450427e-07,
+  "max_joint_step": 0.11135311551180505,
+  "visual_overlap_failure_count": 0,
+  "forbidden_handle_contact_failure_count": 0,
+  "door_slab_contact_failure_count": 0,
+  "first_visual_failures": [],
+  "motion_gif": "/home/users/dazhi.sun-labs/projects/week7_note/assets/videos/level_3_fixed_base_arm_only_open_90.gif",
+  "top_view_gif": "/home/users/dazhi.sun-labs/projects/week7_note/assets/videos/level_3_fixed_base_arm_only_open_90_top_view.gif",
+  "trajectory": "/home/users/dazhi.sun-labs/projects/week7_note/assets/results/level_3_fixed_base_arm_only_open_90_trajectory.json",
+  "frame_sheet": "/home/users/dazhi.sun-labs/projects/week7_note/assets/images/level_3_fixed_base_arm_only_open_90_frames_sheet.png",
+  "top_frame_sheet": "/home/users/dazhi.sun-labs/projects/week7_note/assets/images/level_3_fixed_base_arm_only_open_90_top_frames_sheet.png",
+  "note": "The video starts from a validated two-finger grasp. Base x, y, and yaw remain fixed for every frame."
+}

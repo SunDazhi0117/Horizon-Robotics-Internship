@@ -1,0 +1,24 @@
+{
+  "scene_xml": "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/articulated_demo_mujoco/xml/articulated_demo_with_mobile_base.xml",
+  "robot": "simple_mobile_base",
+  "start_pos": [
+    2.6,
+    2.0,
+    0.16
+  ],
+  "final_pos": [
+    3.4814728938860875,
+    2.4113540171468406,
+    0.16
+  ],
+  "moved_distance_xy": 0.9727315097593769,
+  "all_finite": true,
+  "contact_count_final": 0,
+  "outputs": {
+    "start_png": "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/articulated_demo_mujoco/outputs/mobile_base_start.png",
+    "final_png": "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/articulated_demo_mujoco/outputs/mobile_base_final.png",
+    "motion_gif": "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/articulated_demo_mujoco/outputs/mobile_base_motion.gif"
+  },
+  "passed": true,
+  "note": "Minimal mobile-base loading and motion smoke test; not a real robot task."
+}

@@ -1,0 +1,55 @@
+{
+  "evaluation_name": "level_2_handle_follow_open_90_local_evaluation",
+  "task_name": "open_cabinet_door_to_90_degrees",
+  "instruction": "Move to the cabinet, grasp the right-door handle, and open the cabinet door to 90 degrees.",
+  "description": "The mobile Panda approaches the cabinet, grasps the vertical handle with both fingers, and follows the moving handle until the right door reaches 90 degrees.",
+  "platform": "MuJoCo local simulation",
+  "category": "Precision (primary), Long-Horizon (secondary)",
+  "data_source": "Scripted inverse-kinematics trajectory",
+  "usage": "Local deterministic evaluation only",
+  "adapted_scoring": {
+    "0": "The door does not reach 85 degrees, the grasp is lost, or a forbidden overlap/collision occurs.",
+    "100": "The door reaches at least 85 degrees while both fingers retain the handle and all collision/overlap gates pass."
+  },
+  "local_single_episode_score": 100,
+  "local_single_episode_success": true,
+  "checks": {
+    "door_opened_at_least_85_deg": true,
+    "both_fingers_contact_handle_throughout": true,
+    "gripper_remains_near_handle": true,
+    "hand_pose_tracking_is_accurate": true,
+    "no_visual_overlap": true,
+    "no_forbidden_handle_contact": true,
+    "no_door_slab_collision": true
+  },
+  "measured_values": {
+    "final_hinge_angle_rad": 1.5707963267948966,
+    "final_hinge_angle_deg": 90.0,
+    "open_sample_count": 49,
+    "max_gripper_to_handle_distance_m": 0.05320516177184609,
+    "minimum_unique_finger_contacts": 2.0,
+    "max_hand_position_error_m": 1.486761167072096e-07,
+    "max_hand_rotation_error_rad": 7.271780290922541e-07,
+    "visual_overlap_failure_count": 0,
+    "forbidden_handle_contact_failure_count": 0,
+    "door_slab_contact_failure_count": 0
+  },
+  "robodojo_official_status": {
+    "official_score": null,
+    "eligible_as_official_result": false,
+    "reasons": [
+      "This cabinet-opening task is not one of the current official 42 RoboDojo simulation tasks.",
+      "The run uses MuJoCo rather than the official Isaac Sim evaluation environment.",
+      "The motion is a scripted IK trajectory, not a policy acting from observations in closed loop.",
+      "Only one deterministic episode was evaluated; no randomized multi-episode success rate was measured."
+    ]
+  },
+  "capability_coverage": {
+    "precision": "demonstrated in one deterministic trajectory",
+    "long_horizon": "partially demonstrated through approach, grasp, and open stages",
+    "generalization": "not evaluated",
+    "memory": "not evaluated",
+    "open_vocabulary_instruction_following": "not evaluated"
+  },
+  "source_summary": "/home/users/dazhi.sun-labs/projects/week7_note/assets/results/level_2_handle_follow_open_90_summary.json"
+}

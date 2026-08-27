@@ -1,0 +1,41 @@
+Create a simple openable drawer as an articulated object.
+
+Coordinate convention:
+- X is left-right width.
+- Y is front-back depth.
+- Z is vertical height.
+- The drawer should open by sliding forward along the negative Y direction.
+
+Object structure:
+- One fixed cabinet frame as the root part.
+- One movable drawer tray as the child part.
+
+Cabinet frame:
+- Use simple box geometry.
+- Include left wall, right wall, top panel, bottom panel, and back panel.
+- The front should be open.
+- Add two side guide rails inside the cabinet.
+
+Drawer:
+- The drawer should be an open tray, not a solid block.
+- Include bottom panel, left side wall, right side wall, back wall, front panel, and handle.
+- The drawer should fit inside the cabinet when closed.
+- The drawer front panel should sit just outside the cabinet opening when closed.
+- Avoid interpenetration between the drawer front and the cabinet frame.
+
+Joint:
+- Use exactly one PRISMATIC joint.
+- Parent: cabinet frame.
+- Child: drawer tray.
+- Axis: (0, -1, 0).
+- Lower limit: 0.
+- Upper limit: 0.28.
+
+Validation tests:
+- Check that the cabinet frame is the root part.
+- Check that there is exactly one prismatic joint.
+- Check that the joint parent is the cabinet frame and child is the drawer tray.
+- Check that the joint axis points along negative Y.
+- Check that the drawer moves forward when opened.
+- Check that the drawer remains supported by the rails.
+- Check that the drawer front does not collide with the cabinet frame when closed.

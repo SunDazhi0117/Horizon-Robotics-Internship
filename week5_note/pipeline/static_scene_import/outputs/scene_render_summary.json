@@ -1,0 +1,25 @@
+{
+  "xml_path": "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/static_scene_import/xml/scene_only.xml",
+  "output_image": "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/static_scene_import/outputs/scene_render.png",
+  "image_shape": [
+    600,
+    800,
+    3
+  ],
+  "image_mean": 61.7751350402832,
+  "image_std": 48.5919075012207,
+  "non_empty_image": true,
+  "model_stats": {
+    "nbody": 1,
+    "njnt": 0,
+    "ngeom": 2,
+    "nmesh": 1,
+    "nu": 0
+  },
+  "model_center": [
+    1.7178496813016553,
+    1.1780593083168176,
+    -1.414488453614564
+  ],
+  "model_extent": 9.410053036836374
+}

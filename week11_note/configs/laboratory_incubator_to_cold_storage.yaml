@@ -1,0 +1,247 @@
+task_name: laboratory_incubator_to_cold_storage
+
+runtime:
+  task_xml: xml/laboratory_transfer.xml
+  object_joint_aliases:
+    incubator_hinge: incubator_door_hinge_joint
+    tray_slide: incubator_tray_slide_joint
+    cold_storage_hinge: cold_storage_hinge_joint
+    payload_x: laboratory_payload_x_joint
+    payload_y: laboratory_payload_y_joint
+    payload_z: laboratory_payload_z_joint
+  allowed_finger_target_geoms: [incubator_door_handle, incubator_tray_handle, cold_storage_door_handle, sample_tube_grasp]
+  excluded_environment_geoms: [incubator_display, sample_tube_visual]
+
+initial_state:
+  phase: initial
+  base: [3.62, 2.28, 0.0]
+  arm_qpos: [0.0, -0.55, 0.0, -2.25, 0.0, 1.75, 0.78]
+  gripper: 0.04
+  object_joints: {incubator_hinge: 0.0, tray_slide: 0.0, cold_storage_hinge: 0.0, payload_x: 0.0, payload_y: 0.0, payload_z: 0.0}
+  active_target: null
+
+actions:
+  - {action: hold_pose, phase: initial_hold, frames: 5}
+  - action: move_near_target
+    phase: navigate_to_incubator
+    target_geom: incubator_door_handle
+    base_offset: [-0.32700001, -0.60800185]
+    yaw_offset: 0.05
+    heading_axis: [1.0, 0.0, 0.0]
+    steps_per_segment: 51
+  - action: approach_target
+    phase: approach_incubator_door
+    target_geom: incubator_door_handle
+    hand_offset: &hand_offset [-0.01626286, -0.11035779, -0.00269677]
+    hand_rotation: &hand_rotation
+      - [-0.00879656, 0.98738697, 0.15808094]
+      - [-0.03796533, -0.15830286, 0.98666045]
+      - [0.99924034, 0.00267762, 0.038879]
+    approach_direction: &front_direction [0.0, -1.0, 0.0]
+    standoff_distances: [0.42, 0.30, 0.20, 0.13, 0.08]
+    max_step: 0.03
+  - action: grasp_target
+    phase: grasp_incubator_door
+    target_geom: incubator_door_handle
+    hand_offset: *hand_offset
+    hand_rotation: *hand_rotation
+    closed_gripper: &closed_gripper 0.023711985
+    max_step: 0.025
+    close_steps: 17
+    minimum_final_finger_contacts: 2
+  - action: follow_hinge_joint
+    phase: open_incubator_door
+    joint_name: incubator_hinge
+    moving_body: incubator_door
+    target_angle: 0.75
+    samples: 65
+    max_joint_step: 0.15
+    minimum_each_finger_contacts: 2
+    ik_position_tolerance: 0.007
+    ik_rotation_tolerance: 0.025
+    ik_continuity_weight: 0.004
+    ik_max_nfev: 1500
+  - {action: change_gripper, phase: release_incubator_door, target: 0.04, active_target: null, steps: 17}
+  - action: retreat_from_target
+    phase: retreat_from_incubator_door
+    target_geom: incubator_door_handle
+    hand_offset: *hand_offset
+    hand_rotation: *hand_rotation
+    approach_direction: [-1.0, 0.0, 0.0]
+    standoff_distances: [0.04, 0.07, 0.11, 0.16]
+    max_step: 0.03
+  - action: move_arm
+    phase: reset_before_tray
+    waypoints: &home [[0.0, -0.55, 0.0, -2.25, 0.0, 1.75, 0.78]]
+    max_step: 0.03
+
+  - action: move_near_target
+    phase: align_with_incubator_tray
+    target_geom: incubator_tray_handle
+    base_candidates:
+      - name: clear_incubator_door
+        base_offset: [-0.32700001, -0.60800185]
+        path_offsets: [[0.0, -0.95]]
+    yaw_offset: 0.05
+    heading_axis: [1.0, 0.0, 0.0]
+    steps_per_segment: 41
+  - action: approach_target
+    phase: approach_incubator_tray
+    target_geom: incubator_tray_handle
+    hand_offset: *hand_offset
+    hand_rotation: *hand_rotation
+    approach_direction: *front_direction
+    standoff_distances: [0.36, 0.25, 0.16, 0.10, 0.06]
+    max_step: 0.03
+  - action: grasp_target
+    phase: grasp_incubator_tray
+    target_geom: incubator_tray_handle
+    hand_offset: *hand_offset
+    hand_rotation: *hand_rotation
+    closed_gripper: *closed_gripper
+    max_step: 0.025
+    close_steps: 17
+    minimum_final_finger_contacts: 2
+  - action: follow_slide_joint
+    phase: pull_incubator_tray
+    joint_name: tray_slide
+    moving_body: incubator_tray
+    target_position: 0.22
+    samples: 49
+    base_target: [3.423, 3.15, 0.05]
+    max_joint_step: 0.15
+    minimum_each_finger_contacts: 2
+  - {action: change_gripper, phase: release_incubator_tray, target: 0.04, active_target: null, steps: 17}
+  - action: retreat_from_target
+    phase: retreat_from_incubator_tray
+    target_geom: incubator_tray_handle
+    hand_offset: *hand_offset
+    hand_rotation: *hand_rotation
+    approach_direction: *front_direction
+    standoff_distances: [0.05, 0.09, 0.14, 0.21]
+    max_step: 0.03
+  - {action: move_arm, phase: reset_after_tray, waypoints: *home, max_step: 0.03}
+
+  - action: move_near_target
+    phase: navigate_to_cold_storage
+    target_geom: cold_storage_door_handle
+    base_candidates:
+      - name: clear_open_source
+        base_offset: [-0.32700001, -0.60800185]
+        path_offsets: [[0.0, -1.25]]
+    yaw_offset: 0.05
+    heading_axis: [1.0, 0.0, 0.0]
+    steps_per_segment: 51
+  - action: approach_target
+    phase: approach_cold_storage_door
+    target_geom: cold_storage_door_handle
+    hand_offset: *hand_offset
+    hand_rotation: *hand_rotation
+    approach_direction: *front_direction
+    standoff_distances: [0.42, 0.30, 0.20, 0.13, 0.08]
+    max_step: 0.03
+  - action: grasp_target
+    phase: grasp_cold_storage_door
+    target_geom: cold_storage_door_handle
+    hand_offset: *hand_offset
+    hand_rotation: *hand_rotation
+    closed_gripper: *closed_gripper
+    max_step: 0.025
+    close_steps: 17
+    minimum_final_finger_contacts: 2
+  - action: follow_hinge_joint
+    phase: open_cold_storage_door
+    joint_name: cold_storage_hinge
+    moving_body: cold_storage_door
+    target_angle: 0.75
+    samples: 65
+    max_joint_step: 0.15
+    minimum_each_finger_contacts: 2
+    ik_position_tolerance: 0.007
+    ik_rotation_tolerance: 0.025
+    ik_continuity_weight: 0.004
+    ik_max_nfev: 1500
+  - {action: change_gripper, phase: release_cold_storage_door, target: 0.04, active_target: null, steps: 17}
+  - action: retreat_from_target
+    phase: retreat_from_cold_storage_door
+    target_geom: cold_storage_door_handle
+    hand_offset: *hand_offset
+    hand_rotation: *hand_rotation
+    approach_direction: [-1.0, 0.0, 0.0]
+    standoff_distances: [0.04, 0.07, 0.11, 0.16]
+    max_step: 0.03
+  - {action: move_arm, phase: reset_before_sample, waypoints: *home, max_step: 0.03}
+
+  - action: move_near_target
+    phase: return_to_sample
+    target_geom: sample_tube_grasp
+    base_candidates:
+      - name: clear_all_open_objects
+        base_offset: [-0.32700001, -0.60800185]
+        path_offsets: [[0.0, -1.25]]
+    yaw_offset: 0.05
+    heading_axis: [1.0, 0.0, 0.0]
+    steps_per_segment: 51
+  - action: approach_target
+    phase: approach_sample_tube
+    target_geom: sample_tube_grasp
+    hand_offset: *hand_offset
+    hand_rotation: *hand_rotation
+    approach_direction: *front_direction
+    standoff_distances: [0.36, 0.25, 0.16, 0.10, 0.06]
+    max_step: 0.03
+  - action: grasp_target
+    phase: grasp_sample_tube
+    target_geom: sample_tube_grasp
+    hand_offset: *hand_offset
+    hand_rotation: *hand_rotation
+    closed_gripper: *closed_gripper
+    max_step: 0.025
+    close_steps: 17
+    minimum_final_finger_contacts: 2
+  - action: carry_payload
+    phase: carry_sample_to_cold_storage
+    payload_body: laboratory_payload
+    payload_joint_names: [payload_x, payload_y, payload_z]
+    destination_site: laboratory_destination_site
+    base_target: [4.543, 3.472, 0.05]
+    carry_height: 1.40
+    clearance_offset: [0.0, -0.40, 0.0]
+    lift_samples: 29
+    clearance_samples: 37
+    translate_samples: 85
+    lower_samples: 29
+    max_joint_step: 0.15
+    minimum_each_finger_contacts: 2
+  - {action: hold_pose, phase: inspect_sample_at_destination, frames: 10}
+  - {action: change_gripper, phase: place_sample_in_cold_storage, target: 0.04, active_target: null, steps: 17}
+  - action: retreat_from_target
+    phase: retreat_after_sample_placement
+    target_geom: sample_tube_grasp
+    hand_offset: *hand_offset
+    hand_rotation: *hand_rotation
+    approach_direction: *front_direction
+    standoff_distances: [0.05, 0.09, 0.14, 0.21]
+    max_step: 0.03
+  - {action: move_arm, phase: return_arm_home, waypoints: *home, max_step: 0.03}
+  - {action: hold_pose, phase: final_hold, frames: 8}
+
+evaluation:
+  joint_goals:
+    - {joint_name: incubator_hinge, reached: 0.75, final: 0.75}
+    - {joint_name: tray_slide, reached: 0.22, final: 0.22}
+    - {joint_name: cold_storage_hinge, reached: 0.75, final: 0.75}
+  payload_goal:
+    body: laboratory_payload
+    destination_site: laboratory_destination_site
+    tolerance: 0.000001
+  final_gripper: 0.04
+  max_arm_joint_step: 0.15
+
+render:
+  width: 820
+  height: 580
+  max_frames: 230
+  duration_ms: 90
+  front: {lookat: [4.45, 3.50, 1.02], distance: 2.90, azimuth: 145, elevation: -22}
+  top: {lookat: [4.45, 3.45, 0.78], distance: 3.10, azimuth: 180, elevation: -70}

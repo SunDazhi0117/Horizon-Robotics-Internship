@@ -1,0 +1,40 @@
+task_name: level5_reusable_left_door_grasp_and_open
+
+# This is the accepted pre-grasp state from Level 5. The stable source
+# trajectory remains unchanged; the two actions below regenerate the grasp
+# and 90-degree opening from reusable code.
+initial_state:
+  phase: left_pregrasp
+  base: [4.49, 3.60, -0.05]
+  arm_qpos:
+    - -0.8426699482345249
+    - -0.8482961842539831
+    - -1.3223416584745944
+    - -1.6481432284188133
+    - -2.077430465300469
+    - 2.8514454177873008
+    - 2.012659355956147
+  gripper: 0.04
+  object_joints:
+    left_hinge: 0.0
+    right_hinge: 1.5707963267948966
+  active_target: null
+
+actions:
+  - action: grasp_target
+    phase: grasp_left_handle_reusable
+    target_geom: level5_left_handle_sleeve
+    capture_current_transform: true
+    closed_gripper: 0.023711985
+    close_steps: 17
+    minimum_final_finger_contacts: 2
+
+  - action: follow_hinge_joint
+    phase: open_left_door_reusable
+    joint_name: left_hinge
+    moving_body: cabinet_left_door
+    target_angle: 1.5707963267948966
+    samples: 65
+    base_target: [4.20, 3.30, -0.45]
+    max_joint_step: 0.15
+    minimum_each_finger_contacts: 2

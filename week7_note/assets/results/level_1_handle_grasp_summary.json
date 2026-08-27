@@ -1,0 +1,32 @@
+{
+  "task_name": "level_1_handle_grasp",
+  "scope": "approach and grasp cabinet handle with no contact or visual overlap from non-finger robot geometry",
+  "passed_no_visual_overlap_grasp_validation": true,
+  "sample_count": 351,
+  "forbidden_handle_contact_event_count": 0,
+  "visual_overlap_event_count": 0,
+  "final_sample": {
+    "phase": "close_fingers_no_visual_overlap",
+    "step_index": 79,
+    "gripper_to_handle_distance": 0.05320516177184609,
+    "finger_xy_separation": 0.047423800350171935,
+    "finger_z_separation": 0.00012684994241207725,
+    "finger_contact_bodies": [
+      "left_finger",
+      "right_finger"
+    ],
+    "finger_contact_count": 2,
+    "forbidden_contact_count": 0,
+    "min_forbidden_contact_dist": null,
+    "forbidden_contacts": [],
+    "visual_overlap_count": 0,
+    "visual_overlaps": []
+  },
+  "max_gripper_to_handle_distance": 1.2335390688452157,
+  "max_finger_z_separation": 0.030276034164209875,
+  "motion_gif": "/home/users/dazhi.sun-labs/projects/week7_note/assets/videos/level_1_handle_grasp.gif",
+  "top_view_gif": "/home/users/dazhi.sun-labs/projects/week7_note/assets/videos/level_1_handle_grasp_top_view.gif",
+  "frame_sheet": "/home/users/dazhi.sun-labs/projects/week7_note/assets/images/level_1_handle_grasp_frames_sheet.png",
+  "top_frame_sheet": "/home/users/dazhi.sun-labs/projects/week7_note/assets/images/level_1_handle_grasp_top_frames_sheet.png",
+  "note": "This is the current no-visual-overlap grasp subtask. It does not open the cabinet yet."
+}

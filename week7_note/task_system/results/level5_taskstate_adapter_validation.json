@@ -1,0 +1,18 @@
+{
+  "integration_name": "level5_taskstate_mujoco_adapter",
+  "passed": true,
+  "state_count": 429,
+  "environment_geom_count_checked": 93,
+  "environment_visual_overlap_failure_count": 0,
+  "forbidden_active_target_contact_failure_count": 0,
+  "maximum_base_roundtrip_error": 0.0,
+  "maximum_arm_roundtrip_error": 0.0,
+  "maximum_object_joint_roundtrip_error": 0.0,
+  "maximum_joint_step": 0.11135311551180505,
+  "final_object_joints": {
+    "left_hinge": 1.5707963267948966,
+    "right_hinge": 1.5707963267948966
+  },
+  "source_trajectory": "/home/users/dazhi.sun-labs/projects/week7_note/assets/results/level_5_sequential_open_both_doors_trajectory.json",
+  "source_task_xml": "/home/users/dazhi.sun-labs/projects/week7_note/xml/level_5_sequential_open_both_doors.xml"
+}

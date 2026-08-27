@@ -1,0 +1,107 @@
+{
+  "task_name": "sliding_window_open_close",
+  "passed": true,
+  "state_count": 361,
+  "action_count": 11,
+  "actions": [
+    {
+      "action_index": 0,
+      "action": "hold_pose",
+      "phase": "initial_hold",
+      "start_state_index": 1,
+      "end_state_index": 5
+    },
+    {
+      "action_index": 1,
+      "action": "move_near_target",
+      "phase": "navigate_to_window",
+      "start_state_index": 6,
+      "end_state_index": 55
+    },
+    {
+      "action_index": 2,
+      "action": "approach_target",
+      "phase": "approach_window_handle_5",
+      "start_state_index": 56,
+      "end_state_index": 122
+    },
+    {
+      "action_index": 3,
+      "action": "grasp_target",
+      "phase": "grasp_window_handle",
+      "start_state_index": 123,
+      "end_state_index": 155
+    },
+    {
+      "action_index": 4,
+      "action": "follow_slide_joint",
+      "phase": "open_window",
+      "start_state_index": 156,
+      "end_state_index": 199
+    },
+    {
+      "action_index": 5,
+      "action": "hold_pose",
+      "phase": "hold_window_open",
+      "start_state_index": 200,
+      "end_state_index": 211
+    },
+    {
+      "action_index": 6,
+      "action": "follow_slide_joint",
+      "phase": "close_window",
+      "start_state_index": 212,
+      "end_state_index": 255
+    },
+    {
+      "action_index": 7,
+      "action": "change_gripper",
+      "phase": "release_window_handle",
+      "start_state_index": 256,
+      "end_state_index": 271
+    },
+    {
+      "action_index": 8,
+      "action": "retreat_from_target",
+      "phase": "retreat_from_window_5",
+      "start_state_index": 272,
+      "end_state_index": 319
+    },
+    {
+      "action_index": 9,
+      "action": "move_arm",
+      "phase": "return_arm_home",
+      "start_state_index": 320,
+      "end_state_index": 352
+    },
+    {
+      "action_index": 10,
+      "action": "hold_pose",
+      "phase": "final_hold",
+      "start_state_index": 353,
+      "end_state_index": 360
+    }
+  ],
+  "joint_goals": [
+    {
+      "joint_name": "window_slide",
+      "reached": 0.28,
+      "closest_reached_error": 0.0,
+      "final": 0.0,
+      "expected_final": 0.0,
+      "passed": true
+    }
+  ],
+  "final_gripper": 0.04,
+  "environment_visual_overlap_failure_count": 0,
+  "forbidden_target_contact_failure_count": 0,
+  "lost_grasp_failure_count": 0,
+  "maximum_arm_joint_step": 0.029715526253933255,
+  "front_video_frame_count": 121,
+  "top_video_frame_count": 121,
+  "config": "/home/users/dazhi.sun-labs/projects/week9_note/configs/sliding_window_open_close.yaml",
+  "task_xml": "/home/users/dazhi.sun-labs/projects/week9_note/xml/sliding_window.xml",
+  "trajectory": "/home/users/dazhi.sun-labs/projects/week9_note/results/sliding_window_open_close_trajectory.json",
+  "front_video": "/home/users/dazhi.sun-labs/projects/week9_note/assets/sliding_window_open_close.gif",
+  "top_video": "/home/users/dazhi.sun-labs/projects/week9_note/assets/sliding_window_open_close_top_view.gif"
+}

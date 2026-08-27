@@ -1,0 +1,92 @@
+task_name: sliding_window_open_close
+
+runtime:
+  task_xml: xml/sliding_window.xml
+  object_joint_aliases:
+    window_slide: window_slide_joint
+  allowed_finger_target_geoms: [window_handle]
+
+initial_state:
+  phase: initial
+  base: [3.62, 2.28, 0.0]
+  arm_qpos: [0.0, -0.55, 0.0, -2.25, 0.0, 1.75, 0.78]
+  gripper: 0.04
+  object_joints: {window_slide: 0.0}
+  active_target: null
+
+actions:
+  - {action: hold_pose, phase: initial_hold, frames: 5}
+  - action: move_near_target
+    phase: navigate_to_window
+    target_geom: window_handle
+    base_offset: [-0.32700001, -0.60800185]
+    yaw_offset: 0.05
+    heading_axis: [1.0, 0.0, 0.0]
+    steps_per_segment: 51
+  - action: approach_target
+    phase: approach_window_handle
+    target_geom: window_handle
+    hand_offset: &hand_offset [-0.01626286, -0.11035779, -0.00269677]
+    hand_rotation: &hand_rotation
+      - [-0.00879656, 0.98738697, 0.15808094]
+      - [-0.03796533, -0.15830286, 0.98666045]
+      - [0.99924034, 0.00267762, 0.038879]
+    approach_direction: &approach_direction [0.0, -1.0, 0.0]
+    standoff_distances: [0.45, 0.32, 0.22, 0.14, 0.09]
+    max_step: 0.03
+  - action: grasp_target
+    phase: grasp_window_handle
+    target_geom: window_handle
+    hand_offset: *hand_offset
+    hand_rotation: *hand_rotation
+    closed_gripper: 0.023711985
+    max_step: 0.025
+    close_steps: 17
+    minimum_final_finger_contacts: 2
+  - action: follow_slide_joint
+    phase: open_window
+    joint_name: window_slide
+    moving_body: sliding_window_panel
+    target_position: 0.28
+    samples: 45
+    base_target: [3.72, 3.33753, 0.05]
+    max_joint_step: 0.15
+    minimum_each_finger_contacts: 2
+  - {action: hold_pose, phase: hold_window_open, frames: 12}
+  - action: follow_slide_joint
+    phase: close_window
+    joint_name: window_slide
+    moving_body: sliding_window_panel
+    target_position: 0.0
+    samples: 45
+    base_target: [3.52167, 3.33753, 0.05]
+    max_joint_step: 0.15
+    minimum_each_finger_contacts: 2
+  - {action: change_gripper, phase: release_window_handle, target: 0.04, active_target: null, steps: 17}
+  - action: retreat_from_target
+    phase: retreat_from_window
+    target_geom: window_handle
+    hand_offset: *hand_offset
+    hand_rotation: *hand_rotation
+    approach_direction: *approach_direction
+    standoff_distances: [0.09, 0.14, 0.22, 0.32, 0.45]
+    max_step: 0.03
+  - action: move_arm
+    phase: return_arm_home
+    waypoints: [[0.0, -0.55, 0.0, -2.25, 0.0, 1.75, 0.78]]
+    max_step: 0.03
+  - {action: hold_pose, phase: final_hold, frames: 8}
+
+evaluation:
+  joint_goals:
+    - {joint_name: window_slide, reached: 0.28, final: 0.0}
+  final_gripper: 0.04
+  max_arm_joint_step: 0.15
+
+render:
+  width: 720
+  height: 540
+  max_frames: 160
+  duration_ms: 90
+  front: {lookat: [3.85, 3.55, 1.05], distance: 2.25, azimuth: 142, elevation: -20}
+  top: {lookat: [3.85, 3.45, 0.75], distance: 2.65, azimuth: 180, elevation: -68}

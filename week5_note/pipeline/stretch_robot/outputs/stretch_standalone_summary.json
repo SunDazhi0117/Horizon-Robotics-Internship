@@ -1,0 +1,37 @@
+{
+  "source_scene": "/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/scene.xml",
+  "nbody": 29,
+  "njnt": 19,
+  "nu": 8,
+  "nmesh": 67,
+  "actuators": [
+    "forward",
+    "turn",
+    "lift",
+    "arm_extend",
+    "wrist_yaw",
+    "grip",
+    "head_pan",
+    "head_tilt"
+  ],
+  "start_pos": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "final_pos": [
+    -0.43037822266298525,
+    0.04138308794379455,
+    -0.0008495339183122913
+  ],
+  "moved_distance_xy": 0.4323632437087061,
+  "all_finite": true,
+  "contact_count_final": 9,
+  "outputs": {
+    "start_png": "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/stretch_robot/outputs/stretch_start.png",
+    "final_png": "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/stretch_robot/outputs/stretch_final.png",
+    "motion_gif": "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/stretch_robot/outputs/stretch_motion.gif"
+  },
+  "passed": true,
+  "note": "Standalone Stretch load and actuator smoke test."
+}

@@ -1,0 +1,195 @@
+task_name: workshop_drawer_to_locker
+
+runtime:
+  task_xml: xml/workshop_transfer.xml
+  object_joint_aliases:
+    tool_drawer_slide: tool_drawer_slide_joint
+    locker_hinge: safety_locker_hinge_joint
+    payload_x: workshop_payload_x_joint
+    payload_y: workshop_payload_y_joint
+    payload_z: workshop_payload_z_joint
+  allowed_finger_target_geoms: [tool_drawer_handle, locker_door_handle, workshop_tool_grasp]
+  excluded_environment_geoms: [workshop_tool_visual]
+
+initial_state:
+  phase: initial
+  base: [3.62, 2.28, 0.0]
+  arm_qpos: [0.0, -0.55, 0.0, -2.25, 0.0, 1.75, 0.78]
+  gripper: 0.04
+  object_joints: {tool_drawer_slide: 0.0, locker_hinge: 0.0, payload_x: 0.0, payload_y: 0.0, payload_z: 0.0}
+  active_target: null
+
+actions:
+  - {action: hold_pose, phase: initial_hold, frames: 5}
+  - action: move_near_target
+    phase: navigate_to_tool_drawer
+    target_geom: tool_drawer_handle
+    base_offset: [-0.32700001, -0.60800185]
+    yaw_offset: 0.05
+    heading_axis: [1.0, 0.0, 0.0]
+    steps_per_segment: 51
+  - action: approach_target
+    phase: approach_tool_drawer
+    target_geom: tool_drawer_handle
+    hand_offset: &hand_offset [-0.01626286, -0.11035779, -0.00269677]
+    hand_rotation: &hand_rotation
+      - [-0.00879656, 0.98738697, 0.15808094]
+      - [-0.03796533, -0.15830286, 0.98666045]
+      - [0.99924034, 0.00267762, 0.038879]
+    approach_direction: &front_direction [0.0, -1.0, 0.0]
+    standoff_distances: [0.42, 0.30, 0.20, 0.13, 0.08]
+    max_step: 0.03
+  - action: grasp_target
+    phase: grasp_tool_drawer
+    target_geom: tool_drawer_handle
+    hand_offset: *hand_offset
+    hand_rotation: *hand_rotation
+    closed_gripper: &closed_gripper 0.023711985
+    max_step: 0.025
+    close_steps: 17
+    minimum_final_finger_contacts: 2
+  - action: follow_slide_joint
+    phase: pull_tool_drawer
+    joint_name: tool_drawer_slide
+    moving_body: tool_drawer
+    target_position: 0.26
+    samples: 49
+    base_target: [3.52167, 3.15, 0.05]
+    max_joint_step: 0.15
+    minimum_each_finger_contacts: 2
+  - {action: change_gripper, phase: release_tool_drawer, target: 0.04, active_target: null, steps: 17}
+  - action: retreat_from_target
+    phase: retreat_from_tool_drawer
+    target_geom: tool_drawer_handle
+    hand_offset: *hand_offset
+    hand_rotation: *hand_rotation
+    approach_direction: *front_direction
+    standoff_distances: [0.06, 0.10, 0.16, 0.24]
+    max_step: 0.03
+  - action: move_arm
+    phase: reset_after_drawer
+    waypoints: &home [[0.0, -0.55, 0.0, -2.25, 0.0, 1.75, 0.78]]
+    max_step: 0.03
+
+  - action: move_near_target
+    phase: navigate_to_locker
+    target_geom: locker_door_handle
+    base_candidates:
+      - name: clear_open_drawer
+        base_offset: [-0.32700001, -0.60800185]
+        path_offsets: [[0.0, -1.20]]
+    yaw_offset: 0.05
+    heading_axis: [1.0, 0.0, 0.0]
+    steps_per_segment: 51
+  - action: approach_target
+    phase: approach_locker_door
+    target_geom: locker_door_handle
+    hand_offset: *hand_offset
+    hand_rotation: *hand_rotation
+    approach_direction: *front_direction
+    standoff_distances: [0.42, 0.30, 0.20, 0.13, 0.08]
+    max_step: 0.03
+  - action: grasp_target
+    phase: grasp_locker_door
+    target_geom: locker_door_handle
+    hand_offset: *hand_offset
+    hand_rotation: *hand_rotation
+    closed_gripper: *closed_gripper
+    max_step: 0.025
+    close_steps: 17
+    minimum_final_finger_contacts: 2
+  - action: follow_hinge_joint
+    phase: open_locker_door
+    joint_name: locker_hinge
+    moving_body: safety_locker_door
+    target_angle: 0.75
+    samples: 65
+    max_joint_step: 0.15
+    minimum_each_finger_contacts: 2
+    ik_position_tolerance: 0.007
+    ik_rotation_tolerance: 0.025
+    ik_continuity_weight: 0.004
+    ik_max_nfev: 1500
+  - {action: change_gripper, phase: release_locker_door, target: 0.04, active_target: null, steps: 17}
+  - action: retreat_from_target
+    phase: retreat_from_locker_door
+    target_geom: locker_door_handle
+    hand_offset: *hand_offset
+    hand_rotation: *hand_rotation
+    approach_direction: [-1.0, 0.0, 0.0]
+    standoff_distances: [0.04, 0.07, 0.11, 0.16]
+    max_step: 0.03
+  - {action: move_arm, phase: reset_before_tool, waypoints: *home, max_step: 0.03}
+
+  - action: move_near_target
+    phase: return_to_tool
+    target_geom: workshop_tool_grasp
+    base_candidates:
+      - name: clear_open_objects
+        base_offset: [-0.32700001, -0.60800185]
+        path_offsets: [[0.0, -1.20]]
+    yaw_offset: 0.05
+    heading_axis: [1.0, 0.0, 0.0]
+    steps_per_segment: 51
+  - action: approach_target
+    phase: approach_tool
+    target_geom: workshop_tool_grasp
+    hand_offset: *hand_offset
+    hand_rotation: *hand_rotation
+    approach_direction: *front_direction
+    standoff_distances: [0.38, 0.27, 0.18, 0.11, 0.07]
+    max_step: 0.03
+  - action: grasp_target
+    phase: grasp_tool
+    target_geom: workshop_tool_grasp
+    hand_offset: *hand_offset
+    hand_rotation: *hand_rotation
+    closed_gripper: *closed_gripper
+    max_step: 0.025
+    close_steps: 17
+    minimum_final_finger_contacts: 2
+  - action: carry_payload
+    phase: carry_tool_to_locker
+    payload_body: workshop_payload
+    payload_joint_names: [payload_x, payload_y, payload_z]
+    destination_site: workshop_destination_site
+    base_target: [4.543, 3.472, 0.05]
+    carry_height: 1.39
+    clearance_offset: [0.0, -0.38, 0.0]
+    lift_samples: 29
+    clearance_samples: 35
+    translate_samples: 81
+    lower_samples: 29
+    max_joint_step: 0.15
+    minimum_each_finger_contacts: 2
+  - {action: hold_pose, phase: hold_tool_at_locker, frames: 10}
+  - {action: change_gripper, phase: place_tool_in_locker, target: 0.04, active_target: null, steps: 17}
+  - action: retreat_from_target
+    phase: retreat_after_tool_placement
+    target_geom: workshop_tool_grasp
+    hand_offset: *hand_offset
+    hand_rotation: *hand_rotation
+    approach_direction: *front_direction
+    standoff_distances: [0.06, 0.10, 0.16, 0.24]
+    max_step: 0.03
+  - {action: move_arm, phase: return_arm_home, waypoints: *home, max_step: 0.03}
+  - {action: hold_pose, phase: final_hold, frames: 8}
+
+evaluation:
+  joint_goals:
+    - {joint_name: tool_drawer_slide, reached: 0.26, final: 0.26}
+    - {joint_name: locker_hinge, reached: 0.75, final: 0.75}
+  payload_goal:
+    body: workshop_payload
+    destination_site: workshop_destination_site
+    tolerance: 0.000001
+  final_gripper: 0.04
+  max_arm_joint_step: 0.15
+
+render:
+  width: 800
+  height: 560
+  max_frames: 210
+  duration_ms: 90
+  front: {lookat: [4.50, 3.50, 1.00], distance: 2.80, azimuth: 145, elevation: -22}
+  top: {lookat: [4.50, 3.45, 0.75], distance: 3.00, azimuth: 180, elevation: -70}

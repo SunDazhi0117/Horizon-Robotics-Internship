@@ -1,0 +1,107 @@
+{
+  "task_name": "storage_box_open_close",
+  "passed": true,
+  "state_count": 385,
+  "action_count": 11,
+  "actions": [
+    {
+      "action_index": 0,
+      "action": "hold_pose",
+      "phase": "initial_hold",
+      "start_state_index": 1,
+      "end_state_index": 5
+    },
+    {
+      "action_index": 1,
+      "action": "move_near_target",
+      "phase": "navigate_to_box",
+      "start_state_index": 6,
+      "end_state_index": 55
+    },
+    {
+      "action_index": 2,
+      "action": "approach_target",
+      "phase": "approach_box_handle_5",
+      "start_state_index": 56,
+      "end_state_index": 122
+    },
+    {
+      "action_index": 3,
+      "action": "grasp_target",
+      "phase": "grasp_box_handle",
+      "start_state_index": 123,
+      "end_state_index": 155
+    },
+    {
+      "action_index": 4,
+      "action": "follow_hinge_joint",
+      "phase": "open_box_lid",
+      "start_state_index": 156,
+      "end_state_index": 211
+    },
+    {
+      "action_index": 5,
+      "action": "hold_pose",
+      "phase": "hold_box_open",
+      "start_state_index": 212,
+      "end_state_index": 223
+    },
+    {
+      "action_index": 6,
+      "action": "follow_hinge_joint",
+      "phase": "close_box_lid",
+      "start_state_index": 224,
+      "end_state_index": 279
+    },
+    {
+      "action_index": 7,
+      "action": "change_gripper",
+      "phase": "release_box_handle",
+      "start_state_index": 280,
+      "end_state_index": 295
+    },
+    {
+      "action_index": 8,
+      "action": "retreat_from_target",
+      "phase": "retreat_from_box_5",
+      "start_state_index": 296,
+      "end_state_index": 343
+    },
+    {
+      "action_index": 9,
+      "action": "move_arm",
+      "phase": "return_arm_home",
+      "start_state_index": 344,
+      "end_state_index": 376
+    },
+    {
+      "action_index": 10,
+      "action": "hold_pose",
+      "phase": "final_hold",
+      "start_state_index": 377,
+      "end_state_index": 384
+    }
+  ],
+  "joint_goals": [
+    {
+      "joint_name": "box_lid_hinge",
+      "reached": 0.55,
+      "closest_reached_error": 0.0,
+      "final": 0.0,
+      "expected_final": 0.0,
+      "passed": true
+    }
+  ],
+  "final_gripper": 0.04,
+  "environment_visual_overlap_failure_count": 0,
+  "forbidden_target_contact_failure_count": 0,
+  "lost_grasp_failure_count": 0,
+  "maximum_arm_joint_step": 0.03692648347298633,
+  "front_video_frame_count": 129,
+  "top_video_frame_count": 129,
+  "config": "/home/users/dazhi.sun-labs/projects/week9_note/configs/storage_box_open_close.yaml",
+  "task_xml": "/home/users/dazhi.sun-labs/projects/week9_note/xml/storage_box.xml",
+  "trajectory": "/home/users/dazhi.sun-labs/projects/week9_note/results/storage_box_open_close_trajectory.json",
+  "front_video": "/home/users/dazhi.sun-labs/projects/week9_note/assets/storage_box_open_close.gif",
+  "top_video": "/home/users/dazhi.sun-labs/projects/week9_note/assets/storage_box_open_close_top_view.gif"
+}

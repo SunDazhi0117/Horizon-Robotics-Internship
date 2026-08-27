@@ -1,0 +1,22 @@
+# Generated 3D assets and local caches
+*.blend
+*.blend1
+*.glb
+*.gltf
+*.bin
+*.sdf
+*.urdf
+outputs/
+data/
+.cache/
+
+# Python and editor files
+__pycache__/
+*.py[cod]
+.venv/
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db

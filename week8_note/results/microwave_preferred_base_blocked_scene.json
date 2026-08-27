@@ -1,0 +1,36 @@
+{
+  "source_xml": "/home/users/dazhi.sun-labs/projects/week8_note/xml/microwave_pose_shifted_rotated.xml",
+  "blocked_xml": "/home/users/dazhi.sun-labs/projects/week8_note/xml/microwave_pose_shifted_rotated_preferred_blocked.xml",
+  "microwave_transform": {
+    "source_xml": "/home/users/dazhi.sun-labs/projects/week8_note/xml/microwave_generalization.xml",
+    "moved_xml": "/home/users/dazhi.sun-labs/projects/week8_note/xml/microwave_pose_shifted_rotated.xml",
+    "microwave_center": [
+      4.06367027759552,
+      4.209031820297242,
+      1.189676702022553
+    ],
+    "translation": [
+      0.15,
+      -0.05,
+      0.0
+    ],
+    "yaw_degrees": 10.0,
+    "moved_static_geom_count": 11,
+    "moved_body_count": 5
+  },
+  "preferred_base_goal": [
+    3.8312389027662705,
+    3.2066527043784387,
+    0.22453292571818845
+  ],
+  "preferred_base_offset": [
+    -0.32700001,
+    -0.60800185
+  ],
+  "backup_base_offset": [
+    0.0,
+    -0.6
+  ],
+  "blocker_radius": 0.11,
+  "blocker_half_height": 0.24
+}

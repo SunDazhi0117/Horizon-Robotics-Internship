@@ -1,0 +1,403 @@
+task_name: sterilizer_safety_latch_panel_tray_reset
+
+runtime:
+  task_xml: xml/sterilizer_service.xml
+  object_joint_aliases:
+    sterilizer_safety_latch_slide: sterilizer_safety_latch_slide_joint
+    sterilizer_service_panel_hinge: sterilizer_service_panel_hinge_joint
+    sterilizer_instrument_tray_slide: sterilizer_instrument_tray_slide_joint
+  allowed_finger_target_geoms:
+    - sterilizer_latch_handle
+    - sterilizer_service_panel_handle
+    - sterilizer_instrument_tray_handle
+
+initial_state:
+  phase: initial
+  base: [3.62, 2.28, 0.0]
+  arm_qpos: [0.0, -0.55, 0.0, -2.25, 0.0, 1.75, 0.78]
+  gripper: 0.04
+  object_joints:
+    sterilizer_safety_latch_slide: 0.0
+    sterilizer_service_panel_hinge: 0.0
+    sterilizer_instrument_tray_slide: 0.0
+  active_target: null
+
+actions:
+  - {action: hold_pose, phase: initial_hold, frames: 5}
+  - action: move_near_target
+    phase: navigate_to_safety_latch
+    target_geom: sterilizer_latch_handle
+    base_offset: [-0.32700001, -0.60800185]
+    yaw_offset: 0.05
+    heading_axis: [1.0, 0.0, 0.0]
+    steps_per_segment: 51
+  - action: approach_target
+    phase: approach_safety_latch
+    target_geom: sterilizer_latch_handle
+    hand_offset: &hand_offset [-0.01626286, -0.11035779, -0.00269677]
+    hand_rotation: &hand_rotation
+      - [-0.00879656, 0.98738697, 0.15808094]
+      - [-0.03796533, -0.15830286, 0.98666045]
+      - [0.99924034, 0.00267762, 0.038879]
+    approach_direction: &front_approach [0.0, -1.0, 0.0]
+    standoff_distances: [0.45, 0.32, 0.22, 0.14, 0.09]
+    max_step: 0.03
+  - action: grasp_target
+    phase: grasp_safety_latch
+    target_geom: sterilizer_latch_handle
+    hand_offset: *hand_offset
+    hand_rotation: *hand_rotation
+    closed_gripper: &closed_gripper 0.023711985
+    max_step: 0.025
+    close_steps: 17
+    minimum_final_finger_contacts: 2
+  - action: follow_slide_joint
+    phase: unlock_safety_latch
+    joint_name: sterilizer_safety_latch_slide
+    moving_body: sterilizer_safety_latch
+    target_position: 0.18
+    samples: 45
+    base_target: [3.14167, 3.31753, 0.05]
+    max_joint_step: 0.15
+    minimum_each_finger_contacts: 2
+  - {action: change_gripper, phase: release_unlocked_latch, target: 0.04, active_target: null, steps: 17}
+  - action: retreat_from_target
+    phase: retreat_from_unlocked_latch
+    target_geom: sterilizer_latch_handle
+    hand_offset: *hand_offset
+    hand_rotation: *hand_rotation
+    approach_direction: *front_approach
+    standoff_distances: [0.07, 0.12, 0.20, 0.30]
+    max_step: 0.03
+  - action: move_arm
+    phase: clear_arm_after_unlock
+    waypoints: [[0.0, -0.55, 0.0, -2.25, 0.0, 1.75, 0.78]]
+    max_step: 0.03
+
+  - action: move_near_target
+    phase: reposition_for_service_panel
+    target_geom: sterilizer_service_panel_handle
+    base_offset: [-0.32700001, -0.60800185]
+    yaw_offset: 0.05
+    heading_axis: [1.0, 0.0, 0.0]
+    steps_per_segment: 35
+  - action: approach_target
+    phase: approach_service_panel
+    target_geom: sterilizer_service_panel_handle
+    hand_offset: *hand_offset
+    hand_rotation: *hand_rotation
+    approach_direction: *front_approach
+    standoff_distances: [0.45, 0.32, 0.22, 0.14, 0.09]
+    max_step: 0.03
+  - action: grasp_target
+    phase: grasp_service_panel
+    target_geom: sterilizer_service_panel_handle
+    hand_offset: *hand_offset
+    hand_rotation: *hand_rotation
+    closed_gripper: *closed_gripper
+    max_step: 0.025
+    close_steps: 17
+    minimum_final_finger_contacts: 2
+  - action: follow_hinge_joint
+    phase: open_service_panel
+    joint_name: sterilizer_service_panel_hinge
+    moving_body: sterilizer_service_panel
+    target_angle: 0.65
+    samples: 65
+    base_target: [3.52167, 3.40, 0.05]
+    max_joint_step: 0.15
+    minimum_each_finger_contacts: 2
+    ik_position_tolerance: 0.007
+    ik_rotation_tolerance: 0.025
+    ik_continuity_weight: 0.006
+    ik_max_nfev: 1700
+  - {action: hold_pose, phase: hold_panel_open, frames: 10}
+  - {action: change_gripper, phase: release_service_panel, target: 0.04, active_target: null, steps: 17}
+
+  - action: move_near_target
+    phase: reposition_for_instrument_tray
+    target_geom: sterilizer_instrument_tray_handle
+    base_offset: [-0.327, -0.700]
+    yaw_offset: 0.05
+    heading_axis: [1.0, 0.0, 0.0]
+    steps_per_segment: 35
+  - action: approach_target
+    phase: approach_instrument_tray
+    target_geom: sterilizer_instrument_tray_handle
+    hand_offset: *hand_offset
+    hand_rotation: *hand_rotation
+    approach_direction: *front_approach
+    standoff_distances: [0.36, 0.26, 0.18, 0.11, 0.07]
+    max_step: 0.03
+  - action: grasp_target
+    phase: grasp_instrument_tray
+    target_geom: sterilizer_instrument_tray_handle
+    hand_offset: *hand_offset
+    hand_rotation: *hand_rotation
+    closed_gripper: *closed_gripper
+    max_step: 0.025
+    close_steps: 17
+    minimum_final_finger_contacts: 2
+  - action: follow_slide_joint
+    phase: pull_out_instrument_tray
+    joint_name: sterilizer_instrument_tray_slide
+    moving_body: sterilizer_instrument_tray
+    target_position: 0.24
+    samples: 49
+    base_target: [3.72167, 3.08, 0.05]
+    max_joint_step: 0.15
+    minimum_each_finger_contacts: 2
+  - {action: hold_pose, phase: inspect_instrument_pack, frames: 12}
+  - action: follow_slide_joint
+    phase: push_in_instrument_tray
+    joint_name: sterilizer_instrument_tray_slide
+    moving_body: sterilizer_instrument_tray
+    target_position: 0.0
+    samples: 49
+    base_target: [3.72167, 3.24553, 0.05]
+    max_joint_step: 0.15
+    minimum_each_finger_contacts: 2
+  - {action: change_gripper, phase: release_instrument_tray, target: 0.04, active_target: null, steps: 17}
+  - action: retreat_from_target
+    phase: retreat_from_instrument_tray
+    target_geom: sterilizer_instrument_tray_handle
+    hand_offset: *hand_offset
+    hand_rotation: *hand_rotation
+    approach_direction: *front_approach
+    standoff_distances: [0.07, 0.11, 0.18, 0.26]
+    max_step: 0.03
+
+  - action: move_near_target
+    phase: reposition_for_open_panel
+    target_geom: sterilizer_service_panel_handle
+    base_offset: [-0.327, -0.246]
+    yaw_offset: 0.05
+    heading_axis: [1.0, 0.0, 0.0]
+    steps_per_segment: 35
+  - action: move_arm
+    phase: clear_arm_before_panel_regrasp
+    waypoints: [[0.0, -0.55, 0.0, -2.25, 0.0, 1.75, 0.78]]
+    max_step: 0.025
+  - action: approach_target
+    phase: approach_open_panel_from_above
+    target_geom: sterilizer_service_panel_handle
+    hand_offset: *hand_offset
+    hand_rotation: *hand_rotation
+    approach_direction: [0.0, 0.0, 1.0]
+    standoff_distances: [0.25, 0.15, 0.08]
+    max_step: 0.03
+  - action: grasp_target
+    phase: regrasp_service_panel
+    target_geom: sterilizer_service_panel_handle
+    hand_offset: *hand_offset
+    hand_rotation: *hand_rotation
+    closed_gripper: *closed_gripper
+    max_step: 0.025
+    close_steps: 17
+    minimum_final_finger_contacts: 2
+  - action: follow_hinge_joint
+    phase: close_service_panel
+    joint_name: sterilizer_service_panel_hinge
+    moving_body: sterilizer_service_panel
+    target_angle: 0.0
+    samples: 65
+    base_target: [3.52167, 3.40, 0.05]
+    max_joint_step: 0.15
+    minimum_each_finger_contacts: 2
+    ik_position_tolerance: 0.007
+    ik_rotation_tolerance: 0.025
+    ik_continuity_weight: 0.006
+    ik_max_nfev: 1700
+  - {action: change_gripper, phase: release_closed_panel, target: 0.04, active_target: null, steps: 17}
+  - action: retreat_from_target
+    phase: retreat_from_closed_panel
+    target_geom: sterilizer_service_panel_handle
+    hand_offset: *hand_offset
+    hand_rotation: *hand_rotation
+    approach_direction: *front_approach
+    standoff_distances: [0.06, 0.10, 0.16, 0.24]
+    max_step: 0.03
+
+  - action: move_near_target
+    phase: reposition_for_unlocked_latch
+    target_geom: sterilizer_latch_handle
+    base_offset: [-0.32700001, -0.60800185]
+    yaw_offset: 0.05
+    heading_axis: [1.0, 0.0, 0.0]
+    steps_per_segment: 35
+  - action: move_arm
+    phase: clear_arm_before_latch_regrasp
+    waypoints: [[0.0, -0.55, 0.0, -2.25, 0.0, 1.75, 0.78]]
+    max_step: 0.03
+  - action: approach_target
+    phase: approach_unlocked_latch
+    target_geom: sterilizer_latch_handle
+    hand_offset: *hand_offset
+    hand_rotation: *hand_rotation
+    approach_direction: *front_approach
+    standoff_distances: [0.35, 0.24, 0.15, 0.09]
+    max_step: 0.03
+  - action: grasp_target
+    phase: regrasp_safety_latch
+    target_geom: sterilizer_latch_handle
+    hand_offset: *hand_offset
+    hand_rotation: *hand_rotation
+    closed_gripper: *closed_gripper
+    max_step: 0.025
+    close_steps: 17
+    minimum_final_finger_contacts: 2
+  - action: follow_slide_joint
+    phase: lock_safety_latch
+    joint_name: sterilizer_safety_latch_slide
+    moving_body: sterilizer_safety_latch
+    target_position: 0.0
+    samples: 45
+    base_target: [3.32167, 3.31753, 0.05]
+    max_joint_step: 0.15
+    minimum_each_finger_contacts: 2
+  - {action: change_gripper, phase: release_locked_latch, target: 0.04, active_target: null, steps: 17}
+  - action: retreat_from_target
+    phase: retreat_from_locked_latch
+    target_geom: sterilizer_latch_handle
+    hand_offset: *hand_offset
+    hand_rotation: *hand_rotation
+    approach_direction: *front_approach
+    standoff_distances: [0.07, 0.12, 0.20, 0.30]
+    max_step: 0.03
+  - action: move_arm
+    phase: return_arm_home
+    waypoints: [[0.0, -0.55, 0.0, -2.25, 0.0, 1.75, 0.78]]
+    max_step: 0.03
+  - {action: hold_pose, phase: final_hold, frames: 8}
+
+evaluation:
+  joint_goals:
+    - {joint_name: sterilizer_safety_latch_slide, reached: 0.18, final: 0.0}
+    - {joint_name: sterilizer_service_panel_hinge, reached: 0.65, final: 0.0}
+    - {joint_name: sterilizer_instrument_tray_slide, reached: 0.24, final: 0.0}
+  final_gripper: 0.04
+  max_arm_joint_step: 0.15
+
+strict_validation:
+  required_collision_geoms:
+    - sterilizer_back
+    - sterilizer_left_frame
+    - sterilizer_right_frame
+    - sterilizer_bottom_plinth
+    - sterilizer_top_frame
+    - sterilizer_ground_plinth
+    - sterilizer_tray_track
+    - sterilizer_latch_guide
+    - sterilizer_control_module
+    - sterilizer_status_display
+    - sterilizer_warning_strip
+    - sterilizer_latch_bolt
+    - sterilizer_latch_linkage
+    - sterilizer_latch_handle
+    - sterilizer_service_panel_surface
+    - sterilizer_service_panel_label
+    - sterilizer_service_panel_hinge_bar
+    - sterilizer_service_panel_handle_bracket
+    - sterilizer_service_panel_handle
+    - sterilizer_instrument_tray_bottom
+    - sterilizer_instrument_tray_left_wall
+    - sterilizer_instrument_tray_right_wall
+    - sterilizer_instrument_tray_back
+    - sterilizer_instrument_tray_front_wall
+    - sterilizer_instrument_pack
+    - sterilizer_tray_handle_bracket
+    - sterilizer_instrument_tray_handle
+  clearance_groups:
+    - name: safety_latch_clearance
+      geoms:
+        - sterilizer_latch_bolt
+        - sterilizer_latch_linkage
+        - sterilizer_latch_handle
+      against:
+        - sterilizer_back
+        - sterilizer_left_frame
+        - sterilizer_right_frame
+        - sterilizer_bottom_plinth
+        - sterilizer_top_frame
+        - sterilizer_ground_plinth
+        - sterilizer_tray_track
+        - sterilizer_control_module
+        - sterilizer_status_display
+        - sterilizer_warning_strip
+        - sterilizer_service_panel_surface
+        - sterilizer_service_panel_label
+        - sterilizer_service_panel_handle_bracket
+        - sterilizer_service_panel_handle
+        - sterilizer_instrument_tray_bottom
+        - sterilizer_instrument_tray_left_wall
+        - sterilizer_instrument_tray_right_wall
+        - sterilizer_instrument_tray_back
+        - sterilizer_instrument_tray_front_wall
+        - sterilizer_instrument_pack
+        - sterilizer_tray_handle_bracket
+        - sterilizer_instrument_tray_handle
+    - name: service_panel_clearance
+      geoms:
+        - sterilizer_service_panel_surface
+        - sterilizer_service_panel_label
+        - sterilizer_service_panel_handle_bracket
+        - sterilizer_service_panel_handle
+      against:
+        - sterilizer_back
+        - sterilizer_left_frame
+        - sterilizer_right_frame
+        - sterilizer_bottom_plinth
+        - sterilizer_top_frame
+        - sterilizer_ground_plinth
+        - sterilizer_tray_track
+        - sterilizer_latch_guide
+        - sterilizer_control_module
+        - sterilizer_status_display
+        - sterilizer_warning_strip
+        - sterilizer_latch_bolt
+        - sterilizer_latch_handle
+        - sterilizer_instrument_tray_bottom
+        - sterilizer_instrument_tray_left_wall
+        - sterilizer_instrument_tray_right_wall
+        - sterilizer_instrument_tray_back
+        - sterilizer_instrument_tray_front_wall
+        - sterilizer_instrument_pack
+        - sterilizer_tray_handle_bracket
+        - sterilizer_instrument_tray_handle
+    - name: instrument_tray_clearance
+      geoms:
+        - sterilizer_instrument_tray_bottom
+        - sterilizer_instrument_tray_left_wall
+        - sterilizer_instrument_tray_right_wall
+        - sterilizer_instrument_tray_back
+        - sterilizer_instrument_tray_front_wall
+        - sterilizer_instrument_pack
+        - sterilizer_tray_handle_bracket
+        - sterilizer_instrument_tray_handle
+      against:
+        - sterilizer_back
+        - sterilizer_left_frame
+        - sterilizer_right_frame
+        - sterilizer_bottom_plinth
+        - sterilizer_top_frame
+        - sterilizer_ground_plinth
+        - sterilizer_control_module
+        - sterilizer_status_display
+        - sterilizer_warning_strip
+        - sterilizer_latch_guide
+        - sterilizer_latch_bolt
+        - sterilizer_latch_handle
+  support_checks:
+    - name: instrument_tray_on_track
+      moving_geom: sterilizer_instrument_tray_bottom
+      support_geoms: [sterilizer_tray_track]
+      vertical_gap_tolerance: 0.000001
+      minimum_xy_overlap: 0.009
+
+render:
+  width: 720
+  height: 540
+  max_frames: 220
+  duration_ms: 90
+  front: {lookat: [3.82, 3.48, 1.02], distance: 2.65, azimuth: 142, elevation: -24}
+  top: {lookat: [3.80, 3.38, 0.78], distance: 2.95, azimuth: 180, elevation: -68}

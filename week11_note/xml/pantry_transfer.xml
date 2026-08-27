@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mujoco model="week11_pantry_transfer">
+  <compiler angle="radian" autolimits="true"/>
+  <include file="/home/users/dazhi.sun-labs/projects/week8_note/xml/franka_panda_raised_for_microwave.xml"/>
+  <option gravity="0 0 -9.81" timestep="0.002"/>
+  <visual><global offwidth="1000" offheight="720"/></visual>
+  <worldbody>
+    <light pos="4.4 2.5 4.5" dir="0.1 0.2 -1" diffuse="0.9 0.9 0.9"/>
+    <geom name="reference_ground" type="plane" pos="4.4 3.2 0" size="5 4 0.05" rgba="0.72 0.75 0.77 1"/>
+
+    <body name="source_refrigerator">
+      <geom name="source_back" type="box" pos="3.95 4.300 0.90" size="0.41 0.025 0.60" rgba="0.76 0.80 0.84 1"/>
+      <geom name="source_left" type="box" pos="3.565 4.170 0.90" size="0.025 0.13 0.60" rgba="0.76 0.80 0.84 1"/>
+      <geom name="source_right" type="box" pos="4.335 4.170 0.90" size="0.025 0.13 0.60" rgba="0.76 0.80 0.84 1"/>
+      <geom name="source_top" type="box" pos="3.95 4.170 1.475" size="0.41 0.13 0.025" rgba="0.58 0.64 0.69 1"/>
+      <geom name="source_bottom" type="box" pos="3.95 4.170 0.325" size="0.41 0.13 0.025" rgba="0.58 0.64 0.69 1"/>
+      <geom name="source_shelf" type="box" pos="3.95 4.170 0.925" size="0.36 0.12 0.018" rgba="0.65 0.70 0.74 1"/>
+      <geom name="source_ground_plinth" type="box" pos="3.95 4.170 0.150" size="0.41 0.13 0.150" rgba="0.45 0.50 0.54 1"/>
+      <geom name="source_can_support" type="box" pos="3.800 4.080 0.994" size="0.045 0.040 0.051" rgba="0.52 0.57 0.61 1"/>
+      <geom name="source_hinge_mount_lower" type="box" pos="4.259 4.0655 0.650" size="0.051 0.025 0.025" rgba="0.30 0.34 0.37 1"/>
+      <geom name="source_hinge_mount_upper" type="box" pos="4.259 4.0655 1.150" size="0.051 0.025 0.025" rgba="0.30 0.34 0.37 1"/>
+    </body>
+    <body name="source_refrigerator_door" pos="4.208670006 4.065531845 0.550000000">
+      <joint name="source_refrigerator_hinge_joint" type="hinge" axis="0 0 1" range="0 0.80" damping="1"/>
+      <geom name="source_door_panel" type="box" pos="-0.180 0 0.350" size="0.180 0.025 0.350" rgba="0.86 0.89 0.92 1"/>
+      <geom name="source_door_hinge_pin" type="cylinder" pos="0 0 0.350" size="0.018 0.350" rgba="0.30 0.34 0.37 1"/>
+      <geom name="source_door_handle_bracket" type="box" pos="-0.348 -0.0615 0.639676762" size="0.012 0.0365 0.025" rgba="0.12 0.14 0.16 1"/>
+      <geom name="source_door_handle" type="box" pos="-0.360 -0.120 0.639676762" size="0.024 0.022 0.092" rgba="0.12 0.14 0.16 1" contype="2" conaffinity="3"/>
+    </body>
+
+    <body name="destination_cupboard">
+      <geom name="destination_back" type="box" pos="5.15 4.300 0.90" size="0.41 0.025 0.60" rgba="0.48 0.67 0.48 1"/>
+      <geom name="destination_left" type="box" pos="4.765 4.170 0.90" size="0.025 0.13 0.60" rgba="0.48 0.67 0.48 1"/>
+      <geom name="destination_right" type="box" pos="5.535 4.170 0.90" size="0.025 0.13 0.60" rgba="0.48 0.67 0.48 1"/>
+      <geom name="destination_top" type="box" pos="5.15 4.170 1.475" size="0.41 0.13 0.025" rgba="0.34 0.52 0.35 1"/>
+      <geom name="destination_bottom" type="box" pos="5.15 4.170 0.325" size="0.41 0.13 0.025" rgba="0.34 0.52 0.35 1"/>
+      <geom name="destination_shelf" type="box" pos="5.15 4.170 0.925" size="0.36 0.12 0.018" rgba="0.40 0.58 0.41 1"/>
+      <geom name="destination_ground_plinth" type="box" pos="5.15 4.170 0.150" size="0.41 0.13 0.150" rgba="0.27 0.42 0.29 1"/>
+      <geom name="destination_can_support" type="box" pos="5.000 4.080 0.994" size="0.045 0.040 0.051" rgba="0.34 0.50 0.36 1"/>
+      <geom name="destination_hinge_mount_lower" type="box" pos="5.459 4.0655 0.650" size="0.051 0.025 0.025" rgba="0.24 0.38 0.26 1"/>
+      <geom name="destination_hinge_mount_upper" type="box" pos="5.459 4.0655 1.150" size="0.051 0.025 0.025" rgba="0.24 0.38 0.26 1"/>
+      <site name="pantry_destination_site" type="sphere" pos="5.00 4.080 1.150" size="0.025" rgba="0 0 0 0"/>
+    </body>
+    <body name="destination_cupboard_door" pos="5.408670006 4.065531845 0.550000000">
+      <joint name="destination_cupboard_hinge_joint" type="hinge" axis="0 0 1" range="0 0.80" damping="1"/>
+      <geom name="destination_door_panel" type="box" pos="-0.180 0 0.350" size="0.180 0.025 0.350" rgba="0.58 0.76 0.57 1"/>
+      <geom name="destination_door_hinge_pin" type="cylinder" pos="0 0 0.350" size="0.018 0.350" rgba="0.24 0.38 0.26 1"/>
+      <geom name="destination_door_handle_bracket" type="box" pos="-0.348 -0.0615 0.639676762" size="0.012 0.0365 0.025" rgba="0.12 0.14 0.16 1"/>
+      <geom name="destination_door_handle" type="box" pos="-0.360 -0.120 0.639676762" size="0.024 0.022 0.092" rgba="0.12 0.14 0.16 1" contype="2" conaffinity="3"/>
+    </body>
+
+    <body name="pantry_payload" pos="3.800000000 4.080000000 1.150000000">
+      <joint name="pantry_payload_x_joint" type="slide" axis="1 0 0" range="-2 2" damping="1"/>
+      <joint name="pantry_payload_y_joint" type="slide" axis="0 1 0" range="-2 2" damping="1"/>
+      <joint name="pantry_payload_z_joint" type="slide" axis="0 0 1" range="-1 1" damping="1"/>
+      <geom name="pantry_can_grasp" type="box" size="0.024 0.022 0.092" rgba="0.88 0.20 0.12 1" contype="2" conaffinity="3"/>
+      <geom name="pantry_can_visual" type="cylinder" size="0.040 0.105" rgba="0.92 0.24 0.14 1" contype="0" conaffinity="0"/>
+    </body>
+  </worldbody>
+</mujoco>

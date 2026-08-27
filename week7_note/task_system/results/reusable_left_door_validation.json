@@ -1,0 +1,41 @@
+{
+  "integration_name": "reusable_left_door_grasp_and_open",
+  "passed": true,
+  "state_count": 82,
+  "environment_geom_count_checked": 93,
+  "environment_visual_overlap_failure_count": 0,
+  "forbidden_active_target_contact_failure_count": 0,
+  "maximum_base_roundtrip_error": 0.0,
+  "maximum_arm_roundtrip_error": 0.0,
+  "maximum_object_joint_roundtrip_error": 0.0,
+  "maximum_joint_step": 0.10635377392393308,
+  "final_object_joints": {
+    "left_hinge": 1.5707963267948966,
+    "right_hinge": 1.5707963267948966
+  },
+  "source_task_xml": "/home/users/dazhi.sun-labs/projects/week7_note/xml/level_5_sequential_open_both_doors.xml",
+  "task_name": "level5_reusable_left_door_grasp_and_open",
+  "action_count": 2,
+  "actions": [
+    {
+      "action_index": 0,
+      "action": "grasp_target",
+      "phase": "grasp_left_handle_reusable",
+      "start_state_index": 1,
+      "end_state_index": 17
+    },
+    {
+      "action_index": 1,
+      "action": "follow_hinge_joint",
+      "phase": "open_left_door_reusable",
+      "start_state_index": 18,
+      "end_state_index": 81
+    }
+  ],
+  "target_left_hinge": 1.5707963267948966,
+  "final_left_hinge": 1.5707963267948966,
+  "final_target_error": 0.0,
+  "source_config": "/home/users/dazhi.sun-labs/projects/week7_note/task_system/configs/level5_reusable_left_door.yaml",
+  "generated_trajectory": "/home/users/dazhi.sun-labs/projects/week7_note/task_system/results/reusable_left_door_trajectory.json",
+  "reference_stable_trajectory": "/home/users/dazhi.sun-labs/projects/week7_note/assets/results/level_5_sequential_open_both_doors_trajectory.json"
+}

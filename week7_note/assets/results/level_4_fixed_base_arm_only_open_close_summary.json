@@ -1,0 +1,31 @@
+{
+  "task_name": "level_4_fixed_base_arm_only_open_close",
+  "scope": "hold the handle, open the cabinet to 90 degrees, and close it while the base remains fixed",
+  "passed_full_validation": true,
+  "base_locked_for_entire_task": true,
+  "fixed_base_pose": [
+    4.49,
+    2.3,
+    0.05
+  ],
+  "maximum_base_drift": 0.0,
+  "target_open_hinge_angle": 1.5707963267948966,
+  "maximum_hinge_angle": 1.5707963267948966,
+  "final_closed_hinge_angle": 0.0,
+  "opening_sample_count": 65,
+  "closing_sample_count": 64,
+  "total_validated_sample_count": 149,
+  "max_gripper_to_handle_distance": 0.053205145431453986,
+  "min_handle_unique_finger_contacts": 2.0,
+  "max_joint_step": 0.11135311551180505,
+  "cabinet_visual_overlap_failure_count": 0,
+  "forbidden_handle_contact_failure_count": 0,
+  "door_slab_collision_failure_count": 0,
+  "motion_gif": "/home/users/dazhi.sun-labs/projects/week7_note/assets/videos/level_4_fixed_base_arm_only_open_close.gif",
+  "top_view_gif": "/home/users/dazhi.sun-labs/projects/week7_note/assets/videos/level_4_fixed_base_arm_only_open_close_top_view.gif",
+  "trajectory": "/home/users/dazhi.sun-labs/projects/week7_note/assets/results/level_4_fixed_base_arm_only_open_close_trajectory.json",
+  "frame_sheet": "/home/users/dazhi.sun-labs/projects/week7_note/assets/images/level_4_fixed_base_arm_only_open_close_frames_sheet.png",
+  "top_frame_sheet": "/home/users/dazhi.sun-labs/projects/week7_note/assets/images/level_4_fixed_base_arm_only_open_close_top_frames_sheet.png",
+  "source_level_3_trajectory": "/home/users/dazhi.sun-labs/projects/week7_note/assets/results/level_3_fixed_base_arm_only_open_90_trajectory.json",
+  "note": "Every opening and closing state is revalidated; the close phase traverses the accepted fixed-base arm trajectory in reverse."
+}

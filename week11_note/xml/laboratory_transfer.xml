@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mujoco model="week11_laboratory_transfer">
+  <compiler angle="radian" autolimits="true"/>
+  <include file="/home/users/dazhi.sun-labs/projects/week8_note/xml/franka_panda_raised_for_microwave.xml"/>
+  <option gravity="0 0 -9.81" timestep="0.002"/>
+  <visual><global offwidth="1000" offheight="720"/></visual>
+  <worldbody>
+    <light pos="4.4 2.5 4.5" dir="0.1 0.2 -1" diffuse="0.9 0.9 0.9"/>
+    <geom name="reference_ground" type="plane" pos="4.4 3.2 0" size="5 4 0.05" rgba="0.76 0.78 0.79 1"/>
+
+    <body name="source_incubator">
+      <geom name="incubator_back" type="box" pos="3.89 4.300 0.92" size="0.47 0.025 0.62" rgba="0.82 0.85 0.87 1"/>
+      <geom name="incubator_left" type="box" pos="3.445 4.170 0.92" size="0.025 0.13 0.62" rgba="0.82 0.85 0.87 1"/>
+      <geom name="incubator_right" type="box" pos="4.335 4.170 0.92" size="0.025 0.13 0.62" rgba="0.82 0.85 0.87 1"/>
+      <geom name="incubator_top" type="box" pos="3.89 4.170 1.515" size="0.47 0.13 0.025" rgba="0.59 0.63 0.66 1"/>
+      <geom name="incubator_bottom" type="box" pos="3.89 4.170 0.325" size="0.47 0.13 0.025" rgba="0.59 0.63 0.66 1"/>
+      <geom name="incubator_display" type="box" pos="3.62 4.135 1.395" size="0.10 0.015 0.045" rgba="0.08 0.45 0.58 1" contype="0" conaffinity="0"/>
+      <geom name="incubator_ground_plinth" type="box" pos="3.89 4.170 0.150" size="0.47 0.13 0.150" rgba="0.52 0.56 0.59 1"/>
+      <geom name="incubator_display_mount" type="box" pos="3.62 4.135 1.465" size="0.10 0.015 0.025" rgba="0.35 0.39 0.42 1"/>
+      <geom name="incubator_tray_support_rail" type="box" pos="4.180 4.225 1.017" size="0.130 0.125 0.015" rgba="0.34 0.38 0.41 1"/>
+      <geom name="incubator_hinge_mount_lower" type="box" pos="4.259 4.0655 0.650" size="0.051 0.025 0.025" rgba="0.35 0.39 0.42 1"/>
+      <geom name="incubator_hinge_mount_upper" type="box" pos="4.259 4.0655 1.150" size="0.051 0.025 0.025" rgba="0.35 0.39 0.42 1"/>
+    </body>
+    <body name="incubator_door" pos="4.208670006 4.065531845 0.550000000">
+      <joint name="incubator_door_hinge_joint" type="hinge" axis="0 0 1" range="0 0.80" damping="1"/>
+      <geom name="incubator_door_panel" type="box" pos="-0.180 0 0.350" size="0.180 0.025 0.350" rgba="0.72 0.82 0.86 0.82"/>
+      <geom name="incubator_door_hinge_pin" type="cylinder" pos="0 0 0.350" size="0.018 0.350" rgba="0.35 0.39 0.42 1"/>
+      <geom name="incubator_door_handle_bracket" type="box" pos="-0.348 -0.0615 0.639676762" size="0.012 0.0365 0.025" rgba="0.10 0.12 0.14 1"/>
+      <geom name="incubator_door_handle" type="box" pos="-0.360 -0.120 0.639676762" size="0.024 0.022 0.092" rgba="0.10 0.12 0.14 1" contype="2" conaffinity="3"/>
+    </body>
+    <body name="incubator_tray" pos="3.750000000 4.080000000 1.150000000">
+      <joint name="incubator_tray_slide_joint" type="slide" axis="0 -1 0" range="0 0.24" damping="1"/>
+      <geom name="incubator_tray_front" type="box" pos="0 0 -0.05" size="0.30 0.025 0.07" rgba="0.30 0.58 0.66 1"/>
+      <geom name="incubator_tray_bottom" type="box" pos="0 0.16 -0.10" size="0.30 0.16 0.018" rgba="0.42 0.68 0.73 1"/>
+      <geom name="incubator_tray_left" type="box" pos="-0.285 0.16 0" size="0.015 0.16 0.10" rgba="0.42 0.68 0.73 1"/>
+      <geom name="incubator_tray_right" type="box" pos="0.285 0.16 0" size="0.015 0.16 0.10" rgba="0.42 0.68 0.73 1"/>
+      <geom name="incubator_tray_handle_bracket" type="box" pos="0 -0.039 0" size="0.024 0.014 0.025" rgba="0.10 0.12 0.14 1"/>
+      <geom name="incubator_tray_handle" type="box" pos="0 -0.075 0" size="0.024 0.022 0.092" rgba="0.10 0.12 0.14 1" contype="2" conaffinity="3"/>
+      <geom name="sample_tube_support" type="box" pos="-0.120 0.100 -0.0085" size="0.040 0.040 0.0735" rgba="0.32 0.55 0.61 1"/>
+      <body name="laboratory_payload" pos="-0.120 0.100 0.180">
+        <joint name="laboratory_payload_x_joint" type="slide" axis="1 0 0" range="-2 2" damping="1"/>
+        <joint name="laboratory_payload_y_joint" type="slide" axis="0 1 0" range="-2 2" damping="1"/>
+        <joint name="laboratory_payload_z_joint" type="slide" axis="0 0 1" range="-1 1" damping="1"/>
+        <geom name="sample_tube_grasp" type="box" size="0.024 0.022 0.092" rgba="0.84 0.25 0.70 1" contype="2" conaffinity="3"/>
+        <geom name="sample_tube_visual" type="cylinder" size="0.032 0.115" rgba="0.90 0.34 0.77 0.88" contype="0" conaffinity="0"/>
+      </body>
+    </body>
+
+    <body name="destination_cold_storage">
+      <geom name="cold_storage_back" type="box" pos="5.09 4.300 0.95" size="0.47 0.025 0.62" rgba="0.62 0.72 0.82 1"/>
+      <geom name="cold_storage_left" type="box" pos="4.650 4.170 0.95" size="0.025 0.13 0.62" rgba="0.62 0.72 0.82 1"/>
+      <geom name="cold_storage_right" type="box" pos="5.535 4.170 0.95" size="0.025 0.13 0.62" rgba="0.62 0.72 0.82 1"/>
+      <geom name="cold_storage_top" type="box" pos="5.09 4.170 1.545" size="0.47 0.13 0.025" rgba="0.43 0.54 0.65 1"/>
+      <geom name="cold_storage_bottom" type="box" pos="5.09 4.170 0.355" size="0.47 0.13 0.025" rgba="0.43 0.54 0.65 1"/>
+      <geom name="cold_storage_shelf" type="box" pos="5.08 4.170 1.155" size="0.38 0.12 0.018" rgba="0.50 0.62 0.72 1"/>
+      <geom name="cold_storage_ground_plinth" type="box" pos="5.09 4.170 0.165" size="0.47 0.13 0.165" rgba="0.36 0.46 0.56 1"/>
+      <geom name="cold_storage_tube_support" type="box" pos="4.870 4.080 1.194" size="0.040 0.040 0.021" rgba="0.44 0.56 0.66 1"/>
+      <geom name="cold_storage_hinge_mount_lower" type="box" pos="5.459 4.0655 0.650" size="0.051 0.025 0.025" rgba="0.31 0.40 0.49 1"/>
+      <geom name="cold_storage_hinge_mount_upper" type="box" pos="5.459 4.0655 1.150" size="0.051 0.025 0.025" rgba="0.31 0.40 0.49 1"/>
+      <site name="laboratory_destination_site" type="sphere" pos="4.87 4.080 1.330" size="0.025" rgba="0 0 0 0"/>
+    </body>
+    <body name="cold_storage_door" pos="5.408670006 4.065531845 0.550000000">
+      <joint name="cold_storage_hinge_joint" type="hinge" axis="0 0 1" range="0 0.80" damping="1"/>
+      <geom name="cold_storage_door_panel" type="box" pos="-0.180 0 0.350" size="0.180 0.025 0.350" rgba="0.50 0.65 0.78 0.90"/>
+      <geom name="cold_storage_door_hinge_pin" type="cylinder" pos="0 0 0.350" size="0.018 0.350" rgba="0.31 0.40 0.49 1"/>
+      <geom name="cold_storage_door_handle_bracket" type="box" pos="-0.348 -0.0615 0.639676762" size="0.012 0.0365 0.025" rgba="0.10 0.12 0.14 1"/>
+      <geom name="cold_storage_door_handle" type="box" pos="-0.360 -0.120 0.639676762" size="0.024 0.022 0.092" rgba="0.10 0.12 0.14 1" contype="2" conaffinity="3"/>
+    </body>
+  </worldbody>
+</mujoco>

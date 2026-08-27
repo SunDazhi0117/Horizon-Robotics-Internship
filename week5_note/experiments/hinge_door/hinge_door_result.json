@@ -1,0 +1,18 @@
+{
+  "model_xml": "/home/users/dazhi.sun-labs/projects/week5_note/experiments/hinge_door/hinge_door.xml",
+  "output_gif": "/home/users/dazhi.sun-labs/projects/week5_note/experiments/hinge_door/hinge_door_opening.gif",
+  "duration_sec": 3.0,
+  "target_angle_rad": 1.35,
+  "success_threshold_rad": 1.2,
+  "final_door_angle_rad": 1.409349222217943,
+  "max_door_angle_rad": 1.7245131682099641,
+  "num_frames": 91,
+  "num_steps": 1501,
+  "success": true,
+  "model_stats": {
+    "nbody": 2,
+    "njnt": 1,
+    "ngeom": 7,
+    "nu": 1
+  }
+}

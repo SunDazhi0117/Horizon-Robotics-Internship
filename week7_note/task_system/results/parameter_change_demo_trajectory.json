@@ -1,0 +1,657 @@
+{
+  "task_name": "reusable_primitives_parameter_change_demo",
+  "state_count": 27,
+  "states": [
+    {
+      "phase": "initial",
+      "base": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "arm_qpos": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "gripper": 0.04,
+      "object_joints": {
+        "cabinet_left_hinge": 0.0,
+        "cabinet_right_hinge": 0.0
+      },
+      "active_target": null
+    },
+    {
+      "phase": "initial_hold",
+      "base": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "arm_qpos": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "gripper": 0.04,
+      "object_joints": {
+        "cabinet_left_hinge": 0.0,
+        "cabinet_right_hinge": 0.0
+      },
+      "active_target": null
+    },
+    {
+      "phase": "initial_hold",
+      "base": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "arm_qpos": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "gripper": 0.04,
+      "object_joints": {
+        "cabinet_left_hinge": 0.0,
+        "cabinet_right_hinge": 0.0
+      },
+      "active_target": null
+    },
+    {
+      "phase": "move_to_changed_work_station",
+      "base": [
+        0.02962962962962963,
+        -0.014814814814814815,
+        0.007407407407407408
+      ],
+      "arm_qpos": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "gripper": 0.04,
+      "object_joints": {
+        "cabinet_left_hinge": 0.0,
+        "cabinet_right_hinge": 0.0
+      },
+      "active_target": null
+    },
+    {
+      "phase": "move_to_changed_work_station",
+      "base": [
+        0.1037037037037037,
+        -0.05185185185185185,
+        0.025925925925925925
+      ],
+      "arm_qpos": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "gripper": 0.04,
+      "object_joints": {
+        "cabinet_left_hinge": 0.0,
+        "cabinet_right_hinge": 0.0
+      },
+      "active_target": null
+    },
+    {
+      "phase": "move_to_changed_work_station",
+      "base": [
+        0.2,
+        -0.1,
+        0.05
+      ],
+      "arm_qpos": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "gripper": 0.04,
+      "object_joints": {
+        "cabinet_left_hinge": 0.0,
+        "cabinet_right_hinge": 0.0
+      },
+      "active_target": null
+    },
+    {
+      "phase": "move_to_changed_work_station",
+      "base": [
+        0.2962962962962963,
+        -0.14814814814814814,
+        0.07407407407407407
+      ],
+      "arm_qpos": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "gripper": 0.04,
+      "object_joints": {
+        "cabinet_left_hinge": 0.0,
+        "cabinet_right_hinge": 0.0
+      },
+      "active_target": null
+    },
+    {
+      "phase": "move_to_changed_work_station",
+      "base": [
+        0.37037037037037035,
+        -0.18518518518518517,
+        0.09259259259259259
+      ],
+      "arm_qpos": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "gripper": 0.04,
+      "object_joints": {
+        "cabinet_left_hinge": 0.0,
+        "cabinet_right_hinge": 0.0
+      },
+      "active_target": null
+    },
+    {
+      "phase": "move_to_changed_work_station",
+      "base": [
+        0.4,
+        -0.2,
+        0.1
+      ],
+      "arm_qpos": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "gripper": 0.04,
+      "object_joints": {
+        "cabinet_left_hinge": 0.0,
+        "cabinet_right_hinge": 0.0
+      },
+      "active_target": null
+    },
+    {
+      "phase": "move_to_changed_work_station",
+      "base": [
+        0.4296296296296297,
+        -0.16296296296296298,
+        0.11851851851851852
+      ],
+      "arm_qpos": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "gripper": 0.04,
+      "object_joints": {
+        "cabinet_left_hinge": 0.0,
+        "cabinet_right_hinge": 0.0
+      },
+      "active_target": null
+    },
+    {
+      "phase": "move_to_changed_work_station",
+      "base": [
+        0.5037037037037037,
+        -0.07037037037037037,
+        0.1648148148148148
+      ],
+      "arm_qpos": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "gripper": 0.04,
+      "object_joints": {
+        "cabinet_left_hinge": 0.0,
+        "cabinet_right_hinge": 0.0
+      },
+      "active_target": null
+    },
+    {
+      "phase": "move_to_changed_work_station",
+      "base": [
+        0.6000000000000001,
+        0.04999999999999999,
+        0.22499999999999998
+      ],
+      "arm_qpos": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "gripper": 0.04,
+      "object_joints": {
+        "cabinet_left_hinge": 0.0,
+        "cabinet_right_hinge": 0.0
+      },
+      "active_target": null
+    },
+    {
+      "phase": "move_to_changed_work_station",
+      "base": [
+        0.6962962962962963,
+        0.17037037037037034,
+        0.28518518518518515
+      ],
+      "arm_qpos": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "gripper": 0.04,
+      "object_joints": {
+        "cabinet_left_hinge": 0.0,
+        "cabinet_right_hinge": 0.0
+      },
+      "active_target": null
+    },
+    {
+      "phase": "move_to_changed_work_station",
+      "base": [
+        0.7703703703703704,
+        0.2629629629629629,
+        0.33148148148148143
+      ],
+      "arm_qpos": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "gripper": 0.04,
+      "object_joints": {
+        "cabinet_left_hinge": 0.0,
+        "cabinet_right_hinge": 0.0
+      },
+      "active_target": null
+    },
+    {
+      "phase": "move_to_changed_work_station",
+      "base": [
+        0.8,
+        0.3,
+        0.35
+      ],
+      "arm_qpos": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "gripper": 0.04,
+      "object_joints": {
+        "cabinet_left_hinge": 0.0,
+        "cabinet_right_hinge": 0.0
+      },
+      "active_target": null
+    },
+    {
+      "phase": "reach_changed_pregrasp",
+      "base": [
+        0.8,
+        0.3,
+        0.35
+      ],
+      "arm_qpos": [
+        0.024999999999999998,
+        -0.03333333333333333,
+        0.041666666666666664,
+        -0.049999999999999996,
+        0.03333333333333333,
+        0.016666666666666666,
+        -0.024999999999999998
+      ],
+      "gripper": 0.04,
+      "object_joints": {
+        "cabinet_left_hinge": 0.0,
+        "cabinet_right_hinge": 0.0
+      },
+      "active_target": null
+    },
+    {
+      "phase": "reach_changed_pregrasp",
+      "base": [
+        0.8,
+        0.3,
+        0.35
+      ],
+      "arm_qpos": [
+        0.049999999999999996,
+        -0.06666666666666667,
+        0.08333333333333333,
+        -0.09999999999999999,
+        0.06666666666666667,
+        0.03333333333333333,
+        -0.049999999999999996
+      ],
+      "gripper": 0.04,
+      "object_joints": {
+        "cabinet_left_hinge": 0.0,
+        "cabinet_right_hinge": 0.0
+      },
+      "active_target": null
+    },
+    {
+      "phase": "reach_changed_pregrasp",
+      "base": [
+        0.8,
+        0.3,
+        0.35
+      ],
+      "arm_qpos": [
+        0.075,
+        -0.1,
+        0.125,
+        -0.15,
+        0.1,
+        0.05,
+        -0.075
+      ],
+      "gripper": 0.04,
+      "object_joints": {
+        "cabinet_left_hinge": 0.0,
+        "cabinet_right_hinge": 0.0
+      },
+      "active_target": null
+    },
+    {
+      "phase": "reach_changed_pregrasp",
+      "base": [
+        0.8,
+        0.3,
+        0.35
+      ],
+      "arm_qpos": [
+        0.09999999999999999,
+        -0.13333333333333333,
+        0.16666666666666666,
+        -0.19999999999999998,
+        0.13333333333333333,
+        0.06666666666666667,
+        -0.09999999999999999
+      ],
+      "gripper": 0.04,
+      "object_joints": {
+        "cabinet_left_hinge": 0.0,
+        "cabinet_right_hinge": 0.0
+      },
+      "active_target": null
+    },
+    {
+      "phase": "reach_changed_pregrasp",
+      "base": [
+        0.8,
+        0.3,
+        0.35
+      ],
+      "arm_qpos": [
+        0.12499999999999999,
+        -0.16666666666666666,
+        0.20833333333333331,
+        -0.24999999999999997,
+        0.16666666666666666,
+        0.08333333333333333,
+        -0.12499999999999999
+      ],
+      "gripper": 0.04,
+      "object_joints": {
+        "cabinet_left_hinge": 0.0,
+        "cabinet_right_hinge": 0.0
+      },
+      "active_target": null
+    },
+    {
+      "phase": "reach_changed_pregrasp",
+      "base": [
+        0.8,
+        0.3,
+        0.35
+      ],
+      "arm_qpos": [
+        0.15,
+        -0.2,
+        0.25,
+        -0.3,
+        0.2,
+        0.1,
+        -0.15
+      ],
+      "gripper": 0.04,
+      "object_joints": {
+        "cabinet_left_hinge": 0.0,
+        "cabinet_right_hinge": 0.0
+      },
+      "active_target": null
+    },
+    {
+      "phase": "grasp_changed_target",
+      "base": [
+        0.8,
+        0.3,
+        0.35
+      ],
+      "arm_qpos": [
+        0.15,
+        -0.2,
+        0.25,
+        -0.3,
+        0.2,
+        0.1,
+        -0.15
+      ],
+      "gripper": 0.034666666666666665,
+      "object_joints": {
+        "cabinet_left_hinge": 0.0,
+        "cabinet_right_hinge": 0.0
+      },
+      "active_target": "cabinet_right_handle"
+    },
+    {
+      "phase": "grasp_changed_target",
+      "base": [
+        0.8,
+        0.3,
+        0.35
+      ],
+      "arm_qpos": [
+        0.15,
+        -0.2,
+        0.25,
+        -0.3,
+        0.2,
+        0.1,
+        -0.15
+      ],
+      "gripper": 0.02933333333333334,
+      "object_joints": {
+        "cabinet_left_hinge": 0.0,
+        "cabinet_right_hinge": 0.0
+      },
+      "active_target": "cabinet_right_handle"
+    },
+    {
+      "phase": "grasp_changed_target",
+      "base": [
+        0.8,
+        0.3,
+        0.35
+      ],
+      "arm_qpos": [
+        0.15,
+        -0.2,
+        0.25,
+        -0.3,
+        0.2,
+        0.1,
+        -0.15
+      ],
+      "gripper": 0.024,
+      "object_joints": {
+        "cabinet_left_hinge": 0.0,
+        "cabinet_right_hinge": 0.0
+      },
+      "active_target": "cabinet_right_handle"
+    },
+    {
+      "phase": "grasp_changed_target",
+      "base": [
+        0.8,
+        0.3,
+        0.35
+      ],
+      "arm_qpos": [
+        0.15,
+        -0.2,
+        0.25,
+        -0.3,
+        0.2,
+        0.1,
+        -0.15
+      ],
+      "gripper": 0.018666666666666668,
+      "object_joints": {
+        "cabinet_left_hinge": 0.0,
+        "cabinet_right_hinge": 0.0
+      },
+      "active_target": "cabinet_right_handle"
+    },
+    {
+      "phase": "grasp_changed_target",
+      "base": [
+        0.8,
+        0.3,
+        0.35
+      ],
+      "arm_qpos": [
+        0.15,
+        -0.2,
+        0.25,
+        -0.3,
+        0.2,
+        0.1,
+        -0.15
+      ],
+      "gripper": 0.013333333333333336,
+      "object_joints": {
+        "cabinet_left_hinge": 0.0,
+        "cabinet_right_hinge": 0.0
+      },
+      "active_target": "cabinet_right_handle"
+    },
+    {
+      "phase": "grasp_changed_target",
+      "base": [
+        0.8,
+        0.3,
+        0.35
+      ],
+      "arm_qpos": [
+        0.15,
+        -0.2,
+        0.25,
+        -0.3,
+        0.2,
+        0.1,
+        -0.15
+      ],
+      "gripper": 0.008,
+      "object_joints": {
+        "cabinet_left_hinge": 0.0,
+        "cabinet_right_hinge": 0.0
+      },
+      "active_target": "cabinet_right_handle"
+    }
+  ],
+  "action_ranges": [
+    {
+      "action_index": 0,
+      "action": "hold_pose",
+      "phase": "initial_hold",
+      "start_state_index": 1,
+      "end_state_index": 2
+    },
+    {
+      "action_index": 1,
+      "action": "move_base",
+      "phase": "move_to_changed_work_station",
+      "start_state_index": 3,
+      "end_state_index": 14
+    },
+    {
+      "action_index": 2,
+      "action": "move_arm",
+      "phase": "reach_changed_pregrasp",
+      "start_state_index": 15,
+      "end_state_index": 20
+    },
+    {
+      "action_index": 3,
+      "action": "change_gripper",
+      "phase": "grasp_changed_target",
+      "start_state_index": 21,
+      "end_state_index": 26
+    }
+  ]
+}

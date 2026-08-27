@@ -1,0 +1,212 @@
+{
+  "scene_xml": "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/articulated_demo_mujoco/xml/articulated_demo_with_actuators.xml",
+  "duration": 4.0,
+  "timestep": 0.002,
+  "steps": 2000,
+  "actuator_count": 8,
+  "joint_count": 8,
+  "all_finite": true,
+  "contact_count_final": 0,
+  "task_results": {
+    "open_entry_door": {
+      "joint": "frame_to_door",
+      "value": 1.1999989185735154,
+      "threshold": 1.0,
+      "passed": true
+    },
+    "open_left_cabinet_door": {
+      "joint": "left_hinge",
+      "value": 1.1999989185735154,
+      "threshold": 1.0,
+      "passed": true
+    },
+    "open_right_cabinet_door": {
+      "joint": "right_hinge",
+      "value": 1.1999989185735154,
+      "threshold": 1.0,
+      "passed": true
+    },
+    "open_microwave_door": {
+      "joint": "body_to_front_door",
+      "value": 1.2499988735140781,
+      "threshold": 1.0,
+      "passed": true
+    },
+    "extend_microwave_tray": {
+      "joint": "body_to_sliding_tray",
+      "value": 0.21218268486304268,
+      "threshold": 0.14,
+      "passed": true
+    }
+  },
+  "samples": [
+    {
+      "time": 0.002,
+      "frame_to_door": 0.0,
+      "left_hinge": 0.0,
+      "right_hinge": 0.0,
+      "body_to_front_door": 0.0,
+      "body_to_sliding_tray": 0.0
+    },
+    {
+      "time": 0.20200000000000015,
+      "frame_to_door": 0.1205706899530447,
+      "left_hinge": 0.1205706899530447,
+      "right_hinge": 0.1205706899530447,
+      "body_to_front_door": 0.1255944687010882,
+      "body_to_sliding_tray": 0.0021340986172150396
+    },
+    {
+      "time": 0.4020000000000003,
+      "frame_to_door": 0.23659593465583773,
+      "left_hinge": 0.23659593465583773,
+      "right_hinge": 0.23659593465583773,
+      "body_to_front_door": 0.24645409859983103,
+      "body_to_sliding_tray": 0.015014129380066098
+    },
+    {
+      "time": 0.6020000000000004,
+      "frame_to_door": 0.354338760860333,
+      "left_hinge": 0.354338760860333,
+      "right_hinge": 0.354338760860333,
+      "body_to_front_door": 0.3691028758961801,
+      "body_to_sliding_tray": 0.041862992853204835
+    },
+    {
+      "time": 0.8020000000000006,
+      "frame_to_door": 0.47365034408126333,
+      "left_hinge": 0.47365034408126333,
+      "right_hinge": 0.47365034408126333,
+      "body_to_front_door": 0.4933857750846494,
+      "body_to_sliding_tray": 0.07646624441389532
+    },
+    {
+      "time": 1.0020000000000007,
+      "frame_to_door": 0.5935846155780162,
+      "left_hinge": 0.5935846155780162,
+      "right_hinge": 0.5935846155780162,
+      "body_to_front_door": 0.6183173078937667,
+      "body_to_sliding_tray": 0.10752903893345295
+    },
+    {
+      "time": 1.2020000000000008,
+      "frame_to_door": 0.7136436167016126,
+      "left_hinge": 0.7136436167016126,
+      "right_hinge": 0.7136436167016126,
+      "body_to_front_door": 0.7433787673975132,
+      "body_to_sliding_tray": 0.12635592204308882
+    },
+    {
+      "time": 1.402000000000001,
+      "frame_to_door": 0.8336850254891607,
+      "left_hinge": 0.8336850254891607,
+      "right_hinge": 0.8336850254891607,
+      "body_to_front_door": 0.8684219015512092,
+      "body_to_sliding_tray": 0.13263429200836904
+    },
+    {
+      "time": 1.6020000000000012,
+      "frame_to_door": 0.9536995758409732,
+      "left_hinge": 0.9536995758409732,
+      "right_hinge": 0.9536995758409732,
+      "body_to_front_door": 0.9934370581676805,
+      "body_to_sliding_tray": 0.134478190325229
+    },
+    {
+      "time": 1.8020000000000014,
+      "frame_to_door": 1.0737018345120608,
+      "left_hinge": 1.0737018345120608,
+      "right_hinge": 1.0737018345120608,
+      "body_to_front_door": 1.1184394109500633,
+      "body_to_sliding_tray": 0.1428166780017218
+    },
+    {
+      "time": 2.002000000000001,
+      "frame_to_door": 1.1937010639684773,
+      "left_hinge": 1.1937010639684773,
+      "right_hinge": 1.1937010639684773,
+      "body_to_front_door": 1.243438608300497,
+      "body_to_sliding_tray": 0.16400435025211
+    },
+    {
+      "time": 2.201999999999979,
+      "frame_to_door": 1.1931296399411386,
+      "left_hinge": 1.1931296399411386,
+      "right_hinge": 1.1931296399411386,
+      "body_to_front_door": 1.2428433749386867,
+      "body_to_sliding_tray": 0.19351367264773287
+    },
+    {
+      "time": 2.401999999999957,
+      "frame_to_door": 1.1971040992828592,
+      "left_hinge": 1.1971040992828592,
+      "right_hinge": 1.1971040992828592,
+      "body_to_front_door": 1.2469834367529782,
+      "body_to_sliding_tray": 0.21337062232332119
+    },
+    {
+      "time": 2.601999999999935,
+      "frame_to_door": 1.199361212203797,
+      "left_hinge": 1.199361212203797,
+      "right_hinge": 1.199361212203797,
+      "body_to_front_door": 1.2493345960456217,
+      "body_to_sliding_tray": 0.21044166142369547
+    },
+    {
+      "time": 2.801999999999913,
+      "frame_to_door": 1.200049636471636,
+      "left_hinge": 1.200049636471636,
+      "right_hinge": 1.200049636471636,
+      "body_to_front_door": 1.2500517046579547,
+      "body_to_sliding_tray": 0.18714336304477516
+    },
+    {
+      "time": 3.001999999999891,
+      "frame_to_door": 1.2001153774818665,
+      "left_hinge": 1.2001153774818665,
+      "right_hinge": 1.2001153774818665,
+      "body_to_front_door": 1.2501201848769445,
+      "body_to_sliding_tray": 0.15951293100113964
+    },
+    {
+      "time": 3.201999999999869,
+      "frame_to_door": 1.2000563821791361,
+      "left_hinge": 1.2000563821791361,
+      "right_hinge": 1.2000563821791361,
+      "body_to_front_door": 1.2500587314365996,
+      "body_to_sliding_tray": 0.14617704296223924
+    },
+    {
+      "time": 3.401999999999847,
+      "frame_to_door": 1.2000149748553888,
+      "left_hinge": 1.2000149748553888,
+      "right_hinge": 1.2000149748553888,
+      "body_to_front_door": 1.2500155988076964,
+      "body_to_sliding_tray": 0.15580148367848365
+    },
+    {
+      "time": 3.601999999999825,
+      "frame_to_door": 1.2000004245023548,
+      "left_hinge": 1.2000004245023548,
+      "right_hinge": 1.2000004245023548,
+      "body_to_front_door": 1.2500004421899527,
+      "body_to_sliding_tray": 0.18147334544988752
+    },
+    {
+      "time": 3.801999999999803,
+      "frame_to_door": 1.1999981656285441,
+      "left_hinge": 1.1999981656285441,
+      "right_hinge": 1.1999981656285441,
+      "body_to_front_door": 1.2499980891963995,
+      "body_to_sliding_tray": 0.20564825867109074
+    }
+  ],
+  "outputs": {
+    "start_png": "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/articulated_demo_mujoco/outputs/actuator_demo_start.png",
+    "final_png": "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/articulated_demo_mujoco/outputs/actuator_demo_final.png",
+    "motion_gif": "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/articulated_demo_mujoco/outputs/actuator_demo_motion.gif"
+  },
+  "passed": true,
+  "status": "PASS",
+  "note": "Actuator-driven joint demo using data.ctrl and mj_step; no robot yet."
+}

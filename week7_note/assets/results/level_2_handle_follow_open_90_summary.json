@@ -1,0 +1,22 @@
+{
+  "task_name": "level_2_handle_follow_open_90",
+  "scope": "accepted Level 1 grasp followed rigidly with the cabinet door to 90 degrees",
+  "passed_full_validation": true,
+  "target_hinge_angle": 1.5707963267948966,
+  "final_hinge_angle": 1.5707963267948966,
+  "open_sample_count": 49,
+  "max_gripper_to_handle_distance": 0.05320516177184609,
+  "min_handle_unique_finger_contacts": 2.0,
+  "max_hand_position_error": 1.486761167072096e-07,
+  "max_hand_rotation_error": 7.271780290922541e-07,
+  "visual_overlap_failure_count": 0,
+  "forbidden_handle_contact_failure_count": 0,
+  "door_slab_contact_failure_count": 0,
+  "first_visual_failures": [],
+  "motion_gif": "/home/users/dazhi.sun-labs/projects/week7_note/assets/videos/level_2_handle_follow_open_90.gif",
+  "top_view_gif": "/home/users/dazhi.sun-labs/projects/week7_note/assets/videos/level_2_handle_follow_open_90_top_view.gif",
+  "trajectory": "/home/users/dazhi.sun-labs/projects/week7_note/assets/results/level_2_handle_follow_open_90_trajectory.json",
+  "frame_sheet": "/home/users/dazhi.sun-labs/projects/week7_note/assets/images/level_2_handle_follow_open_90_frames_sheet.png",
+  "top_frame_sheet": "/home/users/dazhi.sun-labs/projects/week7_note/assets/images/level_2_handle_follow_open_90_top_frames_sheet.png",
+  "note": "The hand-to-door transform is fixed from the accepted Level 1 grasp; every rendered opening frame is solved and validated directly."
+}

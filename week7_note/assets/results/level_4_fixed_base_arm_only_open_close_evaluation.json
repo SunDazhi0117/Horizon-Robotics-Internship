@@ -1,0 +1,59 @@
+{
+  "evaluation_name": "level_4_fixed_base_arm_only_open_close_local_evaluation",
+  "task_name": "fixed_base_open_and_close_cabinet_door",
+  "instruction": "Keep the mobile base fixed, hold the right-door handle, open the cabinet to 90 degrees, and close it again.",
+  "description": "The Panda uses only its seven arm joints while both fingers remain on the handle throughout a complete open-close cycle.",
+  "platform": "MuJoCo local simulation",
+  "category": "Long-Horizon (primary), Precision (secondary)",
+  "data_source": "Validated scripted arm-only kinematic trajectory",
+  "usage": "Local deterministic evaluation only",
+  "adapted_scoring": {
+    "0": "The door does not open to at least 85 degrees, does not close below 5 degrees, the base moves, the grasp is lost, or any forbidden overlap/collision occurs.",
+    "100": "The fixed-base arm completes the open-close cycle while both fingers retain the handle and every safety gate passes."
+  },
+  "local_single_episode_score": 100,
+  "local_single_episode_success": true,
+  "checks": {
+    "door_opened_at_least_85_deg": true,
+    "door_closed_back_below_5_deg": true,
+    "mobile_base_remained_fixed": true,
+    "both_fingers_contacted_handle_throughout": true,
+    "gripper_remained_near_handle": true,
+    "arm_motion_remained_continuous": true,
+    "no_whole_cabinet_visual_overlap": true,
+    "no_forbidden_handle_contact": true,
+    "no_door_slab_collision": true
+  },
+  "measured_values": {
+    "maximum_hinge_angle_rad": 1.5707963267948966,
+    "maximum_hinge_angle_deg": 90.0,
+    "final_closed_hinge_angle_rad": 0.0,
+    "final_closed_hinge_angle_deg": 0.0,
+    "maximum_base_drift": 0.0,
+    "total_validated_sample_count": 149,
+    "max_gripper_to_handle_distance_m": 0.053205145431453986,
+    "minimum_unique_finger_contacts": 2.0,
+    "max_joint_step_rad": 0.11135311551180505,
+    "cabinet_visual_overlap_failure_count": 0,
+    "forbidden_handle_contact_failure_count": 0,
+    "door_slab_collision_failure_count": 0
+  },
+  "robodojo_official_status": {
+    "official_score": null,
+    "eligible_as_official_result": false,
+    "reasons": [
+      "This is a custom fixed-base cabinet open-close task.",
+      "The run uses MuJoCo rather than the official Isaac Sim evaluation environment.",
+      "The motion is a scripted kinematic trajectory rather than a closed-loop policy.",
+      "Only one deterministic episode was evaluated without scene randomization."
+    ]
+  },
+  "capability_coverage": {
+    "precision": "demonstrated in one fixed scene and initial state",
+    "long_horizon": "demonstrated across grasp retention, opening, and closing stages",
+    "generalization": "not evaluated",
+    "memory": "not evaluated",
+    "open_vocabulary_instruction_following": "not evaluated"
+  },
+  "source_summary": "/home/users/dazhi.sun-labs/projects/week7_note/assets/results/level_4_fixed_base_arm_only_open_close_summary.json"
+}

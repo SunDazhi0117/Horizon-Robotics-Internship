@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Week7 MuJoCo Cabinet Task</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #101418;
+      color: #f3f5f7;
+    }
+    body {
+      margin: 0;
+      padding: 28px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 30px;
+    }
+    h2 {
+      margin-top: 34px;
+    }
+    p {
+      max-width: 980px;
+      color: #bec7d0;
+      line-height: 1.5;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      gap: 18px;
+      margin-top: 20px;
+    }
+    figure {
+      margin: 0;
+      border: 1px solid #2b343d;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #171d23;
+    }
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      background: #050607;
+    }
+    figcaption {
+      padding: 10px 12px;
+      color: #d9dee4;
+      font-size: 14px;
+    }
+    code {
+      color: #d7e7ff;
+      background: #1e2832;
+      padding: 2px 5px;
+      border-radius: 4px;
+    }
+    .pass {
+      color: #99e6b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Week7 MuJoCo Cabinet Task</h1>
+  <p>
+    Five representative results are organized by task difficulty: grasping the handle,
+    opening while following the handle, opening with the mobile base locked, and completing
+    a fixed-base open-close cycle, followed by sequentially opening both cabinet doors.
+  </p>
+
+  <h2>Level 1: Handle Grasp</h2>
+  <p>
+    The first level establishes the accepted approach and grasp. Only the left and right fingers contact
+    the handle, with no visible overlap from the hand or arm.
+  </p>
+  <div class="grid">
+    <figure>
+      <img src="assets/videos/level_1_handle_grasp.gif" alt="Level 1 handle grasp diagonal view">
+      <figcaption>Level 1 diagonal view: approach and grasp without visual overlap.</figcaption>
+    </figure>
+    <figure>
+      <img src="assets/videos/level_1_handle_grasp_top_view.gif" alt="Level 1 handle grasp top view">
+      <figcaption>Level 1 top view: handle placement between both fingers.</figcaption>
+    </figure>
+  </div>
+
+  <h2>Level 2: Handle-Follow Opening</h2>
+  <p>
+    The second level starts from the accepted grasp and preserves the hand-to-door transform at every
+    opening angle. It opens the right cabinet door to 90 degrees without losing the handle.
+  </p>
+  <div class="grid">
+    <figure>
+      <img src="assets/videos/level_2_handle_follow_open_90.gif" alt="Level 2 handle-follow opening diagonal view">
+      <figcaption>Level 2 diagonal view: approach, grasp, and continuous opening to 90 degrees.</figcaption>
+    </figure>
+    <figure>
+      <img src="assets/videos/level_2_handle_follow_open_90_top_view.gif" alt="Level 2 handle-follow opening top view">
+      <figcaption>Level 2 top view: both fingers remain on the moving handle.</figcaption>
+    </figure>
+  </div>
+  <p class="pass">
+    Local validation: PASS. Final angle: <code>90 deg</code>.
+    Opening samples: <code>49</code>. Minimum finger contacts: <code>2</code>.
+    Visual-overlap failures: <code>0</code>. Door-slab collision failures: <code>0</code>.
+  </p>
+  <p>
+    RoboDojo-style local deterministic score: <code>100/100</code>.
+    Official RoboDojo score: <code>N/A</code>, because this is a scripted MuJoCo trajectory,
+    not an official Isaac Sim policy rollout.
+  </p>
+
+  <h2>Level 3: Fixed-Base Arm-Only Opening</h2>
+  <p>
+    The third level begins from a validated two-finger grasp. The mobile base stays at one fixed
+    position and yaw; only the Panda's seven arm joints move while the door opens.
+  </p>
+  <div class="grid">
+    <figure>
+      <img src="assets/videos/level_3_fixed_base_arm_only_open_90.gif" alt="Level 3 fixed-base arm-only opening diagonal view">
+      <figcaption>Level 3 diagonal view: the arm bends and twists while the base remains fixed.</figcaption>
+    </figure>
+    <figure>
+      <img src="assets/videos/level_3_fixed_base_arm_only_open_90_top_view.gif" alt="Level 3 fixed-base arm-only opening top view">
+      <figcaption>Level 3 top view: fixed base and continuous handle following to 90 degrees.</figcaption>
+    </figure>
+  </div>
+  <p class="pass">
+    Candidate validation: PASS. Base drift: <code>0.0 m/rad</code>.
+    Final angle: <code>90 deg</code>. Opening samples: <code>65</code>.
+    Minimum finger contacts: <code>2</code>. Visual-overlap failures: <code>0</code>.
+    Door-slab collision failures: <code>0</code>.
+  </p>
+
+  <h2>Level 4: Fixed-Base Arm-Only Open-Close</h2>
+  <p>
+    The fourth level extends the accepted Level 3 motion into a complete cycle. The Panda
+    keeps both fingers on the handle, opens the right door to 90 degrees, and closes it
+    back to zero while the mobile base remains fixed.
+  </p>
+  <div class="grid">
+    <figure>
+      <img src="assets/videos/level_4_fixed_base_arm_only_open_close.gif" alt="Level 4 fixed-base open-close diagonal view">
+      <figcaption>Level 4 diagonal view: continuous fixed-base opening and closing.</figcaption>
+    </figure>
+    <figure>
+      <img src="assets/videos/level_4_fixed_base_arm_only_open_close_top_view.gif" alt="Level 4 fixed-base open-close top view">
+      <figcaption>Level 4 top view: the base remains fixed and the grasp follows the handle.</figcaption>
+    </figure>
+  </div>
+  <p class="pass">
+    Validation: PASS. Base drift: <code>0.0 m/rad</code>.
+    Maximum angle: <code>90 deg</code>. Final angle: <code>0 deg</code>.
+    Validated states: <code>149</code>. Minimum finger contacts: <code>2</code>.
+    Whole-cabinet visual-overlap failures: <code>0</code>.
+    Door-slab collision failures: <code>0</code>.
+    Local deterministic score: <code>100/100</code>.
+  </p>
+
+  <h2>Level 5: Sequential Double-Door Opening</h2>
+  <p>
+    The fifth level combines two precise door operations into one longer task. The Panda opens
+    the right door to 90 degrees, releases it, retreats along a checked clearance route, moves
+    to the left work station, grasps the second handle, and opens the left door to 90 degrees.
+    The right opening uses a locked base; the left opening uses a checked base-and-arm
+    retreat that keeps the robot clear of the neighboring microwave cabinet.
+  </p>
+  <div class="grid">
+    <figure>
+      <img src="assets/videos/level_5_sequential_open_both_doors.gif" alt="Level 5 sequential double-door opening diagonal view">
+      <figcaption>Level 5 diagonal view: right opening, safe transfer, and left opening.</figcaption>
+    </figure>
+    <figure>
+      <img src="assets/videos/level_5_sequential_open_both_doors_top_view.gif" alt="Level 5 sequential double-door opening top view">
+      <figcaption>Level 5 top view: rear clearance route and both final 90-degree door poses.</figcaption>
+    </figure>
+    <figure>
+      <img src="assets/videos/level_5_sequential_open_both_doors_right_side_view.gif" alt="Level 5 sequential double-door opening right-side view">
+      <figcaption>Level 5 right-side view: fixed opposite-side camera for inspecting handle contact and nearby furniture clearance.</figcaption>
+    </figure>
+  </div>
+  <p class="pass">
+    Validation: PASS. Final angles: <code>right 90 deg</code>, <code>left 90 deg</code>.
+    Validated states: <code>429</code>. Right-opening base drift: <code>0.0</code>.
+    Minimum finger contacts: <code>2 per handle</code>.
+    Full-environment visual-overlap failures: <code>0</code>.
+    Forbidden active-handle contacts: <code>0</code>.
+    Local deterministic score: <code>100/100</code>.
+  </p>
+
+</body>
+</html>

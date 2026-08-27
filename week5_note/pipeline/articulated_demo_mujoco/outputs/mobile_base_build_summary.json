@@ -1,0 +1,16 @@
+{
+  "input_xml": "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/articulated_demo_mujoco/xml/articulated_demo_with_actuators.xml",
+  "output_xml": "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/articulated_demo_mujoco/xml/articulated_demo_with_mobile_base.xml",
+  "robot": "simple_mobile_base",
+  "robot_joints": [
+    "base_x",
+    "base_y",
+    "base_yaw"
+  ],
+  "robot_actuators": [
+    "base_x_pos",
+    "base_y_pos",
+    "base_yaw_pos"
+  ],
+  "note": "Minimal geometric mobile base, not a real robot URDF."
+}

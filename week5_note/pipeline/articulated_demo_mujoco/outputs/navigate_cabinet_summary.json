@@ -1,0 +1,31 @@
+{
+  "scene_xml": "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/articulated_demo_mujoco/xml/articulated_demo_stretch_to_cabinet.xml",
+  "task_name": "stretch_navigate_to_cabinet_front",
+  "start_xy": [
+    3.35,
+    2.95
+  ],
+  "target_xy": [
+    4.45,
+    2.95
+  ],
+  "success_radius": 0.35,
+  "final_xy": [
+    4.100149166149352,
+    2.951805435292614
+  ],
+  "final_distance_to_target": 0.34985549237162133,
+  "elapsed_time": 5.589999999999606,
+  "path_sample_count": 2796,
+  "all_finite": true,
+  "contact_count_final": 5,
+  "passed": true,
+  "outputs": {
+    "start_top": "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/articulated_demo_mujoco/outputs/navigate_cabinet_start_top.png",
+    "start_diag": "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/articulated_demo_mujoco/outputs/navigate_cabinet_start_diag.png",
+    "final_top": "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/articulated_demo_mujoco/outputs/navigate_cabinet_final_top.png",
+    "final_diag": "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/articulated_demo_mujoco/outputs/navigate_cabinet_final_diag.png",
+    "motion_gif": "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/articulated_demo_mujoco/outputs/navigate_cabinet_motion.gif"
+  },
+  "note": "First navigation task: Stretch drives toward a cabinet-front goal marker. No manipulation yet."
+}

@@ -1,0 +1,38 @@
+Create a simple continuous rotary knob as an articulated object.
+
+Coordinate convention:
+- X is left-right width.
+- Y is front-back depth.
+- Z is vertical height.
+- The knob should rotate around the vertical Z axis.
+
+Object structure:
+- One fixed base as the root part.
+- One movable knob as the child part.
+
+Base:
+- Use a simple square or circular-looking base made from box geometry.
+- Add a small vertical center spindle to support the knob.
+
+Knob:
+- Use simple box geometry to create a round-ish knob shape.
+- The knob should sit above the base.
+- Add a visual indicator mark on the top of the knob so rotation is visible.
+- The knob should rotate around its own center, not orbit around the base.
+
+Joint:
+- Use exactly one CONTINUOUS joint.
+- Parent: base.
+- Child: knob.
+- Axis: (0, 0, 1).
+- The joint origin should be at the center of the knob.
+- Do not use finite lower or upper angular limits.
+- Include reasonable effort and velocity limits if needed.
+
+Validation tests:
+- Check that the base is the root part.
+- Check that there is exactly one continuous joint.
+- Check that the joint parent is the base and child is the knob.
+- Check that the joint axis is vertical.
+- Check that the knob rotates in place around its center.
+- Check that the knob remains visually supported by the spindle.

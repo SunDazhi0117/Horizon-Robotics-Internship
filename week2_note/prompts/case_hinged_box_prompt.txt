@@ -1,0 +1,43 @@
+Create a simple box with an openable hinged lid as an articulated object.
+
+Coordinate convention:
+- X is left-right width.
+- Y is front-back depth.
+- Z is vertical height.
+- The lid should open upward by rotating around the back edge of the box.
+
+Object structure:
+- One fixed box body as the root part.
+- One movable lid as the child part.
+
+Box body:
+- Use simple box geometry.
+- The box should look like an open container.
+- Include bottom panel, left wall, right wall, front wall, and back wall.
+- Leave the top open.
+
+Lid:
+- Use a thin rectangular box as the lid panel.
+- Add a small handle on the front side of the lid.
+- The lid should cover the top opening in the closed position.
+- The lid should be hinged at the back edge of the box.
+- Avoid interpenetration with the box walls.
+
+Joint:
+- Use exactly one REVOLUTE joint.
+- Parent: box body.
+- Child: lid.
+- The hinge origin should be located along the back upper edge of the box.
+- The hinge axis should be along the X axis.
+- Closed position: 0.
+- Open position: about 100 degrees.
+- Use motion limits lower=0 and upper about 1.75 radians.
+
+Validation tests:
+- Check that the box body is the root part.
+- Check that there is exactly one revolute joint.
+- Check that the joint parent is the box body and child is the lid.
+- Check that the hinge origin is near the back upper edge.
+- Check that the lid rotates around the back edge, not around its center.
+- Check that the lid covers the box in the closed pose.
+- Check that the lid opens upward in the open pose.

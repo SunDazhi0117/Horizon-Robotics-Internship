@@ -1,0 +1,44 @@
+{
+  "task_name": "panda_open_close_cabinet",
+  "scope": "reach, grasp visible handle, open cabinet to 90 degrees, then close it again",
+  "target_open_hinge_angle": 1.57079632679,
+  "final_closed_hinge_angle": 0.0,
+  "max_hinge_angle": 1.570796,
+  "min_hinge_angle": 0.0,
+  "open_sample": {
+    "hinge": 1.57079632679,
+    "gripper_to_handle_distance": 0.0003663684912247948,
+    "tool_axis_z_abs": 1.5345183385084837e-07,
+    "finger_xy_separation": 0.03799999999987886,
+    "finger_z_separation": 9.603348494202635e-08,
+    "handle_unique_finger_contacts": 2.0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "forbidden_door_slab_min_dist": 0.0
+  },
+  "closed_before_release_sample": {
+    "hinge": 0.0,
+    "gripper_to_handle_distance": 6.935183685570546e-07,
+    "tool_axis_z_abs": 2.6564192880107473e-07,
+    "finger_xy_separation": 0.03799999999998209,
+    "finger_z_separation": 3.709052509570654e-08,
+    "handle_unique_finger_contacts": 2.0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "forbidden_door_slab_min_dist": 0.0
+  },
+  "max_gripper_to_handle_distance": 0.006353693880117169,
+  "max_tool_axis_z_abs": 0.005876159097589838,
+  "max_finger_z_separation": 0.00022436817375681706,
+  "min_finger_xy_separation": 0.037999337611629505,
+  "grasp_finger_opening": 0.019,
+  "min_handle_unique_finger_contacts": 0.0,
+  "max_forbidden_door_slab_contact_count": 0.0,
+  "passed_numeric": true,
+  "requires_visual_review": true,
+  "motion_gif": "/home/users/dazhi.sun-labs/projects/week6_note/assets/videos/panda_open_close_cabinet.gif",
+  "frame_sheet": "/home/users/dazhi.sun-labs/projects/week6_note/assets/images/panda_open_close_cabinet_frames_sheet.png",
+  "outputs": {
+    "open_diag": "/home/users/dazhi.sun-labs/projects/week6_note/assets/images/panda_open_close_cabinet_open_diag.png",
+    "closed_final_diag": "/home/users/dazhi.sun-labs/projects/week6_note/assets/images/panda_open_close_cabinet_closed_final_diag.png",
+    "closed_final_top": "/home/users/dazhi.sun-labs/projects/week6_note/assets/images/panda_open_close_cabinet_closed_final_top.png"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "task_name": "level_5_sequential_open_both_doors",
+  "scope": "open the right cabinet door, reposition safely, then open the left cabinet door",
+  "passed_full_validation": true,
+  "right_opening_base_locked": true,
+  "left_opening_base_locked": false,
+  "left_opening_uses_controlled_base_motion": true,
+  "base_moved_only_in_planned_phases": true,
+  "right_opening_maximum_base_drift": 0.0,
+  "left_opening_maximum_base_drift": 0.5780138406647372,
+  "left_opening_start_base": [
+    4.49,
+    3.6,
+    -0.05
+  ],
+  "left_opening_end_base": [
+    4.2,
+    3.3,
+    -0.45
+  ],
+  "left_opening_base_displacement": 0.5780138406647372,
+  "base_motion_outside_planned_phase_count": 0,
+  "right_hinge_motion_outside_open_phase_count": 0,
+  "left_hinge_motion_outside_open_phase_count": 0,
+  "right_opening_monotonic": true,
+  "left_opening_monotonic": true,
+  "right_work_base": [
+    4.49,
+    2.3,
+    0.05
+  ],
+  "left_work_base": [
+    4.49,
+    3.6,
+    -0.05
+  ],
+  "target_angle_each_door": 1.5707963267948966,
+  "final_right_hinge_angle": 1.5707963267948966,
+  "final_left_hinge_angle": 1.5707963267948966,
+  "right_open_sample_count": 65,
+  "left_open_sample_count": 65,
+  "total_validated_sample_count": 429,
+  "right_max_gripper_to_handle_distance": 0.053205145431453986,
+  "left_max_gripper_to_handle_distance": 0.05320514543144133,
+  "right_min_unique_finger_contacts": 2,
+  "left_min_unique_finger_contacts": 2,
+  "max_base_command_error": 0.0,
+  "max_joint_step": 0.11135311551180505,
+  "environment_geom_count_checked": 93,
+  "environment_visual_overlap_failure_count": 0,
+  "forbidden_active_handle_contact_failure_count": 0,
+  "right_retreat_base": [
+    3.85,
+    2.3,
+    0.05
+  ],
+  "left_staging_base": [
+    3.4,
+    3.2,
+    -0.05
+  ],
+  "left_preapproach_base": [
+    3.4,
+    3.6,
+    -0.05
+  ],
+  "motion_gif": "/home/users/dazhi.sun-labs/projects/week7_note/assets/videos/level_5_sequential_open_both_doors.gif",
+  "top_view_gif": "/home/users/dazhi.sun-labs/projects/week7_note/assets/videos/level_5_sequential_open_both_doors_top_view.gif",
+  "right_side_view_gif": "/home/users/dazhi.sun-labs/projects/week7_note/assets/videos/level_5_sequential_open_both_doors_right_side_view.gif",
+  "trajectory": "/home/users/dazhi.sun-labs/projects/week7_note/assets/results/level_5_sequential_open_both_doors_trajectory.json",
+  "frame_sheet": "/home/users/dazhi.sun-labs/projects/week7_note/assets/images/level_5_sequential_open_both_doors_frames_sheet.png",
+  "top_frame_sheet": "/home/users/dazhi.sun-labs/projects/week7_note/assets/images/level_5_sequential_open_both_doors_top_frames_sheet.png",
+  "right_side_frame_sheet": "/home/users/dazhi.sun-labs/projects/week7_note/assets/images/level_5_sequential_open_both_doors_right_side_frames_sheet.png",
+  "task_xml": "/home/users/dazhi.sun-labs/projects/week7_note/xml/level_5_sequential_open_both_doors.xml",
+  "note": "The base is locked while opening the right door. After releasing the right handle, the robot tucks the arm and follows a checked clearance route. The left door then uses coordinated base and arm motion to keep clear of the adjacent cabinet."
+}

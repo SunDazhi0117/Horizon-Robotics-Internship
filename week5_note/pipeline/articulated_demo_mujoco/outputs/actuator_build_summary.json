@@ -1,0 +1,55 @@
+{
+  "input_xml": "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/articulated_demo_mujoco/xml/articulated_demo_with_joints.xml",
+  "output_xml": "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/articulated_demo_mujoco/xml/articulated_demo_with_actuators.xml",
+  "actuator_count": 8,
+  "actuators": [
+    {
+      "name": "frame_to_door_pos",
+      "joint": "frame_to_door",
+      "ctrlrange": "0 1.5708",
+      "kp": "8"
+    },
+    {
+      "name": "left_hinge_pos",
+      "joint": "left_hinge",
+      "ctrlrange": "0 1.5708",
+      "kp": "8"
+    },
+    {
+      "name": "right_hinge_pos",
+      "joint": "right_hinge",
+      "ctrlrange": "0 1.5708",
+      "kp": "8"
+    },
+    {
+      "name": "body_to_front_door_pos",
+      "joint": "body_to_front_door",
+      "ctrlrange": "0 1.75",
+      "kp": "8"
+    },
+    {
+      "name": "body_to_sliding_tray_pos",
+      "joint": "body_to_sliding_tray",
+      "ctrlrange": "0 0.22",
+      "kp": "18"
+    },
+    {
+      "name": "tray_to_turntable_pos",
+      "joint": "tray_to_turntable",
+      "ctrlrange": "-6.2832 6.2832",
+      "kp": "3"
+    },
+    {
+      "name": "body_to_upper_knob_pos",
+      "joint": "body_to_upper_knob",
+      "ctrlrange": "-3.1416 3.1416",
+      "kp": "3"
+    },
+    {
+      "name": "body_to_lower_knob_pos",
+      "joint": "body_to_lower_knob",
+      "ctrlrange": "-3.1416 3.1416",
+      "kp": "3"
+    }
+  ]
+}

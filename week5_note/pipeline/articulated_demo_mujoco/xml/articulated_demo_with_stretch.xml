@@ -1,0 +1,620 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mujoco model="articulated_demo_room_with_stretch">
+  <compiler angle="radian" meshdir="../assets/meshes" autolimits="true" />
+  <option integrator="implicitfast" impratio="1" cone="elliptic" noslip_iterations="2">
+    <flag multiccd="enable" />
+  </option>
+  <visual>
+    <global offwidth="1000" offheight="760" />
+  </visual>
+  <default>
+    <default class="stretch">
+      <geom mass="0" solref="0.005 1" />
+      <general biastype="affine" />
+      <default class="wheel">
+        <joint axis="0 0 -1" damping=".3" />
+        <motor ctrlrange="-1 1" gear="3" forcerange="-100 100" />
+      </default>
+      <default class="lift">
+        <joint type="slide" axis="0 0 1" damping="5" range="-0.5 .6" />
+        <general ctrlrange="-0.5 .6" gainprm="300" biasprm="0 -300 -50" forcerange="-56 56" />
+      </default>
+      <default class="telescope">
+        <joint type="slide" axis="0 0 1" damping="5" range="0 0.13" />
+        <general ctrlrange="0 0.52" gainprm="100" biasprm="0 -100 -10" forcerange="-56 56" />
+      </default>
+      <default class="head">
+        <joint axis="0 0 1" damping="1" />
+        <position kp="10" />
+        <default class="head_pan">
+          <joint range="-3.9 1.5" />
+          <position ctrlrange="-3.9 1.5" />
+        </default>
+        <default class="head_tilt">
+          <joint range="-1.53 0.79" />
+          <position ctrlrange="-1.53 0.79" />
+        </default>
+      </default>
+      <default class="wrist">
+        <joint axis="0 0 -1" range="-1.75 4" damping=".1" />
+        <general gainprm="1" biasprm="0 -1 0" ctrlrange="-1.75 4" forcerange="-5 5" />
+      </default>
+      <default class="finger_open">
+        <joint axis="0 0 1" range="-0.6 0.6" damping=".1" />
+      </default>
+      <default class="finger_slide">
+        <joint type="slide" axis="1 0 0" range="-0.005 .04" damping=".1" />
+        <general gainprm="2000" biasprm="0 -2000 -200" ctrlrange="-0.005 .04" />
+      </default>
+      <default class="visual">
+        <geom group="2" type="mesh" contype="0" conaffinity="0" />
+      </default>
+      <default class="collision">
+        <geom group="3" type="mesh" />
+        <default class="caster">
+          <geom type="sphere" size=".02" pos="-0.24 0 .02" condim="1" priority="1" />
+        </default>
+        <default class="rubber">
+          <geom condim="6" friction="0.8 0.02 0.01" priority="1" />
+        </default>
+      </default>
+    </default>
+  </default>
+  <asset>
+    <mesh name="000_Mesh_0" file="000_Mesh_0.obj" />
+    <mesh name="001_double_door_cabinet_cabinet_frame_back_panel" file="001_double_door_cabinet_cabinet_frame_back_panel.obj" />
+    <mesh name="002_double_door_cabinet_cabinet_frame_bottom_panel" file="002_double_door_cabinet_cabinet_frame_bottom_panel.obj" />
+    <mesh name="003_double_door_cabinet_cabinet_frame_internal_shelf" file="003_double_door_cabinet_cabinet_frame_internal_shelf.obj" />
+    <mesh name="004_double_door_cabinet_cabinet_frame_left_side_panel" file="004_double_door_cabinet_cabinet_frame_left_side_panel.obj" />
+    <mesh name="005_double_door_cabinet_cabinet_frame_right_side_panel" file="005_double_door_cabinet_cabinet_frame_right_side_panel.obj" />
+    <mesh name="006_double_door_cabinet_cabinet_frame_top_panel" file="006_double_door_cabinet_cabinet_frame_top_panel.obj" />
+    <mesh name="007_double_door_cabinet_left_door_left_door_slab" file="007_double_door_cabinet_left_door_left_door_slab.obj" />
+    <mesh name="008_double_door_cabinet_left_door_left_handle" file="008_double_door_cabinet_left_door_left_handle.obj" />
+    <mesh name="009_double_door_cabinet_right_door_right_door_slab" file="009_double_door_cabinet_right_door_right_door_slab.obj" />
+    <mesh name="010_double_door_cabinet_right_door_right_handle" file="010_double_door_cabinet_right_door_right_handle.obj" />
+    <mesh name="011_entry_door_door_door_panel" file="011_entry_door_door_door_panel.obj" />
+    <mesh name="012_entry_door_door_hinge_leaf" file="012_entry_door_door_hinge_leaf.obj" />
+    <mesh name="013_entry_door_frame_header" file="013_entry_door_frame_header.obj" />
+    <mesh name="014_entry_door_frame_hinge_post" file="014_entry_door_frame_hinge_post.obj" />
+    <mesh name="015_entry_door_frame_left_jamb" file="015_entry_door_frame_left_jamb.obj" />
+    <mesh name="016_entry_door_frame_right_jamb" file="016_entry_door_frame_right_jamb.obj" />
+    <mesh name="017_entry_door_frame_threshold" file="017_entry_door_frame_threshold.obj" />
+    <mesh name="018_frame" file="018_frame.obj" />
+    <mesh name="019_frame_001" file="019_frame_001.obj" />
+    <mesh name="020_frame_002" file="020_frame_002.obj" />
+    <mesh name="021_geometry_0" file="021_geometry_0.obj" />
+    <mesh name="022_geometry_0_001" file="022_geometry_0_001.obj" />
+    <mesh name="023_geometry_0_002" file="023_geometry_0_002.obj" />
+    <mesh name="024_geometry_0_003" file="024_geometry_0_003.obj" />
+    <mesh name="025_geometry_0_004" file="025_geometry_0_004.obj" />
+    <mesh name="026_geometry_0_005" file="026_geometry_0_005.obj" />
+    <mesh name="027_geometry_0_006" file="027_geometry_0_006.obj" />
+    <mesh name="028_geometry_0_007" file="028_geometry_0_007.obj" />
+    <mesh name="029_glass" file="029_glass.obj" />
+    <mesh name="030_glass_001" file="030_glass_001.obj" />
+    <mesh name="031_glass_002" file="031_glass_002.obj" />
+    <mesh name="032_microwave_front_door_bottom_rail" file="032_microwave_front_door_bottom_rail.obj" />
+    <mesh name="033_microwave_front_door_handle_bar" file="033_microwave_front_door_handle_bar.obj" />
+    <mesh name="034_microwave_front_door_handle_mount_0" file="034_microwave_front_door_handle_mount_0.obj" />
+    <mesh name="035_microwave_front_door_handle_mount_1" file="035_microwave_front_door_handle_mount_1.obj" />
+    <mesh name="036_microwave_front_door_left_stile" file="036_microwave_front_door_left_stile.obj" />
+    <mesh name="037_microwave_front_door_right_stile" file="037_microwave_front_door_right_stile.obj" />
+    <mesh name="038_microwave_front_door_top_rail" file="038_microwave_front_door_top_rail.obj" />
+    <mesh name="039_microwave_front_door_window_pane" file="039_microwave_front_door_window_pane.obj" />
+    <mesh name="040_microwave_lower_knob_center_cap" file="040_microwave_lower_knob_center_cap.obj" />
+    <mesh name="041_microwave_lower_knob_indicator_mark" file="041_microwave_lower_knob_indicator_mark.obj" />
+    <mesh name="042_microwave_lower_knob_segment_0" file="042_microwave_lower_knob_segment_0.obj" />
+    <mesh name="043_microwave_lower_knob_segment_1" file="043_microwave_lower_knob_segment_1.obj" />
+    <mesh name="044_microwave_lower_knob_segment_2" file="044_microwave_lower_knob_segment_2.obj" />
+    <mesh name="045_microwave_lower_knob_segment_3" file="045_microwave_lower_knob_segment_3.obj" />
+    <mesh name="046_microwave_lower_knob_segment_4" file="046_microwave_lower_knob_segment_4.obj" />
+    <mesh name="047_microwave_lower_knob_segment_5" file="047_microwave_lower_knob_segment_5.obj" />
+    <mesh name="048_microwave_microwave_body_back_panel" file="048_microwave_microwave_body_back_panel.obj" />
+    <mesh name="049_microwave_microwave_body_bottom_panel" file="049_microwave_microwave_body_bottom_panel.obj" />
+    <mesh name="050_microwave_microwave_body_control_divider" file="050_microwave_microwave_body_control_divider.obj" />
+    <mesh name="051_microwave_microwave_body_control_panel" file="051_microwave_microwave_body_control_panel.obj" />
+    <mesh name="052_microwave_microwave_body_internal_floor" file="052_microwave_microwave_body_internal_floor.obj" />
+    <mesh name="053_microwave_microwave_body_left_wall" file="053_microwave_microwave_body_left_wall.obj" />
+    <mesh name="054_microwave_microwave_body_rear_stop" file="054_microwave_microwave_body_rear_stop.obj" />
+    <mesh name="055_microwave_microwave_body_right_wall" file="055_microwave_microwave_body_right_wall.obj" />
+    <mesh name="056_microwave_microwave_body_side_rail_0" file="056_microwave_microwave_body_side_rail_0.obj" />
+    <mesh name="057_microwave_microwave_body_side_rail_1" file="057_microwave_microwave_body_side_rail_1.obj" />
+    <mesh name="058_microwave_microwave_body_top_panel" file="058_microwave_microwave_body_top_panel.obj" />
+    <mesh name="059_microwave_sliding_tray_front_lip" file="059_microwave_sliding_tray_front_lip.obj" />
+    <mesh name="060_microwave_sliding_tray_rear_lip" file="060_microwave_sliding_tray_rear_lip.obj" />
+    <mesh name="061_microwave_sliding_tray_tray_plate" file="061_microwave_sliding_tray_tray_plate.obj" />
+    <mesh name="062_microwave_turntable_rotation_marker" file="062_microwave_turntable_rotation_marker.obj" />
+    <mesh name="063_microwave_turntable_segment_0" file="063_microwave_turntable_segment_0.obj" />
+    <mesh name="064_microwave_turntable_segment_1" file="064_microwave_turntable_segment_1.obj" />
+    <mesh name="065_microwave_turntable_segment_2" file="065_microwave_turntable_segment_2.obj" />
+    <mesh name="066_microwave_turntable_segment_3" file="066_microwave_turntable_segment_3.obj" />
+    <mesh name="067_microwave_turntable_segment_4" file="067_microwave_turntable_segment_4.obj" />
+    <mesh name="068_microwave_turntable_segment_5" file="068_microwave_turntable_segment_5.obj" />
+    <mesh name="069_microwave_turntable_segment_6" file="069_microwave_turntable_segment_6.obj" />
+    <mesh name="070_microwave_turntable_segment_7" file="070_microwave_turntable_segment_7.obj" />
+    <mesh name="071_microwave_upper_knob_center_cap" file="071_microwave_upper_knob_center_cap.obj" />
+    <mesh name="072_microwave_upper_knob_indicator_mark" file="072_microwave_upper_knob_indicator_mark.obj" />
+    <mesh name="073_microwave_upper_knob_segment_0" file="073_microwave_upper_knob_segment_0.obj" />
+    <mesh name="074_microwave_upper_knob_segment_1" file="074_microwave_upper_knob_segment_1.obj" />
+    <mesh name="075_microwave_upper_knob_segment_2" file="075_microwave_upper_knob_segment_2.obj" />
+    <mesh name="076_microwave_upper_knob_segment_3" file="076_microwave_upper_knob_segment_3.obj" />
+    <mesh name="077_microwave_upper_knob_segment_4" file="077_microwave_upper_knob_segment_4.obj" />
+    <mesh name="078_microwave_upper_knob_segment_5" file="078_microwave_upper_knob_segment_5.obj" />
+    <mesh name="079_tmp1no018wl_ply_001" file="079_tmp1no018wl_ply_001.obj" />
+    <mesh name="080_tmp1no018wl_ply_002" file="080_tmp1no018wl_ply_002.obj" />
+    <mesh name="081_tmp1zu3xhc8_ply_001" file="081_tmp1zu3xhc8_ply_001.obj" />
+    <mesh name="082_tmp91jrkv4o_ply_001" file="082_tmp91jrkv4o_ply_001.obj" />
+    <mesh name="083_tmp943y7er_ply_001" file="083_tmp943y7er_ply_001.obj" />
+    <mesh name="084_tmpeshskeww_ply_001" file="084_tmpeshskeww_ply_001.obj" />
+    <texture type="2d" file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/hand_crush.png" />
+    <texture type="2d" file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/serial.png" />
+    <texture type="2d" file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/mobile_base_right_corner_aruco_sticker.png" />
+    <texture type="2d" file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/mobile_base_left_corner_aruco_sticker.png" />
+    <texture type="2d" file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/hand_pinch.png" />
+    <texture type="2d" file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/arm_inner_wrist_aruco_sticker.png" />
+    <texture type="2d" file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/arm_top_wrist_aruco_sticker.png" />
+    <texture type="2d" file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/shoulder_aruco_sticker.png" />
+    <material name="Caster_Rollers_Red" rgba="0.8 0.001381 0 1" />
+    <material name="Generic_Black" rgba="0.036889 0.036889 0.036889 1" />
+    <material name="3D_Print_Black" rgba="0.114435 0.114435 0.114435 1" />
+    <material name="Pantone_Black_6_U" rgba="0.072272 0.076185 0.093059 1" />
+    <material name="Plug_White" rgba="1 1 1 1" />
+    <material name="Pure_Black" rgba="0 0 0 1" />
+    <material name="Reflective_Metal" rgba="0.8 0.8 0.8 1" />
+    <material name="Respeaker_Blue_Glow" rgba="0.006995 0.054480 0.799103 1" />
+    <material name="Runstop_White_Glow" rgba="0.8 0.8 0.8 1" />
+    <material name="Speaker_Housing_Black" rgba="0.003642 0.003642 0.003642 1" />
+    <material name="Wheel_Rubber_Gray" rgba="0.418986 0.424087 0.429225 1" />
+    <material name="Lightbar_Green" rgba="0.0 0.8 0.002964 1" />
+    <material name="Pantone_705_U" rgba="1 0.723054 0.760525 1" />
+    <material name="Pantone_Cool_Gray_4_U" rgba="0.473531 0.479320 0.485150 1" />
+    <material name="Power_Button_Green" rgba="0.010852 0.023650 0.002724 1" />
+    <material name="USB_Blue" rgba="0.000557 0.010166 0.8 1" />
+    <material name="White_Plastic" rgba="1 1 1 1" />
+    <material name="Laser_Black" rgba="0.03741 0.03741 0.03741 1" />
+    <material name="Hand_Crush_Sticker" texture="hand_crush" />
+    <material name="Stretch_Serial_Sticker" texture="serial" />
+    <material name="Aruco_Right_Base_Sticker" texture="mobile_base_right_corner_aruco_sticker" />
+    <material name="Aruco_Left_Base_Sticker" texture="mobile_base_left_corner_aruco_sticker" />
+    <material name="Hand_Pinch_Sticker" texture="hand_pinch" />
+    <material name="Carbon_Fiber" rgba="0.061246 0.061246 0.061246 1" />
+    <material name="Aruco_Inner_Wrist_Sticker" texture="arm_inner_wrist_aruco_sticker" />
+    <material name="Aruco_Top_Wrist_Sticker" texture="arm_top_wrist_aruco_sticker" />
+    <material name="suction_rubber" rgba="0.25098 0.25098 0.25098 1" />
+    <material name="Aruco_Shoulder_Sticker" texture="shoulder_aruco_sticker" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/base_link_0.obj" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/base_link_2.obj" inertia="shell" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/base_link_3.obj" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/base_link_4.obj" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/base_link_5.obj" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/base_link_6.obj" inertia="shell" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/base_link_7.obj" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/base_link_8.obj" />
+    <mesh name="base_link_collision" file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/base_link_casterless.stl" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_aruco_right_base.obj" inertia="shell" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_aruco_left_base.obj" inertia="shell" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/respeaker_base.obj" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_mast.obj" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_head_0.obj" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_head_1.obj" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_head_2.obj" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_head_3.obj" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_head_4.obj" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_head_5.obj" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_head_6.obj" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_head_7.obj" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_head_8.obj" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_head_9.obj" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_head_10.obj" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_head_11.obj" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_head_pan_0.obj" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_head_pan_1.obj" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_head_tilt_0.obj" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_head_tilt_1.obj" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_right_wheel_0.obj" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_right_wheel_1.obj" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_left_wheel_0.obj" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_left_wheel_1.obj" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_lift_0.obj" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_lift_1.obj" inertia="shell" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_lift_2.obj" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_lift_3.obj" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_lift_4.obj" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_lift_5.obj" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_lift_6.obj" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_lift_7.obj" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_lift_8.obj" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_lift_9.obj" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_aruco_shoulder.obj" inertia="shell" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_arm_l4_0.obj" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_arm_l4_1.obj" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_arm_l3_0.obj" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_arm_l3_1.obj" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_arm_l2_0.obj" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_arm_l2_1.obj" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_arm_l1_0.obj" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_arm_l1_1.obj" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_arm_l0_0.obj" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_arm_l0_1.obj" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_arm_l0_2.obj" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_aruco_inner_wrist.obj" inertia="shell" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_aruco_top_wrist.obj" inertia="shell" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/laser.obj" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_gripper_fingertip_left.stl" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_gripper_fingertip_right.stl" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_gripper_finger_left_0.obj" scale="0.9 1 1" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_gripper_finger_left_1.obj" scale="0.9 1 1" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_gripper_finger_right_0.obj" scale="0.9 1 1" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_gripper_finger_right_1.obj" scale="0.9 1 1" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_gripper_0.obj" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_gripper_1.obj" />
+    <mesh file="/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/assets/link_wrist_yaw.obj" />
+  </asset>
+  <worldbody>
+    <light name="top" pos="2 2 6" dir="0 0 -1" />
+    <camera name="overview" pos="2.0 -7.5 5.0" xyaxes="1 0 0 0 0.58 0.82" />
+    <geom name="reference_ground" type="plane" size="6 6 0.02" rgba="0.18 0.22 0.25 1" contype="0" conaffinity="0" />
+    <body name="static_room_shell">
+      <geom name="000_Mesh_0" type="mesh" mesh="000_Mesh_0" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="001_double_door_cabinet_cabinet_frame_back_panel" type="mesh" mesh="001_double_door_cabinet_cabinet_frame_back_panel" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="002_double_door_cabinet_cabinet_frame_bottom_panel" type="mesh" mesh="002_double_door_cabinet_cabinet_frame_bottom_panel" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="003_double_door_cabinet_cabinet_frame_internal_shelf" type="mesh" mesh="003_double_door_cabinet_cabinet_frame_internal_shelf" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="004_double_door_cabinet_cabinet_frame_left_side_panel" type="mesh" mesh="004_double_door_cabinet_cabinet_frame_left_side_panel" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="005_double_door_cabinet_cabinet_frame_right_side_panel" type="mesh" mesh="005_double_door_cabinet_cabinet_frame_right_side_panel" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="006_double_door_cabinet_cabinet_frame_top_panel" type="mesh" mesh="006_double_door_cabinet_cabinet_frame_top_panel" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="013_entry_door_frame_header" type="mesh" mesh="013_entry_door_frame_header" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="014_entry_door_frame_hinge_post" type="mesh" mesh="014_entry_door_frame_hinge_post" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="015_entry_door_frame_left_jamb" type="mesh" mesh="015_entry_door_frame_left_jamb" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="016_entry_door_frame_right_jamb" type="mesh" mesh="016_entry_door_frame_right_jamb" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="017_entry_door_frame_threshold" type="mesh" mesh="017_entry_door_frame_threshold" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="018_frame" type="mesh" mesh="018_frame" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="019_frame_001" type="mesh" mesh="019_frame_001" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="020_frame_002" type="mesh" mesh="020_frame_002" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="021_geometry_0" type="mesh" mesh="021_geometry_0" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="022_geometry_0_001" type="mesh" mesh="022_geometry_0_001" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="023_geometry_0_002" type="mesh" mesh="023_geometry_0_002" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="024_geometry_0_003" type="mesh" mesh="024_geometry_0_003" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="025_geometry_0_004" type="mesh" mesh="025_geometry_0_004" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="026_geometry_0_005" type="mesh" mesh="026_geometry_0_005" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="027_geometry_0_006" type="mesh" mesh="027_geometry_0_006" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="028_geometry_0_007" type="mesh" mesh="028_geometry_0_007" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="029_glass" type="mesh" mesh="029_glass" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="030_glass_001" type="mesh" mesh="030_glass_001" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="031_glass_002" type="mesh" mesh="031_glass_002" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="048_microwave_microwave_body_back_panel" type="mesh" mesh="048_microwave_microwave_body_back_panel" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="049_microwave_microwave_body_bottom_panel" type="mesh" mesh="049_microwave_microwave_body_bottom_panel" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="050_microwave_microwave_body_control_divider" type="mesh" mesh="050_microwave_microwave_body_control_divider" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="051_microwave_microwave_body_control_panel" type="mesh" mesh="051_microwave_microwave_body_control_panel" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="052_microwave_microwave_body_internal_floor" type="mesh" mesh="052_microwave_microwave_body_internal_floor" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="053_microwave_microwave_body_left_wall" type="mesh" mesh="053_microwave_microwave_body_left_wall" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="054_microwave_microwave_body_rear_stop" type="mesh" mesh="054_microwave_microwave_body_rear_stop" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="055_microwave_microwave_body_right_wall" type="mesh" mesh="055_microwave_microwave_body_right_wall" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="056_microwave_microwave_body_side_rail_0" type="mesh" mesh="056_microwave_microwave_body_side_rail_0" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="057_microwave_microwave_body_side_rail_1" type="mesh" mesh="057_microwave_microwave_body_side_rail_1" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="058_microwave_microwave_body_top_panel" type="mesh" mesh="058_microwave_microwave_body_top_panel" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="079_tmp1no018wl_ply_001" type="mesh" mesh="079_tmp1no018wl_ply_001" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="080_tmp1no018wl_ply_002" type="mesh" mesh="080_tmp1no018wl_ply_002" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="081_tmp1zu3xhc8_ply_001" type="mesh" mesh="081_tmp1zu3xhc8_ply_001" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="082_tmp91jrkv4o_ply_001" type="mesh" mesh="082_tmp91jrkv4o_ply_001" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="083_tmp943y7er_ply_001" type="mesh" mesh="083_tmp943y7er_ply_001" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="084_tmpeshskeww_ply_001" type="mesh" mesh="084_tmpeshskeww_ply_001" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+    </body>
+    <body name="entry_door" pos="4.127028 0.047500 0.200000">
+      <inertial pos="0 0 0" mass="1" diaginertia="0.01 0.01 0.01" />
+      <joint name="frame_to_door" type="hinge" axis="0 0 1" damping="0.1" range="0 1.5708" />
+      <geom name="011_entry_door_door_door_panel" type="mesh" mesh="011_entry_door_door_door_panel" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.127028 -0.047500 -0.200000" />
+      <geom name="012_entry_door_door_hinge_leaf" type="mesh" mesh="012_entry_door_door_hinge_leaf" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.127028 -0.047500 -0.200000" />
+    </body>
+    <body name="cabinet_left_door" pos="4.930000 3.410000 0.100000">
+      <inertial pos="0 0 0" mass="1" diaginertia="0.01 0.01 0.01" />
+      <joint name="left_hinge" type="hinge" axis="0 0 -1" damping="0.1" range="0 1.5708" />
+      <geom name="007_double_door_cabinet_left_door_left_door_slab" type="mesh" mesh="007_double_door_cabinet_left_door_left_door_slab" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.930000 -3.410000 -0.100000" />
+      <geom name="008_double_door_cabinet_left_door_left_handle" type="mesh" mesh="008_double_door_cabinet_left_door_left_handle" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.930000 -3.410000 -0.100000" />
+    </body>
+    <body name="cabinet_right_door" pos="4.930000 2.490000 0.100000">
+      <inertial pos="0 0 0" mass="1" diaginertia="0.01 0.01 0.01" />
+      <joint name="right_hinge" type="hinge" axis="0 0 1" damping="0.1" range="0 1.5708" />
+      <geom name="009_double_door_cabinet_right_door_right_door_slab" type="mesh" mesh="009_double_door_cabinet_right_door_right_door_slab" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.930000 -2.490000 -0.100000" />
+      <geom name="010_double_door_cabinet_right_door_right_handle" type="mesh" mesh="010_double_door_cabinet_right_door_right_handle" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.930000 -2.490000 -0.100000" />
+    </body>
+    <body name="microwave_door" pos="4.203670 3.977532 1.189677">
+      <inertial pos="0 0 0" mass="1" diaginertia="0.01 0.01 0.01" />
+      <joint name="body_to_front_door" type="hinge" axis="0 0 1" damping="0.1" range="0 1.75" />
+      <geom name="032_microwave_front_door_bottom_rail" type="mesh" mesh="032_microwave_front_door_bottom_rail" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.203670 -3.977532 -1.189677" />
+      <geom name="033_microwave_front_door_handle_bar" type="mesh" mesh="033_microwave_front_door_handle_bar" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.203670 -3.977532 -1.189677" />
+      <geom name="034_microwave_front_door_handle_mount_0" type="mesh" mesh="034_microwave_front_door_handle_mount_0" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.203670 -3.977532 -1.189677" />
+      <geom name="035_microwave_front_door_handle_mount_1" type="mesh" mesh="035_microwave_front_door_handle_mount_1" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.203670 -3.977532 -1.189677" />
+      <geom name="036_microwave_front_door_left_stile" type="mesh" mesh="036_microwave_front_door_left_stile" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.203670 -3.977532 -1.189677" />
+      <geom name="037_microwave_front_door_right_stile" type="mesh" mesh="037_microwave_front_door_right_stile" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.203670 -3.977532 -1.189677" />
+      <geom name="038_microwave_front_door_top_rail" type="mesh" mesh="038_microwave_front_door_top_rail" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.203670 -3.977532 -1.189677" />
+      <geom name="039_microwave_front_door_window_pane" type="mesh" mesh="039_microwave_front_door_window_pane" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.203670 -3.977532 -1.189677" />
+    </body>
+    <body name="microwave_tray" pos="4.006170 4.201532 1.121677">
+      <inertial pos="0 0 0" mass="1" diaginertia="0.01 0.01 0.01" />
+      <joint name="body_to_sliding_tray" type="slide" axis="0 -1 0" damping="0.1" range="0 0.22" />
+      <geom name="059_microwave_sliding_tray_front_lip" type="mesh" mesh="059_microwave_sliding_tray_front_lip" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.006170 -4.201532 -1.121677" />
+      <geom name="060_microwave_sliding_tray_rear_lip" type="mesh" mesh="060_microwave_sliding_tray_rear_lip" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.006170 -4.201532 -1.121677" />
+      <geom name="061_microwave_sliding_tray_tray_plate" type="mesh" mesh="061_microwave_sliding_tray_tray_plate" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.006170 -4.201532 -1.121677" />
+    </body>
+    <body name="microwave_turntable" pos="4.006170 4.201532 1.128677">
+      <inertial pos="0 0 0" mass="1" diaginertia="0.01 0.01 0.01" />
+      <joint name="tray_to_turntable" type="hinge" axis="0 0 1" damping="0.1" />
+      <geom name="062_microwave_turntable_rotation_marker" type="mesh" mesh="062_microwave_turntable_rotation_marker" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.006170 -4.201532 -1.128677" />
+      <geom name="063_microwave_turntable_segment_0" type="mesh" mesh="063_microwave_turntable_segment_0" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.006170 -4.201532 -1.128677" />
+      <geom name="064_microwave_turntable_segment_1" type="mesh" mesh="064_microwave_turntable_segment_1" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.006170 -4.201532 -1.128677" />
+      <geom name="065_microwave_turntable_segment_2" type="mesh" mesh="065_microwave_turntable_segment_2" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.006170 -4.201532 -1.128677" />
+      <geom name="066_microwave_turntable_segment_3" type="mesh" mesh="066_microwave_turntable_segment_3" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.006170 -4.201532 -1.128677" />
+      <geom name="067_microwave_turntable_segment_4" type="mesh" mesh="067_microwave_turntable_segment_4" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.006170 -4.201532 -1.128677" />
+      <geom name="068_microwave_turntable_segment_5" type="mesh" mesh="068_microwave_turntable_segment_5" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.006170 -4.201532 -1.128677" />
+      <geom name="069_microwave_turntable_segment_6" type="mesh" mesh="069_microwave_turntable_segment_6" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.006170 -4.201532 -1.128677" />
+      <geom name="070_microwave_turntable_segment_7" type="mesh" mesh="070_microwave_turntable_segment_7" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.006170 -4.201532 -1.128677" />
+    </body>
+    <body name="microwave_upper_knob" pos="4.273670 3.971532 1.247677">
+      <inertial pos="0 0 0" mass="1" diaginertia="0.01 0.01 0.01" />
+      <joint name="body_to_upper_knob" type="hinge" axis="0 1 0" damping="0.1" />
+      <geom name="071_microwave_upper_knob_center_cap" type="mesh" mesh="071_microwave_upper_knob_center_cap" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.273670 -3.971532 -1.247677" />
+      <geom name="072_microwave_upper_knob_indicator_mark" type="mesh" mesh="072_microwave_upper_knob_indicator_mark" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.273670 -3.971532 -1.247677" />
+      <geom name="073_microwave_upper_knob_segment_0" type="mesh" mesh="073_microwave_upper_knob_segment_0" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.273670 -3.971532 -1.247677" />
+      <geom name="074_microwave_upper_knob_segment_1" type="mesh" mesh="074_microwave_upper_knob_segment_1" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.273670 -3.971532 -1.247677" />
+      <geom name="075_microwave_upper_knob_segment_2" type="mesh" mesh="075_microwave_upper_knob_segment_2" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.273670 -3.971532 -1.247677" />
+      <geom name="076_microwave_upper_knob_segment_3" type="mesh" mesh="076_microwave_upper_knob_segment_3" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.273670 -3.971532 -1.247677" />
+      <geom name="077_microwave_upper_knob_segment_4" type="mesh" mesh="077_microwave_upper_knob_segment_4" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.273670 -3.971532 -1.247677" />
+      <geom name="078_microwave_upper_knob_segment_5" type="mesh" mesh="078_microwave_upper_knob_segment_5" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.273670 -3.971532 -1.247677" />
+    </body>
+    <body name="microwave_lower_knob" pos="4.273670 3.971532 1.141677">
+      <inertial pos="0 0 0" mass="1" diaginertia="0.01 0.01 0.01" />
+      <joint name="body_to_lower_knob" type="hinge" axis="0 1 0" damping="0.1" />
+      <geom name="040_microwave_lower_knob_center_cap" type="mesh" mesh="040_microwave_lower_knob_center_cap" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.273670 -3.971532 -1.141677" />
+      <geom name="041_microwave_lower_knob_indicator_mark" type="mesh" mesh="041_microwave_lower_knob_indicator_mark" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.273670 -3.971532 -1.141677" />
+      <geom name="042_microwave_lower_knob_segment_0" type="mesh" mesh="042_microwave_lower_knob_segment_0" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.273670 -3.971532 -1.141677" />
+      <geom name="043_microwave_lower_knob_segment_1" type="mesh" mesh="043_microwave_lower_knob_segment_1" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.273670 -3.971532 -1.141677" />
+      <geom name="044_microwave_lower_knob_segment_2" type="mesh" mesh="044_microwave_lower_knob_segment_2" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.273670 -3.971532 -1.141677" />
+      <geom name="045_microwave_lower_knob_segment_3" type="mesh" mesh="045_microwave_lower_knob_segment_3" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.273670 -3.971532 -1.141677" />
+      <geom name="046_microwave_lower_knob_segment_4" type="mesh" mesh="046_microwave_lower_knob_segment_4" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.273670 -3.971532 -1.141677" />
+      <geom name="047_microwave_lower_knob_segment_5" type="mesh" mesh="047_microwave_lower_knob_segment_5" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.273670 -3.971532 -1.141677" />
+    </body>
+    <geom name="stretch_collision_floor" type="plane" size="0 0 0.05" rgba="0.1 0.1 0.1 1" />
+    <body name="base_link" childclass="stretch" pos="2.6 2.0 0">
+      <freejoint />
+      <geom mesh="base_link_0" material="Caster_Rollers_Red" class="visual" />
+      <geom mesh="base_link_2" material="Lightbar_Green" class="visual" />
+      <geom mesh="base_link_3" material="Power_Button_Green" class="visual" />
+      <geom mesh="base_link_4" material="USB_Blue" class="visual" />
+      <geom mesh="base_link_5" material="Generic_Black" class="visual" />
+      <geom mesh="base_link_6" material="Hand_Crush_Sticker" class="visual" />
+      <geom mesh="base_link_7" material="Pantone_705_U" class="visual" />
+      <geom mesh="base_link_8" material="Pantone_Cool_Gray_4_U" class="visual" />
+      <geom class="collision" mesh="base_link_collision" mass="15.0" />
+      <geom class="caster" />
+      <body name="link_mast" pos="-0.067 0.135 0.0284" quat="1 1 0 0">
+        <geom material="Generic_Black" mesh="link_mast" class="visual" />
+        <geom mesh="link_mast" class="collision" mass="1.8285" />
+      </body>
+      <body name="link_head" pos="-0.067 0.134995 1.3584" quat="-1 0 0 1">
+        <geom mesh="link_head_0" material="Runstop_White_Glow" class="visual" />
+        <geom mesh="link_head_1" material="Generic_Black" class="visual" />
+        <geom mesh="link_head_2" material="Speaker_Housing_Black" class="visual" />
+        <geom mesh="link_head_3" material="Reflective_Metal" class="visual" />
+        <geom mesh="link_head_4" material="Reflective_Metal" class="visual" />
+        <geom mesh="link_head_5" material="Pure_Black" class="visual" />
+        <geom mesh="link_head_6" material="Reflective_Metal" class="visual" />
+        <geom mesh="link_head_7" material="Plug_White" class="visual" />
+        <geom mesh="link_head_8" material="3D_Print_Black" class="visual" />
+        <geom mesh="link_head_9" material="Respeaker_Blue_Glow" class="visual" />
+        <geom mesh="link_head_10" material="Pantone_Black_6_U" class="visual" />
+        <geom mesh="link_head_11" material="Generic_Black" class="visual" />
+        <geom mesh="link_head_10" class="collision" mass="0.833027236718691" />
+      </body>
+      <body name="link_aruco_right_base" pos="-0.0015028 -0.130497 0.159748" quat="1 0 0 -1">
+        <geom material="Aruco_Right_Base_Sticker" mesh="link_aruco_right_base" class="visual" mass="3.6E-06" />
+        <geom mesh="link_aruco_right_base" class="collision" />
+      </body>
+      <body name="link_aruco_left_base" pos="-0.0015028 0.130497 0.159748" quat="1 0 0 -1">
+        <geom material="Aruco_Left_Base_Sticker" mesh="link_aruco_left_base" class="visual" mass="3.6E-06" />
+        <geom mesh="link_aruco_left_base" class="collision" />
+      </body>
+      <body name="laser" pos="0.004 0 0.1664" quat="0 0 0 1">
+        <geom material="Laser_Black" mesh="laser" class="visual" mass="0.24" />
+        <geom mesh="laser" class="collision" />
+      </body>
+      <body name="link_right_wheel" pos="0 -0.17035 0.0508" quat="1 -1 0 0">
+        <joint name="joint_right_wheel" class="wheel" />
+        <geom mesh="link_right_wheel_0" material="Wheel_Rubber_Gray" class="visual" mass="0.15" />
+        <geom mesh="link_right_wheel_1" material="Generic_Black" class="visual" />
+        <geom class="collision" type="cylinder" size=".05 .0125" pos="0 0 0.0125" />
+      </body>
+      <body name="link_left_wheel" pos="0 0.17035 0.0508" quat="1 -1 0 0">
+        <joint name="joint_left_wheel" class="wheel" />
+        <geom mesh="link_left_wheel_0" material="Wheel_Rubber_Gray" class="visual" mass="0.15" />
+        <geom mesh="link_left_wheel_1" material="Generic_Black" class="visual" />
+        <geom class="collision" type="cylinder" size=".05 .0125" pos="0 0 -0.0125" />
+      </body>
+      <body name="link_lift" gravcomp="1" pos="-0.104385 0.134999 0.695" quat="1 0 0 1">
+        <joint name="joint_lift" class="lift" />
+        <geom mesh="link_lift_0" material="Pantone_705_U" class="visual" />
+        <geom mesh="link_lift_2" material="Pure_Black" class="visual" />
+        <geom mesh="link_lift_3" material="Reflective_Metal" class="visual" />
+        <geom mesh="link_lift_4" material="Plug_White" class="visual" />
+        <geom mesh="link_lift_5" material="Pantone_Black_6_U" class="visual" />
+        <geom mesh="link_lift_6" material="Generic_Black" class="visual" />
+        <geom mesh="link_lift_7" material="Generic_Black" class="visual" />
+        <geom mesh="link_lift_8" material="3D_Print_Black" class="visual" />
+        <geom mesh="link_lift_9" material="Pantone_Black_6_U" class="visual" />
+        <geom mesh="link_lift_0" class="collision" />
+        <geom mesh="link_lift_2" class="collision" />
+        <geom mesh="link_lift_3" class="collision" />
+        <geom mesh="link_lift_4" class="collision" />
+        <geom mesh="link_lift_5" class="collision" />
+        <geom mesh="link_lift_6" class="collision" />
+        <geom mesh="link_lift_7" class="collision" />
+        <geom mesh="link_lift_8" class="collision" mass="1.5" />
+        <geom mesh="link_lift_9" class="collision" mass="1.5" />
+        <body name="link_arm_l4" gravcomp="1">
+          <geom mesh="link_arm_l4_0" pos="-0.2547 0 0" quat="0.5 0.5 -0.5 -0.5" material="Carbon_Fiber" class="visual" />
+          <geom mesh="link_arm_l4_1" pos="-0.2547 0 0" quat="0.5 0.5 -0.5 -0.5" material="3D_Print_Black" class="visual" />
+          <geom mesh="link_arm_l4_0" pos="-0.2547 0 0" quat="0.5 0.5 -0.5 -0.5" class="collision" mass="0.168095" />
+          <geom mesh="link_arm_l4_1" pos="-0.2547 0 0" quat="0.5 0.5 -0.5 -0.5" class="collision" />
+          <body name="link_arm_l3" pos="-0.2677 0 0" quat="0.5 0.5 -0.5 -0.5" gravcomp="1">
+            <joint name="joint_arm_l3" class="telescope" />
+            <geom mesh="link_arm_l3_0" material="Carbon_Fiber" class="visual" mass="0.162893" />
+            <geom mesh="link_arm_l3_1" material="3D_Print_Black" class="visual" />
+            <geom mesh="link_arm_l3_0" class="collision" />
+            <geom mesh="link_arm_l3_1" class="collision" />
+            <body name="link_arm_l2" pos="0 0 0.013" gravcomp="1">
+              <joint name="joint_arm_l2" class="telescope" />
+              <geom mesh="link_arm_l2_0" material="Carbon_Fiber" class="visual" mass="0.157139" />
+              <geom mesh="link_arm_l2_1" material="3D_Print_Black" class="visual" />
+              <geom mesh="link_arm_l2_0" class="collision" />
+              <geom mesh="link_arm_l2_1" class="collision" />
+              <body name="link_arm_l1" pos="0 0 0.013" gravcomp="1">
+                <joint name="joint_arm_l1" class="telescope" />
+                <geom mesh="link_arm_l1_0" material="Carbon_Fiber" class="visual" mass="0.151382" />
+                <geom mesh="link_arm_l1_1" material="3D_Print_Black" class="visual" />
+                <geom mesh="link_arm_l1_0" class="collision" />
+                <geom mesh="link_arm_l1_1" class="collision" />
+                <body name="link_arm_l0" pos="0 0 -0.01375" quat="1 0 0 0" gravcomp="1">
+                  <joint name="joint_arm_l0" class="telescope" />
+                  <geom mesh="link_arm_l0_0" material="3D_Print_Black" class="visual" />
+                  <geom mesh="link_arm_l0_1" material="Carbon_Fiber" class="visual" mass="0.28501" />
+                  <geom mesh="link_arm_l0_2" material="Generic_Black" class="visual" />
+                  <geom mesh="link_arm_l0_0" class="collision" />
+                  <geom mesh="link_arm_l0_1" class="collision" />
+                  <geom mesh="link_arm_l0_2" class="collision" />
+                  <body name="link_aruco_top_wrist" pos="0.04725 0.029285 0" quat="0 0 1 1">
+                    <geom material="Aruco_Top_Wrist_Sticker" mesh="link_aruco_top_wrist" class="visual" mass="3.6E-06" />
+                    <geom mesh="link_aruco_top_wrist" class="collision" />
+                  </body>
+                  <body name="link_aruco_inner_wrist" pos="0.04725 -0.0119 -0.02725" quat="0 0 1 0">
+                    <geom material="Aruco_Inner_Wrist_Sticker" mesh="link_aruco_inner_wrist" class="visual" mass="3.6E-06" />
+                    <geom mesh="link_aruco_inner_wrist" class="collision" />
+                  </body>
+                  <body name="link_wrist_yaw" pos="0.083 -0.03075 0" quat="1 1 0 0" gravcomp="1">
+                    <joint name="joint_wrist_yaw" class="wrist" />
+                    <geom material="Generic_Black" mesh="link_wrist_yaw" class="visual" />
+                    <geom mesh="link_wrist_yaw" class="collision" />
+                    <geom quat="0 1 -1 0" mesh="link_gripper_0" material="Generic_Black" class="visual" />
+                    <geom quat="0 1 -1 0" mesh="link_gripper_1" material="3D_Print_Black" class="visual" mass="0.142377" />
+                    <geom quat="0 1 -1 0" mesh="link_gripper_0" class="collision" />
+                    <geom quat="0 1 -1 0" mesh="link_gripper_1" class="collision" />
+                    <body name="link_gripper_slider" quat="0.183013 -0.683017 -0.683009 -0.183013" pos="0 0.047231 0.04679" gravcomp="1">
+                      <joint name="joint_gripper_slide" class="finger_slide" />
+                      <geom type="box" size=".03 .005 .005" mass=".05" class="visual" rgba="0 0 0 0" />
+                      <body name="link_gripper_finger_left" pos="0 0.0101513 0" gravcomp="1">
+                        <joint name="joint_gripper_finger_left_open" class="finger_open" />
+                        <geom mesh="link_gripper_finger_left_0" material="Reflective_Metal" class="visual" mass="0.0378216" />
+                        <geom mesh="link_gripper_finger_left_1" material="White_Plastic" class="visual" />
+                        <geom class="collision" size="0.00426947 0.00524467 0.08" pos="0.1 0.005 0" quat="0.474728 0.474728 0.524055 0.524055" type="box" />
+                        <geom mesh="link_gripper_finger_left_1" class="collision" />
+                        <body name="rubber_tip_left" pos="0.171099 0.014912 0" quat="1 1 0 0">
+                          <joint name="rubber_left_x" type="hinge" axis="1 0 0" damping="0.001" stiffness="0.05" />
+                          <joint name="rubber_left_y" type="hinge" axis="0 1 0" damping="0.001" stiffness="0.05" />
+                          <geom class="visual" mesh="link_gripper_fingertip_left" mass="0.005" material="suction_rubber" />
+                          <geom class="rubber" type="cylinder" size=".02 .005" pos="0 0 .012" />
+                        </body>
+                      </body>
+                      <body name="link_gripper_finger_right" pos="0 -0.0100487 0" quat="0 0 -1 0" gravcomp="1">
+                        <joint name="joint_gripper_finger_right_open" class="finger_open" />
+                        <geom mesh="link_gripper_finger_right_0" material="Reflective_Metal" class="visual" mass="0.0378216" />
+                        <geom mesh="link_gripper_finger_right_1" material="White_Plastic" class="visual" />
+                        <geom class="collision" size="0.00426947 0.00524467 0.08" pos="-0.1 -0.005 0" quat="0.474728 0.474728 0.524055 0.524055" type="box" />
+                        <geom mesh="link_gripper_finger_right_1" class="collision" />
+                        <body name="rubber_tip_right" pos="-0.171099 -0.014912 0" quat="1 -1 0 0">
+                          <joint name="rubber_right_x" type="hinge" axis="1 0 0" damping="0.001" stiffness="0.05" />
+                          <joint name="rubber_right_y" type="hinge" axis="0 1 0" damping="0.001" stiffness="0.05" />
+                          <geom class="visual" material="suction_rubber" mesh="link_gripper_fingertip_right" mass="0.005" />
+                          <geom class="rubber" type="cylinder" size=".02 .005" pos="0 0 .012" />
+                        </body>
+                      </body>
+                    </body>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+        <body name="link_aruco_shoulder" pos="-0.0133769 0.0558541 0.0865" quat="1 0 0 0">
+          <geom material="Aruco_Shoulder_Sticker" mesh="link_aruco_shoulder" class="visual" mass="3.6E-06" />
+          <geom mesh="link_aruco_shoulder" class="collision" />
+        </body>
+      </body>
+      <body name="link_head_pan" pos="0.00610002 0 1.3552" quat="-1 0 0 0">
+        <joint name="joint_head_pan" class="head_pan" />
+        <geom mesh="link_head_pan_0" material="3D_Print_Black" class="visual" />
+        <geom mesh="link_head_pan_1" material="Generic_Black" class="visual" mass="0.127376" />
+        <geom mesh="link_head_pan_0" class="collision" />
+        <geom mesh="link_head_pan_1" class="collision" />
+        <body name="link_head_tilt" pos="-0.0013 0.0277625 -0.0533108" quat="1 1 0 0">
+          <joint name="joint_head_tilt" class="head_tilt" />
+          <geom mesh="link_head_tilt_0" material="Pantone_Cool_Gray_4_U" class="visual" mass="0.1311085" />
+          <geom mesh="link_head_tilt_1" material="3D_Print_Black" class="visual" mass="0.1311085" />
+          <geom mesh="link_head_tilt_0" class="collision" />
+          <geom mesh="link_head_tilt_1" class="collision" />
+          <body name="realsense" pos="0.0406 0.0053 0.0307">
+            <camera name="camera_rgb" pos="0 0.015 0" quat=".5 -.5 -.5 .5" />
+            <camera name="camera_depth" quat=".5 -.5 -.5 .5" />
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+  <actuator>
+    <position name="frame_to_door_pos" joint="frame_to_door" ctrlrange="0 1.5708" kp="8" />
+    <position name="left_hinge_pos" joint="left_hinge" ctrlrange="0 1.5708" kp="8" />
+    <position name="right_hinge_pos" joint="right_hinge" ctrlrange="0 1.5708" kp="8" />
+    <position name="body_to_front_door_pos" joint="body_to_front_door" ctrlrange="0 1.75" kp="8" />
+    <position name="body_to_sliding_tray_pos" joint="body_to_sliding_tray" ctrlrange="0 0.22" kp="18" />
+    <position name="tray_to_turntable_pos" joint="tray_to_turntable" ctrlrange="-6.2832 6.2832" kp="3" />
+    <position name="body_to_upper_knob_pos" joint="body_to_upper_knob" ctrlrange="-3.1416 3.1416" kp="3" />
+    <position name="body_to_lower_knob_pos" joint="body_to_lower_knob" ctrlrange="-3.1416 3.1416" kp="3" />
+    <motor name="forward" tendon="forward" class="wheel" />
+    <motor name="turn" tendon="turn" class="wheel" />
+    <general name="lift" joint="joint_lift" class="lift" />
+    <general name="arm_extend" tendon="extend" class="telescope" />
+    <general name="wrist_yaw" joint="joint_wrist_yaw" class="wrist" />
+    <general name="grip" joint="joint_gripper_slide" class="finger_slide" />
+    <position name="head_pan" joint="joint_head_pan" class="head_pan" />
+    <position name="head_tilt" joint="joint_head_tilt" class="head_tilt" />
+  </actuator>
+  <contact>
+    <exclude body1="link_head_pan" body2="link_head" />
+    <exclude body1="link_left_wheel" body2="base_link" />
+    <exclude body1="link_right_wheel" body2="base_link" />
+    <exclude body1="link_lift" body2="link_mast" />
+    <exclude body1="link_lift" body2="link_head" />
+    <exclude body1="link_arm_l0" body2="link_arm_l4" />
+    <exclude body1="link_arm_l1" body2="link_arm_l4" />
+    <exclude body1="link_arm_l2" body2="link_arm_l4" />
+    <exclude body1="link_arm_l3" body2="link_arm_l4" />
+    <exclude body1="link_arm_l0" body2="link_arm_l2" />
+    <exclude body1="link_arm_l0" body2="link_arm_l3" />
+    <exclude body1="link_arm_l0" body2="link_lift" />
+    <exclude body1="link_arm_l1" body2="link_arm_l3" />
+    <exclude body1="link_arm_l1" body2="link_lift" />
+    <exclude body1="link_arm_l2" body2="link_lift" />
+    <exclude body1="link_gripper_finger_left" body2="link_wrist_yaw" />
+    <exclude body1="link_gripper_finger_right" body2="link_wrist_yaw" />
+  </contact>
+  <tendon>
+    <fixed name="forward">
+      <joint joint="joint_left_wheel" coef=".5" />
+      <joint joint="joint_right_wheel" coef=".5" />
+    </fixed>
+    <fixed name="turn">
+      <joint joint="joint_left_wheel" coef="-.5" />
+      <joint joint="joint_right_wheel" coef=".5" />
+    </fixed>
+    <fixed name="extend">
+      <joint joint="joint_arm_l0" coef="1" />
+      <joint joint="joint_arm_l1" coef="1" />
+      <joint joint="joint_arm_l2" coef="1" />
+      <joint joint="joint_arm_l3" coef="1" />
+    </fixed>
+  </tendon>
+  <equality>
+    <joint joint1="joint_arm_l0" joint2="joint_arm_l1" />
+    <joint joint1="joint_arm_l1" joint2="joint_arm_l2" />
+    <joint joint1="joint_arm_l2" joint2="joint_arm_l3" />
+    <joint joint1="joint_gripper_finger_left_open" joint2="joint_gripper_slide" polycoef="0 10 0 0 0" solref="0.005 1" />
+    <joint joint1="joint_gripper_finger_right_open" joint2="joint_gripper_slide" polycoef="0 10 0 0 0" solref="0.005 1" />
+  </equality>
+</mujoco>

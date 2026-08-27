@@ -1,0 +1,92 @@
+Create a complex articulated office printer and scanner as an articulated object.
+
+Coordinate convention:
+- X is left-right width.
+- Y is front-back depth.
+- Z is vertical height.
+- Front is toward negative Y.
+- Back is toward positive Y.
+
+Use simple box geometry only.
+
+Parts:
+1. printer_body: fixed root part.
+2. scanner_lid: hinged top lid.
+3. input_tray: sliding paper input tray.
+4. output_flap: hinged front output flap.
+5. cartridge_door: hinged front cartridge access door.
+6. left_roller: continuous rotating roller.
+7. right_roller: continuous rotating roller.
+
+Printer body:
+- Rectangular printer body with hollow paper slot areas.
+- Include main body shell, top scanner bed, front face, side panels, and rear paper channel.
+- Do not make it one solid block.
+- Add visible paper path slot at the front.
+- Add internal supports for input tray.
+
+Scanner lid:
+- Thin lid on the top of the printer.
+- Hinge along the back top edge.
+- Use REVOLUTE joint.
+- Parent: printer_body.
+- Child: scanner_lid.
+- Axis: along X axis.
+- Closed position: 0.
+- Open position: about 70 degrees.
+- Motion limits lower=0, upper about 1.22 radians.
+- Lid should rotate around back edge, not center.
+
+Input tray:
+- Flat sliding tray at the paper input area.
+- Use PRISMATIC joint.
+- Parent: printer_body.
+- Child: input_tray.
+- Axis: (0, -1, 0).
+- Motion limits lower=0, upper about 0.18.
+- Tray should remain partially inside and supported when opened.
+
+Output flap:
+- Thin flap at the front lower output slot.
+- Use REVOLUTE joint.
+- Parent: printer_body.
+- Child: output_flap.
+- Axis: along X axis.
+- Hinge origin along the lower front edge of the output slot.
+- Motion limits lower=0, upper about 1.4 radians.
+- Flap should open downward and outward.
+
+Cartridge door:
+- Front panel above the output slot.
+- Use REVOLUTE joint.
+- Parent: printer_body.
+- Child: cartridge_door.
+- Axis: along X axis.
+- Hinge origin along the lower edge of the cartridge door.
+- Motion limits lower=0, upper about 1.3 radians.
+
+Rollers:
+- Two small rollers inside the output path.
+- Use CONTINUOUS joints.
+- Parent: printer_body.
+- Children: left_roller and right_roller.
+- Axis should be along X axis.
+- Each roller should rotate in place, not orbit.
+- Add indicator marks so rotation is visible.
+
+Validation tests:
+- Check printer_body is root.
+- Check there are exactly six joints.
+- Check scanner_lid, output_flap, and cartridge_door are REVOLUTE.
+- Check input_tray is PRISMATIC.
+- Check rollers are CONTINUOUS.
+- Check scanner_lid rotates around back top edge.
+- Check output_flap rotates around lower front edge.
+- Check cartridge_door rotates around lower edge.
+- Check input_tray slides forward along negative Y.
+- Check rollers rotate around their own centers.
+- Check moving parts are visually separated.
+
+Important:
+- Use clear part names and visual names.
+- Use comments and readable code.

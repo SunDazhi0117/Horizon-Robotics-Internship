@@ -1,0 +1,97 @@
+{
+  "source_glb": "/home/users/dazhi.sun-labs/projects/scenesmith/outputs/2026-07-01/articulated_demo_room_v1/articulated_demo_room_v1.glb",
+  "output_xml": "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/articulated_demo_mujoco/xml/articulated_demo_with_joints.xml",
+  "mesh_count": 85,
+  "joint_count_expected": 8,
+  "joints": {
+    "frame_to_door": {
+      "body": "entry_door",
+      "type": "hinge",
+      "axis": "0 0 1",
+      "range": "0 1.5708",
+      "pivot": [
+        4.12702751159668,
+        0.04749999940395355,
+        0.20000000298023224
+      ]
+    },
+    "left_hinge": {
+      "body": "cabinet_left_door",
+      "type": "hinge",
+      "axis": "0 0 -1",
+      "range": "0 1.5708",
+      "pivot": [
+        4.9299999122328355,
+        3.410000038696211,
+        0.10000000149011612
+      ]
+    },
+    "right_hinge": {
+      "body": "cabinet_right_door",
+      "type": "hinge",
+      "axis": "0 0 1",
+      "range": "0 1.5708",
+      "pivot": [
+        4.929999922733155,
+        2.490000232311086,
+        0.10000000149011612
+      ]
+    },
+    "body_to_front_door": {
+      "body": "microwave_door",
+      "type": "hinge",
+      "axis": "0 0 1",
+      "range": "0 1.75",
+      "pivot": [
+        4.203670024871826,
+        3.977531909942627,
+        1.1896767392754555
+      ]
+    },
+    "body_to_sliding_tray": {
+      "body": "microwave_tray",
+      "type": "slide",
+      "axis": "0 -1 0",
+      "range": "0 0.22",
+      "pivot": [
+        4.006170272827148,
+        4.201531887054443,
+        1.1216766610741615
+      ]
+    },
+    "tray_to_turntable": {
+      "body": "microwave_turntable",
+      "type": "hinge",
+      "axis": "0 0 1",
+      "range": null,
+      "pivot": [
+        4.006170272827148,
+        4.201531887054443,
+        1.1286766305565834
+      ]
+    },
+    "body_to_upper_knob": {
+      "body": "microwave_upper_knob",
+      "type": "hinge",
+      "axis": "0 1 0",
+      "range": null,
+      "pivot": [
+        4.273670196533203,
+        3.971531867980957,
+        1.247676707804203
+      ]
+    },
+    "body_to_lower_knob": {
+      "body": "microwave_lower_knob",
+      "type": "hinge",
+      "axis": "0 1 0",
+      "range": null,
+      "pivot": [
+        4.273670196533203,
+        3.971531867980957,
+        1.1416767612099648
+      ]
+    }
+  },
+  "note": "First-pass MuJoCo articulation rebuild from GLB mesh groups and joint metadata."
+}

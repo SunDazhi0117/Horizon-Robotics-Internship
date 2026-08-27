@@ -1,0 +1,12 @@
+{
+  "input_room_xml": "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/articulated_demo_mujoco/xml/articulated_demo_with_actuators.xml",
+  "stretch_xml": "/home/users/dazhi.sun-labs/projects/week5_note/external/mujoco_menagerie/hello_robot_stretch/stretch.xml",
+  "output_xml": "/home/users/dazhi.sun-labs/projects/week5_note/pipeline/articulated_demo_mujoco/xml/articulated_demo_with_stretch.xml",
+  "robot_body": "base_link",
+  "robot_initial_pos": [
+    2.6,
+    2.0,
+    0.0
+  ],
+  "note": "Merged real Hello Robot Stretch MJCF into the actuator-enabled articulated room."
+}

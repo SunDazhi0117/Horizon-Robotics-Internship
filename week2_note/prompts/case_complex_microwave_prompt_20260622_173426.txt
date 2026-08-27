@@ -1,0 +1,138 @@
+Create a complex articulated microwave oven as an articulated object.
+
+This object should be moderately complex and useful for debugging articulated object generation.
+
+Coordinate convention:
+- X is left-right width.
+- Y is front-back depth.
+- Z is vertical height.
+- The front of the microwave is toward negative Y.
+- The back of the microwave is toward positive Y.
+
+Overall object:
+Create a countertop microwave oven with:
+1. A fixed microwave body as the root part.
+2. A hinged front door that opens outward.
+3. A sliding inner tray that can be pulled forward.
+4. A continuously rotating turntable on the tray.
+5. Two rotary control knobs on the right control panel.
+
+Use simple box geometry only. If a round object is needed, approximate it with multiple thin boxes.
+
+Parts:
+- microwave_body: fixed root part.
+- front_door: movable hinged door.
+- sliding_tray: movable tray inside the microwave.
+- turntable: continuously rotating plate on the tray.
+- upper_knob: continuously rotating upper control knob.
+- lower_knob: continuously rotating lower control knob.
+
+Microwave body geometry:
+- The body should look like a hollow rectangular microwave frame.
+- Include left wall, right wall, top panel, bottom panel, back panel, and internal floor.
+- The front should be open.
+- Add a right-side control panel area next to the door.
+- Add two side rails inside the cavity to support the sliding tray.
+- Do not make the microwave body one solid block.
+
+Front door geometry:
+- The door should be a thin rectangular door frame with a window area.
+- Add a vertical handle on the left side of the door front.
+- The door should cover the main oven opening when closed.
+- The door should not cover the right control panel.
+- The door should be hinged on its right edge next to the control panel.
+- The door should open outward toward the viewer.
+
+Sliding tray geometry:
+- The tray should sit inside the microwave cavity.
+- It should be a thin rectangular plate supported by the side rails.
+- It should slide forward along negative Y.
+- It should remain partially supported by the rails when opened.
+- It should not pass through the front door in the closed position.
+
+Turntable geometry:
+- The turntable should sit on top of the sliding tray.
+- Approximate a circular plate using simple box geometry.
+- Add a small visual marker on top so rotation is visible.
+- The turntable should rotate in place around the vertical Z axis.
+- It should not orbit around the tray.
+
+Knob geometry:
+- Place two control knobs on the right control panel.
+- upper_knob should be above lower_knob.
+- Each knob should rotate around its own front-back Y axis.
+- Add a small indicator mark on each knob.
+- The knobs should be attached to the control panel and should not float.
+
+Joints:
+1. front_door joint:
+   - Type: REVOLUTE.
+   - Parent: microwave_body.
+   - Child: front_door.
+   - Axis: (0, 0, 1).
+   - Hinge origin should be along the right vertical edge of the door.
+   - Closed position: 0.
+   - Open position: about 100 degrees.
+   - Motion limits: lower=0, upper about 1.75 radians.
+   - The door must rotate around its right edge, not around its center.
+
+2. sliding_tray joint:
+   - Type: PRISMATIC.
+   - Parent: microwave_body.
+   - Child: sliding_tray.
+   - Axis: (0, -1, 0).
+   - Lower limit: 0.
+   - Upper limit: about 0.22 meters.
+   - The tray should slide forward out of the microwave cavity.
+
+3. turntable joint:
+   - Type: CONTINUOUS.
+   - Parent: sliding_tray.
+   - Child: turntable.
+   - Axis: (0, 0, 1).
+   - Joint origin should be at the center of the turntable.
+   - No finite lower or upper angular limits.
+   - The turntable should rotate in place relative to the tray.
+
+4. upper_knob joint:
+   - Type: CONTINUOUS.
+   - Parent: microwave_body.
+   - Child: upper_knob.
+   - Axis should be along the front-back Y axis.
+   - Joint origin should be at the center of the upper knob.
+   - The knob should rotate in place on the control panel.
+
+5. lower_knob joint:
+   - Type: CONTINUOUS.
+   - Parent: microwave_body.
+   - Child: lower_knob.
+   - Axis should be along the front-back Y axis.
+   - Joint origin should be at the center of the lower knob.
+   - The knob should rotate in place on the control panel.
+
+Validation tests:
+- Check that microwave_body is the root part.
+- Check that there are exactly five joints.
+- Check that front_door uses a REVOLUTE joint.
+- Check that sliding_tray uses a PRISMATIC joint.
+- Check that turntable uses a CONTINUOUS joint.
+- Check that upper_knob and lower_knob use CONTINUOUS joints.
+- Check that front_door parent is microwave_body and child is front_door.
+- Check that sliding_tray parent is microwave_body and child is sliding_tray.
+- Check that turntable parent is sliding_tray and child is turntable.
+- Check that the door hinge origin is near the right vertical edge of the door.
+- Check that the door opens outward and does not rotate around its center.
+- Check that the tray slides forward along negative Y.
+- Check that the tray remains supported by the rails when opened.
+- Check that the turntable rotates around its own center.
+- Check that both knobs rotate around their own centers.
+- Check that the knobs remain attached to the control panel.
+- Check that the closed door does not interpenetrate the microwave body.
+- Check that the tray does not interpenetrate the back wall or front door in the closed position.
+- Check that the moving parts are visually separated and not merged into one solid block.
+
+Important:
+- Use clear part names.
+- Use clear visual element names.
+- Prefer readable and debuggable code.
+- Add comments explaining key dimensions, joint origins, and axes.

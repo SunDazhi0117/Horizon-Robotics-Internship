@@ -1,0 +1,88 @@
+Create a complex articulated rolling tool chest as an articulated object.
+
+Coordinate convention:
+- X is left-right width.
+- Y is front-back depth.
+- Z is vertical height.
+- Front is toward negative Y.
+- Back is toward positive Y.
+
+Use simple box geometry only.
+
+Parts:
+1. chest_body: fixed root part.
+2. top_lid: hinged top lid.
+3. upper_drawer: sliding drawer.
+4. middle_drawer: sliding drawer.
+5. lower_drawer: sliding drawer.
+6. left_side_handle: rotating side handle.
+7. right_side_handle: rotating side handle.
+8. wheel_fl: front-left caster wheel.
+9. wheel_fr: front-right caster wheel.
+10. wheel_bl: back-left caster wheel.
+11. wheel_br: back-right caster wheel.
+
+Chest body:
+- Rectangular cabinet body.
+- Include left wall, right wall, back panel, top frame, bottom panel, and drawer dividers.
+- Front should have three drawer openings.
+- Add rails for each drawer.
+- Do not make it one solid block.
+
+Top lid:
+- Thin lid on top of the tool chest.
+- Hinge along the back top edge.
+- Use REVOLUTE joint.
+- Parent: chest_body.
+- Child: top_lid.
+- Axis: along X axis.
+- Motion limits lower=0, upper about 1.4 radians.
+- Lid should open upward/backward around its back edge.
+
+Drawers:
+- Three independent drawers: upper_drawer, middle_drawer, lower_drawer.
+- Each drawer should be an open tray, not a solid block.
+- Each drawer should have bottom panel, side walls, back wall, front face, and handle.
+- Each drawer should use a PRISMATIC joint.
+- Parent: chest_body.
+- Axis: (0, -1, 0).
+- upper_drawer upper limit about 0.18.
+- middle_drawer upper limit about 0.22.
+- lower_drawer upper limit about 0.25.
+- Drawers should be vertically separated and independent.
+- Drawers should remain supported by rails when open.
+
+Side handles:
+- Mounted on outside side walls.
+- Each handle should rotate slightly outward using REVOLUTE joints.
+- Parent: chest_body.
+- Motion limits lower=0, upper about 0.8 radians.
+- Handles should remain attached to side walls.
+
+Wheels:
+- Four small wheels under the chest.
+- Each wheel uses a CONTINUOUS joint.
+- Parent: chest_body.
+- Axis should be along X axis.
+- Wheels should rotate in place around their centers.
+- Wheels should not float.
+
+Validation tests:
+- Check chest_body is root.
+- Check there are exactly ten joints.
+- Check top_lid is REVOLUTE.
+- Check three drawers are PRISMATIC.
+- Check side handles are REVOLUTE.
+- Check four wheels are CONTINUOUS.
+- Check drawers slide forward along negative Y.
+- Check drawers remain supported by rails when open.
+- Check drawers are independent and vertically separated.
+- Check top lid rotates around back edge, not center.
+- Check handles remain attached to side walls.
+- Check wheels rotate around their own centers.
+- Check moving parts are not merged into one solid block.
+
+Important:
+- Use clear comments.
+- Use clear part and visual names.
+- Make it complex enough that bugs may appear, especially with drawer spacing, joint origins, and wheel axes.

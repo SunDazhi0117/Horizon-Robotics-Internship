@@ -1,0 +1,215 @@
+{
+  "task_name": "printer_service_panel_tray_restore",
+  "passed": true,
+  "acceptance_scope": "robot, articulated mechanisms, visual collision geometry, tray support, and final restoration",
+  "state_count": 942,
+  "action_count": 24,
+  "actions": [
+    {
+      "action_index": 0,
+      "action": "hold_pose",
+      "phase": "initial_hold",
+      "start_state_index": 1,
+      "end_state_index": 5
+    },
+    {
+      "action_index": 1,
+      "action": "move_near_target",
+      "phase": "navigate_to_printer",
+      "start_state_index": 6,
+      "end_state_index": 55
+    },
+    {
+      "action_index": 2,
+      "action": "approach_target",
+      "phase": "approach_service_panel_5",
+      "start_state_index": 56,
+      "end_state_index": 122
+    },
+    {
+      "action_index": 3,
+      "action": "grasp_target",
+      "phase": "grasp_service_panel",
+      "start_state_index": 123,
+      "end_state_index": 155
+    },
+    {
+      "action_index": 4,
+      "action": "follow_hinge_joint",
+      "phase": "open_service_panel",
+      "start_state_index": 156,
+      "end_state_index": 219
+    },
+    {
+      "action_index": 5,
+      "action": "hold_pose",
+      "phase": "hold_panel_open",
+      "start_state_index": 220,
+      "end_state_index": 229
+    },
+    {
+      "action_index": 6,
+      "action": "change_gripper",
+      "phase": "release_service_panel",
+      "start_state_index": 230,
+      "end_state_index": 245
+    },
+    {
+      "action_index": 7,
+      "action": "move_near_target",
+      "phase": "reposition_for_toner_tray",
+      "start_state_index": 246,
+      "end_state_index": 279
+    },
+    {
+      "action_index": 8,
+      "action": "approach_target",
+      "phase": "approach_toner_tray_5",
+      "start_state_index": 280,
+      "end_state_index": 346
+    },
+    {
+      "action_index": 9,
+      "action": "grasp_target",
+      "phase": "grasp_toner_tray",
+      "start_state_index": 347,
+      "end_state_index": 382
+    },
+    {
+      "action_index": 10,
+      "action": "follow_slide_joint",
+      "phase": "pull_out_toner_tray",
+      "start_state_index": 383,
+      "end_state_index": 430
+    },
+    {
+      "action_index": 11,
+      "action": "hold_pose",
+      "phase": "inspect_toner_cartridge",
+      "start_state_index": 431,
+      "end_state_index": 440
+    },
+    {
+      "action_index": 12,
+      "action": "follow_slide_joint",
+      "phase": "push_in_toner_tray",
+      "start_state_index": 441,
+      "end_state_index": 488
+    },
+    {
+      "action_index": 13,
+      "action": "change_gripper",
+      "phase": "release_toner_tray",
+      "start_state_index": 489,
+      "end_state_index": 504
+    },
+    {
+      "action_index": 14,
+      "action": "retreat_from_target",
+      "phase": "retreat_from_toner_tray_4",
+      "start_state_index": 505,
+      "end_state_index": 544
+    },
+    {
+      "action_index": 15,
+      "action": "move_near_target",
+      "phase": "reposition_for_open_panel",
+      "start_state_index": 545,
+      "end_state_index": 578
+    },
+    {
+      "action_index": 16,
+      "action": "move_arm",
+      "phase": "clear_arm_before_panel_regrasp",
+      "start_state_index": 579,
+      "end_state_index": 620
+    },
+    {
+      "action_index": 17,
+      "action": "approach_target",
+      "phase": "approach_open_panel_from_above_3",
+      "start_state_index": 621,
+      "end_state_index": 699
+    },
+    {
+      "action_index": 18,
+      "action": "grasp_target",
+      "phase": "regrasp_service_panel",
+      "start_state_index": 700,
+      "end_state_index": 727
+    },
+    {
+      "action_index": 19,
+      "action": "follow_hinge_joint",
+      "phase": "close_service_panel",
+      "start_state_index": 728,
+      "end_state_index": 791
+    },
+    {
+      "action_index": 20,
+      "action": "change_gripper",
+      "phase": "release_closed_panel",
+      "start_state_index": 792,
+      "end_state_index": 807
+    },
+    {
+      "action_index": 21,
+      "action": "retreat_from_target",
+      "phase": "retreat_from_printer_4",
+      "start_state_index": 808,
+      "end_state_index": 832
+    },
+    {
+      "action_index": 22,
+      "action": "move_arm",
+      "phase": "return_arm_home",
+      "start_state_index": 833,
+      "end_state_index": 933
+    },
+    {
+      "action_index": 23,
+      "action": "hold_pose",
+      "phase": "final_hold",
+      "start_state_index": 934,
+      "end_state_index": 941
+    }
+  ],
+  "joint_goals": [
+    {
+      "joint_name": "printer_service_panel_hinge",
+      "reached": 0.65,
+      "closest_reached_error": 0.0,
+      "final": 0.0,
+      "expected_final": 0.0,
+      "passed": true
+    },
+    {
+      "joint_name": "printer_toner_tray_slide",
+      "reached": 0.24,
+      "closest_reached_error": 0.0,
+      "final": 0.0,
+      "expected_final": 0.0,
+      "passed": true
+    }
+  ],
+  "final_gripper": 0.04,
+  "environment_visual_overlap_failure_count": 0,
+  "forbidden_target_contact_failure_count": 0,
+  "lost_grasp_failure_count": 0,
+  "required_collision_geometry_count": 23,
+  "noncolliding_visual_geometry_failure_count": 0,
+  "mechanism_clearance_failure_count": 0,
+  "mechanism_clearance_failure_state_count": 0,
+  "mechanism_clearance_failures_sample": [],
+  "support_check_sample_count": 942,
+  "support_failure_count": 0,
+  "support_failures_sample": [],
+  "maximum_arm_joint_step": 0.12037882854451265,
+  "front_video_frame_count": 190,
+  "top_video_frame_count": 190,
+  "config": "/home/users/dazhi.sun-labs/projects/week11_note/configs/printer_service_panel_tray_restore.yaml",
+  "task_xml": "/home/users/dazhi.sun-labs/projects/week11_note/xml/printer_service.xml",
+  "trajectory": "/home/users/dazhi.sun-labs/projects/week11_note/results/printer_service_panel_tray_restore_trajectory.json",
+  "front_video": "/home/users/dazhi.sun-labs/projects/week11_note/assets/printer_service_panel_tray_restore.gif",
+  "top_video": "/home/users/dazhi.sun-labs/projects/week11_note/assets/printer_service_panel_tray_restore_top_view.gif"
+}

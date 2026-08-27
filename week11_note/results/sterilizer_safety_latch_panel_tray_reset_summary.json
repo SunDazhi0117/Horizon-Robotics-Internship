@@ -1,0 +1,321 @@
+{
+  "task_name": "sterilizer_safety_latch_panel_tray_reset",
+  "passed": true,
+  "acceptance_scope": "robot, articulated mechanisms, visual collision geometry, tray support, and final restoration",
+  "state_count": 1487,
+  "action_count": 38,
+  "actions": [
+    {
+      "action_index": 0,
+      "action": "hold_pose",
+      "phase": "initial_hold",
+      "start_state_index": 1,
+      "end_state_index": 5
+    },
+    {
+      "action_index": 1,
+      "action": "move_near_target",
+      "phase": "navigate_to_safety_latch",
+      "start_state_index": 6,
+      "end_state_index": 55
+    },
+    {
+      "action_index": 2,
+      "action": "approach_target",
+      "phase": "approach_safety_latch_5",
+      "start_state_index": 56,
+      "end_state_index": 122
+    },
+    {
+      "action_index": 3,
+      "action": "grasp_target",
+      "phase": "grasp_safety_latch",
+      "start_state_index": 123,
+      "end_state_index": 155
+    },
+    {
+      "action_index": 4,
+      "action": "follow_slide_joint",
+      "phase": "unlock_safety_latch",
+      "start_state_index": 156,
+      "end_state_index": 199
+    },
+    {
+      "action_index": 5,
+      "action": "change_gripper",
+      "phase": "release_unlocked_latch",
+      "start_state_index": 200,
+      "end_state_index": 215
+    },
+    {
+      "action_index": 6,
+      "action": "retreat_from_target",
+      "phase": "retreat_from_unlocked_latch_4",
+      "start_state_index": 216,
+      "end_state_index": 251
+    },
+    {
+      "action_index": 7,
+      "action": "move_arm",
+      "phase": "clear_arm_after_unlock",
+      "start_state_index": 252,
+      "end_state_index": 294
+    },
+    {
+      "action_index": 8,
+      "action": "move_near_target",
+      "phase": "reposition_for_service_panel",
+      "start_state_index": 295,
+      "end_state_index": 328
+    },
+    {
+      "action_index": 9,
+      "action": "approach_target",
+      "phase": "approach_service_panel_5",
+      "start_state_index": 329,
+      "end_state_index": 395
+    },
+    {
+      "action_index": 10,
+      "action": "grasp_target",
+      "phase": "grasp_service_panel",
+      "start_state_index": 396,
+      "end_state_index": 428
+    },
+    {
+      "action_index": 11,
+      "action": "follow_hinge_joint",
+      "phase": "open_service_panel",
+      "start_state_index": 429,
+      "end_state_index": 492
+    },
+    {
+      "action_index": 12,
+      "action": "hold_pose",
+      "phase": "hold_panel_open",
+      "start_state_index": 493,
+      "end_state_index": 502
+    },
+    {
+      "action_index": 13,
+      "action": "change_gripper",
+      "phase": "release_service_panel",
+      "start_state_index": 503,
+      "end_state_index": 518
+    },
+    {
+      "action_index": 14,
+      "action": "move_near_target",
+      "phase": "reposition_for_instrument_tray",
+      "start_state_index": 519,
+      "end_state_index": 552
+    },
+    {
+      "action_index": 15,
+      "action": "approach_target",
+      "phase": "approach_instrument_tray_5",
+      "start_state_index": 553,
+      "end_state_index": 619
+    },
+    {
+      "action_index": 16,
+      "action": "grasp_target",
+      "phase": "grasp_instrument_tray",
+      "start_state_index": 620,
+      "end_state_index": 655
+    },
+    {
+      "action_index": 17,
+      "action": "follow_slide_joint",
+      "phase": "pull_out_instrument_tray",
+      "start_state_index": 656,
+      "end_state_index": 703
+    },
+    {
+      "action_index": 18,
+      "action": "hold_pose",
+      "phase": "inspect_instrument_pack",
+      "start_state_index": 704,
+      "end_state_index": 715
+    },
+    {
+      "action_index": 19,
+      "action": "follow_slide_joint",
+      "phase": "push_in_instrument_tray",
+      "start_state_index": 716,
+      "end_state_index": 763
+    },
+    {
+      "action_index": 20,
+      "action": "change_gripper",
+      "phase": "release_instrument_tray",
+      "start_state_index": 764,
+      "end_state_index": 779
+    },
+    {
+      "action_index": 21,
+      "action": "retreat_from_target",
+      "phase": "retreat_from_instrument_tray_4",
+      "start_state_index": 780,
+      "end_state_index": 819
+    },
+    {
+      "action_index": 22,
+      "action": "move_near_target",
+      "phase": "reposition_for_open_panel",
+      "start_state_index": 820,
+      "end_state_index": 853
+    },
+    {
+      "action_index": 23,
+      "action": "move_arm",
+      "phase": "clear_arm_before_panel_regrasp",
+      "start_state_index": 854,
+      "end_state_index": 895
+    },
+    {
+      "action_index": 24,
+      "action": "approach_target",
+      "phase": "approach_open_panel_from_above_3",
+      "start_state_index": 896,
+      "end_state_index": 974
+    },
+    {
+      "action_index": 25,
+      "action": "grasp_target",
+      "phase": "regrasp_service_panel",
+      "start_state_index": 975,
+      "end_state_index": 1002
+    },
+    {
+      "action_index": 26,
+      "action": "follow_hinge_joint",
+      "phase": "close_service_panel",
+      "start_state_index": 1003,
+      "end_state_index": 1066
+    },
+    {
+      "action_index": 27,
+      "action": "change_gripper",
+      "phase": "release_closed_panel",
+      "start_state_index": 1067,
+      "end_state_index": 1082
+    },
+    {
+      "action_index": 28,
+      "action": "retreat_from_target",
+      "phase": "retreat_from_closed_panel_4",
+      "start_state_index": 1083,
+      "end_state_index": 1107
+    },
+    {
+      "action_index": 29,
+      "action": "move_near_target",
+      "phase": "reposition_for_unlocked_latch",
+      "start_state_index": 1108,
+      "end_state_index": 1141
+    },
+    {
+      "action_index": 30,
+      "action": "move_arm",
+      "phase": "clear_arm_before_latch_regrasp",
+      "start_state_index": 1142,
+      "end_state_index": 1242
+    },
+    {
+      "action_index": 31,
+      "action": "approach_target",
+      "phase": "approach_unlocked_latch_4",
+      "start_state_index": 1243,
+      "end_state_index": 1306
+    },
+    {
+      "action_index": 32,
+      "action": "grasp_target",
+      "phase": "regrasp_safety_latch",
+      "start_state_index": 1307,
+      "end_state_index": 1339
+    },
+    {
+      "action_index": 33,
+      "action": "follow_slide_joint",
+      "phase": "lock_safety_latch",
+      "start_state_index": 1340,
+      "end_state_index": 1383
+    },
+    {
+      "action_index": 34,
+      "action": "change_gripper",
+      "phase": "release_locked_latch",
+      "start_state_index": 1384,
+      "end_state_index": 1399
+    },
+    {
+      "action_index": 35,
+      "action": "retreat_from_target",
+      "phase": "retreat_from_locked_latch_4",
+      "start_state_index": 1400,
+      "end_state_index": 1435
+    },
+    {
+      "action_index": 36,
+      "action": "move_arm",
+      "phase": "return_arm_home",
+      "start_state_index": 1436,
+      "end_state_index": 1478
+    },
+    {
+      "action_index": 37,
+      "action": "hold_pose",
+      "phase": "final_hold",
+      "start_state_index": 1479,
+      "end_state_index": 1486
+    }
+  ],
+  "joint_goals": [
+    {
+      "joint_name": "sterilizer_safety_latch_slide",
+      "reached": 0.18,
+      "closest_reached_error": 0.0,
+      "final": 0.0,
+      "expected_final": 0.0,
+      "passed": true
+    },
+    {
+      "joint_name": "sterilizer_service_panel_hinge",
+      "reached": 0.65,
+      "closest_reached_error": 0.0,
+      "final": 0.0,
+      "expected_final": 0.0,
+      "passed": true
+    },
+    {
+      "joint_name": "sterilizer_instrument_tray_slide",
+      "reached": 0.24,
+      "closest_reached_error": 0.0,
+      "final": 0.0,
+      "expected_final": 0.0,
+      "passed": true
+    }
+  ],
+  "final_gripper": 0.04,
+  "environment_visual_overlap_failure_count": 0,
+  "forbidden_target_contact_failure_count": 0,
+  "lost_grasp_failure_count": 0,
+  "required_collision_geometry_count": 27,
+  "noncolliding_visual_geometry_failure_count": 0,
+  "mechanism_clearance_failure_count": 0,
+  "mechanism_clearance_failure_state_count": 0,
+  "mechanism_clearance_failures_sample": [],
+  "support_check_sample_count": 1487,
+  "support_failure_count": 0,
+  "support_failures_sample": [],
+  "maximum_arm_joint_step": 0.12037882854451265,
+  "front_video_frame_count": 214,
+  "top_video_frame_count": 214,
+  "config": "/home/users/dazhi.sun-labs/projects/week11_note/configs/sterilizer_safety_latch_panel_tray_reset.yaml",
+  "task_xml": "/home/users/dazhi.sun-labs/projects/week11_note/xml/sterilizer_service.xml",
+  "trajectory": "/home/users/dazhi.sun-labs/projects/week11_note/results/sterilizer_safety_latch_panel_tray_reset_trajectory.json",
+  "front_video": "/home/users/dazhi.sun-labs/projects/week11_note/assets/sterilizer_safety_latch_panel_tray_reset.gif",
+  "top_video": "/home/users/dazhi.sun-labs/projects/week11_note/assets/sterilizer_safety_latch_panel_tray_reset_top_view.gif"
+}

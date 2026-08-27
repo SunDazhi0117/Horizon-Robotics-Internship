@@ -1,0 +1,856 @@
+<mujoco model="scene_scene_000_adapter">
+  <compiler angle="radian" boundmass="0.001" boundinertia="0.001" meshdir="meshes" texturedir="meshes"/>
+
+  <visual>
+    <headlight ambient="0.4 0.4 0.4" diffuse="0.8 0.8 0.8" specular="0.1 0.1 0.1"/>
+  </visual>
+
+  <asset>
+    <texture type="skybox" colorspace="auto" name="skybox" builtin="gradient" rgb1="0.3 0.5 0.7" rgb2="0 0 0" width="512" height="3072"/>
+    <texture type="2d" colorspace="auto" name="grid" builtin="checker" mark="edge" rgb1="0.2 0.3 0.4" rgb2="0.1 0.2 0.3" markrgb="0.8 0.8 0.8" width="512" height="512"/>
+    <texture type="2d" colorspace="linear" name="study_floors_floor_tex" file="study_floors_floor_texture.png"/>
+    <texture type="2d" colorspace="linear" name="study_north_wall_wall_tex" file="study_north_wall_wall_texture.png"/>
+    <texture type="2d" colorspace="linear" name="study_window_1_window_tex" file="study_window_1_window_texture.png"/>
+    <texture type="2d" colorspace="linear" name="study_north_wall_exterior_wall_tex" file="study_north_wall_exterior_wall_texture.png"/>
+    <texture type="2d" colorspace="linear" name="study_south_wall_wall_tex" file="study_south_wall_wall_texture.png"/>
+    <texture type="2d" colorspace="linear" name="study_south_wall_exterior_wall_tex" file="study_south_wall_exterior_wall_texture.png"/>
+    <texture type="2d" colorspace="linear" name="study_east_wall_wall_tex" file="study_east_wall_wall_texture.png"/>
+    <texture type="2d" colorspace="linear" name="study_east_wall_exterior_wall_tex" file="study_east_wall_exterior_wall_texture.png"/>
+    <texture type="2d" colorspace="linear" name="study_west_wall_wall_tex" file="study_west_wall_wall_texture.png"/>
+    <texture type="2d" colorspace="linear" name="study_west_wall_exterior_wall_tex" file="study_west_wall_exterior_wall_texture.png"/>
+    <material name="grid" texture="grid" texrepeat="10 10"/>
+    <material name="study_floors_floor_tex" texture="study_floors_floor_tex"/>
+    <material name="study_north_wall_wall_tex" texture="study_north_wall_wall_tex"/>
+    <material name="study_window_1_window_tex" texture="study_window_1_window_tex"/>
+    <material name="study_north_wall_exterior_wall_tex" texture="study_north_wall_exterior_wall_tex"/>
+    <material name="study_south_wall_wall_tex" texture="study_south_wall_wall_tex"/>
+    <material name="study_south_wall_exterior_wall_tex" texture="study_south_wall_exterior_wall_tex"/>
+    <material name="study_east_wall_wall_tex" texture="study_east_wall_wall_tex"/>
+    <material name="study_east_wall_exterior_wall_tex" texture="study_east_wall_exterior_wall_tex"/>
+    <material name="study_west_wall_wall_tex" texture="study_west_wall_wall_tex"/>
+    <material name="study_west_wall_exterior_wall_tex" texture="study_west_wall_exterior_wall_tex"/>
+    <mesh name="study_room_geometry_study_room_geometry_body_link_floor_visual_visual_mesh" file="study_floors_floor.obj"/>
+    <mesh name="study_room_geometry_study_room_geometry_body_link_north_wall_visual_visual_mesh" file="study_north_wall_wall.obj"/>
+    <mesh name="study_room_geometry_study_room_geometry_body_link_window_1_visual_visual_mesh" file="study_window_1_window.obj"/>
+    <mesh name="study_room_geometry_study_room_geometry_body_link_north_wall_exterior_visual_visual_mesh" file="study_north_wall_exterior_wall.obj"/>
+    <mesh name="study_room_geometry_study_room_geometry_body_link_south_wall_visual_visual_mesh" file="study_south_wall_wall.obj"/>
+    <mesh name="study_room_geometry_study_room_geometry_body_link_south_wall_exterior_visual_visual_mesh" file="study_south_wall_exterior_wall.obj"/>
+    <mesh name="study_room_geometry_study_room_geometry_body_link_east_wall_visual_visual_mesh" file="study_east_wall_wall.obj"/>
+    <mesh name="study_room_geometry_study_room_geometry_body_link_east_wall_exterior_visual_visual_mesh" file="study_east_wall_exterior_wall.obj"/>
+    <mesh name="study_room_geometry_study_room_geometry_body_link_west_wall_visual_visual_mesh" file="study_west_wall_wall.obj"/>
+    <mesh name="study_room_geometry_study_room_geometry_body_link_west_wall_exterior_visual_visual_mesh" file="study_west_wall_exterior_wall.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_0_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_0.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_1_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_1.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_2_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_2.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_3_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_3.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_4_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_4.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_5_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_5.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_6_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_6.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_7_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_7.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_8_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_8.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_9_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_9.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_10_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_10.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_11_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_11.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_12_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_12.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_13_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_13.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_14_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_14.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_15_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_15.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_16_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_16.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_17_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_17.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_18_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_18.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_19_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_19.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_20_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_20.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_21_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_21.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_22_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_22.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_23_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_23.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_24_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_24.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_25_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_25.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_26_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_26.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_27_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_27.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_28_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_28.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_29_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_29.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_30_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_30.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_31_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_31.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_32_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_32.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_33_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_33.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_34_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_34.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_35_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_35.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_36_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_36.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_37_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_37.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_38_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_38.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_39_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_39.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_40_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_40.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_41_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_41.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_42_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_42.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_43_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_43.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_44_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_44.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_45_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_45.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_46_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_46.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_47_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_47.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_48_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_48.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_49_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_49.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_50_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_50.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_51_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_51.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_52_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_52.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_53_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_53.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_54_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_54.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_55_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_55.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_56_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_56.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_57_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_57.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_58_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_58.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_59_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_59.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_60_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_60.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_61_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_61.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_62_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_62.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_63_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_63.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_64_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_64.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_65_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_65.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_66_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_66.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_67_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_67.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_68_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_68.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_69_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_69.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_70_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_70.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_71_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_71.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_72_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_72.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_73_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_73.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_74_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_74.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_75_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_75.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_76_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_76.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_77_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_77.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_78_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_78.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_79_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_79.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_80_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_80.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_81_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_81.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_82_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_82.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_83_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_83.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_84_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_84.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_85_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_85.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_86_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_86.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_87_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_87.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_88_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_88.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_89_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_89.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_90_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_90.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_91_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_91.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_92_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_92.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_93_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_93.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_94_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_94.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_95_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_95.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_96_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_96.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_97_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_97.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_98_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_98.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_99_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_99.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_100_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_100.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_101_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_101.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_102_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_102.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_103_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_103.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_104_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_104.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_105_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_105.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_106_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_106.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_107_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_107.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_108_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_108.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_109_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_109.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_110_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_110.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_111_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_111.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_112_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_112.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_113_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_113.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_114_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_114.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_115_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_115.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_116_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_116.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_117_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_117.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_118_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_118.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_119_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_119.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_120_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_120.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_121_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_121.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_122_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_122.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_123_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_123.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_124_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_124.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_125_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_125.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_126_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_126.obj"/>
+    <mesh name="study_study_desk_0_base_link_collision_127_collision_mesh" file="study_study_desk_1783076674_study_desk_collision_127.obj"/>
+    <mesh name="study_study_desk_0_base_link_visual_visual_mesh" file="study_study_desk_1783076674_study_desk.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_0_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_0.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_1_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_1.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_2_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_2.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_3_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_3.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_4_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_4.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_5_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_5.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_6_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_6.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_7_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_7.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_8_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_8.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_9_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_9.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_10_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_10.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_11_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_11.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_12_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_12.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_13_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_13.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_14_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_14.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_15_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_15.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_16_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_16.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_17_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_17.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_18_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_18.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_19_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_19.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_20_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_20.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_21_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_21.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_22_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_22.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_23_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_23.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_24_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_24.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_25_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_25.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_26_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_26.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_27_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_27.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_28_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_28.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_29_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_29.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_30_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_30.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_31_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_31.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_32_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_32.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_33_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_33.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_34_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_34.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_35_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_35.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_36_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_36.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_37_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_37.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_38_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_38.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_39_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_39.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_40_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_40.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_41_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_41.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_42_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_42.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_43_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_43.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_44_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_44.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_45_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_45.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_46_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_46.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_47_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_47.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_48_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_48.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_49_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_49.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_50_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_50.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_51_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_51.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_52_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_52.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_53_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_53.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_54_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_54.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_55_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_55.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_56_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_56.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_57_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_57.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_58_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_58.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_59_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_59.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_60_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_60.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_61_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_61.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_62_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_62.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_63_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_63.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_64_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_64.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_65_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_65.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_66_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_66.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_67_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_67.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_68_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_68.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_69_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_69.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_70_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_70.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_71_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_71.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_72_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_72.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_73_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_73.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_74_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_74.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_75_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_75.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_76_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_76.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_77_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_77.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_78_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_78.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_79_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_79.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_80_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_80.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_81_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_81.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_82_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_82.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_83_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_83.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_84_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_84.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_85_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_85.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_86_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_86.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_87_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_87.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_88_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_88.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_89_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_89.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_90_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_90.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_91_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_91.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_92_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_92.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_93_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_93.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_94_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_94.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_95_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_95.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_96_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_96.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_97_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_97.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_98_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_98.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_99_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_99.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_100_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_100.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_101_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_101.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_102_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_102.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_103_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_103.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_104_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_104.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_105_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_105.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_106_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_106.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_107_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_107.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_108_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_108.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_109_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_109.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_110_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_110.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_111_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_111.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_112_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_112.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_113_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_113.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_114_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_114.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_115_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_115.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_116_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_116.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_117_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_117.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_118_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_118.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_119_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_119.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_120_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_120.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_121_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_121.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_122_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_122.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_123_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_123.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_124_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_124.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_125_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_125.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_126_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_126.obj"/>
+    <mesh name="study_bookcase_0_base_link_collision_127_collision_mesh" file="study_bookcase_1783076674_bookcase_collision_127.obj"/>
+    <mesh name="study_bookcase_0_base_link_visual_visual_mesh" file="study_bookcase_1783076674_bookcase.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_0_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_0.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_1_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_1.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_2_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_2.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_3_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_3.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_4_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_4.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_5_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_5.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_6_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_6.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_7_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_7.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_8_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_8.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_9_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_9.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_10_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_10.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_11_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_11.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_12_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_12.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_13_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_13.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_14_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_14.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_15_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_15.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_16_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_16.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_17_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_17.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_18_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_18.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_19_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_19.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_20_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_20.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_21_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_21.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_22_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_22.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_23_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_23.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_24_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_24.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_25_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_25.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_26_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_26.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_27_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_27.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_28_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_28.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_29_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_29.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_30_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_30.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_31_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_31.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_32_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_32.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_33_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_33.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_34_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_34.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_35_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_35.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_36_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_36.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_37_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_37.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_38_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_38.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_39_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_39.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_40_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_40.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_41_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_41.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_42_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_42.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_43_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_43.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_44_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_44.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_45_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_45.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_46_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_46.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_47_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_47.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_48_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_48.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_49_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_49.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_50_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_50.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_51_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_51.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_52_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_52.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_53_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_53.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_54_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_54.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_55_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_55.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_56_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_56.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_57_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_57.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_58_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_58.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_59_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_59.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_60_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_60.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_61_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_61.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_62_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_62.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_63_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_63.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_64_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_64.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_65_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_65.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_66_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_66.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_67_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_67.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_68_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_68.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_69_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_69.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_70_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_70.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_71_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_71.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_72_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_72.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_73_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_73.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_74_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_74.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_75_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_75.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_76_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_76.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_77_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_77.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_78_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_78.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_79_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_79.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_80_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_80.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_81_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_81.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_82_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_82.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_83_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_83.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_84_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_84.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_85_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_85.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_86_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_86.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_87_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_87.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_88_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_88.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_89_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_89.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_90_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_90.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_91_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_91.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_92_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_92.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_93_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_93.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_94_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_94.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_95_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_95.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_96_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_96.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_97_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_97.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_98_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_98.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_99_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_99.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_100_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_100.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_101_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_101.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_102_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_102.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_103_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_103.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_104_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_104.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_105_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_105.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_106_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_106.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_107_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_107.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_108_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_108.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_109_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_109.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_110_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_110.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_111_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_111.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_112_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_112.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_113_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_113.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_114_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_114.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_115_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_115.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_116_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_116.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_117_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_117.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_118_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_118.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_119_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_119.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_120_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_120.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_121_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_121.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_122_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_122.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_123_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_123.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_124_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_124.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_125_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_125.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_126_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_126.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_collision_127_collision_mesh" file="study_office_side_chair_1783076674_office_side_chair_collision_127.obj"/>
+    <mesh name="study_office_side_chair_0_base_link_visual_visual_mesh" file="study_office_side_chair_1783076674_office_side_chair.obj"/>
+  </asset>
+
+  <worldbody>
+    <geom name="ground_plane" size="0 0 0.05" pos="0 0 -0.001" type="plane" contype="0" conaffinity="0" material="grid"/>
+    <body name="study_room_geometry_study" pos="1.8 1.6 0">
+      <body name="study_room_geometry_study_room_geometry_body_link">
+        <geom name="study_room_geometry_study_room_geometry_body_link_floor_collision_collision" size="1.8 1.6 0.05" pos="0 0 -0.05" type="box" group="3"/>
+        <geom name="study_room_geometry_study_room_geometry_body_link_north_wall_collision_collision" size="1.8 0.025 1.35" pos="0 1.575 1.35" type="box" group="3"/>
+        <geom name="study_room_geometry_study_room_geometry_body_link_south_wall_collision_0_collision" size="0.223162 0.025 1.35" pos="-1.57684 -1.575 1.35" type="box" group="3"/>
+        <geom name="study_room_geometry_study_room_geometry_body_link_south_wall_collision_1_collision" size="1.12684 0.025 1.35" pos="0.673162 -1.575 1.35" type="box" group="3"/>
+        <geom name="study_room_geometry_study_room_geometry_body_link_east_wall_collision_collision" size="0.025 1.6 1.35" pos="1.775 0 1.35" type="box" group="3"/>
+        <geom name="study_room_geometry_study_room_geometry_body_link_west_wall_collision_collision" size="0.025 1.6 1.35" pos="-1.775 0 1.35" type="box" group="3"/>
+        <geom name="study_room_geometry_study_room_geometry_body_link_floor_visual_visual" type="mesh" contype="0" conaffinity="0" material="study_floors_floor_tex" mesh="study_room_geometry_study_room_geometry_body_link_floor_visual_visual_mesh"/>
+        <geom name="study_room_geometry_study_room_geometry_body_link_north_wall_visual_visual" pos="0 1.575 0" quat="1 0 0 0" type="mesh" contype="0" conaffinity="0" material="study_north_wall_wall_tex" mesh="study_room_geometry_study_room_geometry_body_link_north_wall_visual_visual_mesh"/>
+        <geom name="study_room_geometry_study_room_geometry_body_link_window_1_visual_visual" pos="0.574991 1.575 1.5" quat="1 0 0 0" type="mesh" contype="0" conaffinity="0" material="study_window_1_window_tex" mesh="study_room_geometry_study_room_geometry_body_link_window_1_visual_visual_mesh"/>
+        <geom name="study_room_geometry_study_room_geometry_body_link_north_wall_exterior_visual_visual" pos="0 1.625 0" quat="1 0 0 0" type="mesh" contype="0" conaffinity="0" material="study_north_wall_exterior_wall_tex" mesh="study_room_geometry_study_room_geometry_body_link_north_wall_exterior_visual_visual_mesh"/>
+        <geom name="study_room_geometry_study_room_geometry_body_link_south_wall_visual_visual" pos="0 -1.575 0" quat="1 0 0 0" type="mesh" contype="0" conaffinity="0" material="study_south_wall_wall_tex" mesh="study_room_geometry_study_room_geometry_body_link_south_wall_visual_visual_mesh"/>
+        <geom name="study_room_geometry_study_room_geometry_body_link_south_wall_exterior_visual_visual" pos="0 -1.625 0" quat="1 0 0 0" type="mesh" contype="0" conaffinity="0" material="study_south_wall_exterior_wall_tex" mesh="study_room_geometry_study_room_geometry_body_link_south_wall_exterior_visual_visual_mesh"/>
+        <geom name="study_room_geometry_study_room_geometry_body_link_east_wall_visual_visual" pos="1.775 0 0" quat="0.707105 0 0 0.707108" type="mesh" contype="0" conaffinity="0" material="study_east_wall_wall_tex" mesh="study_room_geometry_study_room_geometry_body_link_east_wall_visual_visual_mesh"/>
+        <geom name="study_room_geometry_study_room_geometry_body_link_east_wall_exterior_visual_visual" pos="1.825 0 0" quat="0.707105 0 0 0.707108" type="mesh" contype="0" conaffinity="0" material="study_east_wall_exterior_wall_tex" mesh="study_room_geometry_study_room_geometry_body_link_east_wall_exterior_visual_visual_mesh"/>
+        <geom name="study_room_geometry_study_room_geometry_body_link_west_wall_visual_visual" pos="-1.775 0 0" quat="0.707105 0 0 0.707108" type="mesh" contype="0" conaffinity="0" material="study_west_wall_wall_tex" mesh="study_room_geometry_study_room_geometry_body_link_west_wall_visual_visual_mesh"/>
+        <geom name="study_room_geometry_study_room_geometry_body_link_west_wall_exterior_visual_visual" pos="-1.825 0 0" quat="0.707105 0 0 0.707108" type="mesh" contype="0" conaffinity="0" material="study_west_wall_exterior_wall_tex" mesh="study_room_geometry_study_room_geometry_body_link_west_wall_exterior_visual_visual_mesh"/>
+      </body>
+    </body>
+    <body name="study_study_desk_0" pos="3.16563 2.25345 0" quat="0.707107 0 0 0.707107">
+      <body name="study_study_desk_0_base_link">
+        <inertial pos="0.001655 8e-06 0.303825" quat="0.706789 0.707421 -0.00161499 -0.00146604" mass="30" diaginertia="2.21509 1.83948 1.35185"/>
+        <geom name="study_study_desk_0_base_link_collision_0_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_0_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_1_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_1_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_2_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_2_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_3_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_3_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_4_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_4_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_5_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_5_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_6_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_6_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_7_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_7_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_8_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_8_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_9_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_9_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_10_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_10_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_11_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_11_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_12_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_12_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_13_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_13_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_14_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_14_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_15_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_15_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_16_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_16_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_17_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_17_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_18_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_18_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_19_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_19_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_20_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_20_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_21_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_21_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_22_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_22_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_23_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_23_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_24_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_24_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_25_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_25_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_26_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_26_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_27_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_27_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_28_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_28_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_29_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_29_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_30_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_30_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_31_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_31_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_32_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_32_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_33_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_33_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_34_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_34_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_35_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_35_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_36_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_36_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_37_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_37_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_38_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_38_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_39_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_39_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_40_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_40_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_41_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_41_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_42_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_42_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_43_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_43_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_44_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_44_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_45_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_45_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_46_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_46_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_47_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_47_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_48_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_48_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_49_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_49_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_50_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_50_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_51_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_51_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_52_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_52_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_53_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_53_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_54_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_54_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_55_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_55_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_56_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_56_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_57_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_57_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_58_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_58_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_59_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_59_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_60_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_60_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_61_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_61_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_62_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_62_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_63_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_63_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_64_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_64_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_65_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_65_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_66_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_66_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_67_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_67_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_68_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_68_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_69_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_69_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_70_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_70_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_71_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_71_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_72_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_72_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_73_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_73_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_74_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_74_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_75_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_75_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_76_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_76_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_77_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_77_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_78_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_78_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_79_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_79_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_80_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_80_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_81_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_81_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_82_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_82_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_83_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_83_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_84_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_84_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_85_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_85_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_86_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_86_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_87_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_87_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_88_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_88_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_89_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_89_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_90_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_90_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_91_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_91_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_92_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_92_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_93_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_93_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_94_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_94_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_95_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_95_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_96_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_96_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_97_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_97_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_98_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_98_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_99_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_99_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_100_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_100_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_101_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_101_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_102_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_102_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_103_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_103_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_104_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_104_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_105_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_105_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_106_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_106_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_107_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_107_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_108_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_108_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_109_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_109_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_110_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_110_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_111_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_111_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_112_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_112_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_113_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_113_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_114_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_114_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_115_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_115_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_116_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_116_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_117_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_117_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_118_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_118_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_119_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_119_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_120_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_120_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_121_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_121_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_122_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_122_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_123_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_123_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_124_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_124_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_125_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_125_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_126_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_126_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_collision_127_collision" type="mesh" group="3" friction="0.4" mesh="study_study_desk_0_base_link_collision_127_collision_mesh"/>
+        <geom name="study_study_desk_0_base_link_visual_visual" type="mesh" contype="0" conaffinity="0" mesh="study_study_desk_0_base_link_visual_visual_mesh"/>
+      </body>
+    </body>
+    <body name="study_bookcase_0" pos="0.0803568 2.35002 0" quat="0.707107 0 0 -0.707107">
+      <body name="study_bookcase_0_base_link">
+        <inertial pos="-0.000685 9.5e-05 0.283842" quat="0.500245 0.499784 0.499685 0.500286" mass="12" diaginertia="1.02917 0.674621 0.356138"/>
+        <geom name="study_bookcase_0_base_link_collision_0_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_0_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_1_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_1_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_2_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_2_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_3_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_3_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_4_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_4_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_5_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_5_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_6_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_6_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_7_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_7_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_8_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_8_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_9_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_9_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_10_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_10_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_11_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_11_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_12_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_12_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_13_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_13_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_14_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_14_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_15_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_15_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_16_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_16_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_17_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_17_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_18_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_18_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_19_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_19_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_20_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_20_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_21_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_21_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_22_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_22_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_23_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_23_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_24_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_24_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_25_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_25_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_26_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_26_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_27_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_27_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_28_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_28_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_29_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_29_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_30_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_30_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_31_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_31_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_32_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_32_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_33_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_33_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_34_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_34_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_35_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_35_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_36_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_36_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_37_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_37_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_38_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_38_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_39_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_39_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_40_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_40_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_41_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_41_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_42_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_42_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_43_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_43_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_44_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_44_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_45_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_45_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_46_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_46_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_47_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_47_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_48_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_48_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_49_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_49_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_50_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_50_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_51_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_51_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_52_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_52_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_53_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_53_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_54_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_54_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_55_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_55_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_56_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_56_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_57_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_57_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_58_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_58_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_59_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_59_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_60_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_60_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_61_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_61_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_62_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_62_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_63_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_63_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_64_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_64_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_65_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_65_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_66_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_66_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_67_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_67_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_68_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_68_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_69_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_69_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_70_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_70_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_71_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_71_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_72_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_72_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_73_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_73_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_74_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_74_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_75_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_75_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_76_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_76_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_77_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_77_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_78_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_78_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_79_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_79_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_80_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_80_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_81_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_81_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_82_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_82_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_83_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_83_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_84_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_84_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_85_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_85_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_86_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_86_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_87_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_87_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_88_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_88_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_89_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_89_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_90_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_90_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_91_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_91_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_92_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_92_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_93_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_93_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_94_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_94_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_95_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_95_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_96_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_96_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_97_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_97_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_98_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_98_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_99_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_99_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_100_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_100_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_101_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_101_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_102_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_102_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_103_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_103_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_104_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_104_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_105_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_105_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_106_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_106_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_107_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_107_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_108_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_108_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_109_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_109_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_110_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_110_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_111_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_111_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_112_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_112_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_113_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_113_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_114_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_114_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_115_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_115_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_116_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_116_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_117_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_117_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_118_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_118_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_119_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_119_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_120_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_120_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_121_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_121_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_122_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_122_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_123_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_123_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_124_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_124_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_125_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_125_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_126_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_126_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_collision_127_collision" type="mesh" group="3" friction="0.4" mesh="study_bookcase_0_base_link_collision_127_collision_mesh"/>
+        <geom name="study_bookcase_0_base_link_visual_visual" type="mesh" contype="0" conaffinity="0" mesh="study_bookcase_0_base_link_visual_visual_mesh"/>
+      </body>
+    </body>
+    <body name="study_office_side_chair_0" pos="2.56735 2.23183 0" quat="0.707107 0 0 -0.707107">
+      <body name="study_office_side_chair_0_base_link">
+        <inertial pos="0.000726 0.0086 0.181072" quat="0.894615 0.241848 0.364735 0.0902298" mass="5.5" diaginertia="0.227402 0.164517 0.135932"/>
+        <geom name="study_office_side_chair_0_base_link_collision_0_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_0_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_1_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_1_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_2_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_2_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_3_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_3_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_4_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_4_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_5_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_5_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_6_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_6_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_7_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_7_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_8_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_8_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_9_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_9_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_10_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_10_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_11_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_11_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_12_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_12_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_13_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_13_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_14_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_14_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_15_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_15_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_16_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_16_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_17_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_17_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_18_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_18_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_19_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_19_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_20_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_20_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_21_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_21_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_22_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_22_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_23_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_23_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_24_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_24_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_25_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_25_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_26_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_26_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_27_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_27_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_28_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_28_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_29_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_29_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_30_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_30_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_31_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_31_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_32_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_32_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_33_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_33_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_34_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_34_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_35_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_35_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_36_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_36_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_37_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_37_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_38_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_38_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_39_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_39_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_40_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_40_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_41_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_41_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_42_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_42_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_43_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_43_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_44_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_44_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_45_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_45_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_46_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_46_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_47_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_47_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_48_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_48_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_49_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_49_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_50_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_50_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_51_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_51_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_52_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_52_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_53_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_53_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_54_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_54_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_55_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_55_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_56_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_56_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_57_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_57_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_58_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_58_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_59_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_59_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_60_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_60_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_61_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_61_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_62_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_62_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_63_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_63_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_64_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_64_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_65_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_65_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_66_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_66_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_67_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_67_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_68_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_68_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_69_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_69_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_70_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_70_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_71_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_71_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_72_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_72_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_73_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_73_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_74_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_74_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_75_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_75_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_76_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_76_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_77_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_77_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_78_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_78_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_79_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_79_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_80_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_80_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_81_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_81_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_82_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_82_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_83_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_83_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_84_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_84_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_85_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_85_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_86_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_86_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_87_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_87_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_88_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_88_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_89_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_89_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_90_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_90_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_91_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_91_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_92_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_92_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_93_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_93_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_94_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_94_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_95_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_95_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_96_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_96_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_97_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_97_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_98_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_98_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_99_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_99_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_100_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_100_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_101_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_101_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_102_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_102_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_103_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_103_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_104_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_104_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_105_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_105_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_106_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_106_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_107_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_107_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_108_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_108_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_109_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_109_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_110_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_110_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_111_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_111_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_112_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_112_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_113_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_113_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_114_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_114_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_115_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_115_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_116_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_116_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_117_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_117_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_118_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_118_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_119_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_119_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_120_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_120_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_121_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_121_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_122_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_122_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_123_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_123_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_124_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_124_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_125_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_125_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_126_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_126_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_collision_127_collision" type="mesh" group="3" friction="0.4" mesh="study_office_side_chair_0_base_link_collision_127_collision_mesh"/>
+        <geom name="study_office_side_chair_0_base_link_visual_visual" type="mesh" contype="0" conaffinity="0" mesh="study_office_side_chair_0_base_link_visual_visual_mesh"/>
+      </body>
+    </body>
+  </worldbody>
+</mujoco>

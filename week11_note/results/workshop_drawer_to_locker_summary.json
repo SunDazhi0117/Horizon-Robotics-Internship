@@ -1,0 +1,223 @@
+{
+  "task_name": "workshop_drawer_to_locker",
+  "passed": true,
+  "state_count": 1210,
+  "action_count": 24,
+  "actions": [
+    {
+      "action_index": 0,
+      "action": "hold_pose",
+      "phase": "initial_hold",
+      "start_state_index": 1,
+      "end_state_index": 5
+    },
+    {
+      "action_index": 1,
+      "action": "move_near_target",
+      "phase": "navigate_to_tool_drawer",
+      "start_state_index": 6,
+      "end_state_index": 55
+    },
+    {
+      "action_index": 2,
+      "action": "approach_target",
+      "phase": "approach_tool_drawer_5",
+      "start_state_index": 56,
+      "end_state_index": 120
+    },
+    {
+      "action_index": 3,
+      "action": "grasp_target",
+      "phase": "grasp_tool_drawer",
+      "start_state_index": 121,
+      "end_state_index": 151
+    },
+    {
+      "action_index": 4,
+      "action": "follow_slide_joint",
+      "phase": "pull_tool_drawer",
+      "start_state_index": 152,
+      "end_state_index": 199
+    },
+    {
+      "action_index": 5,
+      "action": "change_gripper",
+      "phase": "release_tool_drawer",
+      "start_state_index": 200,
+      "end_state_index": 215
+    },
+    {
+      "action_index": 6,
+      "action": "retreat_from_target",
+      "phase": "retreat_from_tool_drawer_4",
+      "start_state_index": 216,
+      "end_state_index": 239
+    },
+    {
+      "action_index": 7,
+      "action": "move_arm",
+      "phase": "reset_after_drawer",
+      "start_state_index": 240,
+      "end_state_index": 281
+    },
+    {
+      "action_index": 8,
+      "action": "move_near_target",
+      "phase": "navigate_to_locker_clear_open_drawer",
+      "start_state_index": 282,
+      "end_state_index": 381
+    },
+    {
+      "action_index": 9,
+      "action": "approach_target",
+      "phase": "approach_locker_door_5",
+      "start_state_index": 382,
+      "end_state_index": 446
+    },
+    {
+      "action_index": 10,
+      "action": "grasp_target",
+      "phase": "grasp_locker_door",
+      "start_state_index": 447,
+      "end_state_index": 477
+    },
+    {
+      "action_index": 11,
+      "action": "follow_hinge_joint",
+      "phase": "open_locker_door",
+      "start_state_index": 478,
+      "end_state_index": 541
+    },
+    {
+      "action_index": 12,
+      "action": "change_gripper",
+      "phase": "release_locker_door",
+      "start_state_index": 542,
+      "end_state_index": 557
+    },
+    {
+      "action_index": 13,
+      "action": "retreat_from_target",
+      "phase": "retreat_from_locker_door_4",
+      "start_state_index": 558,
+      "end_state_index": 582
+    },
+    {
+      "action_index": 14,
+      "action": "move_arm",
+      "phase": "reset_before_tool",
+      "start_state_index": 583,
+      "end_state_index": 614
+    },
+    {
+      "action_index": 15,
+      "action": "move_near_target",
+      "phase": "return_to_tool_clear_open_objects",
+      "start_state_index": 615,
+      "end_state_index": 714
+    },
+    {
+      "action_index": 16,
+      "action": "approach_target",
+      "phase": "approach_tool_5",
+      "start_state_index": 715,
+      "end_state_index": 771
+    },
+    {
+      "action_index": 17,
+      "action": "grasp_target",
+      "phase": "grasp_tool",
+      "start_state_index": 772,
+      "end_state_index": 813
+    },
+    {
+      "action_index": 18,
+      "action": "carry_payload",
+      "phase": "carry_tool_to_locker",
+      "start_state_index": 814,
+      "end_state_index": 1017
+    },
+    {
+      "action_index": 19,
+      "action": "hold_pose",
+      "phase": "hold_tool_at_locker",
+      "start_state_index": 1018,
+      "end_state_index": 1027
+    },
+    {
+      "action_index": 20,
+      "action": "change_gripper",
+      "phase": "place_tool_in_locker",
+      "start_state_index": 1028,
+      "end_state_index": 1043
+    },
+    {
+      "action_index": 21,
+      "action": "retreat_from_target",
+      "phase": "retreat_after_tool_placement_4",
+      "start_state_index": 1044,
+      "end_state_index": 1107
+    },
+    {
+      "action_index": 22,
+      "action": "move_arm",
+      "phase": "return_arm_home",
+      "start_state_index": 1108,
+      "end_state_index": 1201
+    },
+    {
+      "action_index": 23,
+      "action": "hold_pose",
+      "phase": "final_hold",
+      "start_state_index": 1202,
+      "end_state_index": 1209
+    }
+  ],
+  "joint_goals": [
+    {
+      "joint_name": "tool_drawer_slide",
+      "reached": 0.26,
+      "closest_reached_error": 0.0,
+      "final": 0.26,
+      "expected_final": 0.26,
+      "passed": true
+    },
+    {
+      "joint_name": "locker_hinge",
+      "reached": 0.75,
+      "closest_reached_error": 0.0,
+      "final": 0.75,
+      "expected_final": 0.75,
+      "passed": true
+    }
+  ],
+  "payload_goal": {
+    "body": "workshop_payload",
+    "destination_site": "workshop_destination_site",
+    "actual_position": [
+      4.87,
+      4.08,
+      1.39
+    ],
+    "expected_position": [
+      4.87,
+      4.08,
+      1.39
+    ],
+    "position_error": 0.0,
+    "tolerance": 1e-06,
+    "passed": true
+  },
+  "final_gripper": 0.04,
+  "environment_visual_overlap_failure_count": 0,
+  "forbidden_target_contact_failure_count": 0,
+  "lost_grasp_failure_count": 0,
+  "maximum_arm_joint_step": 0.036363510149995726,
+  "front_video_frame_count": 203,
+  "top_video_frame_count": 203,
+  "config": "/home/users/dazhi.sun-labs/projects/week11_note/configs/workshop_drawer_to_locker.yaml",
+  "task_xml": "/home/users/dazhi.sun-labs/projects/week11_note/xml/workshop_transfer.xml",
+  "trajectory": "/home/users/dazhi.sun-labs/projects/week11_note/results/workshop_drawer_to_locker_trajectory.json",
+  "front_video": "/home/users/dazhi.sun-labs/projects/week11_note/assets/workshop_drawer_to_locker.gif",
+  "top_video": "/home/users/dazhi.sun-labs/projects/week11_note/assets/workshop_drawer_to_locker_top_view.gif"
+}

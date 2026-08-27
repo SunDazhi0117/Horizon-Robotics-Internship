@@ -1,0 +1,1220 @@
+{
+  "passed": true,
+  "scene_count": 6,
+  "check_count": 118,
+  "failure_count": 0,
+  "scenes": [
+    {
+      "scene": "pantry_fridge_to_cupboard",
+      "passed": true,
+      "check_count": 18,
+      "failure_count": 0,
+      "failures": [],
+      "checks": [
+        {
+          "type": "ground",
+          "label": "source_ground_plinth touches the ground",
+          "state": "initial",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "ground",
+          "label": "destination_ground_plinth touches the ground",
+          "state": "initial",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "source cabinet base",
+          "state": "initial",
+          "geom_a": "source_ground_plinth",
+          "geom_b": "source_bottom",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "source left frame",
+          "state": "initial",
+          "geom_a": "source_back",
+          "geom_b": "source_left",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "source right frame",
+          "state": "initial",
+          "geom_a": "source_back",
+          "geom_b": "source_right",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "source lower hinge",
+          "state": "initial",
+          "geom_a": "source_door_hinge_pin",
+          "geom_b": "source_hinge_mount_lower",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "source handle bracket",
+          "state": "initial",
+          "geom_a": "source_door_handle",
+          "geom_b": "source_door_handle_bracket",
+          "maximum_gap": 4.440892098500626e-16,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "source bracket to door",
+          "state": "initial",
+          "geom_a": "source_door_handle_bracket",
+          "geom_b": "source_door_panel",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "source can pedestal",
+          "state": "initial",
+          "geom_a": "source_can_support",
+          "geom_b": "source_shelf",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "source can support",
+          "state": "initial",
+          "geom_a": "pantry_can_visual",
+          "geom_b": "source_can_support",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "destination cabinet base",
+          "state": "initial",
+          "geom_a": "destination_ground_plinth",
+          "geom_b": "destination_bottom",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "destination left frame",
+          "state": "initial",
+          "geom_a": "destination_back",
+          "geom_b": "destination_left",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "destination right frame",
+          "state": "initial",
+          "geom_a": "destination_back",
+          "geom_b": "destination_right",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "destination lower hinge",
+          "state": "initial",
+          "geom_a": "destination_door_hinge_pin",
+          "geom_b": "destination_hinge_mount_lower",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "destination handle bracket",
+          "state": "initial",
+          "geom_a": "destination_door_handle",
+          "geom_b": "destination_door_handle_bracket",
+          "maximum_gap": 4.440892098500626e-16,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "destination bracket to door",
+          "state": "initial",
+          "geom_a": "destination_door_handle_bracket",
+          "geom_b": "destination_door_panel",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "destination can pedestal",
+          "state": "initial",
+          "geom_a": "destination_can_support",
+          "geom_b": "destination_shelf",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "placed can support",
+          "state": "final",
+          "geom_a": "pantry_can_visual",
+          "geom_b": "destination_can_support",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "scene": "workshop_drawer_to_locker",
+      "passed": true,
+      "check_count": 22,
+      "failure_count": 0,
+      "failures": [],
+      "checks": [
+        {
+          "type": "ground",
+          "label": "tool_chest_ground_plinth touches the ground",
+          "state": "initial",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "ground",
+          "label": "locker_ground_plinth touches the ground",
+          "state": "initial",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "ground",
+          "label": "locker_left_ground_foot touches the ground",
+          "state": "initial",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "tool chest base",
+          "state": "initial",
+          "geom_a": "tool_chest_ground_plinth",
+          "geom_b": "tool_chest_bottom",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "tool chest left frame",
+          "state": "initial",
+          "geom_a": "tool_chest_back",
+          "geom_b": "tool_chest_left",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "drawer rail mount",
+          "state": "initial",
+          "geom_a": "tool_drawer_track",
+          "geom_b": "tool_chest_right",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "drawer rail support",
+          "state": "all",
+          "geom_a": "tool_drawer_track",
+          "geom_b": "tool_drawer_bottom",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "drawer front to bottom",
+          "state": "initial",
+          "geom_a": "tool_drawer_front",
+          "geom_b": "tool_drawer_bottom",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "drawer left wall",
+          "state": "initial",
+          "geom_a": "tool_drawer_left",
+          "geom_b": "tool_drawer_bottom",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "drawer right wall",
+          "state": "initial",
+          "geom_a": "tool_drawer_right",
+          "geom_b": "tool_drawer_bottom",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "drawer handle bracket",
+          "state": "initial",
+          "geom_a": "tool_drawer_handle",
+          "geom_b": "tool_drawer_handle_bracket",
+          "maximum_gap": 4.440892098500626e-16,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "drawer bracket to front",
+          "state": "initial",
+          "geom_a": "tool_drawer_handle_bracket",
+          "geom_b": "tool_drawer_front",
+          "maximum_gap": 4.440892098500626e-16,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "source tool stand",
+          "state": "initial",
+          "geom_a": "workshop_tool_support",
+          "geom_b": "tool_drawer_bottom",
+          "maximum_gap": 2.220446049250313e-16,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "source tool support",
+          "state": "initial",
+          "geom_a": "workshop_tool_visual",
+          "geom_b": "workshop_tool_support",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "locker left connector",
+          "state": "initial",
+          "geom_a": "locker_left",
+          "geom_b": "locker_left_back_connector",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "connector to locker back",
+          "state": "initial",
+          "geom_a": "locker_left_back_connector",
+          "geom_b": "locker_back",
+          "maximum_gap": 8.881784197001252e-16,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "locker left foot",
+          "state": "initial",
+          "geom_a": "locker_left",
+          "geom_b": "locker_left_ground_foot",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "locker base",
+          "state": "initial",
+          "geom_a": "locker_ground_plinth",
+          "geom_b": "locker_bottom",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "locker lower hinge",
+          "state": "initial",
+          "geom_a": "locker_door_hinge_pin",
+          "geom_b": "locker_hinge_mount_lower",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "locker handle bracket",
+          "state": "initial",
+          "geom_a": "locker_door_handle",
+          "geom_b": "locker_door_handle_bracket",
+          "maximum_gap": 4.440892098500626e-16,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "destination tool stand",
+          "state": "initial",
+          "geom_a": "locker_tool_support",
+          "geom_b": "locker_shelf",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "placed tool support",
+          "state": "final",
+          "geom_a": "workshop_tool_visual",
+          "geom_b": "locker_tool_support",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "scene": "laundry_washer_to_dryer",
+      "passed": true,
+      "check_count": 21,
+      "failure_count": 0,
+      "failures": [],
+      "checks": [
+        {
+          "type": "ground",
+          "label": "washer_ground_plinth touches the ground",
+          "state": "initial",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "ground",
+          "label": "dryer_ground_plinth touches the ground",
+          "state": "initial",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "washer base",
+          "state": "initial",
+          "geom_a": "washer_ground_plinth",
+          "geom_b": "washer_bottom",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "washer left frame",
+          "state": "initial",
+          "geom_a": "washer_back",
+          "geom_b": "washer_left",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "washer right frame",
+          "state": "initial",
+          "geom_a": "washer_back",
+          "geom_b": "washer_right",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "washer drum mount",
+          "state": "initial",
+          "geom_a": "washer_drum",
+          "geom_b": "washer_back",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "washer lower hinge",
+          "state": "initial",
+          "geom_a": "washer_door_hinge_pin",
+          "geom_b": "washer_hinge_mount_lower",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "washer handle mount",
+          "state": "initial",
+          "geom_a": "washer_door_handle",
+          "geom_b": "washer_door_handle_mount",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "washer mount to door",
+          "state": "initial",
+          "geom_a": "washer_door_handle_mount",
+          "geom_b": "washer_round_door_visual",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "washer laundry platform mount",
+          "state": "initial",
+          "geom_a": "washer_payload_support",
+          "geom_b": "washer_payload_support_mount",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "washer mount to drum",
+          "state": "initial",
+          "geom_a": "washer_payload_support_mount",
+          "geom_b": "washer_drum",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "source laundry support",
+          "state": "initial",
+          "geom_a": "laundry_bundle_visual",
+          "geom_b": "washer_payload_support",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "dryer base",
+          "state": "initial",
+          "geom_a": "dryer_ground_plinth",
+          "geom_b": "dryer_bottom",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "dryer left frame",
+          "state": "initial",
+          "geom_a": "dryer_back",
+          "geom_b": "dryer_left",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "dryer right frame",
+          "state": "initial",
+          "geom_a": "dryer_back",
+          "geom_b": "dryer_right",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "dryer drum mount",
+          "state": "initial",
+          "geom_a": "dryer_drum",
+          "geom_b": "dryer_back",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "dryer lower hinge",
+          "state": "initial",
+          "geom_a": "dryer_door_hinge_pin",
+          "geom_b": "dryer_hinge_mount_lower",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "dryer handle mount",
+          "state": "initial",
+          "geom_a": "dryer_door_handle",
+          "geom_b": "dryer_door_handle_mount",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "dryer laundry platform mount",
+          "state": "initial",
+          "geom_a": "dryer_payload_support",
+          "geom_b": "dryer_payload_support_mount",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "dryer mount to drum",
+          "state": "initial",
+          "geom_a": "dryer_payload_support_mount",
+          "geom_b": "dryer_drum",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "placed laundry support",
+          "state": "final",
+          "geom_a": "laundry_bundle_visual",
+          "geom_b": "dryer_payload_support",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "scene": "laboratory_incubator_to_cold_storage",
+      "passed": true,
+      "check_count": 21,
+      "failure_count": 0,
+      "failures": [],
+      "checks": [
+        {
+          "type": "ground",
+          "label": "incubator_ground_plinth touches the ground",
+          "state": "initial",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "ground",
+          "label": "cold_storage_ground_plinth touches the ground",
+          "state": "initial",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "incubator base",
+          "state": "initial",
+          "geom_a": "incubator_ground_plinth",
+          "geom_b": "incubator_bottom",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "incubator left frame",
+          "state": "initial",
+          "geom_a": "incubator_back",
+          "geom_b": "incubator_left",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "incubator right frame",
+          "state": "initial",
+          "geom_a": "incubator_back",
+          "geom_b": "incubator_right",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "incubator display mount",
+          "state": "initial",
+          "geom_a": "incubator_display",
+          "geom_b": "incubator_display_mount",
+          "maximum_gap": 2.220446049250313e-16,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "display mount to frame",
+          "state": "initial",
+          "geom_a": "incubator_display_mount",
+          "geom_b": "incubator_top",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "incubator lower hinge",
+          "state": "initial",
+          "geom_a": "incubator_door_hinge_pin",
+          "geom_b": "incubator_hinge_mount_lower",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "incubator handle bracket",
+          "state": "initial",
+          "geom_a": "incubator_door_handle",
+          "geom_b": "incubator_door_handle_bracket",
+          "maximum_gap": 4.440892098500626e-16,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "incubator tray rail mount",
+          "state": "initial",
+          "geom_a": "incubator_tray_support_rail",
+          "geom_b": "incubator_right",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "incubator tray support",
+          "state": "all",
+          "geom_a": "incubator_tray_support_rail",
+          "geom_b": "incubator_tray_bottom",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "tray handle bracket",
+          "state": "initial",
+          "geom_a": "incubator_tray_handle",
+          "geom_b": "incubator_tray_handle_bracket",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "source tube stand",
+          "state": "initial",
+          "geom_a": "sample_tube_support",
+          "geom_b": "incubator_tray_bottom",
+          "maximum_gap": 2.220446049250313e-16,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "source tube support",
+          "state": "initial",
+          "geom_a": "sample_tube_visual",
+          "geom_b": "sample_tube_support",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "cold storage base",
+          "state": "initial",
+          "geom_a": "cold_storage_ground_plinth",
+          "geom_b": "cold_storage_bottom",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "cold storage left frame",
+          "state": "initial",
+          "geom_a": "cold_storage_back",
+          "geom_b": "cold_storage_left",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "cold storage right frame",
+          "state": "initial",
+          "geom_a": "cold_storage_back",
+          "geom_b": "cold_storage_right",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "cold storage lower hinge",
+          "state": "initial",
+          "geom_a": "cold_storage_door_hinge_pin",
+          "geom_b": "cold_storage_hinge_mount_lower",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "cold storage handle bracket",
+          "state": "initial",
+          "geom_a": "cold_storage_door_handle",
+          "geom_b": "cold_storage_door_handle_bracket",
+          "maximum_gap": 4.440892098500626e-16,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "destination tube stand",
+          "state": "initial",
+          "geom_a": "cold_storage_tube_support",
+          "geom_b": "cold_storage_shelf",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "placed tube support",
+          "state": "final",
+          "geom_a": "sample_tube_visual",
+          "geom_b": "cold_storage_tube_support",
+          "maximum_gap": 2.220446049250313e-16,
+          "tolerance": 1e-06,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "scene": "printer_service_panel_tray_restore",
+      "passed": true,
+      "check_count": 16,
+      "failure_count": 0,
+      "failures": [],
+      "checks": [
+        {
+          "type": "ground",
+          "label": "printer_ground_plinth touches the ground",
+          "state": "initial",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "printer base",
+          "state": "initial",
+          "geom_a": "printer_ground_plinth",
+          "geom_b": "printer_bottom_plinth",
+          "maximum_gap": 5.551115123125783e-17,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "printer left frame",
+          "state": "initial",
+          "geom_a": "printer_back",
+          "geom_b": "printer_left_frame",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "printer right frame",
+          "state": "initial",
+          "geom_a": "printer_back",
+          "geom_b": "printer_right_frame",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "printer rail mount",
+          "state": "initial",
+          "geom_a": "printer_right_tray_track",
+          "geom_b": "printer_right_frame",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "toner tray support",
+          "state": "all",
+          "geom_a": "printer_right_tray_track",
+          "geom_b": "printer_toner_tray_bottom",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "upper printer module",
+          "state": "initial",
+          "geom_a": "printer_upper_module",
+          "geom_b": "printer_top_frame",
+          "maximum_gap": 2.220446049250313e-16,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "printer output shelf",
+          "state": "initial",
+          "geom_a": "printer_output_shelf",
+          "geom_b": "printer_upper_module",
+          "maximum_gap": 8.881784197001252e-16,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "printer display mount",
+          "state": "initial",
+          "geom_a": "printer_control_display",
+          "geom_b": "printer_upper_module",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "left panel hinge",
+          "state": "initial",
+          "geom_a": "printer_service_panel_hinge_bar",
+          "geom_b": "printer_left_frame",
+          "maximum_gap": 6.000000052353016e-09,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "right panel hinge",
+          "state": "initial",
+          "geom_a": "printer_service_panel_hinge_bar",
+          "geom_b": "printer_right_frame",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "panel handle bracket",
+          "state": "initial",
+          "geom_a": "printer_service_panel_handle",
+          "geom_b": "printer_service_panel_handle_bracket",
+          "maximum_gap": 4.440892098500626e-16,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "bracket to panel",
+          "state": "initial",
+          "geom_a": "printer_service_panel_handle_bracket",
+          "geom_b": "printer_service_panel_surface",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "toner cartridge support",
+          "state": "all",
+          "geom_a": "printer_toner_cartridge",
+          "geom_b": "printer_toner_tray_bottom",
+          "maximum_gap": 2.220446049250313e-16,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "tray handle bracket",
+          "state": "initial",
+          "geom_a": "printer_toner_tray_handle",
+          "geom_b": "printer_toner_tray_handle_bracket",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "tray bracket to front",
+          "state": "initial",
+          "geom_a": "printer_toner_tray_handle_bracket",
+          "geom_b": "printer_toner_tray_front_wall",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "scene": "sterilizer_safety_latch_panel_tray_reset",
+      "passed": true,
+      "check_count": 20,
+      "failure_count": 0,
+      "failures": [],
+      "checks": [
+        {
+          "type": "ground",
+          "label": "sterilizer_ground_plinth touches the ground",
+          "state": "initial",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "sterilizer base",
+          "state": "initial",
+          "geom_a": "sterilizer_ground_plinth",
+          "geom_b": "sterilizer_bottom_plinth",
+          "maximum_gap": 5.551115123125783e-17,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "sterilizer left frame",
+          "state": "initial",
+          "geom_a": "sterilizer_back",
+          "geom_b": "sterilizer_left_frame",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "sterilizer right frame",
+          "state": "initial",
+          "geom_a": "sterilizer_back",
+          "geom_b": "sterilizer_right_frame",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "sterilizer rail mount",
+          "state": "initial",
+          "geom_a": "sterilizer_tray_track",
+          "geom_b": "sterilizer_right_frame",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "instrument tray support",
+          "state": "all",
+          "geom_a": "sterilizer_tray_track",
+          "geom_b": "sterilizer_instrument_tray_bottom",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "sterilizer control module",
+          "state": "initial",
+          "geom_a": "sterilizer_control_module",
+          "geom_b": "sterilizer_top_frame",
+          "maximum_gap": 2.220446049250313e-16,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "sterilizer display mount",
+          "state": "initial",
+          "geom_a": "sterilizer_status_display",
+          "geom_b": "sterilizer_control_module",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "warning strip mount",
+          "state": "initial",
+          "geom_a": "sterilizer_warning_strip",
+          "geom_b": "sterilizer_control_module",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "latch guide mount",
+          "state": "initial",
+          "geom_a": "sterilizer_latch_guide",
+          "geom_b": "sterilizer_left_frame",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "latch linkage guide",
+          "state": "all",
+          "geom_a": "sterilizer_latch_linkage",
+          "geom_b": "sterilizer_latch_guide",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "latch linkage to bolt",
+          "state": "all",
+          "geom_a": "sterilizer_latch_linkage",
+          "geom_b": "sterilizer_latch_bolt",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "latch handle mount",
+          "state": "all",
+          "geom_a": "sterilizer_latch_bolt",
+          "geom_b": "sterilizer_latch_handle",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "left panel hinge",
+          "state": "initial",
+          "geom_a": "sterilizer_service_panel_hinge_bar",
+          "geom_b": "sterilizer_left_frame",
+          "maximum_gap": 6.000000052353016e-09,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "right panel hinge",
+          "state": "initial",
+          "geom_a": "sterilizer_service_panel_hinge_bar",
+          "geom_b": "sterilizer_right_frame",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "panel handle bracket",
+          "state": "initial",
+          "geom_a": "sterilizer_service_panel_handle",
+          "geom_b": "sterilizer_service_panel_handle_bracket",
+          "maximum_gap": 4.440892098500626e-16,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "bracket to panel",
+          "state": "initial",
+          "geom_a": "sterilizer_service_panel_handle_bracket",
+          "geom_b": "sterilizer_service_panel_surface",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "instrument pack support",
+          "state": "all",
+          "geom_a": "sterilizer_instrument_pack",
+          "geom_b": "sterilizer_instrument_tray_bottom",
+          "maximum_gap": 2.220446049250313e-16,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "tray handle bracket",
+          "state": "initial",
+          "geom_a": "sterilizer_instrument_tray_handle",
+          "geom_b": "sterilizer_tray_handle_bracket",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        },
+        {
+          "type": "contact",
+          "label": "tray bracket to front",
+          "state": "initial",
+          "geom_a": "sterilizer_tray_handle_bracket",
+          "geom_b": "sterilizer_instrument_tray_front_wall",
+          "maximum_gap": 0.0,
+          "tolerance": 1e-06,
+          "passed": true
+        }
+      ]
+    }
+  ]
+}

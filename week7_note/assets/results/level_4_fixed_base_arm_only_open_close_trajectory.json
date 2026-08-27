@@ -1,0 +1,3876 @@
+[
+  {
+    "phase": "opening",
+    "step_index": 0,
+    "hinge": 0.0,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.087489178,
+      0.349237767,
+      -0.425046843,
+      -1.234147529,
+      -1.466619976,
+      1.674814084,
+      2.341326505
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.053205145431453986,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.0
+  },
+  {
+    "phase": "opening",
+    "step_index": 1,
+    "hinge": 0.0011385013660088743,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.08858641346808208,
+      0.3472368256983499,
+      -0.4247867228131017,
+      -1.2367538926153643,
+      -1.4675651347598258,
+      1.6749620967900607,
+      2.3421087594408827
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320514495216015,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.002606363615364371
+  },
+  {
+    "phase": "opening",
+    "step_index": 2,
+    "hinge": 0.004506068564414071,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.09180394141806118,
+      0.34133583174297655,
+      -0.4239977458965798,
+      -1.2444211290834284,
+      -1.4703561415153552,
+      1.6753860632292215,
+      2.3444005081986248
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320514400513768,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.007667236468064109
+  },
+  {
+    "phase": "opening",
+    "step_index": 3,
+    "hinge": 0.01003079624578345,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.09700157216556804,
+      0.33171137199956746,
+      -0.42265298516459066,
+      -1.256867204123752,
+      -1.4749147848568565,
+      1.6760406822232854,
+      2.348089833506478
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320514307151777,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.01244607504032369
+  },
+  {
+    "phase": "opening",
+    "step_index": 4,
+    "hinge": 0.017640779060684873,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.10400474712178957,
+      0.31856457502377417,
+      -0.4207078965729135,
+      -1.273753104250607,
+      -1.481148485930021,
+      1.6768644133033093,
+      2.3530322337451914
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.053205142147638926,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.01688590012685487
+  },
+  {
+    "phase": "opening",
+    "step_index": 5,
+    "hinge": 0.027264111659686202,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.11261174333474029,
+      0.30211160743039617,
+      -0.418104130274601,
+      -1.2947036676992312,
+      -1.4889503377374813,
+      1.6777857868210744,
+      2.3590593527879813
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.053205141233234846,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.020950563448624226
+  },
+  {
+    "phase": "opening",
+    "step_index": 6,
+    "hinge": 0.03882888869335529,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.12260078046098626,
+      0.2825747743408286,
+      -0.4147735773131158,
+      -1.319327630727238,
+      -1.4981986477432456,
+      1.6787302321680022,
+      2.365987354604339
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.053205140331315764,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.024623963028006735
+  },
+  {
+    "phase": "opening",
+    "step_index": 7,
+    "hinge": 0.05226320481226001,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.1337366880875857,
+      0.26017533309105073,
+      -0.410642647036307,
+      -1.3472346634457546,
+      -1.5087560786729712,
+      1.6796270199111063,
+      2.3736242062467148
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.053205139447720526,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.02790703271851669
+  },
+  {
+    "phase": "opening",
+    "step_index": 8,
+    "hinge": 0.0674951546669682,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.14577717344848068,
+      0.2351285265471306,
+      -0.4056369188395043,
+      -1.3780482284794577,
+      -1.520468595463066,
+      1.6804160099699623,
+      2.3817755413307524
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.0532051385905884,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.03081356503370314
+  },
+  {
+    "phase": "opening",
+    "step_index": 9,
+    "hinge": 0.08445283290804775,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.15847882125489654,
+      0.20764074638423083,
+      -0.3996861028953707,
+      -1.411414066370849,
+      -1.5331646364736173,
+      1.6810538853284525,
+      2.3902491395190073
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.053205137769642454,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.03336583789139125
+  },
+  {
+    "phase": "opening",
+    "step_index": 10,
+    "hinge": 0.10306433418606652,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.17160321152116748,
+      0.17790835284255205,
+      -0.3927293647962527,
+      -1.4470047719012256,
+      -1.5466549633831994,
+      1.6815195589262817,
+      2.398858270076951
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.053205136995499884,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.035590705530376576
+  },
+  {
+    "phase": "opening",
+    "step_index": 11,
+    "hinge": 0.12325775315159233,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.18492323705380878,
+      0.1461174544025666,
+      -0.3847206286253859,
+      -1.4845212565759343,
+      -1.5607337190254407,
+      1.6818183286231383,
+      2.4074242088004714
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320513627887211,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.037516484674708694
+  },
+  {
+    "phase": "opening",
+    "step_index": 12,
+    "hinge": 0.1449611844551931,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.1982298492651466,
+      0.11244396476303689,
+      -0.37563372646686227,
+      -1.52369197586132,
+      -1.575181018557148,
+      1.6819843821502887,
+      2.415778174227388
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320513562962332,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.03917071928538585
+  },
+  {
+    "phase": "opening",
+    "step_index": 13,
+    "hinge": 0.16810272274743662,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.21133877441166074,
+      0.07705334657523605,
+      -0.3654666255894581,
+      -1.5642707317601463,
+      -1.5897672798096547,
+      1.6820812118434005,
+      2.423762805311693
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.053205135055888156,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.0405787558988262
+  },
+  {
+    "phase": "opening",
+    "step_index": 14,
+    "hinge": 0.19261046267889081,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.22409678527962573,
+      0.0400997097235833,
+      -0.3542442899359651,
+      -1.606033724026334,
+      -1.6042591017316725,
+      1.6821997123205894,
+      2.43123316749889
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.053205134563111545,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.04176299226618774
+  },
+  {
+    "phase": "opening",
+    "step_index": 15,
+    "hinge": 0.21841249890012351,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.23638677915495893,
+      0.0017242015226325415,
+      -0.3420196194688195,
+      -1.6487763627901935,
+      -1.6184261988629913,
+      1.682453973894222,
+      2.438057183599504
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320513415503742,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.04274263876385942
+  },
+  {
+    "phase": "opening",
+    "step_index": 16,
+    "hinge": 0.2454369260617026,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.24813110592464432,
+      -0.037947098654658756,
+      -0.32887233574925356,
+      -1.6923101973893648,
+      -1.632048615034771,
+      1.682975122648986,
+      2.4441153663267516
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.053205133824893364,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.04353383459917137
+  },
+  {
+    "phase": "opening",
+    "step_index": 17,
+    "hinge": 0.2736118388141959,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.25929251060832037,
+      -0.07880537943541925,
+      -0.31490571408006984,
+      -1.7364601729615414,
+      -1.6449233373102012,
+      1.6839038403232733,
+      2.44929978439534
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320513357198956,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.04414997557217659
+  },
+  {
+    "phase": "opening",
+    "step_index": 18,
+    "hinge": 0.30286533180817127,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.26987279992273105,
+      -0.12076091748729993,
+      -0.3002418012040835,
+      -1.7810623064904798,
+      -1.6568695042728987,
+      1.6853823730049948,
+      2.453512300147122
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320513338533963,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.04460213352893838
+  },
+  {
+    "phase": "opening",
+    "step_index": 19,
+    "hinge": 0.33312549969419664,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.27990934229186193,
+      -0.16374410577870832,
+      -0.2850156031388874,
+      -1.8259617845887008,
+      -1.667731669628406,
+      1.6875468181295525,
+      2.4566622320190894
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320513325254095,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.044899478098221035
+  },
+  {
+    "phase": "opening",
+    "step_index": 20,
+    "hinge": 0.3643204371228398,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.2894700109057675,
+      -0.20770542831830108,
+      -0.26936901153080917,
+      -1.8710114298705398,
+      -1.6773809209492159,
+      1.6905203147535859,
+      2.4586636826210024
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.0532051331588147,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.04504964528183897
+  },
+  {
+    "phase": "opening",
+    "step_index": 21,
+    "hinge": 0.3963782387446686,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.2986472544158846,
+      -0.25261430742231034,
+      -0.2534450800972072,
+      -1.9160704592978886,
+      -1.6857139905884606,
+      1.6944074937343085,
+      2.459432809825291
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.053205133087704574,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.04505902942734874
+  },
+  {
+    "phase": "opening",
+    "step_index": 22,
+    "hinge": 0.429226999210251,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.30755193035909123,
+      -0.2984569100085276,
+      -0.237383045048867,
+      -1.9610034586911458,
+      -1.6926507313122765,
+      1.6992902794562992,
+      2.458885306003158
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320513302171492,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.04584260258621725
+  },
+  {
+    "phase": "opening",
+    "step_index": 23,
+    "hinge": 0.46279481317015475,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.31630733438414005,
+      -0.3452330973311414,
+      -0.2213142113347796,
+      -2.005679512000447,
+      -1.6981304277386986,
+      1.7052249501708434,
+      2.4569343077293038
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320513294264989,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.046776187322613794
+  },
+  {
+    "phase": "opening",
+    "step_index": 24,
+    "hinge": 0.4970097752749477,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.32504392493587014,
+      -0.39295276057877876,
+      -0.20535883696416868,
+      -2.0499714455086484,
+      -1.7021074763857262,
+      1.7122401859016227,
+      2.453488895726921
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320513283200233,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.04771966324763738
+  },
+  {
+    "phase": "opening",
+    "step_index": 25,
+    "hinge": 0.5317999801751979,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.33389463637260963,
+      -0.4416317443138673,
+      -0.1896236735480133,
+      -2.0937551623507757,
+      -1.7045468173863134,
+      1.7203359113637149,
+      2.4484533050129165
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320513267105917,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.048678983735088555
+  },
+  {
+    "phase": "opening",
+    "step_index": 26,
+    "hinge": 0.5670935225214729,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.3429909974206303,
+      -0.4912875534494359,
+      -0.1742001342185668,
+      -2.1369090591194517,
+      -1.7054195093876223,
+      1.7294826647657644,
+      2.4417269187663955
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.053205132441009856,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.04965580913556861
+  },
+  {
+    "phase": "opening",
+    "step_index": 27,
+    "hinge": 0.6028184969643409,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.3524598838696108,
+      -0.5419349711067596,
+      -0.15916281318004685,
+      -2.1793135221827966,
+      -1.7046986949127607,
+      1.7396213699270437,
+      2.4332051075091097
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.053205132123125144,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.05064741765732367
+  },
+  {
+    "phase": "opening",
+    "step_index": 28,
+    "hinge": 0.6389029981543696,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.36242085498945564,
+      -0.5935816845354931,
+      -0.1445682406884821,
+      -2.2208505061424475,
+      -1.7023561813882968,
+      1.7506634265093937,
+      2.4227809626452403
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320513169895111,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.051646713428733504
+  },
+  {
+    "phase": "opening",
+    "step_index": 29,
+    "hinge": 0.6752751207421267,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.37298393276796976,
+      -0.6462239795895767,
+      -0.13045375073987628,
+      -2.2614031965762145,
+      -1.6983598086616165,
+      1.7624911422818108,
+      2.4103479732194932
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320513115075655,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.05264229505408358
+  },
+  {
+    "phase": "opening",
+    "step_index": 30,
+    "hinge": 0.7118629593781803,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.3842478382383221,
+      -0.6998425604573183,
+      -0.11683649345986373,
+      -2.300855760467658,
+      -1.692671808111688,
+      1.7749585305301843,
+      2.395803680000196
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320513046205625,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.05361858086774163
+  },
+  {
+    "phase": "opening",
+    "step_index": 31,
+    "hinge": 0.7485946087130982,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.39629851482416445,
+      -0.7543985319781308,
+      -0.10371255217271365,
+      -2.3390931843237874,
+      -1.6852482932988497,
+      1.7878926430568787,
+      2.3790543324150426
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320512961866288,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.054555971520812485
+  },
+  {
+    "phase": "opening",
+    "step_index": 32,
+    "hinge": 0.7853981633974483,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.4092080741597093,
+      -0.8098296162136693,
+      -0.09105635930964465,
+      -2.3760012053346955,
+      -1.6760401139041559,
+      1.801095496700293,
+      2.3600205190125054
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320512860967465,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.05543108423553855
+  },
+  {
+    "phase": "opening",
+    "step_index": 33,
+    "hinge": 0.8222017180817983,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.42303391884365876,
+      -0.86604666667441,
+      -0.0788204246434769,
+      -2.411466339640168,
+      -1.6649951490389014,
+      1.8143468895716612,
+      2.338643698816626
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.0532051274290012,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.05621705046074066
+  },
+  {
+    "phase": "opening",
+    "step_index": 34,
+    "hinge": 0.8589333674167162,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.4378182311743871,
+      -0.9229306126626197,
+      -0.06693568742383699,
+      -2.4453760285088366,
+      -1.6520622142204073,
+      1.8274081653896097,
+      2.3148934378318686
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320512607701867,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.05688394598820967
+  },
+  {
+    "phase": "opening",
+    "step_index": 35,
+    "hinge": 0.8955212060527699,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.45358737018429623,
+      -0.980329969936078,
+      -0.055312517544274534,
+      -2.4776189319776547,
+      -1.637196426234695,
+      1.840027382618224,
+      2.2887750566312515
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.053205124562344164,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.05739935727345835
+  },
+  {
+    "phase": "opening",
+    "step_index": 36,
+    "hinge": 0.931893328640527,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.47035135615229484,
+      -1.0380591599049958,
+      -0.04384277926955861,
+      -2.5080854371238996,
+      -1.6203659614661714,
+      1.851945901464843,
+      2.2603371890013344
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320512290359111,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.05772918996891774
+  },
+  {
+    "phase": "opening",
+    "step_index": 37,
+    "hinge": 0.9679778298305557,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.48810297589165175,
+      -1.0958979052451236,
+      -0.03240308916787616,
+      -2.536668475745033,
+      -1.6015597117190623,
+      1.862906743197882,
+      2.229678596824042
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320512113081304,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.057838745340127895
+  },
+  {
+    "phase": "opening",
+    "step_index": 38,
+    "hinge": 1.0037028042734235,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.5068164979699097,
+      -1.1535920605936003,
+      -0.02085961570039361,
+      -2.5632647918215596,
+      -1.580795286160841,
+      1.8726646192780179,
+      2.1969533829904035
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320511928633028,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.05769415534847666
+  },
+  {
+    "phase": "opening",
+    "step_index": 39,
+    "hinge": 1.0389963466196988,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.5264458624394636,
+      -1.210856262977397,
+      -0.00907460815789423,
+      -2.5877768248344943,
+      -1.5581265277515761,
+      1.8809973877588462,
+      2.1623736384285164
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.053205117424507745,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.05726420238379659
+  },
+  {
+    "phase": "opening",
+    "step_index": 40,
+    "hinge": 1.0737865515199487,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.5469223457570103,
+      -1.2673787769292686,
+      0.0030853036471125833,
+      -2.6101153732191564,
+      -1.5336495682494,
+      1.887718337887489,
+      2.126208570223067
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320511561024728,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.05652251395187169
+  },
+  {
+    "phase": "opening",
+    "step_index": 41,
+    "hinge": 1.1080015136247419,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.5681522855891346,
+      -1.3228288079971642,
+      0.015739189043891273,
+      -2.630203141835126,
+      -1.5075065980299713,
+      1.8926879635412965,
+      2.0887793845263065
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.0532051139158613,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.05545003106789559
+  },
+  {
+    "phase": "opening",
+    "step_index": 42,
+    "hinge": 1.1415693275846457,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.5900152511304627,
+      -1.3768663176334628,
+      0.028980983201283464,
+      -2.647979141750458,
+      -1.4798865253359392,
+      1.8958238849269577,
+      2.0504496816531215
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.053205112416482896,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.05403750963629861
+  },
+  {
+    "phase": "opening",
+    "step_index": 43,
+    "hinge": 1.174418088050228,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.612363540574279,
+      -1.4291540179672233,
+      0.04286881731157072,
+      -2.6634037104311767,
+      -1.451022194645651,
+      1.8971072014757984,
+      2.011611811541715
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320511118434112,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.05228770033376051
+  },
+  {
+    "phase": "opening",
+    "step_index": 44,
+    "hinge": 1.2064758896720569,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.6350237463410825,
+      -1.4793707718498978,
+      0.057416015089722265,
+      -2.6764636931412085,
+      -1.4211842609907352,
+      1.8965839549475614,
+      1.9726704119098193
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320511028261291,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.05021675388267455
+  },
+  {
+    "phase": "opening",
+    "step_index": 45,
+    "hinge": 1.2376708271007,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.6578008308595856,
+      -1.5272251970277033,
+      0.0725853667467387,
+      -2.6871771481482263,
+      -1.390672285078815,
+      1.894361144477507,
+      1.9340249697885104
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320510975972707,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.04785442517780547
+  },
+  {
+    "phase": "opening",
+    "step_index": 46,
+    "hinge": 1.2679309949867252,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.6804846659273535,
+      -1.572468012705141,
+      0.08828798069438283,
+      -2.695596883444864,
+      -1.3598039772363042,
+      1.890597750738216,
+      1.896053493705406
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320510964516952,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.0452428156774376
+  },
+  {
+    "phase": "opening",
+    "step_index": 47,
+    "hinge": 1.2971844879807006,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.7028585471496165,
+      -1.614901680713997,
+      0.10438729663442818,
+      -2.7018122364998645,
+      -1.3289037496280842,
+      1.885492088883362,
+      1.8590991733152387
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.053205109947308746,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.042433668008856174
+  },
+  {
+    "phase": "opening",
+    "step_index": 48,
+    "hinge": 1.325359400733194,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.7247085909823732,
+      -1.65438625067487,
+      0.12070790530713542,
+      -2.7059487666977073,
+      -1.2982916382862424,
+      1.8792675533201095,
+      1.8234612467313025
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320511065367337,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.03948456996087302
+  },
+  {
+    "phase": "opening",
+    "step_index": 49,
+    "hinge": 1.352383827894773,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.7458328475724992,
+      -1.690840902907545,
+      0.13704790920797644,
+      -2.7081658525590853,
+      -1.268273529500028,
+      1.872158773150451,
+      1.7893904748268858
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320511173344221,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.03645465223267497
+  },
+  {
+    "phase": "opening",
+    "step_index": 50,
+    "hinge": 1.3781858641160056,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.7660490976800497,
+      -1.7242413395606515,
+      0.15319299037649756,
+      -2.7086524851628795,
+      -1.2391333767859711,
+      1.864399737191915,
+      1.757088867489156
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320511314176558,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.033400436653106436
+  },
+  {
+    "phase": "opening",
+    "step_index": 51,
+    "hinge": 1.40269360404746,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.7852003675537079,
+      -1.754613776294663,
+      0.1689301992982639,
+      -2.7076217699925142,
+      -1.2111276695480224,
+      1.8562149716100989,
+      1.7267127257008767
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320511482503793,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.0303761417882793
+  },
+  {
+    "phase": "opening",
+    "step_index": 52,
+    "hinge": 1.4258351423397035,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.8950186843638208,
+      -1.7626999999999993,
+      0.20095897726706827,
+      -2.6991440283976753,
+      -1.2311242761023493,
+      1.7689782687928468,
+      1.7243143984549523
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320504146836695,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.10981831681011289
+  },
+  {
+    "phase": "opening",
+    "step_index": 53,
+    "hinge": 1.4475385736433042,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      1.0063717998756259,
+      -1.7626999999999997,
+      0.2359756491271887,
+      -2.689483823966327,
+      -1.2522167317327453,
+      1.6790654999225283,
+      1.724671751352801
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320509316446271,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.11135311551180505
+  },
+  {
+    "phase": "opening",
+    "step_index": 54,
+    "hinge": 1.4677319926088301,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      1.089637242535881,
+      -1.7626999999999997,
+      0.2669944352843588,
+      -2.680598942475273,
+      -1.2613296508278249,
+      1.6124113250021583,
+      1.7207710538833756
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320512516992444,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.08326544266025504
+  },
+  {
+    "phase": "opening",
+    "step_index": 55,
+    "hinge": 1.4863434938868487,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      1.1533883746250282,
+      -1.7626999999999997,
+      0.2943541540661781,
+      -2.6721468847559766,
+      -1.2635854497606507,
+      1.5618501556367366,
+      1.7151236960114455
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320513713931651,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.06375113208914729
+  },
+  {
+    "phase": "opening",
+    "step_index": 56,
+    "hinge": 1.5033011721279284,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      1.2029818505990992,
+      -1.7626999999999997,
+      0.3183375093172977,
+      -2.6640806187436232,
+      -1.2618864895718584,
+      1.5228537863770946,
+      1.708927010421484
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.053205141497525414,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.049593475974071044
+  },
+  {
+    "phase": "opening",
+    "step_index": 57,
+    "hinge": 1.5185331219826366,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      1.241911349351093,
+      -1.7626999999999997,
+      0.3391614865060512,
+      -2.656476609903246,
+      -1.2580142110641737,
+      1.4924646182509167,
+      1.7028029269348421
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320514293621879,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.038929498751993696
+  },
+  {
+    "phase": "opening",
+    "step_index": 58,
+    "hinge": 1.5319674381015413,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      1.2725356493926028,
+      -1.7626999999999997,
+      0.3569913529003049,
+      -2.649462357890097,
+      -1.2531257922098418,
+      1.4686954993616488,
+      1.6970994191094757
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320514332348117,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.030624300041509844
+  },
+  {
+    "phase": "opening",
+    "step_index": 59,
+    "hinge": 1.5435322151352104,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      1.2964860180768394,
+      -1.7626999999999997,
+      0.371952149714035,
+      -2.6431827750725234,
+      -1.2480038628754746,
+      1.450184726515424,
+      1.6920253157948713
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.053205143418226616,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.02395036868423661
+  },
+  {
+    "phase": "opening",
+    "step_index": 60,
+    "hinge": 1.5531555477342116,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      1.3149038499223906,
+      -1.7626999999999997,
+      0.3841353737082394,
+      -2.637783194455306,
+      -1.2431931064533834,
+      1.4359908750819932,
+      1.6877150608733162
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320514352131276,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.018417831845551236
+  },
+  {
+    "phase": "opening",
+    "step_index": 61,
+    "hinge": 1.560765530549113,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      1.3285835315934273,
+      -1.7626999999999997,
+      0.39360202021242846,
+      -2.6333999921896636,
+      -1.2390797120639545,
+      1.4254674231169837,
+      1.6842615792257938
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320514373841625,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.013679681671036725
+  },
+  {
+    "phase": "opening",
+    "step_index": 62,
+    "hinge": 1.5662902582304825,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      1.3380592822987345,
+      -1.7626999999999997,
+      0.40038322057840153,
+      -2.6301548443210225,
+      -1.235939338112644,
+      1.418185261363536,
+      1.6817336432418069
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.0532051440909942,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.009475750705307151
+  },
+  {
+    "phase": "opening",
+    "step_index": 63,
+    "hinge": 1.5696578254288878,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      1.3436566070733775,
+      -1.7626999999999997,
+      0.4044793020756119,
+      -2.6281507290890875,
+      -1.2339661752672808,
+      1.4138857803251066,
+      1.6801852493875868
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.0532051445642297,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.005597324774643031
+  },
+  {
+    "phase": "opening",
+    "step_index": 64,
+    "hinge": 1.5707963267948966,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      1.3455193239171215,
+      -1.7626999999999997,
+      0.4058577494690715,
+      -2.6274687227877016,
+      -1.2332894604132496,
+      1.4124552302346476,
+      1.6796605872597052
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320514512787669,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.00186271684374395
+  },
+  {
+    "phase": "hold_open",
+    "step_index": 65,
+    "hinge": 1.5707963267948966,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      1.3455193239171215,
+      -1.7626999999999997,
+      0.4058577494690715,
+      -2.6274687227877016,
+      -1.2332894604132496,
+      1.4124552302346476,
+      1.6796605872597052
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320514512787669,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.0
+  },
+  {
+    "phase": "hold_open",
+    "step_index": 66,
+    "hinge": 1.5707963267948966,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      1.3455193239171215,
+      -1.7626999999999997,
+      0.4058577494690715,
+      -2.6274687227877016,
+      -1.2332894604132496,
+      1.4124552302346476,
+      1.6796605872597052
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320514512787669,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.0
+  },
+  {
+    "phase": "hold_open",
+    "step_index": 67,
+    "hinge": 1.5707963267948966,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      1.3455193239171215,
+      -1.7626999999999997,
+      0.4058577494690715,
+      -2.6274687227877016,
+      -1.2332894604132496,
+      1.4124552302346476,
+      1.6796605872597052
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320514512787669,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.0
+  },
+  {
+    "phase": "hold_open",
+    "step_index": 68,
+    "hinge": 1.5707963267948966,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      1.3455193239171215,
+      -1.7626999999999997,
+      0.4058577494690715,
+      -2.6274687227877016,
+      -1.2332894604132496,
+      1.4124552302346476,
+      1.6796605872597052
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320514512787669,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.0
+  },
+  {
+    "phase": "hold_open",
+    "step_index": 69,
+    "hinge": 1.5707963267948966,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      1.3455193239171215,
+      -1.7626999999999997,
+      0.4058577494690715,
+      -2.6274687227877016,
+      -1.2332894604132496,
+      1.4124552302346476,
+      1.6796605872597052
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320514512787669,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.0
+  },
+  {
+    "phase": "hold_open",
+    "step_index": 70,
+    "hinge": 1.5707963267948966,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      1.3455193239171215,
+      -1.7626999999999997,
+      0.4058577494690715,
+      -2.6274687227877016,
+      -1.2332894604132496,
+      1.4124552302346476,
+      1.6796605872597052
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320514512787669,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.0
+  },
+  {
+    "phase": "hold_open",
+    "step_index": 71,
+    "hinge": 1.5707963267948966,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      1.3455193239171215,
+      -1.7626999999999997,
+      0.4058577494690715,
+      -2.6274687227877016,
+      -1.2332894604132496,
+      1.4124552302346476,
+      1.6796605872597052
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320514512787669,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.0
+  },
+  {
+    "phase": "hold_open",
+    "step_index": 72,
+    "hinge": 1.5707963267948966,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      1.3455193239171215,
+      -1.7626999999999997,
+      0.4058577494690715,
+      -2.6274687227877016,
+      -1.2332894604132496,
+      1.4124552302346476,
+      1.6796605872597052
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320514512787669,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.0
+  },
+  {
+    "phase": "hold_open",
+    "step_index": 73,
+    "hinge": 1.5707963267948966,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      1.3455193239171215,
+      -1.7626999999999997,
+      0.4058577494690715,
+      -2.6274687227877016,
+      -1.2332894604132496,
+      1.4124552302346476,
+      1.6796605872597052
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320514512787669,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.0
+  },
+  {
+    "phase": "hold_open",
+    "step_index": 74,
+    "hinge": 1.5707963267948966,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      1.3455193239171215,
+      -1.7626999999999997,
+      0.4058577494690715,
+      -2.6274687227877016,
+      -1.2332894604132496,
+      1.4124552302346476,
+      1.6796605872597052
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320514512787669,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.0
+  },
+  {
+    "phase": "closing",
+    "step_index": 75,
+    "hinge": 1.5696578254288878,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      1.3436566070733775,
+      -1.7626999999999997,
+      0.4044793020756119,
+      -2.6281507290890875,
+      -1.2339661752672808,
+      1.4138857803251066,
+      1.6801852493875868
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.0532051445642297,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.00186271684374395
+  },
+  {
+    "phase": "closing",
+    "step_index": 76,
+    "hinge": 1.5662902582304825,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      1.3380592822987345,
+      -1.7626999999999997,
+      0.40038322057840153,
+      -2.6301548443210225,
+      -1.235939338112644,
+      1.418185261363536,
+      1.6817336432418069
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.0532051440909942,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.005597324774643031
+  },
+  {
+    "phase": "closing",
+    "step_index": 77,
+    "hinge": 1.560765530549113,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      1.3285835315934273,
+      -1.7626999999999997,
+      0.39360202021242846,
+      -2.6333999921896636,
+      -1.2390797120639545,
+      1.4254674231169837,
+      1.6842615792257938
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320514373841625,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.009475750705307151
+  },
+  {
+    "phase": "closing",
+    "step_index": 78,
+    "hinge": 1.5531555477342116,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      1.3149038499223906,
+      -1.7626999999999997,
+      0.3841353737082394,
+      -2.637783194455306,
+      -1.2431931064533834,
+      1.4359908750819932,
+      1.6877150608733162
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320514352131276,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.013679681671036725
+  },
+  {
+    "phase": "closing",
+    "step_index": 79,
+    "hinge": 1.5435322151352104,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      1.2964860180768394,
+      -1.7626999999999997,
+      0.371952149714035,
+      -2.6431827750725234,
+      -1.2480038628754746,
+      1.450184726515424,
+      1.6920253157948713
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.053205143418226616,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.018417831845551236
+  },
+  {
+    "phase": "closing",
+    "step_index": 80,
+    "hinge": 1.5319674381015413,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      1.2725356493926028,
+      -1.7626999999999997,
+      0.3569913529003049,
+      -2.649462357890097,
+      -1.2531257922098418,
+      1.4686954993616488,
+      1.6970994191094757
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320514332348117,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.02395036868423661
+  },
+  {
+    "phase": "closing",
+    "step_index": 81,
+    "hinge": 1.5185331219826366,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      1.241911349351093,
+      -1.7626999999999997,
+      0.3391614865060512,
+      -2.656476609903246,
+      -1.2580142110641737,
+      1.4924646182509167,
+      1.7028029269348421
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320514293621879,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.030624300041509844
+  },
+  {
+    "phase": "closing",
+    "step_index": 82,
+    "hinge": 1.5033011721279284,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      1.2029818505990992,
+      -1.7626999999999997,
+      0.3183375093172977,
+      -2.6640806187436232,
+      -1.2618864895718584,
+      1.5228537863770946,
+      1.708927010421484
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.053205141497525414,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.038929498751993696
+  },
+  {
+    "phase": "closing",
+    "step_index": 83,
+    "hinge": 1.4863434938868487,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      1.1533883746250282,
+      -1.7626999999999997,
+      0.2943541540661781,
+      -2.6721468847559766,
+      -1.2635854497606507,
+      1.5618501556367366,
+      1.7151236960114455
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320513713931651,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.049593475974071044
+  },
+  {
+    "phase": "closing",
+    "step_index": 84,
+    "hinge": 1.4677319926088301,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      1.089637242535881,
+      -1.7626999999999997,
+      0.2669944352843588,
+      -2.680598942475273,
+      -1.2613296508278249,
+      1.6124113250021583,
+      1.7207710538833756
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320512516992444,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.06375113208914729
+  },
+  {
+    "phase": "closing",
+    "step_index": 85,
+    "hinge": 1.4475385736433042,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      1.0063717998756259,
+      -1.7626999999999997,
+      0.2359756491271887,
+      -2.689483823966327,
+      -1.2522167317327453,
+      1.6790654999225283,
+      1.724671751352801
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320509316446271,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.08326544266025504
+  },
+  {
+    "phase": "closing",
+    "step_index": 86,
+    "hinge": 1.4258351423397035,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.8950186843638208,
+      -1.7626999999999993,
+      0.20095897726706827,
+      -2.6991440283976753,
+      -1.2311242761023493,
+      1.7689782687928468,
+      1.7243143984549523
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320504146836695,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.11135311551180505
+  },
+  {
+    "phase": "closing",
+    "step_index": 87,
+    "hinge": 1.40269360404746,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.7852003675537079,
+      -1.754613776294663,
+      0.1689301992982639,
+      -2.7076217699925142,
+      -1.2111276695480224,
+      1.8562149716100989,
+      1.7267127257008767
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320511482503793,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.10981831681011289
+  },
+  {
+    "phase": "closing",
+    "step_index": 88,
+    "hinge": 1.3781858641160056,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.7660490976800497,
+      -1.7242413395606515,
+      0.15319299037649756,
+      -2.7086524851628795,
+      -1.2391333767859711,
+      1.864399737191915,
+      1.757088867489156
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320511314176558,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.0303761417882793
+  },
+  {
+    "phase": "closing",
+    "step_index": 89,
+    "hinge": 1.352383827894773,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.7458328475724992,
+      -1.690840902907545,
+      0.13704790920797644,
+      -2.7081658525590853,
+      -1.268273529500028,
+      1.872158773150451,
+      1.7893904748268858
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320511173344221,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.033400436653106436
+  },
+  {
+    "phase": "closing",
+    "step_index": 90,
+    "hinge": 1.325359400733194,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.7247085909823732,
+      -1.65438625067487,
+      0.12070790530713542,
+      -2.7059487666977073,
+      -1.2982916382862424,
+      1.8792675533201095,
+      1.8234612467313025
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320511065367337,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.03645465223267497
+  },
+  {
+    "phase": "closing",
+    "step_index": 91,
+    "hinge": 1.2971844879807006,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.7028585471496165,
+      -1.614901680713997,
+      0.10438729663442818,
+      -2.7018122364998645,
+      -1.3289037496280842,
+      1.885492088883362,
+      1.8590991733152387
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.053205109947308746,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.03948456996087302
+  },
+  {
+    "phase": "closing",
+    "step_index": 92,
+    "hinge": 1.2679309949867252,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.6804846659273535,
+      -1.572468012705141,
+      0.08828798069438283,
+      -2.695596883444864,
+      -1.3598039772363042,
+      1.890597750738216,
+      1.896053493705406
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320510964516952,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.042433668008856174
+  },
+  {
+    "phase": "closing",
+    "step_index": 93,
+    "hinge": 1.2376708271007,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.6578008308595856,
+      -1.5272251970277033,
+      0.0725853667467387,
+      -2.6871771481482263,
+      -1.390672285078815,
+      1.894361144477507,
+      1.9340249697885104
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320510975972707,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.0452428156774376
+  },
+  {
+    "phase": "closing",
+    "step_index": 94,
+    "hinge": 1.2064758896720569,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.6350237463410825,
+      -1.4793707718498978,
+      0.057416015089722265,
+      -2.6764636931412085,
+      -1.4211842609907352,
+      1.8965839549475614,
+      1.9726704119098193
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320511028261291,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.04785442517780547
+  },
+  {
+    "phase": "closing",
+    "step_index": 95,
+    "hinge": 1.174418088050228,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.612363540574279,
+      -1.4291540179672233,
+      0.04286881731157072,
+      -2.6634037104311767,
+      -1.451022194645651,
+      1.8971072014757984,
+      2.011611811541715
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320511118434112,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.05021675388267455
+  },
+  {
+    "phase": "closing",
+    "step_index": 96,
+    "hinge": 1.1415693275846457,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.5900152511304627,
+      -1.3768663176334628,
+      0.028980983201283464,
+      -2.647979141750458,
+      -1.4798865253359392,
+      1.8958238849269577,
+      2.0504496816531215
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.053205112416482896,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.05228770033376051
+  },
+  {
+    "phase": "closing",
+    "step_index": 97,
+    "hinge": 1.1080015136247419,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.5681522855891346,
+      -1.3228288079971642,
+      0.015739189043891273,
+      -2.630203141835126,
+      -1.5075065980299713,
+      1.8926879635412965,
+      2.0887793845263065
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.0532051139158613,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.05403750963629861
+  },
+  {
+    "phase": "closing",
+    "step_index": 98,
+    "hinge": 1.0737865515199487,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.5469223457570103,
+      -1.2673787769292686,
+      0.0030853036471125833,
+      -2.6101153732191564,
+      -1.5336495682494,
+      1.887718337887489,
+      2.126208570223067
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320511561024728,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.05545003106789559
+  },
+  {
+    "phase": "closing",
+    "step_index": 99,
+    "hinge": 1.0389963466196988,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.5264458624394636,
+      -1.210856262977397,
+      -0.00907460815789423,
+      -2.5877768248344943,
+      -1.5581265277515761,
+      1.8809973877588462,
+      2.1623736384285164
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.053205117424507745,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.05652251395187169
+  },
+  {
+    "phase": "closing",
+    "step_index": 100,
+    "hinge": 1.0037028042734235,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.5068164979699097,
+      -1.1535920605936003,
+      -0.02085961570039361,
+      -2.5632647918215596,
+      -1.580795286160841,
+      1.8726646192780179,
+      2.1969533829904035
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320511928633028,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.05726420238379659
+  },
+  {
+    "phase": "closing",
+    "step_index": 101,
+    "hinge": 0.9679778298305557,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.48810297589165175,
+      -1.0958979052451236,
+      -0.03240308916787616,
+      -2.536668475745033,
+      -1.6015597117190623,
+      1.862906743197882,
+      2.229678596824042
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320512113081304,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.05769415534847666
+  },
+  {
+    "phase": "closing",
+    "step_index": 102,
+    "hinge": 0.931893328640527,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.47035135615229484,
+      -1.0380591599049958,
+      -0.04384277926955861,
+      -2.5080854371238996,
+      -1.6203659614661714,
+      1.851945901464843,
+      2.2603371890013344
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320512290359111,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.057838745340127895
+  },
+  {
+    "phase": "closing",
+    "step_index": 103,
+    "hinge": 0.8955212060527699,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.45358737018429623,
+      -0.980329969936078,
+      -0.055312517544274534,
+      -2.4776189319776547,
+      -1.637196426234695,
+      1.840027382618224,
+      2.2887750566312515
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.053205124562344164,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.05772918996891774
+  },
+  {
+    "phase": "closing",
+    "step_index": 104,
+    "hinge": 0.8589333674167162,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.4378182311743871,
+      -0.9229306126626197,
+      -0.06693568742383699,
+      -2.4453760285088366,
+      -1.6520622142204073,
+      1.8274081653896097,
+      2.3148934378318686
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320512607701867,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.05739935727345835
+  },
+  {
+    "phase": "closing",
+    "step_index": 105,
+    "hinge": 0.8222017180817983,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.42303391884365876,
+      -0.86604666667441,
+      -0.0788204246434769,
+      -2.411466339640168,
+      -1.6649951490389014,
+      1.8143468895716612,
+      2.338643698816626
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.0532051274290012,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.05688394598820967
+  },
+  {
+    "phase": "closing",
+    "step_index": 106,
+    "hinge": 0.7853981633974483,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.4092080741597093,
+      -0.8098296162136693,
+      -0.09105635930964465,
+      -2.3760012053346955,
+      -1.6760401139041559,
+      1.801095496700293,
+      2.3600205190125054
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320512860967465,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.05621705046074066
+  },
+  {
+    "phase": "closing",
+    "step_index": 107,
+    "hinge": 0.7485946087130982,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.39629851482416445,
+      -0.7543985319781308,
+      -0.10371255217271365,
+      -2.3390931843237874,
+      -1.6852482932988497,
+      1.7878926430568787,
+      2.3790543324150426
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320512961866288,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.05543108423553855
+  },
+  {
+    "phase": "closing",
+    "step_index": 108,
+    "hinge": 0.7118629593781803,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.3842478382383221,
+      -0.6998425604573183,
+      -0.11683649345986373,
+      -2.300855760467658,
+      -1.692671808111688,
+      1.7749585305301843,
+      2.395803680000196
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320513046205625,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.054555971520812485
+  },
+  {
+    "phase": "closing",
+    "step_index": 109,
+    "hinge": 0.6752751207421267,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.37298393276796976,
+      -0.6462239795895767,
+      -0.13045375073987628,
+      -2.2614031965762145,
+      -1.6983598086616165,
+      1.7624911422818108,
+      2.4103479732194932
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320513115075655,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.05361858086774163
+  },
+  {
+    "phase": "closing",
+    "step_index": 110,
+    "hinge": 0.6389029981543696,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.36242085498945564,
+      -0.5935816845354931,
+      -0.1445682406884821,
+      -2.2208505061424475,
+      -1.7023561813882968,
+      1.7506634265093937,
+      2.4227809626452403
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320513169895111,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.05264229505408358
+  },
+  {
+    "phase": "closing",
+    "step_index": 111,
+    "hinge": 0.6028184969643409,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.3524598838696108,
+      -0.5419349711067596,
+      -0.15916281318004685,
+      -2.1793135221827966,
+      -1.7046986949127607,
+      1.7396213699270437,
+      2.4332051075091097
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.053205132123125144,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.051646713428733504
+  },
+  {
+    "phase": "closing",
+    "step_index": 112,
+    "hinge": 0.5670935225214729,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.3429909974206303,
+      -0.4912875534494359,
+      -0.1742001342185668,
+      -2.1369090591194517,
+      -1.7054195093876223,
+      1.7294826647657644,
+      2.4417269187663955
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.053205132441009856,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.05064741765732367
+  },
+  {
+    "phase": "closing",
+    "step_index": 113,
+    "hinge": 0.5317999801751979,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.33389463637260963,
+      -0.4416317443138673,
+      -0.1896236735480133,
+      -2.0937551623507757,
+      -1.7045468173863134,
+      1.7203359113637149,
+      2.4484533050129165
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320513267105917,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.04965580913556861
+  },
+  {
+    "phase": "closing",
+    "step_index": 114,
+    "hinge": 0.4970097752749477,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.32504392493587014,
+      -0.39295276057877876,
+      -0.20535883696416868,
+      -2.0499714455086484,
+      -1.7021074763857262,
+      1.7122401859016227,
+      2.453488895726921
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320513283200233,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.048678983735088555
+  },
+  {
+    "phase": "closing",
+    "step_index": 115,
+    "hinge": 0.46279481317015475,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.31630733438414005,
+      -0.3452330973311414,
+      -0.2213142113347796,
+      -2.005679512000447,
+      -1.6981304277386986,
+      1.7052249501708434,
+      2.4569343077293038
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320513294264989,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.04771966324763738
+  },
+  {
+    "phase": "closing",
+    "step_index": 116,
+    "hinge": 0.429226999210251,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.30755193035909123,
+      -0.2984569100085276,
+      -0.237383045048867,
+      -1.9610034586911458,
+      -1.6926507313122765,
+      1.6992902794562992,
+      2.458885306003158
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320513302171492,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.046776187322613794
+  },
+  {
+    "phase": "closing",
+    "step_index": 117,
+    "hinge": 0.3963782387446686,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.2986472544158846,
+      -0.25261430742231034,
+      -0.2534450800972072,
+      -1.9160704592978886,
+      -1.6857139905884606,
+      1.6944074937343085,
+      2.459432809825291
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.053205133087704574,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.04584260258621725
+  },
+  {
+    "phase": "closing",
+    "step_index": 118,
+    "hinge": 0.3643204371228398,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.2894700109057675,
+      -0.20770542831830108,
+      -0.26936901153080917,
+      -1.8710114298705398,
+      -1.6773809209492159,
+      1.6905203147535859,
+      2.4586636826210024
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.0532051331588147,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.04505902942734874
+  },
+  {
+    "phase": "closing",
+    "step_index": 119,
+    "hinge": 0.33312549969419664,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.27990934229186193,
+      -0.16374410577870832,
+      -0.2850156031388874,
+      -1.8259617845887008,
+      -1.667731669628406,
+      1.6875468181295525,
+      2.4566622320190894
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320513325254095,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.04504964528183897
+  },
+  {
+    "phase": "closing",
+    "step_index": 120,
+    "hinge": 0.30286533180817127,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.26987279992273105,
+      -0.12076091748729993,
+      -0.3002418012040835,
+      -1.7810623064904798,
+      -1.6568695042728987,
+      1.6853823730049948,
+      2.453512300147122
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320513338533963,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.044899478098221035
+  },
+  {
+    "phase": "closing",
+    "step_index": 121,
+    "hinge": 0.2736118388141959,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.25929251060832037,
+      -0.07880537943541925,
+      -0.31490571408006984,
+      -1.7364601729615414,
+      -1.6449233373102012,
+      1.6839038403232733,
+      2.44929978439534
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320513357198956,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.04460213352893838
+  },
+  {
+    "phase": "closing",
+    "step_index": 122,
+    "hinge": 0.2454369260617026,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.24813110592464432,
+      -0.037947098654658756,
+      -0.32887233574925356,
+      -1.6923101973893648,
+      -1.632048615034771,
+      1.682975122648986,
+      2.4441153663267516
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.053205133824893364,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.04414997557217659
+  },
+  {
+    "phase": "closing",
+    "step_index": 123,
+    "hinge": 0.21841249890012351,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.23638677915495893,
+      0.0017242015226325415,
+      -0.3420196194688195,
+      -1.6487763627901935,
+      -1.6184261988629913,
+      1.682453973894222,
+      2.438057183599504
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320513415503742,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.04353383459917137
+  },
+  {
+    "phase": "closing",
+    "step_index": 124,
+    "hinge": 0.19261046267889081,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.22409678527962573,
+      0.0400997097235833,
+      -0.3542442899359651,
+      -1.606033724026334,
+      -1.6042591017316725,
+      1.6821997123205894,
+      2.43123316749889
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.053205134563111545,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.04274263876385942
+  },
+  {
+    "phase": "closing",
+    "step_index": 125,
+    "hinge": 0.16810272274743662,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.21133877441166074,
+      0.07705334657523605,
+      -0.3654666255894581,
+      -1.5642707317601463,
+      -1.5897672798096547,
+      1.6820812118434005,
+      2.423762805311693
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.053205135055888156,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.04176299226618774
+  },
+  {
+    "phase": "closing",
+    "step_index": 126,
+    "hinge": 0.1449611844551931,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.1982298492651466,
+      0.11244396476303689,
+      -0.37563372646686227,
+      -1.52369197586132,
+      -1.575181018557148,
+      1.6819843821502887,
+      2.415778174227388
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320513562962332,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.0405787558988262
+  },
+  {
+    "phase": "closing",
+    "step_index": 127,
+    "hinge": 0.12325775315159233,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.18492323705380878,
+      0.1461174544025666,
+      -0.3847206286253859,
+      -1.4845212565759343,
+      -1.5607337190254407,
+      1.6818183286231383,
+      2.4074242088004714
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320513627887211,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.03917071928538585
+  },
+  {
+    "phase": "closing",
+    "step_index": 128,
+    "hinge": 0.10306433418606652,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.17160321152116748,
+      0.17790835284255205,
+      -0.3927293647962527,
+      -1.4470047719012256,
+      -1.5466549633831994,
+      1.6815195589262817,
+      2.398858270076951
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.053205136995499884,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.037516484674708694
+  },
+  {
+    "phase": "closing",
+    "step_index": 129,
+    "hinge": 0.08445283290804775,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.15847882125489654,
+      0.20764074638423083,
+      -0.3996861028953707,
+      -1.411414066370849,
+      -1.5331646364736173,
+      1.6810538853284525,
+      2.3902491395190073
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.053205137769642454,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.035590705530376576
+  },
+  {
+    "phase": "closing",
+    "step_index": 130,
+    "hinge": 0.0674951546669682,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.14577717344848068,
+      0.2351285265471306,
+      -0.4056369188395043,
+      -1.3780482284794577,
+      -1.520468595463066,
+      1.6804160099699623,
+      2.3817755413307524
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.0532051385905884,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.03336583789139125
+  },
+  {
+    "phase": "closing",
+    "step_index": 131,
+    "hinge": 0.05226320481226001,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.1337366880875857,
+      0.26017533309105073,
+      -0.410642647036307,
+      -1.3472346634457546,
+      -1.5087560786729712,
+      1.6796270199111063,
+      2.3736242062467148
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.053205139447720526,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.03081356503370314
+  },
+  {
+    "phase": "closing",
+    "step_index": 132,
+    "hinge": 0.03882888869335529,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.12260078046098626,
+      0.2825747743408286,
+      -0.4147735773131158,
+      -1.319327630727238,
+      -1.4981986477432456,
+      1.6787302321680022,
+      2.365987354604339
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.053205140331315764,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.02790703271851669
+  },
+  {
+    "phase": "closing",
+    "step_index": 133,
+    "hinge": 0.027264111659686202,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.11261174333474029,
+      0.30211160743039617,
+      -0.418104130274601,
+      -1.2947036676992312,
+      -1.4889503377374813,
+      1.6777857868210744,
+      2.3590593527879813
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.053205141233234846,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.024623963028006735
+  },
+  {
+    "phase": "closing",
+    "step_index": 134,
+    "hinge": 0.017640779060684873,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.10400474712178957,
+      0.31856457502377417,
+      -0.4207078965729135,
+      -1.273753104250607,
+      -1.481148485930021,
+      1.6768644133033093,
+      2.3530322337451914
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.053205142147638926,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.020950563448624226
+  },
+  {
+    "phase": "closing",
+    "step_index": 135,
+    "hinge": 0.01003079624578345,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.09700157216556804,
+      0.33171137199956746,
+      -0.42265298516459066,
+      -1.256867204123752,
+      -1.4749147848568565,
+      1.6760406822232854,
+      2.348089833506478
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320514307151777,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.01688590012685487
+  },
+  {
+    "phase": "closing",
+    "step_index": 136,
+    "hinge": 0.004506068564414071,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.09180394141806118,
+      0.34133583174297655,
+      -0.4239977458965798,
+      -1.2444211290834284,
+      -1.4703561415153552,
+      1.6753860632292215,
+      2.3444005081986248
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320514400513768,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.01244607504032369
+  },
+  {
+    "phase": "closing",
+    "step_index": 137,
+    "hinge": 0.0011385013660088743,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.08858641346808208,
+      0.3472368256983499,
+      -0.4247867228131017,
+      -1.2367538926153643,
+      -1.4675651347598258,
+      1.6749620967900607,
+      2.3421087594408827
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.05320514495216015,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.007667236468064109
+  },
+  {
+    "phase": "closing",
+    "step_index": 138,
+    "hinge": 0.0,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.087489178,
+      0.349237767,
+      -0.425046843,
+      -1.234147529,
+      -1.466619976,
+      1.674814084,
+      2.341326505
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.053205145431453986,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.002606363615364371
+  },
+  {
+    "phase": "hold_closed",
+    "step_index": 139,
+    "hinge": 0.0,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.087489178,
+      0.349237767,
+      -0.425046843,
+      -1.234147529,
+      -1.466619976,
+      1.674814084,
+      2.341326505
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.053205145431453986,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.0
+  },
+  {
+    "phase": "hold_closed",
+    "step_index": 140,
+    "hinge": 0.0,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.087489178,
+      0.349237767,
+      -0.425046843,
+      -1.234147529,
+      -1.466619976,
+      1.674814084,
+      2.341326505
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.053205145431453986,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.0
+  },
+  {
+    "phase": "hold_closed",
+    "step_index": 141,
+    "hinge": 0.0,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.087489178,
+      0.349237767,
+      -0.425046843,
+      -1.234147529,
+      -1.466619976,
+      1.674814084,
+      2.341326505
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.053205145431453986,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.0
+  },
+  {
+    "phase": "hold_closed",
+    "step_index": 142,
+    "hinge": 0.0,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.087489178,
+      0.349237767,
+      -0.425046843,
+      -1.234147529,
+      -1.466619976,
+      1.674814084,
+      2.341326505
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.053205145431453986,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.0
+  },
+  {
+    "phase": "hold_closed",
+    "step_index": 143,
+    "hinge": 0.0,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.087489178,
+      0.349237767,
+      -0.425046843,
+      -1.234147529,
+      -1.466619976,
+      1.674814084,
+      2.341326505
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.053205145431453986,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.0
+  },
+  {
+    "phase": "hold_closed",
+    "step_index": 144,
+    "hinge": 0.0,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.087489178,
+      0.349237767,
+      -0.425046843,
+      -1.234147529,
+      -1.466619976,
+      1.674814084,
+      2.341326505
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.053205145431453986,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.0
+  },
+  {
+    "phase": "hold_closed",
+    "step_index": 145,
+    "hinge": 0.0,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.087489178,
+      0.349237767,
+      -0.425046843,
+      -1.234147529,
+      -1.466619976,
+      1.674814084,
+      2.341326505
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.053205145431453986,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.0
+  },
+  {
+    "phase": "hold_closed",
+    "step_index": 146,
+    "hinge": 0.0,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.087489178,
+      0.349237767,
+      -0.425046843,
+      -1.234147529,
+      -1.466619976,
+      1.674814084,
+      2.341326505
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.053205145431453986,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.0
+  },
+  {
+    "phase": "hold_closed",
+    "step_index": 147,
+    "hinge": 0.0,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.087489178,
+      0.349237767,
+      -0.425046843,
+      -1.234147529,
+      -1.466619976,
+      1.674814084,
+      2.341326505
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.053205145431453986,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.0
+  },
+  {
+    "phase": "hold_closed",
+    "step_index": 148,
+    "hinge": 0.0,
+    "fixed_base": [
+      4.49,
+      2.3,
+      0.05
+    ],
+    "panda_qpos": [
+      0.087489178,
+      0.349237767,
+      -0.425046843,
+      -1.234147529,
+      -1.466619976,
+      1.674814084,
+      2.341326505
+    ],
+    "base_drift": 0.0,
+    "gripper_to_handle_distance": 0.053205145431453986,
+    "handle_unique_finger_contacts": 2.0,
+    "cabinet_visual_overlap_count": 0,
+    "forbidden_handle_contact_count": 0,
+    "forbidden_door_slab_contact_count": 0.0,
+    "max_joint_step_from_previous": 0.0
+  }
+]

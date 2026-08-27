@@ -1,0 +1,145 @@
+default_max_gap: 0.000001
+
+scenes:
+  - name: pantry_fridge_to_cupboard
+    task_config: configs/pantry_fridge_to_cupboard.yaml
+    trajectory: results/pantry_fridge_to_cupboard_trajectory.json
+    grounded_geoms: [source_ground_plinth, destination_ground_plinth]
+    contact_checks:
+      - {a: source_ground_plinth, b: source_bottom, label: source cabinet base}
+      - {a: source_back, b: source_left, label: source left frame}
+      - {a: source_back, b: source_right, label: source right frame}
+      - {a: source_door_hinge_pin, b: source_hinge_mount_lower, label: source lower hinge}
+      - {a: source_door_handle, b: source_door_handle_bracket, label: source handle bracket}
+      - {a: source_door_handle_bracket, b: source_door_panel, label: source bracket to door}
+      - {a: source_can_support, b: source_shelf, label: source can pedestal}
+      - {a: pantry_can_visual, b: source_can_support, at: initial, label: source can support}
+      - {a: destination_ground_plinth, b: destination_bottom, label: destination cabinet base}
+      - {a: destination_back, b: destination_left, label: destination left frame}
+      - {a: destination_back, b: destination_right, label: destination right frame}
+      - {a: destination_door_hinge_pin, b: destination_hinge_mount_lower, label: destination lower hinge}
+      - {a: destination_door_handle, b: destination_door_handle_bracket, label: destination handle bracket}
+      - {a: destination_door_handle_bracket, b: destination_door_panel, label: destination bracket to door}
+      - {a: destination_can_support, b: destination_shelf, label: destination can pedestal}
+      - {a: pantry_can_visual, b: destination_can_support, at: final, label: placed can support}
+
+  - name: workshop_drawer_to_locker
+    task_config: configs/workshop_drawer_to_locker.yaml
+    trajectory: results/workshop_drawer_to_locker_trajectory.json
+    grounded_geoms: [tool_chest_ground_plinth, locker_ground_plinth, locker_left_ground_foot]
+    contact_checks:
+      - {a: tool_chest_ground_plinth, b: tool_chest_bottom, label: tool chest base}
+      - {a: tool_chest_back, b: tool_chest_left, label: tool chest left frame}
+      - {a: tool_drawer_track, b: tool_chest_right, label: drawer rail mount}
+      - {a: tool_drawer_track, b: tool_drawer_bottom, at: all, label: drawer rail support}
+      - {a: tool_drawer_front, b: tool_drawer_bottom, label: drawer front to bottom}
+      - {a: tool_drawer_left, b: tool_drawer_bottom, label: drawer left wall}
+      - {a: tool_drawer_right, b: tool_drawer_bottom, label: drawer right wall}
+      - {a: tool_drawer_handle, b: tool_drawer_handle_bracket, label: drawer handle bracket}
+      - {a: tool_drawer_handle_bracket, b: tool_drawer_front, label: drawer bracket to front}
+      - {a: workshop_tool_support, b: tool_drawer_bottom, label: source tool stand}
+      - {a: workshop_tool_visual, b: workshop_tool_support, at: initial, label: source tool support}
+      - {a: locker_left, b: locker_left_back_connector, label: locker left connector}
+      - {a: locker_left_back_connector, b: locker_back, label: connector to locker back}
+      - {a: locker_left, b: locker_left_ground_foot, label: locker left foot}
+      - {a: locker_ground_plinth, b: locker_bottom, label: locker base}
+      - {a: locker_door_hinge_pin, b: locker_hinge_mount_lower, label: locker lower hinge}
+      - {a: locker_door_handle, b: locker_door_handle_bracket, label: locker handle bracket}
+      - {a: locker_tool_support, b: locker_shelf, label: destination tool stand}
+      - {a: workshop_tool_visual, b: locker_tool_support, at: final, label: placed tool support}
+
+  - name: laundry_washer_to_dryer
+    task_config: configs/laundry_washer_to_dryer.yaml
+    trajectory: results/laundry_washer_to_dryer_trajectory.json
+    grounded_geoms: [washer_ground_plinth, dryer_ground_plinth]
+    contact_checks:
+      - {a: washer_ground_plinth, b: washer_bottom, label: washer base}
+      - {a: washer_back, b: washer_left, label: washer left frame}
+      - {a: washer_back, b: washer_right, label: washer right frame}
+      - {a: washer_drum, b: washer_back, label: washer drum mount}
+      - {a: washer_door_hinge_pin, b: washer_hinge_mount_lower, label: washer lower hinge}
+      - {a: washer_door_handle, b: washer_door_handle_mount, label: washer handle mount}
+      - {a: washer_door_handle_mount, b: washer_round_door_visual, label: washer mount to door}
+      - {a: washer_payload_support, b: washer_payload_support_mount, label: washer laundry platform mount}
+      - {a: washer_payload_support_mount, b: washer_drum, label: washer mount to drum}
+      - {a: laundry_bundle_visual, b: washer_payload_support, at: initial, label: source laundry support}
+      - {a: dryer_ground_plinth, b: dryer_bottom, label: dryer base}
+      - {a: dryer_back, b: dryer_left, label: dryer left frame}
+      - {a: dryer_back, b: dryer_right, label: dryer right frame}
+      - {a: dryer_drum, b: dryer_back, label: dryer drum mount}
+      - {a: dryer_door_hinge_pin, b: dryer_hinge_mount_lower, label: dryer lower hinge}
+      - {a: dryer_door_handle, b: dryer_door_handle_mount, label: dryer handle mount}
+      - {a: dryer_payload_support, b: dryer_payload_support_mount, label: dryer laundry platform mount}
+      - {a: dryer_payload_support_mount, b: dryer_drum, label: dryer mount to drum}
+      - {a: laundry_bundle_visual, b: dryer_payload_support, at: final, label: placed laundry support}
+
+  - name: laboratory_incubator_to_cold_storage
+    task_config: configs/laboratory_incubator_to_cold_storage.yaml
+    trajectory: results/laboratory_incubator_to_cold_storage_trajectory.json
+    grounded_geoms: [incubator_ground_plinth, cold_storage_ground_plinth]
+    contact_checks:
+      - {a: incubator_ground_plinth, b: incubator_bottom, label: incubator base}
+      - {a: incubator_back, b: incubator_left, label: incubator left frame}
+      - {a: incubator_back, b: incubator_right, label: incubator right frame}
+      - {a: incubator_display, b: incubator_display_mount, label: incubator display mount}
+      - {a: incubator_display_mount, b: incubator_top, label: display mount to frame}
+      - {a: incubator_door_hinge_pin, b: incubator_hinge_mount_lower, label: incubator lower hinge}
+      - {a: incubator_door_handle, b: incubator_door_handle_bracket, label: incubator handle bracket}
+      - {a: incubator_tray_support_rail, b: incubator_right, label: incubator tray rail mount}
+      - {a: incubator_tray_support_rail, b: incubator_tray_bottom, at: all, label: incubator tray support}
+      - {a: incubator_tray_handle, b: incubator_tray_handle_bracket, label: tray handle bracket}
+      - {a: sample_tube_support, b: incubator_tray_bottom, label: source tube stand}
+      - {a: sample_tube_visual, b: sample_tube_support, at: initial, label: source tube support}
+      - {a: cold_storage_ground_plinth, b: cold_storage_bottom, label: cold storage base}
+      - {a: cold_storage_back, b: cold_storage_left, label: cold storage left frame}
+      - {a: cold_storage_back, b: cold_storage_right, label: cold storage right frame}
+      - {a: cold_storage_door_hinge_pin, b: cold_storage_hinge_mount_lower, label: cold storage lower hinge}
+      - {a: cold_storage_door_handle, b: cold_storage_door_handle_bracket, label: cold storage handle bracket}
+      - {a: cold_storage_tube_support, b: cold_storage_shelf, label: destination tube stand}
+      - {a: sample_tube_visual, b: cold_storage_tube_support, at: final, label: placed tube support}
+
+  - name: printer_service_panel_tray_restore
+    task_config: configs/printer_service_panel_tray_restore.yaml
+    trajectory: results/printer_service_panel_tray_restore_trajectory.json
+    grounded_geoms: [printer_ground_plinth]
+    contact_checks:
+      - {a: printer_ground_plinth, b: printer_bottom_plinth, label: printer base}
+      - {a: printer_back, b: printer_left_frame, label: printer left frame}
+      - {a: printer_back, b: printer_right_frame, label: printer right frame}
+      - {a: printer_right_tray_track, b: printer_right_frame, label: printer rail mount}
+      - {a: printer_right_tray_track, b: printer_toner_tray_bottom, at: all, label: toner tray support}
+      - {a: printer_upper_module, b: printer_top_frame, label: upper printer module}
+      - {a: printer_output_shelf, b: printer_upper_module, label: printer output shelf}
+      - {a: printer_control_display, b: printer_upper_module, label: printer display mount}
+      - {a: printer_service_panel_hinge_bar, b: printer_left_frame, label: left panel hinge}
+      - {a: printer_service_panel_hinge_bar, b: printer_right_frame, label: right panel hinge}
+      - {a: printer_service_panel_handle, b: printer_service_panel_handle_bracket, label: panel handle bracket}
+      - {a: printer_service_panel_handle_bracket, b: printer_service_panel_surface, label: bracket to panel}
+      - {a: printer_toner_cartridge, b: printer_toner_tray_bottom, at: all, label: toner cartridge support}
+      - {a: printer_toner_tray_handle, b: printer_toner_tray_handle_bracket, label: tray handle bracket}
+      - {a: printer_toner_tray_handle_bracket, b: printer_toner_tray_front_wall, label: tray bracket to front}
+
+  - name: sterilizer_safety_latch_panel_tray_reset
+    task_config: configs/sterilizer_safety_latch_panel_tray_reset.yaml
+    trajectory: results/sterilizer_safety_latch_panel_tray_reset_trajectory.json
+    grounded_geoms: [sterilizer_ground_plinth]
+    contact_checks:
+      - {a: sterilizer_ground_plinth, b: sterilizer_bottom_plinth, label: sterilizer base}
+      - {a: sterilizer_back, b: sterilizer_left_frame, label: sterilizer left frame}
+      - {a: sterilizer_back, b: sterilizer_right_frame, label: sterilizer right frame}
+      - {a: sterilizer_tray_track, b: sterilizer_right_frame, label: sterilizer rail mount}
+      - {a: sterilizer_tray_track, b: sterilizer_instrument_tray_bottom, at: all, label: instrument tray support}
+      - {a: sterilizer_control_module, b: sterilizer_top_frame, label: sterilizer control module}
+      - {a: sterilizer_status_display, b: sterilizer_control_module, label: sterilizer display mount}
+      - {a: sterilizer_warning_strip, b: sterilizer_control_module, label: warning strip mount}
+      - {a: sterilizer_latch_guide, b: sterilizer_left_frame, label: latch guide mount}
+      - {a: sterilizer_latch_linkage, b: sterilizer_latch_guide, at: all, label: latch linkage guide}
+      - {a: sterilizer_latch_linkage, b: sterilizer_latch_bolt, at: all, label: latch linkage to bolt}
+      - {a: sterilizer_latch_bolt, b: sterilizer_latch_handle, at: all, label: latch handle mount}
+      - {a: sterilizer_service_panel_hinge_bar, b: sterilizer_left_frame, label: left panel hinge}
+      - {a: sterilizer_service_panel_hinge_bar, b: sterilizer_right_frame, label: right panel hinge}
+      - {a: sterilizer_service_panel_handle, b: sterilizer_service_panel_handle_bracket, label: panel handle bracket}
+      - {a: sterilizer_service_panel_handle_bracket, b: sterilizer_service_panel_surface, label: bracket to panel}
+      - {a: sterilizer_instrument_pack, b: sterilizer_instrument_tray_bottom, at: all, label: instrument pack support}
+      - {a: sterilizer_instrument_tray_handle, b: sterilizer_tray_handle_bracket, label: tray handle bracket}
+      - {a: sterilizer_tray_handle_bracket, b: sterilizer_instrument_tray_front_wall, label: tray bracket to front}

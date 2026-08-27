@@ -1,0 +1,37 @@
+<mujoco model="hinge_door_demo">
+  <compiler angle="radian"/>
+  <option timestep="0.002" gravity="0 0 -9.81"/>
+
+  <visual>
+    <global offwidth="800" offheight="600"/>
+  </visual>
+
+  <asset>
+    <material name="floor_mat" rgba="0.72 0.70 0.66 1"/>
+    <material name="wall_mat" rgba="0.82 0.84 0.86 1"/>
+    <material name="door_mat" rgba="0.65 0.38 0.18 1"/>
+    <material name="frame_mat" rgba="0.25 0.25 0.25 1"/>
+  </asset>
+
+  <worldbody>
+    <light name="top_light" pos="0 -2 4" dir="0 1 -2"/>
+    <camera name="overview" pos="2.4 -3.2 1.8" xyaxes="0.8 0.6 0 -0.28 0.37 0.88"/>
+
+    <geom name="floor" type="plane" size="3 3 0.05" material="floor_mat"/>
+
+    <geom name="left_wall" type="box" pos="-0.65 0 1.0" size="0.05 0.08 1.0" material="wall_mat"/>
+    <geom name="right_wall" type="box" pos="0.65 0 1.0" size="0.05 0.08 1.0" material="wall_mat"/>
+    <geom name="top_frame" type="box" pos="0 0 2.0" size="0.70 0.08 0.05" material="frame_mat"/>
+    <geom name="hinge_post" type="box" pos="-0.45 -0.03 1.0" size="0.03 0.03 1.0" material="frame_mat" contype="0" conaffinity="0"/>
+
+    <body name="door" pos="-0.45 0 1.0">
+      <joint name="door_hinge" type="hinge" axis="0 0 1" range="0 1.57" damping="0.1"/>
+      <geom name="door_panel" type="box" pos="0.3 0 0" size="0.30 0.035 0.85" mass="2" material="door_mat"/>
+      <geom name="door_handle" type="sphere" pos="0.52 -0.05 0.05" size="0.035" mass="0.1" rgba="0.05 0.05 0.05 1"/>
+    </body>
+  </worldbody>
+
+  <actuator>
+    <position name="door_position_motor" joint="door_hinge" kp="120" ctrlrange="0 1.45" forcerange="-80 80"/>
+  </actuator>
+</mujoco>

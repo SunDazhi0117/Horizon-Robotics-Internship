@@ -1,0 +1,50 @@
+{
+  "scene_version": "articulated_demo_room_v1",
+  "room": {
+    "floor": true,
+    "walls": 4,
+    "windows": 3,
+    "entrances": 1
+  },
+  "static_furniture_count": 6,
+  "articulated_objects": [
+    {
+      "name": "entry_door",
+      "joint_count": 1,
+      "joints": {
+        "revolute": 1,
+        "prismatic": 0,
+        "continuous": 0
+      }
+    },
+    {
+      "name": "double_door_cabinet",
+      "joint_count": 2,
+      "joints": {
+        "revolute": 2,
+        "prismatic": 0,
+        "continuous": 0
+      }
+    },
+    {
+      "name": "microwave",
+      "joint_count": 5,
+      "joints": {
+        "revolute": 1,
+        "prismatic": 1,
+        "continuous": 3
+      }
+    }
+  ],
+  "validation": {
+    "sampled_poses": 23,
+    "normal_path_unintended_collisions": 0,
+    "reachable_targets": 4,
+    "target_count": 4,
+    "connected_free_space_ratio": 0.862861,
+    "browser_joint_controls": 8,
+    "browser_status": "Ready",
+    "result": "PASS"
+  },
+  "known_constraint": "Open the microwave door to at least 1.50 rad before extending its tray."
+}

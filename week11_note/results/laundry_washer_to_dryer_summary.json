@@ -1,0 +1,231 @@
+{
+  "task_name": "laundry_washer_to_dryer",
+  "passed": true,
+  "state_count": 1139,
+  "action_count": 24,
+  "actions": [
+    {
+      "action_index": 0,
+      "action": "hold_pose",
+      "phase": "initial_hold",
+      "start_state_index": 1,
+      "end_state_index": 5
+    },
+    {
+      "action_index": 1,
+      "action": "move_near_target",
+      "phase": "navigate_to_washer",
+      "start_state_index": 6,
+      "end_state_index": 55
+    },
+    {
+      "action_index": 2,
+      "action": "approach_target",
+      "phase": "approach_washer_door_5",
+      "start_state_index": 56,
+      "end_state_index": 120
+    },
+    {
+      "action_index": 3,
+      "action": "grasp_target",
+      "phase": "grasp_washer_door",
+      "start_state_index": 121,
+      "end_state_index": 151
+    },
+    {
+      "action_index": 4,
+      "action": "follow_hinge_joint",
+      "phase": "open_washer_door",
+      "start_state_index": 152,
+      "end_state_index": 215
+    },
+    {
+      "action_index": 5,
+      "action": "change_gripper",
+      "phase": "release_washer_door",
+      "start_state_index": 216,
+      "end_state_index": 231
+    },
+    {
+      "action_index": 6,
+      "action": "retreat_from_target",
+      "phase": "retreat_from_washer_4",
+      "start_state_index": 232,
+      "end_state_index": 256
+    },
+    {
+      "action_index": 7,
+      "action": "move_arm",
+      "phase": "reset_after_washer",
+      "start_state_index": 257,
+      "end_state_index": 288
+    },
+    {
+      "action_index": 8,
+      "action": "move_near_target",
+      "phase": "navigate_to_dryer_clear_washer_door",
+      "start_state_index": 289,
+      "end_state_index": 388
+    },
+    {
+      "action_index": 9,
+      "action": "approach_target",
+      "phase": "approach_dryer_door_5",
+      "start_state_index": 389,
+      "end_state_index": 453
+    },
+    {
+      "action_index": 10,
+      "action": "grasp_target",
+      "phase": "grasp_dryer_door",
+      "start_state_index": 454,
+      "end_state_index": 484
+    },
+    {
+      "action_index": 11,
+      "action": "follow_hinge_joint",
+      "phase": "open_dryer_door",
+      "start_state_index": 485,
+      "end_state_index": 548
+    },
+    {
+      "action_index": 12,
+      "action": "change_gripper",
+      "phase": "release_dryer_door",
+      "start_state_index": 549,
+      "end_state_index": 564
+    },
+    {
+      "action_index": 13,
+      "action": "retreat_from_target",
+      "phase": "retreat_from_dryer_4",
+      "start_state_index": 565,
+      "end_state_index": 589
+    },
+    {
+      "action_index": 14,
+      "action": "move_arm",
+      "phase": "reset_before_laundry",
+      "start_state_index": 590,
+      "end_state_index": 621
+    },
+    {
+      "action_index": 15,
+      "action": "move_near_target",
+      "phase": "return_to_laundry_bundle_clear_open_doors",
+      "start_state_index": 622,
+      "end_state_index": 721
+    },
+    {
+      "action_index": 16,
+      "action": "approach_target",
+      "phase": "approach_laundry_bundle_5",
+      "start_state_index": 722,
+      "end_state_index": 791
+    },
+    {
+      "action_index": 17,
+      "action": "grasp_target",
+      "phase": "grasp_laundry_bundle",
+      "start_state_index": 792,
+      "end_state_index": 820
+    },
+    {
+      "action_index": 18,
+      "action": "carry_payload",
+      "phase": "transfer_laundry_to_dryer",
+      "start_state_index": 821,
+      "end_state_index": 1024
+    },
+    {
+      "action_index": 19,
+      "action": "hold_pose",
+      "phase": "hold_laundry_in_dryer",
+      "start_state_index": 1025,
+      "end_state_index": 1034
+    },
+    {
+      "action_index": 20,
+      "action": "change_gripper",
+      "phase": "place_laundry_in_dryer",
+      "start_state_index": 1035,
+      "end_state_index": 1050
+    },
+    {
+      "action_index": 21,
+      "action": "retreat_from_target",
+      "phase": "retreat_after_laundry_placement_4",
+      "start_state_index": 1051,
+      "end_state_index": 1081
+    },
+    {
+      "action_index": 22,
+      "action": "move_arm",
+      "phase": "return_arm_home",
+      "start_state_index": 1082,
+      "end_state_index": 1130
+    },
+    {
+      "action_index": 23,
+      "action": "hold_pose",
+      "phase": "final_hold",
+      "start_state_index": 1131,
+      "end_state_index": 1138
+    }
+  ],
+  "joint_goals": [
+    {
+      "joint_name": "washer_hinge",
+      "reached": 0.75,
+      "closest_reached_error": 0.0,
+      "final": 0.75,
+      "expected_final": 0.75,
+      "passed": true
+    },
+    {
+      "joint_name": "dryer_hinge",
+      "reached": 0.75,
+      "closest_reached_error": 0.0,
+      "final": 0.75,
+      "expected_final": 0.75,
+      "passed": true
+    },
+    {
+      "joint_name": "payload_x",
+      "reached": 1.2,
+      "closest_reached_error": 2.220446049250313e-16,
+      "final": 1.2000000000000002,
+      "expected_final": 1.2,
+      "passed": true
+    }
+  ],
+  "payload_goal": {
+    "body": "laundry_payload",
+    "destination_site": "laundry_destination_site",
+    "actual_position": [
+      5.0,
+      4.08,
+      1.15
+    ],
+    "expected_position": [
+      5.0,
+      4.08,
+      1.15
+    ],
+    "position_error": 0.0,
+    "tolerance": 1e-06,
+    "passed": true
+  },
+  "final_gripper": 0.04,
+  "environment_visual_overlap_failure_count": 0,
+  "forbidden_target_contact_failure_count": 0,
+  "lost_grasp_failure_count": 0,
+  "maximum_arm_joint_step": 0.04332045751336877,
+  "front_video_frame_count": 191,
+  "top_video_frame_count": 191,
+  "config": "/home/users/dazhi.sun-labs/projects/week11_note/configs/laundry_washer_to_dryer.yaml",
+  "task_xml": "/home/users/dazhi.sun-labs/projects/week11_note/xml/laundry_transfer.xml",
+  "trajectory": "/home/users/dazhi.sun-labs/projects/week11_note/results/laundry_washer_to_dryer_trajectory.json",
+  "front_video": "/home/users/dazhi.sun-labs/projects/week11_note/assets/laundry_washer_to_dryer.gif",
+  "top_video": "/home/users/dazhi.sun-labs/projects/week11_note/assets/laundry_washer_to_dryer_top_view.gif"
+}

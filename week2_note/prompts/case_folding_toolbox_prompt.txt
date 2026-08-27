@@ -1,0 +1,139 @@
+Create a complex articulated folding toolbox for testing MP4 motion export.
+
+The toolbox should have:
+- a rectangular dark blue plastic base,
+- a large top lid,
+- two side trays,
+- two front drawers,
+- gray metal hinges,
+- visible drawer rails,
+- and small handles so the motion axes are easy to understand.
+
+Coordinate convention:
+- X is left-right width.
+- Y is front-back depth.
+- Z is vertical height.
+- Front is toward negative Y.
+- Back is toward positive Y.
+- Left is negative X.
+- Right is positive X.
+
+Use simple box geometry only, but make the object visually clear and detailed enough for MP4 motion testing.
+
+Parts:
+1. toolbox_base: fixed root part.
+2. top_lid: large hinged lid.
+3. left_tray: hinged side tray opening to the left.
+4. right_tray: hinged side tray opening to the right.
+5. upper_front_drawer: sliding upper front drawer.
+6. lower_front_drawer: sliding lower front drawer.
+
+Toolbox base:
+- Make a dark blue rectangular toolbox base.
+- It should look like a plastic storage toolbox.
+- Add front drawer openings.
+- Add visible gray drawer rails on both sides of each drawer.
+- Add small gray hinge plates on the rear side for the top lid.
+- Add small gray side hinge plates for the left and right trays.
+- Keep the base as the fixed root part.
+
+Top lid:
+- Large dark blue lid on top of the toolbox.
+- Use a REVOLUTE joint.
+- Parent: toolbox_base.
+- Child: top_lid.
+- The lid should rotate upward and backward around a rear hinge.
+- Axis should be along the X axis.
+- Hinge origin should be at the rear top edge of the toolbox, not at the lid center.
+- Motion limits: lower=0, upper about 1.35 radians.
+- Add a small front handle on the lid.
+- Add gray hinge details along the rear edge.
+
+Left tray:
+- A side tray on the left side of the toolbox.
+- Use a REVOLUTE joint.
+- Parent: toolbox_base.
+- Child: left_tray.
+- It should rotate outward to the left around a side hinge.
+- Axis should be vertical, along the Z axis.
+- Hinge origin should be on the left side edge of the toolbox.
+- Motion limits: lower=0, upper about 1.35 radians.
+- Add a small handle or lip.
+- Add gray hinge plates so the rotation axis is visible.
+
+Right tray:
+- A side tray on the right side of the toolbox.
+- Use a REVOLUTE joint.
+- Parent: toolbox_base.
+- Child: right_tray.
+- It should rotate outward to the right around a side hinge.
+- Axis should be vertical, along the Z axis.
+- Hinge origin should be on the right side edge of the toolbox.
+- Motion limits: lower=-1.35, upper=0 if needed, or use a positive direction that clearly opens outward to the right.
+- Add a small handle or lip.
+- Add gray hinge plates so the rotation axis is visible.
+
+Upper front drawer:
+- A drawer in the upper front part of the toolbox.
+- Use a PRISMATIC joint.
+- Parent: toolbox_base.
+- Child: upper_front_drawer.
+- It should slide forward toward negative Y.
+- Axis: (0, -1, 0).
+- Motion limits: lower=0, upper about 0.22.
+- Add a small front handle.
+- Add visible side rails.
+- Keep enough spacing so it does not visually merge with the lower drawer.
+
+Lower front drawer:
+- A drawer in the lower front part of the toolbox.
+- Use a PRISMATIC joint.
+- Parent: toolbox_base.
+- Child: lower_front_drawer.
+- It should slide forward toward negative Y.
+- Axis: (0, -1, 0).
+- Motion limits: lower=0, upper about 0.25.
+- Add a small front handle.
+- Add visible side rails.
+- Keep enough spacing so it is clearly separate from the upper drawer.
+
+Motion sequence requirement for MP4 export:
+- The motion should happen one part at a time.
+- First, the top lid rotates upward and backward around the rear hinge.
+- Keep the lid open.
+- Then the left tray rotates outward to the left around its side hinge.
+- Keep it open.
+- Then the right tray rotates outward to the right around its side hinge.
+- Keep it open.
+- Then the upper front drawer slides forward on a prismatic joint.
+- Keep it extended.
+- Finally, the lower front drawer slides forward on a prismatic joint.
+
+Important visual requirements:
+- Make each moving part clearly visible and separated from the others.
+- Use realistic proportions.
+- Use clear hinge axes.
+- Add enough spacing so every motion is visible in the exported MP4.
+- Avoid parts intersecting during motion.
+- Avoid placing hinge origins at the center of panels.
+- The object should be suitable for testing sequential MP4 export.
+
+Validation tests:
+- Check toolbox_base is the root part.
+- Check there are exactly five joints.
+- Check top_lid, left_tray, and right_tray are REVOLUTE joints.
+- Check upper_front_drawer and lower_front_drawer are PRISMATIC joints.
+- Check drawer joints slide along negative Y.
+- Check top_lid rotates around the rear top edge, not its center.
+- Check left_tray rotates outward from the left side.
+- Check right_tray rotates outward from the right side.
+- Check drawers remain visible when extended.
+- Check all moving parts are visually separated.
+- Check the object is suitable for sequential MP4 motion export.
+
+Add clear comments in the generated model.py explaining:
+- part dimensions,
+- joint origins,
+- joint axes,
+- motion limits,
+- and bug-prone areas for MP4 export.

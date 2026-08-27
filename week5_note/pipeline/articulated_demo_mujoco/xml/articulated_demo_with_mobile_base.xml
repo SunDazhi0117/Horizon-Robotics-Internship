@@ -1,0 +1,240 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mujoco model="articulated_demo_room_with_mobile_base">
+  <compiler angle="radian" meshdir="../assets/meshes" autolimits="true" />
+  <option gravity="0 0 -9.81" timestep="0.002" />
+  <visual>
+    <global offwidth="1000" offheight="760" />
+  </visual>
+  <asset>
+    <mesh name="000_Mesh_0" file="000_Mesh_0.obj" />
+    <mesh name="001_double_door_cabinet_cabinet_frame_back_panel" file="001_double_door_cabinet_cabinet_frame_back_panel.obj" />
+    <mesh name="002_double_door_cabinet_cabinet_frame_bottom_panel" file="002_double_door_cabinet_cabinet_frame_bottom_panel.obj" />
+    <mesh name="003_double_door_cabinet_cabinet_frame_internal_shelf" file="003_double_door_cabinet_cabinet_frame_internal_shelf.obj" />
+    <mesh name="004_double_door_cabinet_cabinet_frame_left_side_panel" file="004_double_door_cabinet_cabinet_frame_left_side_panel.obj" />
+    <mesh name="005_double_door_cabinet_cabinet_frame_right_side_panel" file="005_double_door_cabinet_cabinet_frame_right_side_panel.obj" />
+    <mesh name="006_double_door_cabinet_cabinet_frame_top_panel" file="006_double_door_cabinet_cabinet_frame_top_panel.obj" />
+    <mesh name="007_double_door_cabinet_left_door_left_door_slab" file="007_double_door_cabinet_left_door_left_door_slab.obj" />
+    <mesh name="008_double_door_cabinet_left_door_left_handle" file="008_double_door_cabinet_left_door_left_handle.obj" />
+    <mesh name="009_double_door_cabinet_right_door_right_door_slab" file="009_double_door_cabinet_right_door_right_door_slab.obj" />
+    <mesh name="010_double_door_cabinet_right_door_right_handle" file="010_double_door_cabinet_right_door_right_handle.obj" />
+    <mesh name="011_entry_door_door_door_panel" file="011_entry_door_door_door_panel.obj" />
+    <mesh name="012_entry_door_door_hinge_leaf" file="012_entry_door_door_hinge_leaf.obj" />
+    <mesh name="013_entry_door_frame_header" file="013_entry_door_frame_header.obj" />
+    <mesh name="014_entry_door_frame_hinge_post" file="014_entry_door_frame_hinge_post.obj" />
+    <mesh name="015_entry_door_frame_left_jamb" file="015_entry_door_frame_left_jamb.obj" />
+    <mesh name="016_entry_door_frame_right_jamb" file="016_entry_door_frame_right_jamb.obj" />
+    <mesh name="017_entry_door_frame_threshold" file="017_entry_door_frame_threshold.obj" />
+    <mesh name="018_frame" file="018_frame.obj" />
+    <mesh name="019_frame_001" file="019_frame_001.obj" />
+    <mesh name="020_frame_002" file="020_frame_002.obj" />
+    <mesh name="021_geometry_0" file="021_geometry_0.obj" />
+    <mesh name="022_geometry_0_001" file="022_geometry_0_001.obj" />
+    <mesh name="023_geometry_0_002" file="023_geometry_0_002.obj" />
+    <mesh name="024_geometry_0_003" file="024_geometry_0_003.obj" />
+    <mesh name="025_geometry_0_004" file="025_geometry_0_004.obj" />
+    <mesh name="026_geometry_0_005" file="026_geometry_0_005.obj" />
+    <mesh name="027_geometry_0_006" file="027_geometry_0_006.obj" />
+    <mesh name="028_geometry_0_007" file="028_geometry_0_007.obj" />
+    <mesh name="029_glass" file="029_glass.obj" />
+    <mesh name="030_glass_001" file="030_glass_001.obj" />
+    <mesh name="031_glass_002" file="031_glass_002.obj" />
+    <mesh name="032_microwave_front_door_bottom_rail" file="032_microwave_front_door_bottom_rail.obj" />
+    <mesh name="033_microwave_front_door_handle_bar" file="033_microwave_front_door_handle_bar.obj" />
+    <mesh name="034_microwave_front_door_handle_mount_0" file="034_microwave_front_door_handle_mount_0.obj" />
+    <mesh name="035_microwave_front_door_handle_mount_1" file="035_microwave_front_door_handle_mount_1.obj" />
+    <mesh name="036_microwave_front_door_left_stile" file="036_microwave_front_door_left_stile.obj" />
+    <mesh name="037_microwave_front_door_right_stile" file="037_microwave_front_door_right_stile.obj" />
+    <mesh name="038_microwave_front_door_top_rail" file="038_microwave_front_door_top_rail.obj" />
+    <mesh name="039_microwave_front_door_window_pane" file="039_microwave_front_door_window_pane.obj" />
+    <mesh name="040_microwave_lower_knob_center_cap" file="040_microwave_lower_knob_center_cap.obj" />
+    <mesh name="041_microwave_lower_knob_indicator_mark" file="041_microwave_lower_knob_indicator_mark.obj" />
+    <mesh name="042_microwave_lower_knob_segment_0" file="042_microwave_lower_knob_segment_0.obj" />
+    <mesh name="043_microwave_lower_knob_segment_1" file="043_microwave_lower_knob_segment_1.obj" />
+    <mesh name="044_microwave_lower_knob_segment_2" file="044_microwave_lower_knob_segment_2.obj" />
+    <mesh name="045_microwave_lower_knob_segment_3" file="045_microwave_lower_knob_segment_3.obj" />
+    <mesh name="046_microwave_lower_knob_segment_4" file="046_microwave_lower_knob_segment_4.obj" />
+    <mesh name="047_microwave_lower_knob_segment_5" file="047_microwave_lower_knob_segment_5.obj" />
+    <mesh name="048_microwave_microwave_body_back_panel" file="048_microwave_microwave_body_back_panel.obj" />
+    <mesh name="049_microwave_microwave_body_bottom_panel" file="049_microwave_microwave_body_bottom_panel.obj" />
+    <mesh name="050_microwave_microwave_body_control_divider" file="050_microwave_microwave_body_control_divider.obj" />
+    <mesh name="051_microwave_microwave_body_control_panel" file="051_microwave_microwave_body_control_panel.obj" />
+    <mesh name="052_microwave_microwave_body_internal_floor" file="052_microwave_microwave_body_internal_floor.obj" />
+    <mesh name="053_microwave_microwave_body_left_wall" file="053_microwave_microwave_body_left_wall.obj" />
+    <mesh name="054_microwave_microwave_body_rear_stop" file="054_microwave_microwave_body_rear_stop.obj" />
+    <mesh name="055_microwave_microwave_body_right_wall" file="055_microwave_microwave_body_right_wall.obj" />
+    <mesh name="056_microwave_microwave_body_side_rail_0" file="056_microwave_microwave_body_side_rail_0.obj" />
+    <mesh name="057_microwave_microwave_body_side_rail_1" file="057_microwave_microwave_body_side_rail_1.obj" />
+    <mesh name="058_microwave_microwave_body_top_panel" file="058_microwave_microwave_body_top_panel.obj" />
+    <mesh name="059_microwave_sliding_tray_front_lip" file="059_microwave_sliding_tray_front_lip.obj" />
+    <mesh name="060_microwave_sliding_tray_rear_lip" file="060_microwave_sliding_tray_rear_lip.obj" />
+    <mesh name="061_microwave_sliding_tray_tray_plate" file="061_microwave_sliding_tray_tray_plate.obj" />
+    <mesh name="062_microwave_turntable_rotation_marker" file="062_microwave_turntable_rotation_marker.obj" />
+    <mesh name="063_microwave_turntable_segment_0" file="063_microwave_turntable_segment_0.obj" />
+    <mesh name="064_microwave_turntable_segment_1" file="064_microwave_turntable_segment_1.obj" />
+    <mesh name="065_microwave_turntable_segment_2" file="065_microwave_turntable_segment_2.obj" />
+    <mesh name="066_microwave_turntable_segment_3" file="066_microwave_turntable_segment_3.obj" />
+    <mesh name="067_microwave_turntable_segment_4" file="067_microwave_turntable_segment_4.obj" />
+    <mesh name="068_microwave_turntable_segment_5" file="068_microwave_turntable_segment_5.obj" />
+    <mesh name="069_microwave_turntable_segment_6" file="069_microwave_turntable_segment_6.obj" />
+    <mesh name="070_microwave_turntable_segment_7" file="070_microwave_turntable_segment_7.obj" />
+    <mesh name="071_microwave_upper_knob_center_cap" file="071_microwave_upper_knob_center_cap.obj" />
+    <mesh name="072_microwave_upper_knob_indicator_mark" file="072_microwave_upper_knob_indicator_mark.obj" />
+    <mesh name="073_microwave_upper_knob_segment_0" file="073_microwave_upper_knob_segment_0.obj" />
+    <mesh name="074_microwave_upper_knob_segment_1" file="074_microwave_upper_knob_segment_1.obj" />
+    <mesh name="075_microwave_upper_knob_segment_2" file="075_microwave_upper_knob_segment_2.obj" />
+    <mesh name="076_microwave_upper_knob_segment_3" file="076_microwave_upper_knob_segment_3.obj" />
+    <mesh name="077_microwave_upper_knob_segment_4" file="077_microwave_upper_knob_segment_4.obj" />
+    <mesh name="078_microwave_upper_knob_segment_5" file="078_microwave_upper_knob_segment_5.obj" />
+    <mesh name="079_tmp1no018wl_ply_001" file="079_tmp1no018wl_ply_001.obj" />
+    <mesh name="080_tmp1no018wl_ply_002" file="080_tmp1no018wl_ply_002.obj" />
+    <mesh name="081_tmp1zu3xhc8_ply_001" file="081_tmp1zu3xhc8_ply_001.obj" />
+    <mesh name="082_tmp91jrkv4o_ply_001" file="082_tmp91jrkv4o_ply_001.obj" />
+    <mesh name="083_tmp943y7er_ply_001" file="083_tmp943y7er_ply_001.obj" />
+    <mesh name="084_tmpeshskeww_ply_001" file="084_tmpeshskeww_ply_001.obj" />
+  </asset>
+  <worldbody>
+    <light name="top" pos="2 2 6" dir="0 0 -1" />
+    <camera name="overview" pos="2.0 -7.5 5.0" xyaxes="1 0 0 0 0.58 0.82" />
+    <geom name="reference_ground" type="plane" size="6 6 0.02" rgba="0.18 0.22 0.25 1" contype="0" conaffinity="0" />
+    <body name="static_room_shell">
+      <geom name="000_Mesh_0" type="mesh" mesh="000_Mesh_0" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="001_double_door_cabinet_cabinet_frame_back_panel" type="mesh" mesh="001_double_door_cabinet_cabinet_frame_back_panel" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="002_double_door_cabinet_cabinet_frame_bottom_panel" type="mesh" mesh="002_double_door_cabinet_cabinet_frame_bottom_panel" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="003_double_door_cabinet_cabinet_frame_internal_shelf" type="mesh" mesh="003_double_door_cabinet_cabinet_frame_internal_shelf" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="004_double_door_cabinet_cabinet_frame_left_side_panel" type="mesh" mesh="004_double_door_cabinet_cabinet_frame_left_side_panel" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="005_double_door_cabinet_cabinet_frame_right_side_panel" type="mesh" mesh="005_double_door_cabinet_cabinet_frame_right_side_panel" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="006_double_door_cabinet_cabinet_frame_top_panel" type="mesh" mesh="006_double_door_cabinet_cabinet_frame_top_panel" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="013_entry_door_frame_header" type="mesh" mesh="013_entry_door_frame_header" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="014_entry_door_frame_hinge_post" type="mesh" mesh="014_entry_door_frame_hinge_post" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="015_entry_door_frame_left_jamb" type="mesh" mesh="015_entry_door_frame_left_jamb" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="016_entry_door_frame_right_jamb" type="mesh" mesh="016_entry_door_frame_right_jamb" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="017_entry_door_frame_threshold" type="mesh" mesh="017_entry_door_frame_threshold" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="018_frame" type="mesh" mesh="018_frame" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="019_frame_001" type="mesh" mesh="019_frame_001" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="020_frame_002" type="mesh" mesh="020_frame_002" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="021_geometry_0" type="mesh" mesh="021_geometry_0" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="022_geometry_0_001" type="mesh" mesh="022_geometry_0_001" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="023_geometry_0_002" type="mesh" mesh="023_geometry_0_002" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="024_geometry_0_003" type="mesh" mesh="024_geometry_0_003" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="025_geometry_0_004" type="mesh" mesh="025_geometry_0_004" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="026_geometry_0_005" type="mesh" mesh="026_geometry_0_005" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="027_geometry_0_006" type="mesh" mesh="027_geometry_0_006" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="028_geometry_0_007" type="mesh" mesh="028_geometry_0_007" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="029_glass" type="mesh" mesh="029_glass" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="030_glass_001" type="mesh" mesh="030_glass_001" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="031_glass_002" type="mesh" mesh="031_glass_002" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="048_microwave_microwave_body_back_panel" type="mesh" mesh="048_microwave_microwave_body_back_panel" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="049_microwave_microwave_body_bottom_panel" type="mesh" mesh="049_microwave_microwave_body_bottom_panel" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="050_microwave_microwave_body_control_divider" type="mesh" mesh="050_microwave_microwave_body_control_divider" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="051_microwave_microwave_body_control_panel" type="mesh" mesh="051_microwave_microwave_body_control_panel" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="052_microwave_microwave_body_internal_floor" type="mesh" mesh="052_microwave_microwave_body_internal_floor" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="053_microwave_microwave_body_left_wall" type="mesh" mesh="053_microwave_microwave_body_left_wall" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="054_microwave_microwave_body_rear_stop" type="mesh" mesh="054_microwave_microwave_body_rear_stop" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="055_microwave_microwave_body_right_wall" type="mesh" mesh="055_microwave_microwave_body_right_wall" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="056_microwave_microwave_body_side_rail_0" type="mesh" mesh="056_microwave_microwave_body_side_rail_0" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="057_microwave_microwave_body_side_rail_1" type="mesh" mesh="057_microwave_microwave_body_side_rail_1" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="058_microwave_microwave_body_top_panel" type="mesh" mesh="058_microwave_microwave_body_top_panel" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="079_tmp1no018wl_ply_001" type="mesh" mesh="079_tmp1no018wl_ply_001" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="080_tmp1no018wl_ply_002" type="mesh" mesh="080_tmp1no018wl_ply_002" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="081_tmp1zu3xhc8_ply_001" type="mesh" mesh="081_tmp1zu3xhc8_ply_001" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="082_tmp91jrkv4o_ply_001" type="mesh" mesh="082_tmp91jrkv4o_ply_001" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="083_tmp943y7er_ply_001" type="mesh" mesh="083_tmp943y7er_ply_001" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+      <geom name="084_tmpeshskeww_ply_001" type="mesh" mesh="084_tmpeshskeww_ply_001" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" />
+    </body>
+    <body name="entry_door" pos="4.127028 0.047500 0.200000">
+      <inertial pos="0 0 0" mass="1" diaginertia="0.01 0.01 0.01" />
+      <joint name="frame_to_door" type="hinge" axis="0 0 1" damping="0.1" range="0 1.5708" />
+      <geom name="011_entry_door_door_door_panel" type="mesh" mesh="011_entry_door_door_door_panel" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.127028 -0.047500 -0.200000" />
+      <geom name="012_entry_door_door_hinge_leaf" type="mesh" mesh="012_entry_door_door_hinge_leaf" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.127028 -0.047500 -0.200000" />
+    </body>
+    <body name="cabinet_left_door" pos="4.930000 3.410000 0.100000">
+      <inertial pos="0 0 0" mass="1" diaginertia="0.01 0.01 0.01" />
+      <joint name="left_hinge" type="hinge" axis="0 0 -1" damping="0.1" range="0 1.5708" />
+      <geom name="007_double_door_cabinet_left_door_left_door_slab" type="mesh" mesh="007_double_door_cabinet_left_door_left_door_slab" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.930000 -3.410000 -0.100000" />
+      <geom name="008_double_door_cabinet_left_door_left_handle" type="mesh" mesh="008_double_door_cabinet_left_door_left_handle" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.930000 -3.410000 -0.100000" />
+    </body>
+    <body name="cabinet_right_door" pos="4.930000 2.490000 0.100000">
+      <inertial pos="0 0 0" mass="1" diaginertia="0.01 0.01 0.01" />
+      <joint name="right_hinge" type="hinge" axis="0 0 1" damping="0.1" range="0 1.5708" />
+      <geom name="009_double_door_cabinet_right_door_right_door_slab" type="mesh" mesh="009_double_door_cabinet_right_door_right_door_slab" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.930000 -2.490000 -0.100000" />
+      <geom name="010_double_door_cabinet_right_door_right_handle" type="mesh" mesh="010_double_door_cabinet_right_door_right_handle" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.930000 -2.490000 -0.100000" />
+    </body>
+    <body name="microwave_door" pos="4.203670 3.977532 1.189677">
+      <inertial pos="0 0 0" mass="1" diaginertia="0.01 0.01 0.01" />
+      <joint name="body_to_front_door" type="hinge" axis="0 0 1" damping="0.1" range="0 1.75" />
+      <geom name="032_microwave_front_door_bottom_rail" type="mesh" mesh="032_microwave_front_door_bottom_rail" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.203670 -3.977532 -1.189677" />
+      <geom name="033_microwave_front_door_handle_bar" type="mesh" mesh="033_microwave_front_door_handle_bar" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.203670 -3.977532 -1.189677" />
+      <geom name="034_microwave_front_door_handle_mount_0" type="mesh" mesh="034_microwave_front_door_handle_mount_0" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.203670 -3.977532 -1.189677" />
+      <geom name="035_microwave_front_door_handle_mount_1" type="mesh" mesh="035_microwave_front_door_handle_mount_1" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.203670 -3.977532 -1.189677" />
+      <geom name="036_microwave_front_door_left_stile" type="mesh" mesh="036_microwave_front_door_left_stile" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.203670 -3.977532 -1.189677" />
+      <geom name="037_microwave_front_door_right_stile" type="mesh" mesh="037_microwave_front_door_right_stile" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.203670 -3.977532 -1.189677" />
+      <geom name="038_microwave_front_door_top_rail" type="mesh" mesh="038_microwave_front_door_top_rail" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.203670 -3.977532 -1.189677" />
+      <geom name="039_microwave_front_door_window_pane" type="mesh" mesh="039_microwave_front_door_window_pane" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.203670 -3.977532 -1.189677" />
+    </body>
+    <body name="microwave_tray" pos="4.006170 4.201532 1.121677">
+      <inertial pos="0 0 0" mass="1" diaginertia="0.01 0.01 0.01" />
+      <joint name="body_to_sliding_tray" type="slide" axis="0 -1 0" damping="0.1" range="0 0.22" />
+      <geom name="059_microwave_sliding_tray_front_lip" type="mesh" mesh="059_microwave_sliding_tray_front_lip" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.006170 -4.201532 -1.121677" />
+      <geom name="060_microwave_sliding_tray_rear_lip" type="mesh" mesh="060_microwave_sliding_tray_rear_lip" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.006170 -4.201532 -1.121677" />
+      <geom name="061_microwave_sliding_tray_tray_plate" type="mesh" mesh="061_microwave_sliding_tray_tray_plate" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.006170 -4.201532 -1.121677" />
+    </body>
+    <body name="microwave_turntable" pos="4.006170 4.201532 1.128677">
+      <inertial pos="0 0 0" mass="1" diaginertia="0.01 0.01 0.01" />
+      <joint name="tray_to_turntable" type="hinge" axis="0 0 1" damping="0.1" />
+      <geom name="062_microwave_turntable_rotation_marker" type="mesh" mesh="062_microwave_turntable_rotation_marker" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.006170 -4.201532 -1.128677" />
+      <geom name="063_microwave_turntable_segment_0" type="mesh" mesh="063_microwave_turntable_segment_0" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.006170 -4.201532 -1.128677" />
+      <geom name="064_microwave_turntable_segment_1" type="mesh" mesh="064_microwave_turntable_segment_1" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.006170 -4.201532 -1.128677" />
+      <geom name="065_microwave_turntable_segment_2" type="mesh" mesh="065_microwave_turntable_segment_2" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.006170 -4.201532 -1.128677" />
+      <geom name="066_microwave_turntable_segment_3" type="mesh" mesh="066_microwave_turntable_segment_3" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.006170 -4.201532 -1.128677" />
+      <geom name="067_microwave_turntable_segment_4" type="mesh" mesh="067_microwave_turntable_segment_4" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.006170 -4.201532 -1.128677" />
+      <geom name="068_microwave_turntable_segment_5" type="mesh" mesh="068_microwave_turntable_segment_5" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.006170 -4.201532 -1.128677" />
+      <geom name="069_microwave_turntable_segment_6" type="mesh" mesh="069_microwave_turntable_segment_6" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.006170 -4.201532 -1.128677" />
+      <geom name="070_microwave_turntable_segment_7" type="mesh" mesh="070_microwave_turntable_segment_7" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.006170 -4.201532 -1.128677" />
+    </body>
+    <body name="microwave_upper_knob" pos="4.273670 3.971532 1.247677">
+      <inertial pos="0 0 0" mass="1" diaginertia="0.01 0.01 0.01" />
+      <joint name="body_to_upper_knob" type="hinge" axis="0 1 0" damping="0.1" />
+      <geom name="071_microwave_upper_knob_center_cap" type="mesh" mesh="071_microwave_upper_knob_center_cap" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.273670 -3.971532 -1.247677" />
+      <geom name="072_microwave_upper_knob_indicator_mark" type="mesh" mesh="072_microwave_upper_knob_indicator_mark" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.273670 -3.971532 -1.247677" />
+      <geom name="073_microwave_upper_knob_segment_0" type="mesh" mesh="073_microwave_upper_knob_segment_0" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.273670 -3.971532 -1.247677" />
+      <geom name="074_microwave_upper_knob_segment_1" type="mesh" mesh="074_microwave_upper_knob_segment_1" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.273670 -3.971532 -1.247677" />
+      <geom name="075_microwave_upper_knob_segment_2" type="mesh" mesh="075_microwave_upper_knob_segment_2" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.273670 -3.971532 -1.247677" />
+      <geom name="076_microwave_upper_knob_segment_3" type="mesh" mesh="076_microwave_upper_knob_segment_3" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.273670 -3.971532 -1.247677" />
+      <geom name="077_microwave_upper_knob_segment_4" type="mesh" mesh="077_microwave_upper_knob_segment_4" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.273670 -3.971532 -1.247677" />
+      <geom name="078_microwave_upper_knob_segment_5" type="mesh" mesh="078_microwave_upper_knob_segment_5" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.273670 -3.971532 -1.247677" />
+    </body>
+    <body name="microwave_lower_knob" pos="4.273670 3.971532 1.141677">
+      <inertial pos="0 0 0" mass="1" diaginertia="0.01 0.01 0.01" />
+      <joint name="body_to_lower_knob" type="hinge" axis="0 1 0" damping="0.1" />
+      <geom name="040_microwave_lower_knob_center_cap" type="mesh" mesh="040_microwave_lower_knob_center_cap" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.273670 -3.971532 -1.141677" />
+      <geom name="041_microwave_lower_knob_indicator_mark" type="mesh" mesh="041_microwave_lower_knob_indicator_mark" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.273670 -3.971532 -1.141677" />
+      <geom name="042_microwave_lower_knob_segment_0" type="mesh" mesh="042_microwave_lower_knob_segment_0" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.273670 -3.971532 -1.141677" />
+      <geom name="043_microwave_lower_knob_segment_1" type="mesh" mesh="043_microwave_lower_knob_segment_1" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.273670 -3.971532 -1.141677" />
+      <geom name="044_microwave_lower_knob_segment_2" type="mesh" mesh="044_microwave_lower_knob_segment_2" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.273670 -3.971532 -1.141677" />
+      <geom name="045_microwave_lower_knob_segment_3" type="mesh" mesh="045_microwave_lower_knob_segment_3" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.273670 -3.971532 -1.141677" />
+      <geom name="046_microwave_lower_knob_segment_4" type="mesh" mesh="046_microwave_lower_knob_segment_4" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.273670 -3.971532 -1.141677" />
+      <geom name="047_microwave_lower_knob_segment_5" type="mesh" mesh="047_microwave_lower_knob_segment_5" rgba="0.82 0.80 0.74 1" contype="0" conaffinity="0" pos="-4.273670 -3.971532 -1.141677" />
+    </body>
+    <body name="simple_mobile_base" pos="2.6 2.0 0.16">
+      <inertial pos="0 0 0" mass="8" diaginertia="0.15 0.15 0.12" />
+      <joint name="base_x" type="slide" axis="1 0 0" range="-1.5 1.5" damping="2" />
+      <joint name="base_y" type="slide" axis="0 1 0" range="-1.2 1.2" damping="2" />
+      <joint name="base_yaw" type="hinge" axis="0 0 1" range="-3.1416 3.1416" damping="1" />
+      <geom name="base_body" type="cylinder" size="0.22 0.08" rgba="0.2 0.55 0.9 1" />
+      <geom name="base_front_marker" type="box" pos="0.22 0 0.05" size="0.04 0.08 0.035" rgba="1 0.85 0.2 1" />
+    </body>
+  </worldbody>
+  <actuator>
+    <position name="frame_to_door_pos" joint="frame_to_door" ctrlrange="0 1.5708" kp="8" />
+    <position name="left_hinge_pos" joint="left_hinge" ctrlrange="0 1.5708" kp="8" />
+    <position name="right_hinge_pos" joint="right_hinge" ctrlrange="0 1.5708" kp="8" />
+    <position name="body_to_front_door_pos" joint="body_to_front_door" ctrlrange="0 1.75" kp="8" />
+    <position name="body_to_sliding_tray_pos" joint="body_to_sliding_tray" ctrlrange="0 0.22" kp="18" />
+    <position name="tray_to_turntable_pos" joint="tray_to_turntable" ctrlrange="-6.2832 6.2832" kp="3" />
+    <position name="body_to_upper_knob_pos" joint="body_to_upper_knob" ctrlrange="-3.1416 3.1416" kp="3" />
+    <position name="body_to_lower_knob_pos" joint="body_to_lower_knob" ctrlrange="-3.1416 3.1416" kp="3" />
+    <position name="base_x_pos" joint="base_x" ctrlrange="-1.5 1.5" kp="18" />
+    <position name="base_y_pos" joint="base_y" ctrlrange="-1.2 1.2" kp="18" />
+    <position name="base_yaw_pos" joint="base_yaw" ctrlrange="-3.1416 3.1416" kp="8" />
+  </actuator>
+</mujoco>

@@ -1,0 +1,35 @@
+task_name: reusable_primitives_parameter_change_demo
+
+initial_state:
+  phase: initial
+  base: [0.0, 0.0, 0.0]
+  arm_qpos: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+  gripper: 0.04
+  object_joints:
+    cabinet_left_hinge: 0.0
+    cabinet_right_hinge: 0.0
+  active_target: null
+
+actions:
+  - action: hold_pose
+    phase: initial_hold
+    frames: 2
+
+  - action: move_base
+    phase: move_to_changed_work_station
+    waypoints:
+      - [0.4, -0.2, 0.1]
+      - [0.8, 0.3, 0.35]
+    steps_per_segment: 7
+
+  - action: move_arm
+    phase: reach_changed_pregrasp
+    waypoints:
+      - [0.15, -0.2, 0.25, -0.3, 0.2, 0.1, -0.15]
+    max_step: 0.05
+
+  - action: change_gripper
+    phase: grasp_changed_target
+    target: 0.008
+    active_target: cabinet_right_handle
+    steps: 7

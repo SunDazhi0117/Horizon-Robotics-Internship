@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mujoco model="week11_laundry_transfer">
+  <compiler angle="radian" autolimits="true"/>
+  <include file="/home/users/dazhi.sun-labs/projects/week8_note/xml/franka_panda_raised_for_microwave.xml"/>
+  <option gravity="0 0 -9.81" timestep="0.002"/>
+  <visual><global offwidth="1000" offheight="720"/></visual>
+  <worldbody>
+    <light pos="4.4 2.5 4.5" dir="0.1 0.2 -1" diffuse="0.9 0.9 0.9"/>
+    <geom name="reference_ground" type="plane" pos="4.4 3.2 0" size="5 4 0.05" rgba="0.70 0.74 0.76 1"/>
+
+    <body name="washing_machine">
+      <geom name="washer_back" type="box" pos="3.95 4.300 0.90" size="0.41 0.025 0.62" rgba="0.80 0.84 0.87 1"/>
+      <geom name="washer_left" type="box" pos="3.565 4.170 0.90" size="0.025 0.13 0.62" rgba="0.83 0.87 0.90 1"/>
+      <geom name="washer_right" type="box" pos="4.335 4.170 0.90" size="0.025 0.13 0.62" rgba="0.83 0.87 0.90 1"/>
+      <geom name="washer_top" type="box" pos="3.95 4.170 1.495" size="0.41 0.13 0.025" rgba="0.58 0.64 0.68 1"/>
+      <geom name="washer_bottom" type="box" pos="3.95 4.170 0.305" size="0.41 0.13 0.025" rgba="0.58 0.64 0.68 1"/>
+      <geom name="washer_drum" type="cylinder" pos="3.97 4.255 1.02" quat="0.70710678 0.70710678 0 0" size="0.26 0.08" rgba="0.16 0.22 0.27 1"/>
+      <geom name="washer_ground_plinth" type="box" pos="3.95 4.170 0.140" size="0.41 0.13 0.140" rgba="0.48 0.53 0.57 1"/>
+      <geom name="washer_payload_support" type="box" pos="3.800 4.080 1.025" size="0.080 0.050 0.020" rgba="0.21 0.29 0.34 1"/>
+      <geom name="washer_payload_support_mount" type="box" pos="3.800 4.1525 1.025" size="0.080 0.0225 0.020" rgba="0.18 0.25 0.30 1"/>
+      <geom name="washer_hinge_mount_lower" type="box" pos="4.259 4.0655 0.650" size="0.051 0.025 0.025" rgba="0.30 0.34 0.37 1"/>
+      <geom name="washer_hinge_mount_upper" type="box" pos="4.259 4.0655 1.150" size="0.051 0.025 0.025" rgba="0.30 0.34 0.37 1"/>
+    </body>
+    <body name="washer_door" pos="4.208670006 4.065531845 0.550000000">
+      <joint name="washer_door_hinge_joint" type="hinge" axis="0 0 1" range="0 0.80" damping="1"/>
+      <geom name="washer_door_collision" type="box" pos="-0.180 0 0.350" size="0.180 0.025 0.350" rgba="0 0 0 0"/>
+      <geom name="washer_round_door_visual" type="cylinder" pos="-0.180 0 0.350" quat="0.70710678 0.70710678 0 0" size="0.245 0.035" rgba="0.35 0.48 0.58 0.72" contype="0" conaffinity="0"/>
+      <geom name="washer_door_hinge_pin" type="cylinder" pos="0 0 0.350" size="0.018 0.350" rgba="0.22 0.27 0.31 1"/>
+      <geom name="washer_door_handle_mount" type="box" pos="-0.285 -0.075 0.510" size="0.075 0.045 0.080" rgba="0.22 0.29 0.34 1"/>
+      <geom name="washer_door_handle" type="box" pos="-0.360 -0.120 0.639676762" size="0.024 0.022 0.092" rgba="0.10 0.12 0.14 1" contype="2" conaffinity="3"/>
+    </body>
+
+    <body name="dryer_machine">
+      <geom name="dryer_back" type="box" pos="5.15 4.300 0.90" size="0.41 0.025 0.62" rgba="0.78 0.75 0.70 1"/>
+      <geom name="dryer_left" type="box" pos="4.765 4.170 0.90" size="0.025 0.13 0.62" rgba="0.82 0.79 0.74 1"/>
+      <geom name="dryer_right" type="box" pos="5.535 4.170 0.90" size="0.025 0.13 0.62" rgba="0.82 0.79 0.74 1"/>
+      <geom name="dryer_top" type="box" pos="5.15 4.170 1.495" size="0.41 0.13 0.025" rgba="0.55 0.51 0.46 1"/>
+      <geom name="dryer_bottom" type="box" pos="5.15 4.170 0.305" size="0.41 0.13 0.025" rgba="0.55 0.51 0.46 1"/>
+      <geom name="dryer_drum" type="cylinder" pos="5.17 4.255 1.02" quat="0.70710678 0.70710678 0 0" size="0.26 0.08" rgba="0.19 0.17 0.15 1"/>
+      <geom name="dryer_ground_plinth" type="box" pos="5.15 4.170 0.140" size="0.41 0.13 0.140" rgba="0.46 0.42 0.38 1"/>
+      <geom name="dryer_payload_support" type="box" pos="5.000 4.080 1.025" size="0.080 0.050 0.020" rgba="0.27 0.23 0.20 1"/>
+      <geom name="dryer_payload_support_mount" type="box" pos="5.000 4.1525 1.025" size="0.080 0.0225 0.020" rgba="0.24 0.20 0.17 1"/>
+      <geom name="dryer_hinge_mount_lower" type="box" pos="5.459 4.0655 0.650" size="0.051 0.025 0.025" rgba="0.33 0.30 0.27 1"/>
+      <geom name="dryer_hinge_mount_upper" type="box" pos="5.459 4.0655 1.150" size="0.051 0.025 0.025" rgba="0.33 0.30 0.27 1"/>
+      <site name="laundry_destination_site" type="sphere" pos="5.00 4.080 1.150" size="0.025" rgba="0 0 0 0"/>
+    </body>
+    <body name="dryer_door" pos="5.408670006 4.065531845 0.550000000">
+      <joint name="dryer_door_hinge_joint" type="hinge" axis="0 0 1" range="0 0.80" damping="1"/>
+      <geom name="dryer_door_collision" type="box" pos="-0.180 0 0.350" size="0.180 0.025 0.350" rgba="0 0 0 0"/>
+      <geom name="dryer_round_door_visual" type="cylinder" pos="-0.180 0 0.350" quat="0.70710678 0.70710678 0 0" size="0.245 0.035" rgba="0.47 0.35 0.27 0.72" contype="0" conaffinity="0"/>
+      <geom name="dryer_door_hinge_pin" type="cylinder" pos="0 0 0.350" size="0.018 0.350" rgba="0.26 0.23 0.20 1"/>
+      <geom name="dryer_door_handle_mount" type="box" pos="-0.285 -0.075 0.510" size="0.075 0.045 0.080" rgba="0.31 0.27 0.23 1"/>
+      <geom name="dryer_door_handle" type="box" pos="-0.360 -0.120 0.639676762" size="0.024 0.022 0.092" rgba="0.10 0.12 0.14 1" contype="2" conaffinity="3"/>
+    </body>
+
+    <body name="laundry_payload" pos="3.800000000 4.080000000 1.150000000">
+      <joint name="laundry_payload_x_joint" type="slide" axis="1 0 0" range="-2 2" damping="1"/>
+      <joint name="laundry_payload_y_joint" type="slide" axis="0 1 0" range="-2 2" damping="1"/>
+      <joint name="laundry_payload_z_joint" type="slide" axis="0 0 1" range="-1 1" damping="1"/>
+      <geom name="laundry_bundle_grasp" type="box" size="0.024 0.022 0.092" rgba="0.24 0.50 0.92 1" contype="2" conaffinity="3"/>
+      <geom name="laundry_bundle_visual" type="ellipsoid" size="0.075 0.045 0.105" rgba="0.28 0.55 0.96 1" contype="0" conaffinity="0"/>
+    </body>
+  </worldbody>
+</mujoco>

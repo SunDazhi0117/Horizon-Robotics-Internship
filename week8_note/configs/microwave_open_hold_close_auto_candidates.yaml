@@ -1,0 +1,112 @@
+task_name: microwave_open_hold_close_auto_candidates
+
+initial_state:
+  phase: initial
+  base: [3.62, 2.28, 0.0]
+  arm_qpos: [0.0, -0.55, 0.0, -2.25, 0.0, 1.75, 0.78]
+  gripper: 0.04
+  object_joints:
+    left_hinge: 0.0
+    right_hinge: 0.0
+    microwave_hinge: 0.0
+  active_target: null
+
+actions:
+  - action: hold_pose
+    phase: initial_hold
+    frames: 5
+
+  - action: move_near_target
+    phase: navigate_to_microwave
+    target_geom: week8_microwave_handle_proxy
+    candidate_search:
+      stand_distance: 0.60
+      center_angle_degrees: -118.27257832
+      angle_offsets_degrees: [0.0, 28.27257832, -25.0, 55.0, -55.0]
+      detour_distance: 1.25
+    yaw_offset: 0.05
+    heading_axis: [1.0, 0.0, 0.0]
+    steps_per_segment: 51
+
+  - action: approach_target
+    phase: approach_microwave_handle
+    target_geom: week8_microwave_handle_proxy
+    hand_offset: [-0.01626286, -0.11035779, -0.00269677]
+    hand_rotation:
+      - [-0.00879656, 0.98738697, 0.15808094]
+      - [-0.03796533, -0.15830286, 0.98666045]
+      - [0.99924034, 0.00267762, 0.038879]
+    approach_direction: [0.0, -1.0, 0.0]
+    standoff_distances: [0.45, 0.32, 0.22, 0.14, 0.09]
+    max_step: 0.03
+
+  - action: grasp_target
+    phase: grasp_microwave_handle
+    target_geom: week8_microwave_handle_proxy
+    hand_offset: [-0.01626286, -0.11035779, -0.00269677]
+    hand_rotation:
+      - [-0.00879656, 0.98738697, 0.15808094]
+      - [-0.03796533, -0.15830286, 0.98666045]
+      - [0.99924034, 0.00267762, 0.038879]
+    closed_gripper: 0.023711985
+    max_step: 0.025
+    close_steps: 17
+    minimum_final_finger_contacts: 2
+
+  - action: follow_hinge_joint
+    phase: open_microwave_door
+    joint_name: microwave_hinge
+    moving_body: microwave_door
+    target_angle: 1.0
+    samples: 65
+    max_joint_step: 0.15
+    minimum_each_finger_contacts: 2
+    ik_position_tolerance: 0.006
+    ik_rotation_tolerance: 0.015
+    ik_continuity_weight: 0.003
+    ik_max_nfev: 1400
+
+  - action: hold_pose
+    phase: hold_microwave_open
+    frames: 12
+
+  - action: follow_hinge_joint
+    phase: close_microwave_door
+    joint_name: microwave_hinge
+    moving_body: microwave_door
+    target_angle: 0.0
+    samples: 65
+    max_joint_step: 0.15
+    minimum_each_finger_contacts: 2
+    ik_position_tolerance: 0.006
+    ik_rotation_tolerance: 0.015
+    ik_continuity_weight: 0.003
+    ik_max_nfev: 1400
+
+  - action: change_gripper
+    phase: release_microwave_handle
+    target: 0.04
+    active_target: null
+    steps: 17
+
+  - action: retreat_from_target
+    phase: retreat_from_microwave
+    target_geom: week8_microwave_handle_proxy
+    hand_offset: [-0.01626286, -0.11035779, -0.00269677]
+    hand_rotation:
+      - [-0.00879656, 0.98738697, 0.15808094]
+      - [-0.03796533, -0.15830286, 0.98666045]
+      - [0.99924034, 0.00267762, 0.038879]
+    approach_direction: [0.0, -1.0, 0.0]
+    standoff_distances: [0.09, 0.14, 0.22, 0.32, 0.45]
+    max_step: 0.03
+
+  - action: move_arm
+    phase: return_arm_home
+    waypoints:
+      - [0.0, -0.55, 0.0, -2.25, 0.0, 1.75, 0.78]
+    max_step: 0.03
+
+  - action: hold_pose
+    phase: final_hold
+    frames: 8

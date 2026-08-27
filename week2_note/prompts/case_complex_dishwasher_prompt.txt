@@ -1,0 +1,96 @@
+Create a complex articulated dishwasher as an articulated object.
+
+Coordinate convention:
+- X is left-right width.
+- Y is front-back depth.
+- Z is vertical height.
+- Front is toward negative Y.
+- Back is toward positive Y.
+
+Use simple box geometry only.
+
+Parts:
+1. dishwasher_body: fixed root part.
+2. front_door: movable hinged door.
+3. upper_rack: movable sliding upper rack.
+4. lower_rack: movable sliding lower rack.
+5. spray_arm: continuously rotating spray arm.
+6. detergent_drawer: small sliding detergent drawer mounted on the inner side of the door.
+
+Dishwasher body:
+- Hollow rectangular dishwasher cabinet.
+- Include left wall, right wall, top panel, bottom panel, back panel, and inner floor.
+- The front should be open.
+- Add rail supports for upper_rack and lower_rack.
+- Do not make it one solid block.
+
+Front door:
+- Thin rectangular panel covering the front opening when closed.
+- Hinge along the bottom front edge.
+- Use a REVOLUTE joint.
+- Parent: dishwasher_body.
+- Child: front_door.
+- Axis: along X axis.
+- Closed position: 0.
+- Open position: about 100 degrees.
+- Motion limits lower=0, upper about 1.75 radians.
+- Door should rotate around bottom edge, not center.
+- Add an outer handle near the top front of the door.
+
+Upper rack:
+- Basket-like rack, not a solid block.
+- Include thin base rails, left/right side rails, front/back rails.
+- Use a PRISMATIC joint.
+- Parent: dishwasher_body.
+- Child: upper_rack.
+- Axis: (0, -1, 0).
+- Motion limits lower=0, upper about 0.25.
+- Rack should remain supported when opened.
+
+Lower rack:
+- Similar basket-like rack but lower and slightly larger.
+- Use a PRISMATIC joint.
+- Parent: dishwasher_body.
+- Child: lower_rack.
+- Axis: (0, -1, 0).
+- Motion limits lower=0, upper about 0.28.
+- Rack should remain supported when opened.
+
+Spray arm:
+- Near the bottom inside the dishwasher.
+- Approximate with two long thin rectangular arms crossing at the center.
+- Use a CONTINUOUS joint.
+- Parent: dishwasher_body.
+- Child: spray_arm.
+- Axis: (0, 0, 1).
+- Rotate in place around its own center.
+
+Detergent drawer:
+- Small rectangular sliding compartment mounted on the inner face of the front door.
+- Use a PRISMATIC joint.
+- Parent: front_door.
+- Child: detergent_drawer.
+- Axis along local outward direction of the door.
+- Motion limits lower=0, upper about 0.04.
+- It should move with the door because its parent is front_door.
+
+Validation tests:
+- Check dishwasher_body is root.
+- Check there are exactly five joints.
+- Check front_door is REVOLUTE.
+- Check upper_rack and lower_rack are PRISMATIC.
+- Check spray_arm is CONTINUOUS.
+- Check detergent_drawer is PRISMATIC.
+- Check detergent_drawer parent is front_door.
+- Check racks slide along negative Y.
+- Check racks remain supported by rails when opened.
+- Check door rotates around bottom edge, not center.
+- Check spray_arm rotates around its own center.
+- Check detergent drawer remains attached to the door.
+- Check moving parts are separate and visually clear.
+
+Important:
+- Use clear part names.
+- Use clear visual element names.
+- Add comments explaining dimensions, joint origins, axes, and likely bug-prone areas.
+- Prefer readable and debuggable code.

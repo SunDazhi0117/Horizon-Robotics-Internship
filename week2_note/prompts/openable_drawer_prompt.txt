@@ -1,0 +1,54 @@
+Create a simple openable drawer as an articulated object.
+
+The object should be a small cabinet with one pull-out drawer.
+
+Coordinate convention:
+- X is left-right width.
+- Y is front-back depth.
+- Z is vertical height.
+- The drawer should open by sliding forward along the negative Y direction.
+
+Parts:
+1. A fixed cabinet frame as the root part.
+2. One movable drawer tray as the child part.
+
+Cabinet frame requirements:
+- Use simple box geometry.
+- The frame should include left wall, right wall, top panel, bottom panel, and back panel.
+- Leave the front open so the drawer can slide out.
+- Add two side rails or guide rails inside the cabinet to visually support the drawer.
+
+Drawer requirements:
+- The drawer should not be a solid block.
+- It should look like an open tray with:
+  - bottom panel,
+  - left side wall,
+  - right side wall,
+  - back wall,
+  - front panel,
+  - handle on the front panel.
+- The drawer should fit inside the cabinet in the closed position.
+- The drawer front panel should sit just in front of the cabinet opening when closed.
+- Avoid interpenetration between the drawer front and the cabinet frame.
+
+Joint requirements:
+- Connect the drawer tray to the cabinet frame using one PRISMATIC joint.
+- The parent should be the cabinet frame.
+- The child should be the drawer tray.
+- The joint axis should be (0, -1, 0), so the drawer slides forward.
+- The closed position should be 0.
+- The open position should be around 0.28 meters.
+- Use motion limits lower=0 and upper=0.28.
+
+Validation tests:
+- Check that the cabinet frame is the root part.
+- Check that there is exactly one prismatic joint.
+- Check that the joint parent is the cabinet frame and the child is the drawer tray.
+- Check that the joint axis points along negative Y.
+- Check that the joint limits allow the drawer to move from 0 to about 0.28.
+- Check that the drawer is inside the cabinet when closed.
+- Check that the drawer moves forward when opened.
+- Check that the drawer remains supported by the side rails in the open position.
+- Check that the drawer front does not collide with the cabinet frame in the closed position.
+
+Use clear part names and visual element names.
